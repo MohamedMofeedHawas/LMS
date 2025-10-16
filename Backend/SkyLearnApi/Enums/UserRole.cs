@@ -7,3 +7,4 @@ namespace SkyLearnApi.Enums
         Admin
     }
 }
+ 
