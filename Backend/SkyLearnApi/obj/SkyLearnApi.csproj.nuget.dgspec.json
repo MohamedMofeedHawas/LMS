@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MK\\OneDrive\\Desktop\\SkyLearn.Api\\SkyLearnApi\\SkyLearnApi.csproj": {}
+    "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\SkyLearnApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MK\\OneDrive\\Desktop\\SkyLearn.Api\\SkyLearnApi\\SkyLearnApi.csproj": {
+    "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\SkyLearnApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MK\\OneDrive\\Desktop\\SkyLearn.Api\\SkyLearnApi\\SkyLearnApi.csproj",
+        "projectUniqueName": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\SkyLearnApi.csproj",
         "projectName": "SkyLearnApi",
-        "projectPath": "C:\\Users\\MK\\OneDrive\\Desktop\\SkyLearn.Api\\SkyLearnApi\\SkyLearnApi.csproj",
+        "projectPath": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\SkyLearnApi.csproj",
         "packagesPath": "C:\\Users\\MK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MK\\OneDrive\\Desktop\\SkyLearn.Api\\SkyLearnApi\\obj\\",
+        "outputPath": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

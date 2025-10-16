@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TWs9XNYaIqo=",
+  "dgSpecHash": "B3DYGB/K6fo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MK\\OneDrive\\Desktop\\SkyLearn.Api\\SkyLearnApi\\SkyLearnApi.csproj",
+  "projectFilePath": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\SkyLearnApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MK\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\MK\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
