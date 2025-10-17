@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing & Login</title>
+  <style>
+    /*  CSS STYLE  */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9fafc;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2563eb;
+    }
+
+    .navbar nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      transition: color 0.3s;
+    }
+
+    .navbar nav a:hover {
+      color: #2563eb;
+    }
+
+    .login-btn {
+      background: #2563eb;
+      color: #fff !important;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 80px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #2563eb;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .buttons .btn {
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+
+    .btn.primary {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .btn.primary:hover {
+      background: #1e4fd1;
+    }
+
+    .btn.secondary {
+      border: 1px solid #2563eb;
+      color: #2563eb;
+    }
+
+    .btn.secondary:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .hero-img img {
+      width: 600px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /*  LOGIN PAGE STYLE */
+    .login-page {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #e0ebff, #ffffff);
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .remember {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+
+    .remember a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .btn.full {
+      width: 100%;
+    }
+
+    .back a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .back a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .hero-img img {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LANDING PAGE  -->
+  <div id="landing-page">
+    <header class="navbar">
+      <div class="logo">EduLearn</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#" class="login-btn" onclick="openLogin()">Login</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Learn Smarter. Grow Faster.</h1>
+        <p>Join thousands of learners growing their skills through interactive courses and real-world projects.</p>
+        <div class="buttons">
+          <a href="#" class="btn primary" onclick="openLogin()">Login</a>
+          <a href="#" class="btn secondary">Start Learning</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="photo.jpg" alt="Learning Image" />
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 EduLearn. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!--LOGIN PAGE --> 
+  <div id="login-page" class="login-page">
+    <div class="login-container">
+      <h2>Welcome Back 👋</h2>
+      <p class="subtitle">Sign in to continue to your courses</p>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <div class="remember">
+          <label><input type="checkbox" /> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn primary full">Login</button>
+      </form>
+      <p class="back"><a href="#" onclick="backToLanding()">← Back to Home</a></p>
+    </div>
+  </div>
+
+  <script>
+    //  JS TOGGLE BETWEEN PAGES
+    const landing = document.getElementById('landing-page');
+    const login = document.getElementById('login-page');
+
+    function openLogin() {
+      landing.style.display = 'none';
+      login.style.display = 'flex';
+    }
+
+    function backToLanding() {
+      login.style.display = 'none';
+      landing.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
