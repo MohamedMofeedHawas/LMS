@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkyLearnApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+055971ba12c5b4886c53c2f122259159c75fc242")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2529240895ff5fea21c261a0193c1aba1c5844c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyLearnApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkyLearnApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

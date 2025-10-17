@@ -10,7 +10,8 @@ namespace SkyLearnApi.Data
         {
         }
 
-        public DbSet<ApplicationUser> Users { get; set; } = null!;
+        public DbSet<ApplicationUser> Users { get; set; }
+        public DbSet<AuditLog> AuditLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

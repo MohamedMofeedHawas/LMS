@@ -10,17 +10,17 @@ namespace SkyLearnApi.Entities
     public string Password { get; set; } = string.Empty;
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
-   public string? ProfileImageUrl { get; set; }
-        public string? Gender { get; set; }
-        public string? City { get; set; }
-        public string? AcademicLevel { get; set; }
+    public string? ProfileImageUrl { get; set; }
+    public string? Gender { get; set; }
+    public string? City { get; set; }
+    public string? AcademicLevel { get; set; }
 
         // ---- Role ----
-        public UserRole Role { get; set; } = UserRole.Student;
+    public UserRole Role { get; set; } = UserRole.Student;
 
         // ---- Audit Info ----
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
 }
 

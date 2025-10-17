@@ -1,11 +1,10 @@
-using System.Threading.Tasks;
+using SkyLearnApi.Dtos;
 
-namespace SkyLearnApi.Services.Interfaces
+namespace SkyLearnApi.Services
 {
     public interface IAuthService
-{
-    Task<string?> LoginAsync(string email, string password); 
-    Task LogoutAsync(long userId);
-}
-
+    {
+        Task<AuthResponseDto?> LoginAsync(string email, string password);
+        Task LogoutAsync(string token);
+    }
 }

@@ -339,3 +339,4 @@ C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\refint\SkyLearnAp
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\SkyLearnApi.pdb
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\SkyLearnApi.genruntimeconfig.cache
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\ref\SkyLearnApi.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Debug\net9.0\BCrypt.Net-Next.dll
