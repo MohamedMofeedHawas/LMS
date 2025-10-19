@@ -51,15 +51,18 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Swagger setup
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyLearn API v1");
-        options.RoutePrefix = string.Empty;
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyLearn API v1");
+    options.RoutePrefix = string.Empty;
+});
+
+app.UseRouting();
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 app.UseAuthentication();
 app.UseAuthorization();

@@ -15,5 +15,6 @@ namespace SkyLearnApi.Entities
         public DateTime? ExpiresAt { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public ApplicationUser? User { get; set; }
     }
 }

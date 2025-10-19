@@ -44,6 +44,7 @@ namespace SkyLearnApi.Configuration
                    .HasConversion<string>()
                    .IsRequired();
 
+
         }
     }
 }

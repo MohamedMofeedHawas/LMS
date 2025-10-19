@@ -25,90 +25,69 @@ namespace SkyLearnApi.Services
         public async Task<AuthResponseDto?> LoginAsync(string email, string password)
         {
             var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
-            if (user == null)
+            if (user == null || user.Password != password)
             {
-                await _audit.LogAsync("Failed Login", $"Failed attempt for {email}", "User", null);
+                await _audit.LogAsync("Failed Login", $"Login failed for {email}", "Auth", user?.Id);
                 return null;
             }
 
-            // ⚠️ مؤقتًا: مقارنة الباسورد بدون تشفير لتجربة السواجر فقط
-            if (user.Password != password)
-            {
-                await _audit.LogAsync("Failed Login", $"Wrong password for {email}", "User", user.Id);
-                return null;
-            }
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(_jwtSettings.Key);
-
+            var jti = Guid.NewGuid().ToString();
             var claims = new List<Claim>
             {
                 new Claim("UserId", user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role.ToString())
+                new Claim(ClaimTypes.Role, user.Role.ToString()),
+                new Claim(JwtRegisteredClaimNames.Jti, jti)
             };
 
-            var jti = Guid.NewGuid().ToString();
-            claims.Add(new Claim(JwtRegisteredClaimNames.Jti, jti));
-
+            var key = Encoding.UTF8.GetBytes(_jwtSettings.Key);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.UtcNow.AddMinutes(_jwtSettings.ExpireMinutes),
                 Issuer = _jwtSettings.Issuer,
                 Audience = _jwtSettings.Audience,
-                SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(key),
-                    SecurityAlgorithms.HmacSha256Signature
-                )
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
+            var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            // Log successful login
-            await _audit.LogAsync(
-                "User Login",
-                $"User {user.Email} logged in",
-                "Auth",
-                user.Id,
-                jti,
-                tokenDescriptor.Expires
-            );
+            await _audit.LogAsync("User Login", $"User {user.Email} logged in", "Auth", user.Id, jti, tokenDescriptor.Expires);
 
             return new AuthResponseDto
             {
                 Token = tokenString,
-                ExpiresAt = tokenDescriptor.Expires!.Value
+                ExpiresIn = tokenDescriptor.Expires!.Value,
+                User = new UserDto
+                {
+                    Id = user.Id,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Email = user.Email,
+                    Role = user.Role.ToString(),
+                    Gender = user.Gender,
+                    City = user.City,
+                    AcademicLevel = user.AcademicLevel,
+                    ProfileImageUrl = user.ProfileImageUrl
+                }
             };
         }
 
         public async Task LogoutAsync(string token)
         {
             var handler = new JwtSecurityTokenHandler();
-            JwtSecurityToken? jwt = null;
             try
             {
-                jwt = handler.ReadJwtToken(token);
+                var jwt = handler.ReadJwtToken(token);
+                int? userId = int.TryParse(jwt.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value, out var uid) ? uid : null;
+
+                await _audit.LogAsync("User Logout", $"Token revoked (jti={jwt.Id})", "Auth", userId, jwt.Id, jwt.ValidTo);
             }
             catch
             {
-                // invalid token
-            }
-
-            if (jwt != null)
-            {
-                var jti = jwt.Id;
-                var exp = jwt.ValidTo;
-                int? userId = null;
-                var userIdClaim = jwt.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value;
-                if (int.TryParse(userIdClaim, out var uid)) userId = uid;
-
-                await _audit.LogAsync("RevokeToken", $"Token revoked (jti={jti})", "Auth", userId, jti, exp);
-            }
-            else
-            {
-                await _audit.LogAsync("RevokeToken", "Logout attempted with invalid token", "Auth", null, null, null);
+                await _audit.LogAsync("Failed Logout", "Invalid or missing token", "Auth", null);
             }
         }
     }

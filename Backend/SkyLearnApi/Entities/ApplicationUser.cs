@@ -18,9 +18,11 @@ namespace SkyLearnApi.Entities
         // ---- Role ----
     public UserRole Role { get; set; } = UserRole.Student;
 
-        // ---- Audit Info ----
+        
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+    
+    public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
 
 }
 

@@ -113,7 +113,24 @@ namespace SkyLearnApi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("AuditLogs");
+                });
+
+            modelBuilder.Entity("SkyLearnApi.Entities.AuditLog", b =>
+                {
+                    b.HasOne("SkyLearnApi.Entities.ApplicationUser", "User")
+                        .WithMany("AuditLogs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SkyLearnApi.Entities.ApplicationUser", b =>
+                {
+                    b.Navigation("AuditLogs");
                 });
 #pragma warning restore 612, 618
         }

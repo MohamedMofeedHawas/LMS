@@ -17,6 +17,12 @@ namespace SkyLearnApi.Data
         {
             
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            
+            modelBuilder.Entity<AuditLog>()
+           .HasOne(a => a.User)
+           .WithMany(u => u.AuditLogs)
+           .HasForeignKey(a => a.UserId)
+           .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }
