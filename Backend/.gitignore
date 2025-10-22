@@ -1,25 +1,10 @@
-﻿# Visual Studio
-.vs/
-*.user
-*.suo
-*.cache
-
-# Build folders
-bin/
-obj/
-
-# Logs
-*.log
-
-# Publish output
-*.pubxml.user
-bin/
-obj/
-.vs/
-*.user
-*.suo
-*.dbmdl
-*.pdb
-*.exe
-*.dll
-*.cache
+bin/ 
+obj/ 
+.vs/ 
+*.user 
+*.suo 
+*.dbmdl 
+*.pdb 
+*.exe 
+*.dll 
+*.cache 
