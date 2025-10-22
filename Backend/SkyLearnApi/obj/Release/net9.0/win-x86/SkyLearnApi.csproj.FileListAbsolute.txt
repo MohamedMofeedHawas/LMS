@@ -165,3 +165,7 @@ C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\refint\
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\SkyLearnApi.pdb
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\SkyLearnApi.genruntimeconfig.cache
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\ref\SkyLearnApi.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Release\net9.0\win-x86\SkyLearnApi.staticwebassets.runtime.json
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Release\net9.0\win-x86\Mapster.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Release\net9.0\win-x86\Mapster.Core.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Release\net9.0\win-x86\Mapster.DependencyInjection.dll

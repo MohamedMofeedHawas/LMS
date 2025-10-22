@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251022181510_UpdateCourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkyLearnApi\\Migrations\\20251022181510_UpdateCourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\services\\implementation\\yearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\services\\implementation\\yearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251020214955_AddDeptYearTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkyLearnApi\\Migrations\\20251020214955_AddDeptYearTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,24 +51,24 @@
       "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\services\\implementation\\auditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\migrations\\20251018201648_lms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\migrations\\20251018201648_lms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\DTOs\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkyLearnApi\\DTOs\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\DTOs\\AuthResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkyLearnApi\\DTOs\\AuthResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|c:\\users\\mk\\downloads\\lms\\backend\\skylearnapi\\migrations\\20251020215417_adddeptyeartable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8141BF6-EAC2-9F2E-24FB-5F669E415A0B}|SkyLearnApi\\SkyLearnApi.csproj|solutionrelative:skylearnapi\\migrations\\20251020215417_adddeptyeartable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,20 +106,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JwtSettings.cs",
-              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\JwtSettings.cs",
-              "RelativeDocumentMoniker": "SkyLearnApi\\Services\\JwtSettings.cs",
-              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\JwtSettings.cs",
-              "RelativeToolTip": "SkyLearnApi\\Services\\JwtSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:38:02.212Z",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\.gitignore",
+              "RelativeDocumentMoniker": "SkyLearnApi\\.gitignore",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\.gitignore",
+              "RelativeToolTip": "SkyLearnApi\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-10-22T18:27:01.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251022181510_UpdateCourse.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251022181510_UpdateCourse.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Migrations\\20251022181510_UpdateCourse.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251022181510_UpdateCourse.cs",
+              "RelativeToolTip": "SkyLearnApi\\Migrations\\20251022181510_UpdateCourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:15:11.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "YearService.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\YearService.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Services\\Implementation\\YearService.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\YearService.cs",
+              "RelativeToolTip": "SkyLearnApi\\Services\\Implementation\\YearService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAADwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T11:29:48.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20251020215417_AddDeptYearTable.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251020215417_AddDeptYearTable.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Migrations\\20251020215417_AddDeptYearTable.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251020215417_AddDeptYearTable.cs",
+              "RelativeToolTip": "SkyLearnApi\\Migrations\\20251020215417_AddDeptYearTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T21:54:17.842Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "20251020214955_AddDeptYearTable.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251020214955_AddDeptYearTable.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Migrations\\20251020214955_AddDeptYearTable.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251020214955_AddDeptYearTable.cs",
+              "RelativeToolTip": "SkyLearnApi\\Migrations\\20251020214955_AddDeptYearTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T21:49:56.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\JwtService.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\Services\\Implementation\\JwtService.cs",
@@ -107,38 +177,59 @@
               "RelativeToolTip": "SkyLearnApi\\Services\\Implementation\\JwtService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAiwCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:36:54.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T22:36:54.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "SkyLearnApi\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T21:44:49.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Services\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\JwtSettings.cs",
+              "RelativeToolTip": "SkyLearnApi\\Services\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T22:38:02.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\AuthService.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\Services\\Implementation\\AuthService.cs",
-              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\AuthService.cs*",
-              "RelativeToolTip": "SkyLearnApi\\Services\\Implementation\\AuthService.cs*",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\AuthService.cs",
+              "RelativeToolTip": "SkyLearnApi\\Services\\Implementation\\AuthService.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAiwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T21:45:38.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "SkyLearnApi\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "SkyLearnApi\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T19:04:21.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T21:45:38.339Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SkyLearnApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SkyLearnApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:04:21.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\Enums\\UserRole.cs",
@@ -146,12 +237,11 @@
               "RelativeToolTip": "SkyLearnApi\\Enums\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:27:55.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T22:27:55.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "AuditService.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Services\\Implementation\\AuditService.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\Services\\Implementation\\AuditService.cs",
@@ -159,12 +249,11 @@
               "RelativeToolTip": "SkyLearnApi\\Services\\Implementation\\AuditService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwBgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:36:23.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T22:36:23.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\DTOs\\LoginDto.cs",
@@ -172,12 +261,11 @@
               "RelativeToolTip": "SkyLearnApi\\DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T21:45:23.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T21:45:23.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Program.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\Program.cs",
@@ -185,12 +273,11 @@
               "RelativeToolTip": "SkyLearnApi\\Program.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAiwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T21:54:14.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T21:54:14.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "AuthResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\DTOs\\AuthResponseDto.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\DTOs\\AuthResponseDto.cs",
@@ -198,25 +285,11 @@
               "RelativeToolTip": "SkyLearnApi\\DTOs\\AuthResponseDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwBUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T21:45:10.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T21:45:10.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Entities\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "SkyLearnApi\\Entities\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Entities\\ApplicationUser.cs*",
-              "RelativeToolTip": "SkyLearnApi\\Entities\\ApplicationUser.cs*",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T21:44:49.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\appsettings.json",
               "RelativeDocumentMoniker": "SkyLearnApi\\appsettings.json",
@@ -224,12 +297,11 @@
               "RelativeToolTip": "SkyLearnApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-18T19:22:50.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T19:22:50.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "20251018201648_LMS.cs",
               "DocumentMoniker": "C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\Migrations\\20251018201648_LMS.cs",
               "RelativeDocumentMoniker": "SkyLearnApi\\Migrations\\20251018201648_LMS.cs",
@@ -237,8 +309,7 @@
               "RelativeToolTip": "SkyLearnApi\\Migrations\\20251018201648_LMS.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T20:16:51.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T20:16:51.128Z"
             }
           ]
         }

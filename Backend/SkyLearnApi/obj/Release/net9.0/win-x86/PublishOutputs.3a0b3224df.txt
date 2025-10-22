@@ -7,6 +7,9 @@ C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Azure.Core.dll
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Azure.Identity.dll
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\BCrypt.Net-Next.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Mapster.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Mapster.Core.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Mapster.DependencyInjection.dll
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll

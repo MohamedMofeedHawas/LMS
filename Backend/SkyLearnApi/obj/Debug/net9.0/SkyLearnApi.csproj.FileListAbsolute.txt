@@ -340,4 +340,7 @@ C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\SkyLearnApi.pdb
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\SkyLearnApi.genruntimeconfig.cache
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\ref\SkyLearnApi.dll
 C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Debug\net9.0\BCrypt.Net-Next.dll
-C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Debug\net9.0\SkyLearnApi.staticwebassets.runtime.json
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Debug\net9.0\Mapster.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Debug\net9.0\Mapster.Core.dll
+C:\Users\MK\Downloads\LMS\Backend\SkyLearnApi\bin\Debug\net9.0\Mapster.DependencyInjection.dll
