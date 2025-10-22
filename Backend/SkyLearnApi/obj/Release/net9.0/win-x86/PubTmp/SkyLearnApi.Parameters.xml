@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="site40051" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\MK\\Downloads\\LMS\\Backend\\SkyLearnApi\\obj\\Release\\net9\.0\\win-x86\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
