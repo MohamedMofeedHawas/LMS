@@ -1,6 +1,3 @@
-
-using SkyLearnApi.Enums;
-
 namespace SkyLearnApi.Entities
 {
     public class ApplicationUser
@@ -8,8 +5,7 @@ namespace SkyLearnApi.Entities
     public int Id { get; set; }
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
-    public string FirstName { get; set; } = string.Empty;
-    public string LastName { get; set; } = string.Empty;
+    public string FullName { get; set; } = string.Empty;
     public string? ProfileImageUrl { get; set; }
     public string? Gender { get; set; }
     public string? City { get; set; }
@@ -27,3 +23,8 @@ namespace SkyLearnApi.Entities
 }
 
 }
+
+
+// "ConnectionStrings": {
+//     "DefaultConnection": "Server=db30067.public.databaseasp.net;Database=db30067;User Id=db30067;Password=Sx8?6L_qWe5%;Encrypt=False;MultipleActiveResultSets=True;TrustServerCertificate=True;"
+//   },
