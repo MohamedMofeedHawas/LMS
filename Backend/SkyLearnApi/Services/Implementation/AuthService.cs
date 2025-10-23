@@ -63,7 +63,8 @@ namespace SkyLearnApi.Services
                 User = new UserDto
                 {
                     Id = user.Id,
-                    FullName = user.FullName,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
                     Email = user.Email,
                     Role = user.Role.ToString(),
                     Gender = user.Gender,

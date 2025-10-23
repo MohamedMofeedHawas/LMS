@@ -17,6 +17,11 @@ dependencies:
   google_fonts: ^6.3.2
   table_calendar: ^3.2.0
   flutter_svg: ^2.2.1
+  dio: ^5.9.0
+  shared_preferences: ^2.5.3
+  flutter_bloc: ^9.1.1
+  awesome_dialog: ^3.3.0
+  flutter_secure_storage: ^9.2.4
 
 dev_dependencies:
   flutter_test:
@@ -28,6 +33,14 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/logo/
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+    - assets/test_images/
+
 
   fonts:
     - family: inter
@@ -36,10 +49,5 @@ flutter:
         - asset: assets/fonts/Inter_18pt-Bold.ttf
         - asset: assets/fonts/Inter_18pt-ExtraBold.ttf
 
-  assets:
-    - assets/
-    - assets/logo/
-    - assets/icons/
-    - assets/images/
-    - assets/fonts/
+
 
