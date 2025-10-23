@@ -2,7 +2,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SkyLearnApi.Data;
+using SkyLearnApi.Entities;
+using SkyLearnApi.Middleware;
 using SkyLearnApi.Services;
+using SkyLearnApi.Services.Interfaces;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +21,8 @@ builder.Services.AddSingleton(sp => sp.GetRequiredService<IConfiguration>().GetS
 builder.Services.AddScoped<AuditService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IAuditService, AuditService>();
+
 
 // Jwt configuration
 var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()!;
@@ -65,8 +70,11 @@ app.UseCors(x => x
     .AllowAnyHeader());
 
 app.UseAuthentication();
+app.UseAuditLogging();
 app.UseAuthorization();
 
 app.MapControllers();
+
+
 
 app.Run();

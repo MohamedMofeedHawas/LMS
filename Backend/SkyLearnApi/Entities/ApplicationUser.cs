@@ -13,16 +13,19 @@ namespace SkyLearnApi.Entities
     public string? ProfileImageUrl { get; set; }
     public string? Gender { get; set; }
     public string? City { get; set; }
-    public string? AcademicLevel { get; set; }
+       // public string AcademicYear { get; set; }
+
 
         // ---- Role ----
-    public UserRole Role { get; set; } = UserRole.Student;
+        public UserRole Role { get; set; } = UserRole.Student;
 
         
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
-    
-    public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
+        public string? GroupName { get; set; }
+        public string? AcademicYear { get; set; }
+
+        public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
 
 }
 

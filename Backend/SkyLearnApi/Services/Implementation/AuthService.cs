@@ -69,7 +69,7 @@ namespace SkyLearnApi.Services
                     Role = user.Role.ToString(),
                     Gender = user.Gender,
                     City = user.City,
-                    AcademicLevel = user.AcademicLevel,
+                    AcademicYear = user.AcademicYear ,
                     ProfileImageUrl = user.ProfileImageUrl
                 }
             };

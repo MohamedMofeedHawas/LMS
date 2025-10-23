@@ -37,7 +37,7 @@ namespace SkyLearnApi.Configuration
             builder.Property(u => u.City)
                    .HasMaxLength(50);
 
-            builder.Property(u => u.AcademicLevel)
+            builder.Property(u => u.AcademicYear)
                    .HasMaxLength(50);
 
             builder.Property(u => u.Role)

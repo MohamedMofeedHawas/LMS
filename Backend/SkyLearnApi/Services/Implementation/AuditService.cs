@@ -1,9 +1,10 @@
 using SkyLearnApi.Data;
 using SkyLearnApi.Entities;
+using SkyLearnApi.Services.Interfaces;
 
 namespace SkyLearnApi.Services
 {
-    public class AuditService
+    public class AuditService : IAuditService
     {
         private readonly AppDbContext _db;
 
