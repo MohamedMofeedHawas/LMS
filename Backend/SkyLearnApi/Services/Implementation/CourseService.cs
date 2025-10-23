@@ -1,9 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using SkyLearnApi.Data;
-using SkyLearnApi.Dtos.Courses;
-using SkyLearnApi.Entities;
-using SkyLearnApi.Services.Interfaces;
-using MapsterMapper;
 
 namespace SkyLearnApi.Services.Implementations
 {

@@ -1,6 +1,3 @@
-
-using SkyLearnApi.Enums;
-
 namespace SkyLearnApi.Entities
 {
     public class ApplicationUser

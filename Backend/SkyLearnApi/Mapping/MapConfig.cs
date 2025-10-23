@@ -1,6 +1,3 @@
-using Mapster;
-using SkyLearnApi.Dtos.Year;
-using SkyLearnApi.Entities;
 
 namespace SkyLearnApi.Mappings
 {

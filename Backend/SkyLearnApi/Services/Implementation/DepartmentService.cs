@@ -1,9 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using SkyLearnApi.Data;
-using SkyLearnApi.Dtos.Department;
-using SkyLearnApi.Entities;
-using SkyLearnApi.Helpers;
-using SkyLearnApi.Services.Interfaces;
 
 namespace SkyLearnApi.Services.Implementations
 {

@@ -1,14 +1,4 @@
-using Mapster;
-using MapsterMapper;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using SkyLearnApi.Data;
-using SkyLearnApi.Mappings; // 🔹 Mapster mappings
-using SkyLearnApi.Services;
-using SkyLearnApi.Services.Implementations;
-using SkyLearnApi.Services.Interfaces;
-using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

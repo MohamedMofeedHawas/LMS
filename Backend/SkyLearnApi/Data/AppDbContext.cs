@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using SkyLearnApi.Configuration;
-using SkyLearnApi.Configurations;
-using SkyLearnApi.Entities;
 
 namespace SkyLearnApi.Data
 {

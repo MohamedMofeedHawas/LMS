@@ -1,14 +1,8 @@
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using SkyLearnApi.Dtos.Courses;
-using SkyLearnApi.Services.Interfaces;
-using System.Security.Claims;
-
 namespace SkyLearnApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] // 🔒 لازم تكون authenticated عشان تدخل هنا
+    [Authorize] 
     public class CourseController : ControllerBase
     {
         private readonly ICourseService _courseService;

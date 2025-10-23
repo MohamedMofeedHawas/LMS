@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SkyLearnApi.Entities;
-
 namespace SkyLearnApi.Configuration
 {
     public class UserConfiguration : IEntityTypeConfiguration<ApplicationUser>

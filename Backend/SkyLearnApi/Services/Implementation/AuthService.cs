@@ -1,12 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using SkyLearnApi.Data;
-using SkyLearnApi.Dtos;
-using SkyLearnApi.Entities;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-
 namespace SkyLearnApi.Services
 {
     public class AuthService : IAuthService

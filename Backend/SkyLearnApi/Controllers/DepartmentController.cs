@@ -1,8 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using SkyLearnApi.Dtos.Department;
-using SkyLearnApi.Services.Interfaces;
-
 namespace SkyLearnApi.Controllers
 {
     [ApiController]
