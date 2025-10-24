@@ -29,10 +29,214 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>lms</title>
+  <title>SKY Learn - Learning Management System</title>
   <link rel="manifest" href="manifest.json">
+  
+  <!-- Prevent white screen flash with immediate styling -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #E0F2FE 0%, #B3E5FC 35%, #E0F2FE 100%);
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+    }
+    
+    /* Loading screen styles to match Flutter app */
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #E0F2FE 0%, #B3E5FC 35%, #E0F2FE 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    
+    .loading-logo {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 
+        0 20px 40px rgba(23, 92, 211, 0.2),
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      margin-bottom: 30px;
+      overflow: hidden;
+      position: relative;
+      animation: logoFloat 3s ease-in-out infinite;
+    }
+    
+    .loading-logo::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #175CD3, #53B1FD, #175CD3);
+      border-radius: 32px;
+      z-index: -1;
+      animation: borderGlow 2s linear infinite;
+    }
+    
+    .loading-logo svg {
+      width: 60px;
+      height: 60px;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    }
+    
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(2deg); }
+    }
+    
+    @keyframes borderGlow {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+    
+    .loading-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #175CD3;
+      margin-bottom: 10px;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .loading-subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      color: #545F70;
+      margin-bottom: 40px;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      margin: 20px 0;
+    }
+    
+    .loading-spinner::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 4px solid transparent;
+      border-top: 4px solid #175CD3;
+      border-right: 4px solid #53B1FD;
+      border-radius: 50%;
+      animation: spin 1.2s linear infinite;
+    }
+    
+    .loading-spinner::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      border: 2px solid transparent;
+      border-bottom: 2px solid #175CD3;
+      border-left: 2px solid #53B1FD;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite reverse;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Additional decorative elements */
+    .loading-features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      opacity: 0.7;
+    }
+    
+    .feature-icon {
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(45deg, #175CD3, #53B1FD);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: featurePulse 2s ease-in-out infinite;
+    }
+    
+    .feature-icon:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    
+    .feature-icon:nth-child(3) {
+      animation-delay: 1s;
+    }
+    
+    @keyframes featurePulse {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+    
+    /* Hide loading screen when Flutter is ready */
+    .flutter-ready .loading-container {
+      display: none;
+    }
+  </style>
 </head>
 <body>
+  <!-- Immediate loading screen to prevent white flash -->
+  <div class="loading-container" id="loading-screen">
+    <div class="loading-logo">
+      <svg viewBox="0 0 24 24" fill="#175CD3">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        <path d="M12 6l1.5 3L17 10.5l-3 2.5 1 4L12 15l-3 2 1-4-3-2.5L10.5 9L12 6z" fill="#53B1FD"/>
+      </svg>
+    </div>
+    <div class="loading-title">SKY Learn</div>
+    <div class="loading-subtitle">Loading your learning experience...</div>
+    <div class="loading-spinner"></div>
+    
+    <!-- Feature icons -->
+    <div class="loading-features">
+      <div class="feature-icon">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </div>
+      <div class="feature-icon">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+      </div>
+      <div class="feature-icon">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  
   <script src="flutter_bootstrap.js" async></script>
+  
+  <!-- Hide loading screen when Flutter is ready -->
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      document.body.classList.add('flutter-ready');
+    });
+  </script>
 </body>
 </html>

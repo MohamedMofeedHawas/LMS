@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using SkyLearnApi.DTOs;
-using SkyLearnApi.Services;
-
-namespace SkyLearnApi.Controllers
+﻿namespace SkyLearnApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

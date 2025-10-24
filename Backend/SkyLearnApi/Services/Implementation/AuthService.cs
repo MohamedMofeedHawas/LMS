@@ -1,12 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using SkyLearnApi.Data;
-using SkyLearnApi.Dtos;
-using SkyLearnApi.Entities;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-
 namespace SkyLearnApi.Services
 {
     public class AuthService : IAuthService
@@ -63,8 +54,7 @@ namespace SkyLearnApi.Services
                 User = new UserDto
                 {
                     Id = user.Id,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
+                    FullName = user.FullName,
                     Email = user.Email,
                     Role = user.Role.ToString(),
                     Gender = user.Gender,

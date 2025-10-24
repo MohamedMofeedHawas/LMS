@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lms/features/screens/login/state_management/login_cubit.dart';
+import 'package:lms/features/screens/login/state_management/login_server_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lms/features/screens/login/state_management/login_state.dart';
 
 import '../../../core/cons/Colors/app_colors.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -17,37 +18,26 @@ class _LoginScreenState extends State<LoginScreen> {
   bool isPressed = false;
   bool isObscure = true;
   final formKey = GlobalKey<FormState>();
-  final usernameController = TextEditingController(
-    text: "mohamed.test@skylearn.local",
-  );
-  final passwordController = TextEditingController(text: "1234Strong!");
+  final usernameController = TextEditingController(text: "mohamed.abdelstar@test.com");
+  final passwordController = TextEditingController(text: "P@ssward123");
 
-  bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(seconds: 2), () {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    });
   }
 
   @override
   void dispose() {
-    _isLoading = false;
+    usernameController.dispose();
+    passwordController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return _isLoading
-        ? Scaffold(body: Center(child: CircularProgressIndicator()))
-        : BlocProvider(
+    return BlocProvider(
             create: (context) => LoginCubit(),
             child: Builder(
               builder: (context) {
@@ -213,14 +203,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                   BlocBuilder<LoginCubit, LoginState>(
                                     bloc: loginCubit,
                                     builder: (context, state) {
-                                      if (state is LoadingLoginState) {
-                                        return Center(
-                                          child: CircularProgressIndicator(),
-                                        );
-                                      }
-                                      return
-                                        InkWell(
-                                        onTap: () {
+                                      final isLoading = state is LoadingLoginState;
+                                      
+                                      return InkWell(
+                                        onTap: isLoading ? null : () {
                                           SystemSound.play(
                                             SystemSoundType.click,
                                           );
@@ -236,7 +222,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                           child: Container(
                                             width: 470,
                                             height: 45,
-
                                             decoration: BoxDecoration(
                                               gradient: LinearGradient(
                                                 begin: Alignment.topLeft,
@@ -246,21 +231,42 @@ class _LoginScreenState extends State<LoginScreen> {
                                                   Color(0xFF53B1FD),
                                                 ],
                                               ),
-
-                                              color: Color(0xFF175CD3),
-                                              borderRadius:
-                                                  BorderRadius.circular(12),
+                                              borderRadius: BorderRadius.circular(12),
                                             ),
                                             child: Center(
-                                              child: Text(
-                                                "Login",
-                                                style: TextStyle(
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.w600,
-                                                  fontFamily: "inter",
-                                                  color: Colors.white,
-                                                ),
-                                              ),
+                                              child: isLoading
+                                                  ? Row(
+                                                      mainAxisAlignment: MainAxisAlignment.center,
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 20,
+                                                          height: 20,
+                                                          child: CircularProgressIndicator(
+                                                            strokeWidth: 2,
+                                                            valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                                          ),
+                                                        ),
+                                                        SizedBox(width: 10),
+                                                        Text(
+                                                          "Logging in...",
+                                                          style: TextStyle(
+                                                            fontSize: 16,
+                                                            fontWeight: FontWeight.w600,
+                                                            fontFamily: "inter",
+                                                            color: Colors.white,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    )
+                                                  : Text(
+                                                      "Login",
+                                                      style: TextStyle(
+                                                        fontSize: 16,
+                                                        fontWeight: FontWeight.w600,
+                                                        fontFamily: "inter",
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
                                             ),
                                           ),
                                         ),
