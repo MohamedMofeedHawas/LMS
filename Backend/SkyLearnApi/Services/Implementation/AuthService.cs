@@ -4,12 +4,14 @@ namespace SkyLearnApi.Services
     {
         private readonly AppDbContext _db;
         private readonly JwtSettings _jwtSettings;
-        private readonly AuditService _audit;
+        private readonly IAuditService _audit;
+        private readonly IUserService _userService;
 
-        public AuthService(AppDbContext db, IConfiguration config, AuditService audit)
+        public AuthService(AppDbContext db, IConfiguration config, IAuditService audit, IUserService userService)
         {
             _db = db;
             _audit = audit;
+            _userService = userService;
             _jwtSettings = config.GetSection("Jwt").Get<JwtSettings>() ?? new JwtSettings();
         }
 
@@ -28,7 +30,9 @@ namespace SkyLearnApi.Services
                 new Claim("UserId", user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.Role.ToString()),
-                new Claim(JwtRegisteredClaimNames.Jti, jti)
+                new Claim(JwtRegisteredClaimNames.Jti, jti),
+                new Claim(nameof(ApplicationUser.GroupName), user.GroupName),
+                new Claim(nameof(ApplicationUser.AcademicYear), user.AcademicYear),
             };
 
             var key = Encoding.UTF8.GetBytes(_jwtSettings.Key);
@@ -45,7 +49,24 @@ namespace SkyLearnApi.Services
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            await _audit.LogAsync("User Login", $"User {user.Email} logged in", "Auth", user.Id, jti, tokenDescriptor.Expires);
+            //await _audit.LogAsync("User Login", $"User {user.Email} logged in", "Auth", user.Id, jti, tokenDescriptor.Expires);
+
+            await _audit.LogAsync(new AuditLog
+            {
+                UserId = user.Id,
+                Action = "User Login",
+                Description = $"User {user.Email} logged in",
+                EntityName = "Auth",
+                Jti = jti,
+                ExpiresAt = tokenDescriptor.Expires,
+                CreatedAt = DateTime.UtcNow,
+                GroupName = user.GroupName,
+                AcademicYear = user.AcademicYear
+            });
+
+
+            // Set User as Active in database
+            await _userService.SetUserAsActiveAsync(user.Id, true);
 
             return new AuthResponseDto
             {
@@ -59,7 +80,7 @@ namespace SkyLearnApi.Services
                     Role = user.Role.ToString(),
                     Gender = user.Gender,
                     City = user.City,
-                    AcademicYear = user.AcademicYear ,
+                    AcademicYear = user.AcademicYear,
                     ProfileImageUrl = user.ProfileImageUrl
                 }
             };
@@ -72,8 +93,30 @@ namespace SkyLearnApi.Services
             {
                 var jwt = handler.ReadJwtToken(token);
                 int? userId = int.TryParse(jwt.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value, out var uid) ? uid : null;
+                var groupName = jwt.Claims.First(x => x.Type == "GroupName").Value;
+                var academicYear = jwt.Claims.First(x => x.Type == "AcademicYear").Value;
 
-                await _audit.LogAsync("User Logout", $"Token revoked (jti={jwt.Id})", "Auth", userId, jwt.Id, jwt.ValidTo);
+                if (userId.HasValue)
+                {
+                    //await _audit.LogAsync("User Logout", $"Token revoked (jti={jwt.Id})", "Auth", userId, jwt.Id, jwt.ValidTo);
+
+                    await _audit.LogAsync(new AuditLog
+                    {
+                        UserId = userId,
+                        Action = "User Logout",
+                        Description = $"Token revoked (jti={jwt.Id})",
+                        EntityName = "Auth",
+                        Jti = jwt.Id,
+                        ExpiresAt = null,
+                        CreatedAt = DateTime.UtcNow,
+                        GroupName = groupName,
+                        AcademicYear = academicYear
+                    });
+
+
+                    // Set User as Active in database
+                    await _userService.SetUserAsActiveAsync(userId.Value, false);
+                }
             }
             catch
             {

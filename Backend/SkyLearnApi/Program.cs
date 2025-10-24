@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SkyLearnApi.Data;
+using SkyLearnApi.Middleware;
 using SkyLearnApi.Services;
 using System.Text;
 

@@ -16,9 +16,9 @@ namespace SkyLearnApi.Entities
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public ApplicationUser? User { get; set; }
-        public string? GroupName { get; set; }        
-        public string? AcademicYear { get; set; }    
-        public bool? IsActive { get; set; }           
+        public string? GroupName { get; set; }
+        public string? AcademicYear { get; set; }
+        public bool? IsActive { get; set; }
         public string? ExtraDataJson { get; set; }
     }
 }

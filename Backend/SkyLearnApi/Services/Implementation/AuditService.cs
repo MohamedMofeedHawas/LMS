@@ -28,5 +28,11 @@ namespace SkyLearnApi.Services
             _db.AuditLogs.Add(audit);
             await _db.SaveChangesAsync();
         }
+
+        public async Task LogAsync(AuditLog auditLog)
+        {
+            _db.AuditLogs.Add(auditLog);
+            await _db.SaveChangesAsync();
+        }
     }
 }
