@@ -105,7 +105,7 @@ df_dummy = df_dummy.sample(frac=1).reset_index(drop=True)
 
 # 5.Saving into file 
 OUTPUT_FILE = 'dummy_audit_logs.csv'
-print(f"\nSaving to '{OUTPUT_FILE}'...")
+print(f"\nSaving to '{OUTPUT_FILE}'")
 df_dummy.to_csv(OUTPUT_FILE, 
                 index=False, 
                 encoding='utf-8', 

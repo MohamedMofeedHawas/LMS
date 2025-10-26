@@ -32,18 +32,16 @@ def transform_data(df):
     df = df.dropna(subset=['CreatedAt'])
     # Process 'ExpiresAt' (convert to date, but keep NaT for NULLs)
     df['ExpiresAt'] = pd.to_datetime(df['ExpiresAt'], errors='coerce')
-    
-    print("Processed 'CreatedAt' and 'ExpiresAt' columns.")
 
-    # 3. Divide Date into Date, days and hours
+    # Divide Date into Date, days and hours
     df['EventDate'] = df['CreatedAt'].dt.date
     df['EventHour'] = df['CreatedAt'].dt.hour
     df['EventDay'] = df['CreatedAt'].dt.day_name()
 
-    # 4. Remove Duplicates
+    # Remove Duplicates
     df = df.drop_duplicates()
     
-    # 6. Reorder Columns (for better readability) 
+    # Reorder Columns (for better readability) 
     new_order = [
         'Id', 'UserId', 'CreatedAt', 'EventDate', 'EventHour', 'EventDay',
         'Action', 'Description', 'EntityName', 'GroupName', 'AcademicY',
@@ -84,5 +82,5 @@ def main():
     
     print("Data Pipeline Finished ")
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
