@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logging out...</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="design.css" />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #cde9ff, #e8f3ff);
+      font-family: 'Poppins', sans-serif;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {color: #0078ff;}
+    p {color: #444;
+      font-size: 18px;}
+    .container {display: none;}
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0078ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;}
+    .btn:hover {
+      background-color: #005fcc;}
+  </style>
+</head>
+<body>
+  <!-- w ana b3ml logout -->
+  <h1>Logging out...</h1>
+  <p>You will be redirected shortly.</p>
+  <!-- b3d el logout-->
+  <div class="container">
+    <h2>You have been logged out successfully.</h2>
+    <a href="login.html" class="btn">Login Again</a>
+  </div>
+  <script>
+    localStorage.removeItem('userName');
+    localStorage.removeItem('loggedInUser');
+
+    // b3d 3sec mn el-outting
+    setTimeout(() => {
+      document.querySelector('h1').style.display = 'none';
+      document.querySelector('p').style.display = 'none';
+      document.querySelector('.container').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>

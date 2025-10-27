@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKY Learn - Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Welcome Back 👋</h2>
+        <p>Enter your details below to access your courses and progress.</p>
+        <form id="signinForm" class="signin-form">
+          <label for="email">Username</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <small id="emailError" class="error"></small>
+
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <span class="toggle-password" onclick="togglePassword()">👁</span>
+          </div>
+          <small id="passwordError" class="error"></small>
+
+          <div class="extra">
+            <a href="#" class="forgot">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script> 
+    <script>
+      function togglePassword() {
+        const passwordField = document.getElementById("password");
+        passwordField.type =
+          passwordField.type === "password" ? "text" : "password";
+      }
+    </script>
+  </body>
+</html>

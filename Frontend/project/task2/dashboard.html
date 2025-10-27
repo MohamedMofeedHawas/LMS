@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class= "logo" >Sky Learn</div>
+        <div class="user-name">
+            <img src="user-icon.png" 
+            class="user-icon" id="usericon" alt="user"> </div>
+            <div class="dropdown" id="dropdownMenu">
+                <a href="dashboard.html"> Courses</a>
+                <a href="profile.html"> Profile</a>
+                <a href="setting.html"> Setting</a>
+                <a href="logout.html"> Logout</a>
+
+            </div>
+    </header>
+  <div class="dashboard">
+    <h1 id="welcomeMessage"></h1>
+    <p>You have successfully signed in!</p>
+    <a href="login.html" class="btn" id="logoutBtn">Log out</a>
+  </div>
+
+  <script>
+    // name mn local storage
+    const userName = localStorage.getItem("userName");
+    const welcomeMessage = document.getElementById("welcomeMessage");
+
+    if (userName) {
+      welcomeMessage.textContent = `Welcome, ${userName}` ;
+    } else {
+      welcomeMessage.textContent = "Welcome 💙";
+    }
+
+    // delete el name lma y3ml logout
+    //const logoutBtn = document.getElementById("logoutBtn");
+    //if (logoutBtn) {
+      //logoutBtn.addEventListener("click", () => {
+        //localStorage.removeItem("userName");
+      //});
+    //}
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+  document.body.style.transition = "opacity 0.5s ease";
+  document.body.style.opacity = "0";
+
+  setTimeout(() => {
+    localStorage.removeItem("userName");
+    window.location.href = "signin.html";
+  }, 500);
+});
+  </script>
+</body>
+</html>
