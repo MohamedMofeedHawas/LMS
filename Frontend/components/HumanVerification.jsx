@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './HumanVerification.css';
+import './css/HumanVerification.css';
 
 const HumanVerification = ({ onVerified }) => {
   const [question, setQuestion] = useState('');
@@ -14,7 +14,7 @@ const HumanVerification = ({ onVerified }) => {
   const generateQuestion = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
-    setQuestion({num1} + {num2});
+    setQuestion(`${num1}` + `${num2}`);
     setAnswer((num1 + num2).toString());
   };
   const handleSubmit = (e) => {
@@ -33,7 +33,7 @@ const HumanVerification = ({ onVerified }) => {
   if (verified) {
     return (
       <div className="verification-success">
-        <h3>Verified as Human ✅</h3>
+        <h3>Verified as Human </h3>
         <p>You can now proceed.</p>
       </div>
     );
@@ -57,5 +57,4 @@ const HumanVerification = ({ onVerified }) => {
     </div>
   );
 };
-
 export default HumanVerification;

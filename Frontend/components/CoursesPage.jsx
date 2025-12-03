@@ -1,12 +1,12 @@
 import React, { useContext, useEffect } from 'react';
 import { AuthContext } from '../context/AuthContext.jsx';
 import { useNavigate } from 'react-router-dom';
-import './CoursesPage.css';
-import photo from '<src/photo/photo.jpg';
-import photo1 from 'src/photo/photo1.jpg';
-import photo2 from 'src/photo/pyhoto2.jpg';
-import photo3 from 'src/photo/photo3-css.jpg';
-import photo4 from 'src/photo/photo4.jpg';
+import './css/CoursesPage.css';
+//import photo from '../photo/photo.jpg';
+//import photo1 from '../photo/photo1.jpg';
+//import photo2 from '../photo/photo2.jpg';
+//import photo3 from '../photo/photo3-css.jpg';
+//import photo4 from '../photo/photo4.jpg';
 
 const CoursesPage = () => {
   const { user, logout } = useContext(AuthContext);
@@ -24,12 +24,12 @@ const CoursesPage = () => {
   };
 
   const courses = [
-    { name: "chemical nomenclature", img: photo },
-    { name: "class and conflict in world cinema", img: photo1 },
-    { name: "Psychlogy in cinema", img: photo2 },
-    { name: "celebrating culture", img: photo3 },
-    { name: "A1/A2 english with h5p", img: photo4 },
-  ];
+    { name: "chemical nomenclature", img: "https://via.placeholder.com/300x200?text=Chemical+Nomenclature" },
+    { name: "class and conflict in world cinema", img: "https://via.placeholder.com/300x200?text=Cinema+Course" },
+    { name: "Psychology in cinema", img: "https://via.placeholder.com/300x200?text=Psychology+in+Cinema" },  // صححت الإملاء
+    { name: "celebrating culture", img: "https://via.placeholder.com/300x200?text=Celebrating+Culture" },
+    { name: "A1/A2 english with h5p", img: "https://via.placeholder.com/300x200?text=English+Course" },
+];
 
   return (
     <div className="courses-page">
