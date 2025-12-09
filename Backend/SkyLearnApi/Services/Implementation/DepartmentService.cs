@@ -1,5 +1,5 @@
 
-namespace SkyLearnApi.Services.Implementations
+namespace SkyLearnApi.Services.Implementation
 {
     public class DepartmentService : IDepartmentService
     {

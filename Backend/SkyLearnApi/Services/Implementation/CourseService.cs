@@ -1,17 +1,22 @@
 
-namespace SkyLearnApi.Services.Implementations
+using SkyLearnApi.Services.Base;
+
+namespace SkyLearnApi.Services.Implementation
 {
     public class CourseService : ICourseService
     {
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
         private readonly IWebHostEnvironment _env;
+        private readonly IAuditService _auditService;
 
-        public CourseService(AppDbContext context, IMapper mapper, IWebHostEnvironment env)
+
+        public CourseService(AppDbContext context, IMapper mapper, IWebHostEnvironment env, IAuditService auditService)
         {
             _context = context;
             _mapper = mapper;
             _env = env;
+            _auditService = auditService;
         }
 
         public async Task<IEnumerable<CourseResponseDto>> GetAllAsync(
@@ -56,6 +61,8 @@ namespace SkyLearnApi.Services.Implementations
                 .Include(c => c.CreatedBy)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
+            await _auditService.LogAuditAsync(AuditActions.COURSE_VIEW, $"", EntityName.Courses);
+
             return course == null ? null : _mapper.Map<CourseResponseDto>(course);
         }
 
@@ -91,6 +98,8 @@ namespace SkyLearnApi.Services.Implementations
 
             // 🔁 Update Year totals after course creation
             await UpdateYearTotalsAsync(course.YearId);
+
+            // call audit
 
             return _mapper.Map<CourseResponseDto>(course);
         }
@@ -171,14 +180,12 @@ namespace SkyLearnApi.Services.Implementations
         // 🔁 Helper: Update total courses and total hours in Year table
         private async Task UpdateYearTotalsAsync(int yearId)
         {
-            var totalCourses = await _context.Courses.CountAsync(c => c.YearId == yearId);
-            var totalHours = await _context.Courses.Where(c => c.YearId == yearId).SumAsync(c => c.CreditHours);
-
             var year = await _context.Years.FindAsync(yearId);
             if (year != null)
             {
-                year.TotalCourses = totalCourses;
-                year.TotalHours = totalHours;
+                var totalCourses = await _context.Courses.Where(c => c.YearId == yearId).ToListAsync();
+                year.TotalCourses = totalCourses.Count;
+                year.TotalHours = totalCourses.Sum(e => e.CreditHours);
                 await _context.SaveChangesAsync();
             }
         }

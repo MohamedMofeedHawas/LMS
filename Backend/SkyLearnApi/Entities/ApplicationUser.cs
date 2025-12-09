@@ -21,6 +21,12 @@ namespace SkyLearnApi.Entities
         public bool IsActive { get; set; }
 
         public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
+
+        // in case of Instructor role
+        public ICollection<CourseInstructor> Courses { get; set; } = new List<CourseInstructor>();
+        
+        // in case of Student role
+        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
 }
 

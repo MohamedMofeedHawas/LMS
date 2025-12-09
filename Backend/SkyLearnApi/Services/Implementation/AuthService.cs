@@ -1,17 +1,19 @@
-namespace SkyLearnApi.Services
+using SkyLearnApi.Services.Base;
+
+namespace SkyLearnApi.Services.Implementation
 {
     public class AuthService : IAuthService
     {
         private readonly AppDbContext _db;
         private readonly JwtSettings _jwtSettings;
-        private readonly IAuditService _audit;
         private readonly IUserService _userService;
+        private readonly IAuditService _auditService;
 
-        public AuthService(AppDbContext db, IConfiguration config, IAuditService audit, IUserService userService)
+        public AuthService(AppDbContext db, IConfiguration config, IUserService userService, IAuditService auditService)
         {
             _db = db;
-            _audit = audit;
             _userService = userService;
+            _auditService = auditService;
             _jwtSettings = config.GetSection("Jwt").Get<JwtSettings>() ?? new JwtSettings();
         }
 
@@ -20,19 +22,18 @@ namespace SkyLearnApi.Services
             var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
             if (user == null || user.Password != password)
             {
-                await _audit.LogAsync("Failed Login", $"Login failed for {email}", "Auth", user?.Id);
                 return null;
             }
 
             var jti = Guid.NewGuid().ToString();
             var claims = new List<Claim>
             {
-                new Claim("UserId", user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role.ToString()),
-                new Claim(JwtRegisteredClaimNames.Jti, jti),
-                new Claim(nameof(ApplicationUser.GroupName), user.GroupName),
-                new Claim(nameof(ApplicationUser.AcademicYear), user.AcademicYear),
+                new Claim(SystemClaim.UserId, user.Id.ToString()),
+                new Claim(SystemClaim.Email, user.Email),
+                new Claim(SystemClaim.Role, user.Role.ToString()),
+                new Claim(SystemClaim.Jti, jti),
+                new Claim(SystemClaim.GroupName, user.GroupName),
+                new Claim(SystemClaim.AcademicYear, user.AcademicYear)
             };
 
             var key = Encoding.UTF8.GetBytes(_jwtSettings.Key);
@@ -51,18 +52,7 @@ namespace SkyLearnApi.Services
 
             //await _audit.LogAsync("User Login", $"User {user.Email} logged in", "Auth", user.Id, jti, tokenDescriptor.Expires);
 
-            await _audit.LogAsync(new AuditLog
-            {
-                UserId = user.Id,
-                Action = "User Login",
-                Description = $"User {user.Email} logged in",
-                EntityName = "Auth",
-                Jti = jti,
-                ExpiresAt = tokenDescriptor.Expires,
-                CreatedAt = DateTime.UtcNow,
-                GroupName = user.GroupName,
-                AcademicYear = user.AcademicYear
-            });
+            await _auditService.LogAuditAsync(AuditActions.USER_LOGIN, $"", EntityName.Users);
 
 
             // Set User as Active in database
@@ -92,26 +82,13 @@ namespace SkyLearnApi.Services
             try
             {
                 var jwt = handler.ReadJwtToken(token);
-                int? userId = int.TryParse(jwt.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value, out var uid) ? uid : null;
-                var groupName = jwt.Claims.First(x => x.Type == "GroupName").Value;
-                var academicYear = jwt.Claims.First(x => x.Type == "AcademicYear").Value;
+                int? userId = int.TryParse(jwt.Claims.FirstOrDefault(c => c.Type == SystemClaim.UserId)?.Value, out var uid) ? uid : null;
 
                 if (userId.HasValue)
                 {
                     //await _audit.LogAsync("User Logout", $"Token revoked (jti={jwt.Id})", "Auth", userId, jwt.Id, jwt.ValidTo);
 
-                    await _audit.LogAsync(new AuditLog
-                    {
-                        UserId = userId,
-                        Action = "User Logout",
-                        Description = $"Token revoked (jti={jwt.Id})",
-                        EntityName = "Auth",
-                        Jti = jwt.Id,
-                        ExpiresAt = null,
-                        CreatedAt = DateTime.UtcNow,
-                        GroupName = groupName,
-                        AcademicYear = academicYear
-                    });
+                    await _auditService.LogAuditAsync(AuditActions.USER_LOGOUT, $"", EntityName.Users);
 
 
                     // Set User as Active in database
@@ -120,7 +97,7 @@ namespace SkyLearnApi.Services
             }
             catch
             {
-                await _audit.LogAsync("Failed Logout", "Invalid or missing token", "Auth", null);
+                await _auditService.LogAuditAsync(AuditActions.FAILED_LOGIN, $"", EntityName.Users);
             }
         }
     }

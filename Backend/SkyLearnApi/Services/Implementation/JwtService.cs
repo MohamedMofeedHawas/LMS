@@ -1,5 +1,10 @@
-namespace SkyLearnApi.Services.Implementations
+namespace SkyLearnApi.Services.Implementation
 {
+    public interface IJwtTokenService
+    {
+        string GenerateToken(string userId, string userName, string email, IEnumerable<string>? roles = null);
+    }
+
     public class JwtService
     {
         private readonly IConfiguration _config;

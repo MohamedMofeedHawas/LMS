@@ -1,9 +1,8 @@
-namespace SkyLearnApi.Enums
+namespace SkyLearnApi.Enums;
+
+public enum UserRole
 {
-    public enum UserRole
-    {
-        Student,
-        Instructor,
-        Admin
-    }
+    Student,
+    Instructor,
+    Admin
 }

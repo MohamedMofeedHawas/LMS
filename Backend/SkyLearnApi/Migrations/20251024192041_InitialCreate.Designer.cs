@@ -12,8 +12,8 @@ using SkyLearnApi.Data;
 namespace SkyLearnApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251024213557_UpdateApplicationUser")]
-    partial class UpdateApplicationUser
+    [Migration("20251024192041_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,7 +34,6 @@ namespace SkyLearnApi.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AcademicYear")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -62,12 +61,7 @@ namespace SkyLearnApi.Migrations
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("GroupName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()

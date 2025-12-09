@@ -1,5 +1,5 @@
 
-namespace SkyLearnApi.Services
+namespace SkyLearnApi.Services.Interfaces
 {
     public interface IAuthService
     {

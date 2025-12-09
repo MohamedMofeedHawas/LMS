@@ -4,6 +4,8 @@ using Microsoft.IdentityModel.Tokens;
 using SkyLearnApi.Data;
 using SkyLearnApi.Middleware;
 using SkyLearnApi.Services;
+using SkyLearnApi.Services.Base;
+using SkyLearnApi.Services.Implementation;
 using System.Text;
 
 
@@ -29,6 +31,12 @@ builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IAuditService, AuditService>();
+
+// HTTP Context Accessor for CurrentUserService
+builder.Services.AddHttpContextAccessor();
+
+// Current User Service
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 
 // Register Mapster mappings
 MapConfig.RegisterMappings();
@@ -78,7 +86,17 @@ app.UseCors(x => x
     .AllowAnyMethod()
     .AllowAnyHeader());
 
-app.UseStaticFiles();    
+app.UseStaticFiles();
+
+if (app.Environment.IsDevelopment())
+{
+    // Create a scope to get the DbContext and apply migrations
+    using (var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        db.Database.Migrate();
+    }
+}
 
 app.UseAuthentication();
 app.UseAuditLogging();

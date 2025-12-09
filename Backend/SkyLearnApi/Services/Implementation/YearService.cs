@@ -1,7 +1,7 @@
 
 
 
-namespace SkyLearnApi.Services
+namespace SkyLearnApi.Services.Implementation
 {
     public class YearService : IYearService
     {

@@ -1,6 +1,4 @@
-﻿using System.Security.Claims;
-using System.Text.Json;
-using SkyLearnApi.Services;
+﻿using SkyLearnApi.Services.Base;
 
 namespace SkyLearnApi.Middleware
 {
@@ -13,35 +11,27 @@ namespace SkyLearnApi.Middleware
             _next = next;
         }
 
-        public async Task InvokeAsync(HttpContext context, IAuditService auditService)
+        public async Task InvokeAsync(HttpContext context, IAuditService auditService, ICurrentUserService currentUserService)
         {
             var action = $"{context.Request.Method} {context.Request.Path}";
-            var description = $"Request from {context.Connection.RemoteIpAddress}";
+            var description = $"";
             string? entityName = context.Request.Path.Value?.Split('/').LastOrDefault();
 
             await _next(context);
 
 
-            var userIdClaim = context.User.FindFirst("UserId")?.Value;
-            int? userId = int.TryParse(userIdClaim, out var uid) ? uid : null;
-            var groupName = context.User.FindFirst("GroupName")?.Value;
-            var academicYear = context.User.FindFirst("AcademicYear")?.Value;
-
-            var jti = context.User.FindFirst(JwtRegisteredClaimNames.Jti)?.Value;
-            var expClaim = context.User.FindFirst("exp")?.Value;
-
             if (context.User.Identity is { IsAuthenticated: true })
                 await auditService.LogAsync(new AuditLog
                 {
-                    UserId = userId,
+                    UserId = currentUserService.UserId,
                     Action = action,
                     Description = description,
                     EntityName = entityName,
-                    Jti = jti,
-                    ExpiresAt = string.IsNullOrEmpty(expClaim) ? null : DateTimeOffset.FromUnixTimeSeconds(long.Parse(expClaim)).UtcDateTime,
+                    Jti = currentUserService.Jti,
+                    ExpiresAt = currentUserService.ExpiresAt,
                     CreatedAt = DateTime.UtcNow,
-                    GroupName = groupName,
-                    AcademicYear = academicYear
+                    GroupName = currentUserService.GroupName,
+                    AcademicYear = currentUserService.AcademicYear
                 });
         }
     }

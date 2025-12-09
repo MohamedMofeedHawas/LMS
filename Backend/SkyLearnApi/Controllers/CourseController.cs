@@ -21,7 +21,7 @@ namespace SkyLearnApi.Controllers
         }
 
         [HttpGet("get-all")]
-        [AllowAnonymous] // لو عايز تخليها مفتوحة
+        //[AllowAnonymous] // لو عايز تخليها مفتوحة
         public async Task<IActionResult> GetAll(
             [FromQuery] string? search,
             [FromQuery] int? departmentId,

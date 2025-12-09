@@ -1,4 +1,4 @@
-namespace SkyLearnApi.Services;
+namespace SkyLearnApi.Services.Implementation;
 
 public class UserService : IUserService
 {

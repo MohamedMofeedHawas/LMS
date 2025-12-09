@@ -11,6 +11,17 @@ namespace SkyLearnApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
+                name: "GroupName",
+                table: "Users",
+                type: "nvarchar(50)",
+                maxLength: 50,
+                nullable: false,
+                defaultValue: "",
+                oldClrType: typeof(string),
+                oldType: "nvarchar(max)",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<string>(
                 name: "AcademicYear",
                 table: "Users",
                 type: "nvarchar(50)",
@@ -21,14 +32,6 @@ namespace SkyLearnApi.Migrations
                 oldType: "nvarchar(50)",
                 oldMaxLength: 50,
                 oldNullable: true);
-
-          /*  migrationBuilder.AddColumn<string>(
-                name: "GroupName",
-                table: "Users",
-                type: "nvarchar(50)",
-                maxLength: 50,
-                nullable: false,
-                defaultValue: "");*/
 
             migrationBuilder.AddColumn<bool>(
                 name: "IsActive",
@@ -41,13 +44,18 @@ namespace SkyLearnApi.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-          /*  migrationBuilder.DropColumn(
-                name: "GroupName",
-                table: "Users");*/
-
             migrationBuilder.DropColumn(
                 name: "IsActive",
                 table: "Users");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "GroupName",
+                table: "Users",
+                type: "nvarchar(max)",
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(50)",
+                oldMaxLength: 50);
 
             migrationBuilder.AlterColumn<string>(
                 name: "AcademicYear",
