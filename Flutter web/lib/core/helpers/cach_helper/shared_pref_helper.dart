@@ -10,10 +10,7 @@ import '../../cons/context/navigation_key.dart';
 import 'package:dio/dio.dart';
 
 class PrefHelper {
-  // static Future<String?> getToken() async {
-  //   final prefs = await SharedPreferences.getInstance();
-  //   return prefs.getString("tokenKey");
-  // }
+
 
   static Future<int?> getId() async {
     final prefs = await SharedPreferences.getInstance();
@@ -35,15 +32,7 @@ class PrefHelper {
     return prefs.getString("email");
   }
 
-  // static Future<String?> getFirstName() async {
-  //   final prefs = await SharedPreferences.getInstance();
-  //   return prefs.getString("firstName");
-  // }
 
-  // static Future<String?> getLastName() async {
-  //   final prefs = await SharedPreferences.getInstance();
-  //   return prefs.getString("lastName");
-  // }
   static Future<String?> getFulName () async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getString("fullName");
@@ -83,7 +72,7 @@ class PrefHelper {
     if (token == null) {
       ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
         const SnackBar(
-          content: Text('⚠️ No token found. Please log in first.'),
+          content: Text('No token found. Please log in first.'),
           backgroundColor: Colors.red,
         ),
       );
@@ -113,7 +102,7 @@ class PrefHelper {
             ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
               SnackBar(
                 content: Text(
-                  '✅ ${response.data["message"] ?? "Logout successful"}',
+                  '${response.data["message"] ?? "Logout successful"}',
                 ),
                 backgroundColor: Colors.green,
               ),
@@ -127,7 +116,7 @@ class PrefHelper {
           } else {
             ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
               SnackBar(
-                content: Text('❌ Logout failed: ${response.statusMessage}'),
+                content: Text('Logout failed: ${response.statusMessage}'),
                 backgroundColor: Colors.red,
               ),
             );
@@ -140,14 +129,14 @@ class PrefHelper {
 
           ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
             SnackBar(
-              content: Text('🚫 $errorMessage'),
+              content: Text('Error:- $errorMessage'),
               backgroundColor: Colors.red,
             ),
           );
         } catch (e) {
           ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
             SnackBar(
-              content: Text('⚠️ Unexpected error: $e'),
+              content: Text('Unexpected error: $e'),
               backgroundColor: Colors.red,
             ),
           );

@@ -1,8 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:lms/core/cons/context/navigation_key.dart';
+import 'package:lms/features/screens/Announcement/view.dart';
+import 'package:lms/features/screens/courses/admin/view.dart';
+import 'package:lms/features/screens/courses/teacher/view.dart';
+import 'package:lms/features/screens/hero_section/view.dart';
 import 'package:lms/features/screens/login/view.dart';
-import 'package:lms/core/widgets/loading_screen.dart';
+import 'package:lms/features/screens/pre_loading/loading_screen.dart';
 import 'package:lms/core/services/app_initialization_service.dart';
+import 'package:lms/features/screens/student_profile/view.dart';
+
+import 'features/draft/test_screen.dart';
+import 'features/screens/Courses_dashboard/view.dart';
+import 'features/screens/add_course/view.dart';
+import 'features/screens/celeberating cultures/view.dart';
+import 'features/screens/chat_bot/view.dart';
+import 'features/screens/courses/student/view.dart';
+import 'features/screens/teacher_profile/view.dart';
+
 
 
 
@@ -27,15 +41,12 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    // Start initialization immediately but don't wait for it
     _initializeApp();
   }
 
   Future<void> _initializeApp() async {
-    // Show loading screen immediately, then initialize
-    await Future.delayed(Duration(milliseconds: 100)); // Small delay to show loading screen
+    await Future.delayed(Duration(milliseconds: 100));
     
-    // Initialize app services
     await AppInitializationService.initializeApp();
     
     setState(() {
@@ -57,11 +68,27 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(
           useMaterial3: true,
           fontFamily: 'inter',
-          // Prevent white flash by setting scaffold background
           scaffoldBackgroundColor: Color(0xFFE0F2FE),
         ),
         debugShowCheckedModeBanner: false,
-        home: _isInitialized ? LoginScreen() : LoadingScreen(),
+        home:
+        // CelebratingScreen()
+        // LearnMateChat()
+        // LearnMateApp()
+        // DashboardPage()
+        // ProfileScreen()
+        StudentProfileScreen()
+        // CoursesManagementApp()
+        // LearnMateChat()
+        // AdminCourseScreen()
+        // AnnouncementScreen()
+        // AttendanceChart()
+        // AdminCourseScreen()
+        // TeacherCourseScreen()
+        // StudentCourseScreen()
+        // HeroSectionScreen()
+        // UploadCoursePage()
+        // _isInitialized ? LoginScreen() : LoadingScreen(),
       ),
     );
   }

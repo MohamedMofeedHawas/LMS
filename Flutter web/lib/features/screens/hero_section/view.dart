@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/cons/Colors/app_colors.dart';
 import '../../../core/widgets/app_bar.dart';
+import '../../../generated/assets.dart';
 
 class HeroSectionScreen extends StatelessWidget {
   const HeroSectionScreen({super.key});
@@ -16,7 +17,7 @@ class HeroSectionScreen extends StatelessWidget {
           gradient: LinearGradient(
             colors: [
               MYColors.gradientColor_3,
-              MYColors.gradientColor_1.withValues(alpha: 0.35),
+              MYColors.gradientColor_2.withValues(alpha: 0.25),
               MYColors.gradientColor_3,
             ],
             begin: Alignment.topLeft,
@@ -93,15 +94,15 @@ class HeroSectionScreen extends StatelessWidget {
             width: 185,
             height: 45,
 
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color(0xFF1849A9),
-                  Color(0xFF53B1FD),
-                ],
-              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xFF1849A9),
+                    Color(0xFF53B1FD),
+                  ],
+                ),
 
               color: Color(0xFF175CD3),
               borderRadius:
@@ -162,13 +163,13 @@ class HeroSectionScreen extends StatelessWidget {
 
             Stack(
               children: [
-                Image.asset("assets/images/man-welcom.png",width: 732,height: 600,),
+                Image.asset(Assets.manWelcome,width: 732,height: 600,),
                 Positioned(top: 290,
                     left: 25,
-                    child: Image.asset("assets/images/frame_1.png")),
+                    child: Image.asset(Assets.frame_1)),
                 Positioned(top: 200,
                     right: 100,
-                    child: Image.asset("assets/images/frame_2.png")),
+                    child: Image.asset(Assets.frame_2)),
 
               ],
             )

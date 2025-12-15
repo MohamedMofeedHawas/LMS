@@ -14,14 +14,19 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  video_player: ^2.10.1
   google_fonts: ^6.3.2
   table_calendar: ^3.2.0
+  image_picker:
   flutter_svg: ^2.2.1
   dio: ^5.9.0
   shared_preferences: ^2.5.3
   flutter_bloc: ^9.1.1
   awesome_dialog: ^3.3.0
   flutter_secure_storage: ^9.2.4
+  file_picker: ^10.3.3
+  fl_chart: ^1.1.1
+  provider: ^6.1.5+1
 
 dev_dependencies:
   flutter_test:
@@ -40,6 +45,12 @@ flutter:
     - assets/images/
     - assets/fonts/
     - assets/test_images/
+    - assets/images/wing.svg
+    - assets/icons/delete_icon.svg
+    - assets/icons/list_announcement_icon.svg
+
+
+
 
 
   fonts:

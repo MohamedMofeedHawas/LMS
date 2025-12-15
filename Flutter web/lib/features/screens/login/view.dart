@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lms/features/screens/login/state_management/login_state.dart';
 
 import '../../../core/cons/Colors/app_colors.dart';
+import '../../../generated/assets.dart';
 
 
 class LoginScreen extends StatefulWidget {
@@ -47,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     gradient: LinearGradient(
                       colors: [
                         MYColors.gradientColor_3,
-                        MYColors.gradientColor_1.withValues(alpha: 0.35),
+                        MYColors.gradientColor_2.withValues(alpha: 0.25),
                         MYColors.gradientColor_3,
                       ],
                       begin: Alignment.topLeft,
@@ -80,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                 ),
                                 SizedBox(width: 5),
-                                Image.asset("assets/icons/hand.png"),
+                                Image.asset(Assets.iconsHand),
                               ],
                             ),
                             Text(

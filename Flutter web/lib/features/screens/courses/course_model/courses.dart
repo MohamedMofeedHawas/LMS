@@ -55,7 +55,6 @@ List<CourseModel> courses = [
     subTitle: "Faculty of Health and Medicine",
     title: "Chemical Nomenclature",
   ),
-
   CourseModel(
     imageUrl: "assets/test_images/course_3.png",
     title: "Psychology in Cinema",
@@ -74,7 +73,6 @@ List<CourseModel> courses = [
     subTitle: "Faculty of Health and Medicine",
     title: "Chemical Nomenclature",
   ),
-
   CourseModel(
     imageUrl: "assets/test_images/course_3.png",
     title: "Psychology in Cinema",

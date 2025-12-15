@@ -55,7 +55,7 @@ class UserModel {
     message = json['message'];
     token = json['token'];
     expiresIn = json['expiresIn'];
-    user = json['user'] != null ? new User.fromJson(json['user']) : null;
+    user = json['user'] != null ? User.fromJson(json['user']) : null;
   }
 
 }

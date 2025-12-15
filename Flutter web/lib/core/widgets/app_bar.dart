@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../generated/assets.dart';
+
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   const CustomAppBar({super.key,});
@@ -8,26 +10,29 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       width: double.infinity,
         height: 100,
       decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 8,
+            offset: const Offset(0, 4),
+          ),
+        ],
         color: Color(0xffE3F6FF),
       ) ,
       child: Center(
         child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            CircleAvatar(
-              radius: 25,
-              backgroundImage: AssetImage("assets/logo/logo.jpg"),
-            ),
-           // Image.asset("assets/logo/logo.jpg",width: 60,height: 60,),
+            AnimatedCircleAvatar(),
 
             SizedBox(
               width: 400,
               child: Row(
                 mainAxisSize: MainAxisSize.min,
-                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
 
                 InkWell(
@@ -71,13 +76,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 children: [
 
 
-                  InkWell(child: SvgPicture.asset("assets/icons/search_icon.svg"),onTap: (){},),
+                  InkWell(child: SvgPicture.asset(Assets.iconsSearchIcon),onTap: (){},),
             Spacer(),
-                  InkWell(child: SvgPicture.asset("assets/icons/bell_icon.svg"),onTap: (){},),
+                  InkWell(child: SvgPicture.asset(Assets.iconsBellIcon),onTap: (){},),
                   Spacer(),
-                  InkWell(child: SvgPicture.asset("assets/icons/message-icon.svg"),onTap: (){},),
+                  InkWell(child: SvgPicture.asset(Assets.iconsMessageIcon),onTap: (){},),
                   Spacer(),
-                  InkWell(child: SvgPicture.asset("assets/icons/man_icon.svg"),onTap: (){},),
+                  InkWell(child: SvgPicture.asset(Assets.iconsManIcon),onTap: (){},),
 
 
 
@@ -90,20 +95,73 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
     );
-    //   AppBar(
-    //   backgroundColor: Colors.teal,
-    //   centerTitle: true,
-    //   leading: IconButton(
-    //     icon: const Icon(Icons.arrow_back),
-    //     onPressed: () => Navigator.pop(context),
-    //   ),
-    //
-    //   actions: [
-    //     IconButton(icon: const Icon(Icons.notifications), onPressed: () {}),
-    //   ],
-    // );
+
+
+
   }
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+}
+class AnimatedCircleAvatar extends StatefulWidget {
+  const AnimatedCircleAvatar({super.key});
+
+  @override
+  State<AnimatedCircleAvatar> createState() => _AnimatedCircleAvatarState();
+}
+
+class _AnimatedCircleAvatarState extends State<AnimatedCircleAvatar>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _scaleAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 2),
+    )..repeat(reverse: true);
+
+    _scaleAnimation = Tween<double>(begin: 0.9, end: 1.1).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: AnimatedBuilder(
+        animation: _scaleAnimation,
+        builder: (context, child) {
+          return Transform.scale(
+            scale: _scaleAnimation.value,
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.3),
+                    blurRadius: 2,
+                    offset: const Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: const CircleAvatar(
+                radius: 20,
+                backgroundImage: AssetImage(Assets.logo),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
 }
