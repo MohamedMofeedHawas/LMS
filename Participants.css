@@ -1,0 +1,70 @@
+.participants-page { padding: 30px;
+  background: #f5f7fb;
+  font-family: Arial;}
+
+.participants-table {
+    color: #333;}
+    table { color: #000000; }
+
+  .participants-contect {
+    color: blue;}
+
+.tabs { display: flex;
+  gap: 25px;
+  border-bottom: 2px solid #dddd;
+  padding-bottom: 8px;}
+
+.tab { color: #666;
+  text-decoration: none;
+  cursor: pointer;}
+
+.tab.active { color: #007bff;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 6px;}
+
+.search-bar input {width: 250px;
+  padding: 7px;
+  margin: 15px 0;
+  border: 1px solid #ccc;}
+
+.letters-filter {display: flex;
+  align-items: center;
+  gap: 6px;
+  color: black;
+  font-size: 13px;
+  margin-bottom: 5px;}
+
+.letters-filter button { background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;}
+
+.count {font-size: 13px;
+  margin: 10px 0;}
+
+table { width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 13px;}
+
+th { background: #ccc;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;}
+
+td { padding: 9px;
+  border-bottom: 1px solid #eee;}
+
+.pagination {margin-top: 10px;
+  text-align: right;}
+
+.pagination button { margin-left: 5px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;}
+
+.pagination .active { background: #007bff;
+  color: white; }
+
+
