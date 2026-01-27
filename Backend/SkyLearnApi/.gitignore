@@ -8,3 +8,5 @@ obj/
 *.exe
 *.dll
 *.cache
+# Logs
+logs/

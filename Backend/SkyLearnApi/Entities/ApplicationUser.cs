@@ -1,35 +1,34 @@
+
+
 namespace SkyLearnApi.Entities
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser<int>
     {
-        public int Id { get; set; }
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
+        //==============================================================================
+        // INHERITED FROM IdentityUser<int>:
+        //Id (int)
+        //Email (string?)
+        //PasswordHash (string?) - NEVER store plain passwords!
+        //UserName (string?)
+        //PhoneNumber (string?)
+        //EmailConfirmed (bool)
+        //LockoutEnd, AccessFailedCount, etc
+        // =================================================================== 
+        // Universal Properties (apply to ALL users: Admin, Instructor,Student)
         public string FullName { get; set; } = string.Empty;
-        public string? ProfileImageUrl { get; set; }
+        public string? NationalId { get; set; }
+        public DateTime? DateOfBirth { get; set; }
         public string? Gender { get; set; }
         public string? City { get; set; }
-        // public string AcademicYear { get; set; }
-
-        // ---- Role ----
-        public UserRole Role { get; set; } = UserRole.Student;
-
+        public string? ProfileImageUrl { get; set; }
+        public bool IsActive { get; set; } = true;
+        /// Indicates whether the user has completed first-time activation (password setup)
+        /// In this closed system, Admins create users WITHOUT passwords
+        /// Users must set their password on first login to activate their account
+        /// important //////////////////////////////////////////////////
+        public bool IsActivated { get; set; } = false;       
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
-        public string GroupName { get; set; }
-        public string AcademicYear { get; set; }
-        public bool IsActive { get; set; }
-
-        public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
-
-        // in case of Instructor role
-        public ICollection<CourseInstructor> Courses { get; set; } = new List<CourseInstructor>();
-        
-        // in case of Student role
-        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+        public DateTime? LastLoginAt { get; set; }
     }
 }
-
-// "ConnectionStrings": {
-//     "DefaultConnection": "Server=db30067.public.databaseasp.net;Database=db30067;User Id=db30067;Password=Sx8?6L_qWe5%;Encrypt=False;MultipleActiveResultSets=True;TrustServerCertificate=True;"
-//   },

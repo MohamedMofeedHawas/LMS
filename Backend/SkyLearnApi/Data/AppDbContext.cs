@@ -1,36 +1,41 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using SkyLearnApi.Configuration;
+using SkyLearnApi.Entities;
 
 namespace SkyLearnApi.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<ApplicationUser, IdentityRole<int>, int>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 
-        public DbSet<ApplicationUser> Users { get; set; }
+        // Entity DbSets
         public DbSet<Department> Departments { get; set; }
         public DbSet<Year> Years { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<Enrollment> Enrollments { get; set; }
-        public DbSet<CourseInstructor> CourseInstructors { get; set; }
-        public DbSet<MaterialType> MaterialTypes { get; set; }
-        public DbSet<CourseMaterial> CourseMaterials { get; set; }
-        public DbSet<Assignment> Assignments { get; set; }
-        public DbSet<AssignmentSubmission> AssignmentSubmissions { get; set; }
-
-
-        public DbSet<AuditLog> AuditLogs { get; set; }
+        
+        // Student Academic Context
+        public DbSet<Squadron> Squadrons { get; set; }
+        public DbSet<StudentProfile> StudentProfiles { get; set; }
+        
+        // Unified Activity/Analytics Logging
+        public DbSet<ActivityLog> ActivityLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CourseConfiguration).Assembly);
-
-            modelBuilder.Entity<AuditLog>()
-                .HasOne(a => a.User)
-                .WithMany(u => u.AuditLogs)
-                .HasForeignKey(a => a.UserId)
-                .OnDelete(DeleteBehavior.SetNull);
+            // Apply all Fluent API configurations
+            modelBuilder.ApplyConfiguration(new ApplicationUserConfiguration());
+            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+            modelBuilder.ApplyConfiguration(new YearConfiguration());
+            modelBuilder.ApplyConfiguration(new CourseConfiguration());
+            modelBuilder.ApplyConfiguration(new SquadronConfiguration());
+            modelBuilder.ApplyConfiguration(new StudentProfileConfiguration());
+            modelBuilder.ApplyConfiguration(new ActivityLogConfiguration());
         }
     }
 }

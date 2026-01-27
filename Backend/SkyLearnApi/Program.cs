@@ -1,109 +1,66 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using SkyLearnApi.Data;
-using SkyLearnApi.Middleware;
-using SkyLearnApi.Services;
-using SkyLearnApi.Services.Base;
-using SkyLearnApi.Services.Implementation;
-using System.Text;
-
-
 var builder = WebApplication.CreateBuilder(args);
 
-// DbContext
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Host.UseSerilog((context, services, configuration) => configuration
+    .ReadFrom.Configuration(context.Configuration)
+    .ReadFrom.Services(services)
+    .Enrich.FromLogContext()
+    .Enrich.WithMachineName()
+    .Enrich.WithThreadId()
+    .Enrich.WithProperty("Application", "SkyLearnApi")
+    .Enrich.WithProperty("Environment", context.HostingEnvironment.EnvironmentName));
 
-// Jwt settings
-builder.Services.AddSingleton(sp => sp.GetRequiredService<IConfiguration>().GetSection("Jwt").Get<JwtSettings>()!);
+builder.Services.AddDatabase(builder.Configuration);
+builder.Services.AddIdentityServices();
+builder.Services.AddAnalyticsServices(builder.Configuration);
+builder.Services.AddJwtConfiguration(builder.Configuration);
+builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddMapsterConfiguration();
+builder.Services.AddApplicationServices();
 
-
-var config = TypeAdapterConfig.GlobalSettings;
-builder.Services.AddSingleton(config);
-// Services
-builder.Services.AddScoped<AuditService>();
-builder.Services.AddScoped<IMapper, ServiceMapper>();
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IYearService, YearService>();
-builder.Services.AddScoped<ICourseService, CourseService>();
-builder.Services.AddScoped<IDepartmentService, DepartmentService>();
-builder.Services.AddHttpContextAccessor();
-builder.Services.AddScoped<IAuditService, AuditService>();
-
-// HTTP Context Accessor for CurrentUserService
-builder.Services.AddHttpContextAccessor();
-
-// Current User Service
-builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
-
-// Register Mapster mappings
-MapConfig.RegisterMappings();
-
-// Jwt configuration
-var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()!;
-var key = Encoding.UTF8.GetBytes(jwtSettings.Key);
-
-builder.Services
-    .AddAuthentication(options =>
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
     {
-        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    })
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidIssuer = jwtSettings.Issuer,
-            ValidateAudience = true,
-            ValidAudience = jwtSettings.Audience,
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(key),
-            ValidateLifetime = true
-        };
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
+});
 
-builder.Services.AddAuthorization();
-builder.Services.AddControllers();
+// Issue #8 fix: Register ActivityTrackingFilter globally for all controllers
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ActivityTrackingFilter>();
+})
+.AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+});
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerWithJwt();
+builder.Services.AddAuthorization();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
-// Swagger setup
-app.UseSwagger();
-app.UseSwaggerUI(options =>
+Log.Information("SkyLearnApi Starting - Environment: {Environment}", app.Environment.EnvironmentName);
+
+await app.Services.SeedRolesAsync();
+await app.Services.SeedAdminUserAsync();
+
+app.ConfigureMiddlewarePipeline();
+
+try
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyLearn API v1");
-    options.RoutePrefix = string.Empty;
-});
-
-app.UseRouting();
-app.UseCors(x => x
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
-
-app.UseStaticFiles();
-
-if (app.Environment.IsDevelopment())
-{
-    // Create a scope to get the DbContext and apply migrations
-    using (var scope = app.Services.CreateScope())
-    {
-        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-        db.Database.Migrate();
-    }
+    Log.Information("SkyLearnApi started successfully");
+    app.Run();
 }
-
-app.UseAuthentication();
-app.UseAuditLogging();
-app.UseAuthorization();
-
-app.MapControllers();
-
-
-
-app.Run();
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Application terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}

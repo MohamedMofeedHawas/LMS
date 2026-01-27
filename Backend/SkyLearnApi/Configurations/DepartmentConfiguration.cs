@@ -1,23 +1,26 @@
-namespace SkyLearnApi.Configurations;
 
-public class DepartmentConfiguration : IEntityTypeConfiguration<Department>
+
+namespace SkyLearnApi.Configuration
 {
-    public void Configure(EntityTypeBuilder<Department> builder)
+    public class DepartmentConfiguration : IEntityTypeConfiguration<Department>
     {
-        builder.ToTable("Departments");
+        public void Configure(EntityTypeBuilder<Department> builder)
+        {
+            builder.ToTable("Departments");
 
-        builder.HasKey(d => d.Id);
+            builder.HasKey(d => d.Id);
 
-        builder.Property(d => d.Name)
-            .IsRequired()
-            .HasMaxLength(100);
+            builder.Property(d => d.Name)
+                .IsRequired()
+                .HasMaxLength(100);
 
-        builder.Property(d => d.ImageUrl)
-            .HasMaxLength(255);
+            builder.Property(d => d.ImageUrl)
+                .HasMaxLength(255);
 
-        builder.HasOne(d => d.Head)
-            .WithMany() 
-            .HasForeignKey(d => d.HeadId)
-            .OnDelete(DeleteBehavior.Restrict); 
+            builder.HasOne(d => d.Head)
+                .WithMany() 
+                .HasForeignKey(d => d.HeadId)
+                .OnDelete(DeleteBehavior.Restrict); 
+        }
     }
 }
