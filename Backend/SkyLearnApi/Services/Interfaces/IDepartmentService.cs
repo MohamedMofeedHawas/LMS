@@ -1,5 +1,3 @@
-
-
 namespace SkyLearnApi.Services.Interfaces
 {
     public interface IDepartmentService

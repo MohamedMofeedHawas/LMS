@@ -1,14 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace SkyLearnApi.Dtos.Users
-{
-     
-    /// DTO for creating a new user (Admin only).
-    /// 
-    /// BUSINESS RULE: In this closed system, Admins create users WITHOUT passwords.
-    /// Users must set their own password during first-time activation.
-    /// This ensures Admins never know user passwords.
-     
+{  
     public class CreateUserDto
     {
         [Required(ErrorMessage = "Email is required")]

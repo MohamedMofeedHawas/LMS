@@ -1,5 +1,3 @@
-
-
 namespace SkyLearnApi.Configuration
 {
     public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>

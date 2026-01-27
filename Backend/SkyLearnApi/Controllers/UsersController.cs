@@ -15,20 +15,14 @@ namespace SkyLearnApi.Controllers
         {
             _userService = userService;
         }
-
-      
         /// Get all users with pagination, filtering, and sorting
-        
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] UserFilterParams filterParams)
         {
             var result = await _userService.GetAllUsersAsync(filterParams);
             return Ok(result);
         }
-
-        
         /// Get a user by ID
-        
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {

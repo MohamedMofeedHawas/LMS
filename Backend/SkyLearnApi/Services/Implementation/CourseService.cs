@@ -30,6 +30,7 @@ namespace SkyLearnApi.Services.Implementations
             if (yearId.HasValue)
                 query = query.Where(c => c.YearId == yearId.Value);
 
+
             //Null-safe search 
             if (!string.IsNullOrWhiteSpace(search))
             {
@@ -41,7 +42,7 @@ namespace SkyLearnApi.Services.Implementations
             if (startDate.HasValue)
                 query = query.Where(c => c.CreatedAt >= startDate.Value);
 
-            if (endDate.HasValue)
+    if (endDate.HasValue)
                 query = query.Where(c => c.CreatedAt <= endDate.Value);
 
             var courses = await query
@@ -66,6 +67,7 @@ namespace SkyLearnApi.Services.Implementations
 
         public async Task<CourseResponseDto> CreateAsync(CourseRequestDto dto, int userId)
         {
+
             if (!await _context.Departments.AnyAsync(d => d.Id == dto.DepartmentId))
                 throw new ArgumentException("Invalid DepartmentId.");
 
@@ -80,7 +82,7 @@ namespace SkyLearnApi.Services.Implementations
                 if (string.IsNullOrEmpty(_env.WebRootPath))
                     throw new InvalidOperationException("WebRootPath is not configured.");
 
-                var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads", "courses");
+              var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads", "courses");
                 Directory.CreateDirectory(uploadsFolder);
 
                 var fileName = $"{Guid.NewGuid()}_{dto.ImageFile.FileName}";
@@ -94,8 +96,7 @@ namespace SkyLearnApi.Services.Implementations
 
             _context.Courses.Add(course);
             await _context.SaveChangesAsync();
-
-            await UpdateYearTotalsAsync(course.YearId);
+           await UpdateYearTotalsAsync(course.YearId);
 
             return _mapper.Map<CourseResponseDto>(course);
         }
@@ -161,7 +162,6 @@ namespace SkyLearnApi.Services.Implementations
 
             _context.Courses.Remove(course);
             await _context.SaveChangesAsync();
-
             await UpdateYearTotalsAsync(yearId);
 
             return true;

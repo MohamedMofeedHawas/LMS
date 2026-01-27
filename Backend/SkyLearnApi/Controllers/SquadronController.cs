@@ -3,8 +3,7 @@
 namespace SkyLearnApi.Controllers
 {
     /// Squadron CRUD controller (Admin only).
-    /// 5 endpoints: List, Get, Create, Update, Delete
-    /// GetById includes student list (merged per business requirement).
+   /// GetById includes student list (merged per business requirement)
     [ApiController]
     [Route("api/[controller]")]
     [Authorize(Roles = Roles.Admin)]
@@ -16,7 +15,6 @@ namespace SkyLearnApi.Controllers
         {
             _squadronService = squadronService;
         }
-
         /// List all squadrons with student counts
         [HttpGet]
         public async Task<IActionResult> GetAll()

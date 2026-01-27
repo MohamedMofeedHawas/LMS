@@ -15,30 +15,10 @@ namespace SkyLearnApi.Dtos.Users
             get => _pageSize;
             set => _pageSize = value > MaxPageSize ? MaxPageSize : value;
         }
-
-         
-        /// Filter by role: Admin, Instructor, Student
-         
         public string? Role { get; set; }
-
-         
-        /// Search in email and full name
-         
-        public string? Search { get; set; }
-
-         
-        /// Filter by active status
-         
+       public string? Search { get; set; }
         public bool? IsActive { get; set; }
-
-         
-        /// Sort field: FullName, Email, CreatedAt, LastLoginAt
-         
-        public string SortBy { get; set; } = "CreatedAt";
-
-         
-        /// Sort direction: asc or desc
-         
+        public string SortBy { get; set; } = "CreatedAt"; 
         public string SortDirection { get; set; } = "desc";
     }
 }

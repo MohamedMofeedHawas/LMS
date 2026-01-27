@@ -2,4 +2,7 @@
 "Backend/SkyLearnApi/bin/" 
 "Backend/SkyLearnApi/obj/" 
 "Backend/SkyLearnApi/Properties/PublishProfiles/" 
+<<<<<<< HEAD
 /.vs/audit_trail_imp2/v17
+=======
+>>>>>>> c663dc8d7ae7c4beafe7f487de1ed1cdf6ad29b6

@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -16,14 +17,9 @@ namespace SkyLearnApi.Data
         public DbSet<Department> Departments { get; set; }
         public DbSet<Year> Years { get; set; }
         public DbSet<Course> Courses { get; set; }
-        
-        // Student Academic Context
         public DbSet<Squadron> Squadrons { get; set; }
         public DbSet<StudentProfile> StudentProfiles { get; set; }
-        
-        // Unified Activity/Analytics Logging
         public DbSet<ActivityLog> ActivityLogs { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -36,6 +32,6 @@ namespace SkyLearnApi.Data
             modelBuilder.ApplyConfiguration(new SquadronConfiguration());
             modelBuilder.ApplyConfiguration(new StudentProfileConfiguration());
             modelBuilder.ApplyConfiguration(new ActivityLogConfiguration());
-        }
+       }
     }
 }

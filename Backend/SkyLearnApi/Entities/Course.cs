@@ -7,8 +7,6 @@ namespace SkyLearnApi.Entities
         public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
         public string ImageUrl { get; set; }
-
-        
         public int CreditHours { get; set; }
         public int EnrolledStudentsCount { get; set; } = 0;
 

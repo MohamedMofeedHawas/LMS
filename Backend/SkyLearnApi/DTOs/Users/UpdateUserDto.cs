@@ -2,18 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SkyLearnApi.Dtos.Users
 {
-     
-    /// DTO for updating an existing user (Admin only).
-    /// 
-    /// BUSINESS RULE: Admins can update user profile information but CANNOT:
-    /// - Set or change passwords (users manage their own passwords)
-    /// - View password hashes
-    /// 
-    /// Password management is strictly user-controlled via:
-    /// - /api/auth/activate-account (first-time setup)
-    /// - /api/auth/reset-password (password recovery)
-     
-    public class UpdateUserDto
+        public class UpdateUserDto
     {
         [EmailAddress(ErrorMessage = "Invalid email format")]
         public string? Email { get; set; }
@@ -30,10 +19,6 @@ namespace SkyLearnApi.Dtos.Users
         public string? City { get; set; }
         public string? ProfileImageUrl { get; set; }
         
-         
-        /// Enable or disable the user account.
-        /// Disabled users cannot log in.
-         
-        public bool? IsActive { get; set; }
+           public bool? IsActive { get; set; }
     }
 }

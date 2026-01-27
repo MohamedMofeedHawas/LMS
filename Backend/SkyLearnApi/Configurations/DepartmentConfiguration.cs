@@ -1,5 +1,3 @@
-
-
 namespace SkyLearnApi.Configuration
 {
     public class DepartmentConfiguration : IEntityTypeConfiguration<Department>

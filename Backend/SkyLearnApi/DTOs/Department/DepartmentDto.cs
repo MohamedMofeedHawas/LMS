@@ -11,5 +11,5 @@ namespace SkyLearnApi.Dtos.Department
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public ICollection<YearResponseDto> Years { get; set; } = new List<YearResponseDto>();
-    }
+ }
 }

@@ -1,5 +1,3 @@
-
-
 namespace SkyLearnApi.Services.Implementation
 {
     /// Authentication service for the Air Force Academy closed system.

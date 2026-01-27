@@ -1,5 +1,3 @@
-
-
 namespace SkyLearnApi.Controllers
 {
    
@@ -96,7 +94,7 @@ namespace SkyLearnApi.Controllers
                 return NotFound(new { message = "Course not found" });
             }
 
-            return Ok(new { message = "Course deleted successfully." });
+          return Ok(new { message = "Course deleted successfully." });
         }
     }
 }

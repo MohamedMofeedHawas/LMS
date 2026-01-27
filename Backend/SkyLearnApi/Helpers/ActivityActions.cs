@@ -1,15 +1,7 @@
 namespace SkyLearnApi.Helpers
 {
-     
-    /// Unified activity action constants for the ActivityLog system.
-    /// Used for both auditing and analytics tracking.
-     
     public static class ActivityActions
-    {
-        // ============================================
-        // Authentication Events
-        // ============================================
-        public const string UserLoggedIn = "UserLoggedIn";
+    {        public const string UserLoggedIn = "UserLoggedIn";
         public const string UserLoggedOut = "UserLoggedOut";
         public const string LoginFailed = "LoginFailed";
         public const string LogoutFailed = "LogoutFailed";

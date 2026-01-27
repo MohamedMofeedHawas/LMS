@@ -1,4 +1,6 @@
+
 namespace SkyLearnApi.Services.Implementation
+
 {
     public class YearService : IYearService
     {
@@ -44,7 +46,7 @@ namespace SkyLearnApi.Services.Implementation
             if (!departmentExists)
                 throw new KeyNotFoundException("Department not found");
 
-            var years = await _db.Years
+              var years = await _db.Years
                 .Where(y => y.DepartmentId == departmentId)
                 .Include(y => y.Department)
                 .Include(y => y.CreatedBy)
@@ -79,11 +81,10 @@ namespace SkyLearnApi.Services.Implementation
             year.TotalHours = 0;
 
             year.DepartmentId = department.Id;
-
-            _db.Years.Add(year);
+       _db.Years.Add(year);
             await _db.SaveChangesAsync();
 
-            await _db.Entry(year).Reference(y => y.Department).LoadAsync();
+           await _db.Entry(year).Reference(y => y.Department).LoadAsync();
             await _db.Entry(year).Reference(y => y.CreatedBy).LoadAsync();
 
             return year.Adapt<YearResponseDto>();
@@ -110,18 +111,16 @@ namespace SkyLearnApi.Services.Implementation
             year.Name = dto.Name;
             year.Description = dto.Description;
             // DepartmentId already updated above if needed
-            year.StartDate = dto.StartDate;
+          year.StartDate = dto.StartDate;
             year.EndDate = dto.EndDate;
             year.UpdatedAt = DateTime.UtcNow;
 
             await _db.SaveChangesAsync();
-
-            await _db.Entry(year).Reference(y => y.Department).LoadAsync();
+         await _db.Entry(year).Reference(y => y.Department).LoadAsync();
             await _db.Entry(year).Reference(y => y.CreatedBy).LoadAsync();
 
             return year.Adapt<YearResponseDto>();
         }
-
         public async Task<bool> DeleteAsync(int id, string userId)
         {
             var year = await _db.Years.FindAsync(id);
@@ -138,5 +137,5 @@ namespace SkyLearnApi.Services.Implementation
             await _db.SaveChangesAsync();
             return true;
         }
-    }
+     }
 }

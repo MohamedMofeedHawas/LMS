@@ -1,5 +1,3 @@
-
-
 namespace SkyLearnApi.Configuration
 {
     public class ActivityLogConfiguration : IEntityTypeConfiguration<ActivityLog>

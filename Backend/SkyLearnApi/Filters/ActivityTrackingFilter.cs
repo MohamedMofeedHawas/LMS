@@ -1,21 +1,5 @@
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Serilog;
-using SkyLearnApi.Helpers;
-using SkyLearnApi.Services.Interfaces;
-
 namespace SkyLearnApi.Filters
 {
-     
-    /// Global action filter that handles cross-cutting concerns:
-    /// - Stopwatch timing
-    /// - Structured logging (request/response)
-    /// - Analytics tracking
-    /// - Exception logging
-    /// 
-    /// Issue #8 fix: Removes repetitive boilerplate from controllers.
-     
     public class ActivityTrackingFilter : IAsyncActionFilter
     {
         private readonly IActivityService _activityService;
@@ -32,11 +16,9 @@ namespace SkyLearnApi.Filters
             var actionName = context.RouteData.Values["action"]?.ToString() ?? "Unknown";
             var httpMethod = context.HttpContext.Request.Method;
             var path = context.HttpContext.Request.Path.ToString();
-
             // Get user ID from claims
             var userIdClaim = context.HttpContext.User.FindFirst("UserId")?.Value;
             int? userId = int.TryParse(userIdClaim, out var id) ? id : null;
-
             // Log request start
             Log.Information(
                 "Request started: {HttpMethod} {Path} - Controller: {Controller}, Action: {Action}, UserId: {UserId}",

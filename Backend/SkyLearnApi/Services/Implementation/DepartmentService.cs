@@ -24,19 +24,20 @@ namespace SkyLearnApi.Services.Implementations
                     Description = d.Description,
                     ImageUrl = d.ImageUrl,
                     HeadId = d.HeadId,
+
                     HeadName = d.Head != null ? d.Head.FullName : "Not Assigned",
-                    CreatedAt = d.CreatedAt,
+                   CreatedAt = d.CreatedAt,
                     UpdatedAt = d.UpdatedAt
                 })
                 .ToListAsync();
         }
-        public async Task<DepartmentDto?> GetByIdAsync(int id)
+                public async Task<DepartmentDto?> GetByIdAsync(int id)
         {
             var dept = await _context.Departments
                 .Include(d => d.Head)
                 .Include(d => d.Years)
                     .ThenInclude(y => y.CreatedBy) 
-                .FirstOrDefaultAsync(d => d.Id == id);
+               .FirstOrDefaultAsync(d => d.Id == id);
 
             if (dept == null) return null;
 
@@ -89,10 +90,11 @@ namespace SkyLearnApi.Services.Implementations
             _context.Departments.Add(dept);
             await _context.SaveChangesAsync();
 
+
             Log.Information("Department created - Id: {DepartmentId}, Name: {Name}, HeadId: {HeadId}", 
                 dept.Id, dept.Name, dept.HeadId);
 
-            return new DepartmentDto
+           return new DepartmentDto
             {
                 Id = dept.Id,
                 Name = dept.Name,
@@ -134,7 +136,7 @@ namespace SkyLearnApi.Services.Implementations
                 }
 
                 head = newHead;
-                dept.HeadId = head.Id;
+             dept.HeadId = head.Id;
             }
 
             if (!string.IsNullOrEmpty(dto.Name)) dept.Name = dto.Name;
@@ -146,14 +148,13 @@ namespace SkyLearnApi.Services.Implementations
                 if (!string.IsNullOrEmpty(dept.ImageUrl))
                     ImageHelper.DeleteImage(dept.ImageUrl, _environment);
                     
-                dept.ImageUrl = await ImageHelper.SaveImageAsync(dto.Image, "departments", _environment);
+             dept.ImageUrl = await ImageHelper.SaveImageAsync(dto.Image, "departments", _environment);
             }
 
             await _context.SaveChangesAsync();
 
             Log.Information("Department updated - Id: {DepartmentId}, Name: {Name}", dept.Id, dept.Name);
-
-            return new DepartmentDto
+    return new DepartmentDto
             {
                 Id = dept.Id,
                 Name = dept.Name,
@@ -161,16 +162,17 @@ namespace SkyLearnApi.Services.Implementations
                 ImageUrl = dept.ImageUrl,
                 HeadId = dept.HeadId,
                 HeadName = head?.FullName ?? "Not Assigned",
+
                 CreatedAt = dept.CreatedAt,
                 UpdatedAt = dept.UpdatedAt
             };
         }
 
+
         public async Task<bool> DeleteAsync(int id)
         {
             var dept = await _context.Departments.FindAsync(id);
             if (dept == null) return false;
-
             if (!string.IsNullOrEmpty(dept.ImageUrl))
                 ImageHelper.DeleteImage(dept.ImageUrl, _environment);
 

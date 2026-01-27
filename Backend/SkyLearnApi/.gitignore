@@ -8,5 +8,8 @@ obj/
 *.exe
 *.dll
 *.cache
+<<<<<<< HEAD
 # Logs
 logs/
+=======
+>>>>>>> c663dc8d7ae7c4beafe7f487de1ed1cdf6ad29b6

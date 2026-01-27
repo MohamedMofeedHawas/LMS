@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SkyLearnApi.Entities;
+>>>>>>> c663dc8d7ae7c4beafe7f487de1ed1cdf6ad29b6
 
 namespace SkyLearnApi.Configurations
 {

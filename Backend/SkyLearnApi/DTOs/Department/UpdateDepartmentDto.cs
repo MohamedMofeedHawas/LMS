@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-
 namespace SkyLearnApi.Dtos.Department
 {
     public class UpdateDepartmentDto
