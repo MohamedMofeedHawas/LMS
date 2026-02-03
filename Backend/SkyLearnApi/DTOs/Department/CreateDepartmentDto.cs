@@ -16,5 +16,4 @@ namespace SkyLearnApi.Dtos.Department
         
         public IFormFile? Image { get; set; }
     }
-
 }

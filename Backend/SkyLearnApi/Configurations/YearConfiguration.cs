@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 
-=======
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SkyLearnApi.Entities;
->>>>>>> c663dc8d7ae7c4beafe7f487de1ed1cdf6ad29b6
 
 namespace SkyLearnApi.Configurations
 {
@@ -66,6 +60,10 @@ namespace SkyLearnApi.Configurations
                             .WithOne(c => c.Year)
                             .HasForeignKey(c => c.YearId)
                             .OnDelete(DeleteBehavior.Restrict);
+
+                     // Composite Unique Index
+                     builder.HasIndex(y => new { y.Name, y.DepartmentId })
+                            .IsUnique();
               }
     }
 }

@@ -15,29 +15,32 @@ namespace SkyLearnApi.Services.Implementations
         }
         public async Task<IEnumerable<DepartmentDto>> GetAllAsync()
         {
-            return await _context.Departments
+            var departments = await _context.Departments
+                .AsNoTracking()
                 .Include(d => d.Head)
-                .Select(d => new DepartmentDto
-                {
-                    Id = d.Id,
-                    Name = d.Name,
-                    Description = d.Description,
-                    ImageUrl = d.ImageUrl,
-                    HeadId = d.HeadId,
-
-                    HeadName = d.Head != null ? d.Head.FullName : "Not Assigned",
-                   CreatedAt = d.CreatedAt,
-                    UpdatedAt = d.UpdatedAt
-                })
+                .Include(d => d.Years)
                 .ToListAsync();
+
+            return departments.Select(d => new DepartmentDto
+            {
+                Id = d.Id,
+                Name = d.Name,
+                Description = d.Description,
+                ImageUrl = d.ImageUrl,
+                HeadId = d.HeadId,
+                HeadName = d.Head != null ? d.Head.FullName : "Not Assigned",
+                CreatedAt = d.CreatedAt,
+                UpdatedAt = d.UpdatedAt,
+                Years = d.Years.Adapt<ICollection<YearResponseDto>>()
+            }).ToList();
         }
-                public async Task<DepartmentDto?> GetByIdAsync(int id)
+        public async Task<DepartmentDto?> GetByIdAsync(int id)
         {
             var dept = await _context.Departments
                 .Include(d => d.Head)
                 .Include(d => d.Years)
                     .ThenInclude(y => y.CreatedBy) 
-               .FirstOrDefaultAsync(d => d.Id == id);
+                .FirstOrDefaultAsync(d => d.Id == id);
 
             if (dept == null) return null;
 
@@ -63,6 +66,9 @@ namespace SkyLearnApi.Services.Implementations
                 Log.Warning("Department creation failed - Head Name {HeadName} not found", dto.HeadName);
                 throw new KeyNotFoundException($"User with Name '{dto.HeadName}' not found.");
             }
+
+            if (await _context.Departments.AnyAsync(d => d.Name == dto.Name))
+                throw new InvalidOperationException($"Department with name '{dto.Name}' already exists.");
 
             var isAdmin = await _userManager.IsInRoleAsync(head, Roles.Admin);
             var isInstructor = await _userManager.IsInRoleAsync(head, Roles.Instructor);
@@ -90,11 +96,10 @@ namespace SkyLearnApi.Services.Implementations
             _context.Departments.Add(dept);
             await _context.SaveChangesAsync();
 
-
             Log.Information("Department created - Id: {DepartmentId}, Name: {Name}, HeadId: {HeadId}", 
                 dept.Id, dept.Name, dept.HeadId);
 
-           return new DepartmentDto
+            return new DepartmentDto
             {
                 Id = dept.Id,
                 Name = dept.Name,
@@ -136,10 +141,15 @@ namespace SkyLearnApi.Services.Implementations
                 }
 
                 head = newHead;
-             dept.HeadId = head.Id;
+                dept.HeadId = head.Id;
             }
 
-            if (!string.IsNullOrEmpty(dto.Name)) dept.Name = dto.Name;
+            if (!string.IsNullOrEmpty(dto.Name))
+            {
+                if (await _context.Departments.AnyAsync(d => d.Name == dto.Name && d.Id != id))
+                    throw new InvalidOperationException($"Department with name '{dto.Name}' already exists.");
+                dept.Name = dto.Name;
+            }
             if (!string.IsNullOrEmpty(dto.Description)) dept.Description = dto.Description;
             dept.UpdatedAt = DateTime.UtcNow;
 
@@ -148,13 +158,14 @@ namespace SkyLearnApi.Services.Implementations
                 if (!string.IsNullOrEmpty(dept.ImageUrl))
                     ImageHelper.DeleteImage(dept.ImageUrl, _environment);
                     
-             dept.ImageUrl = await ImageHelper.SaveImageAsync(dto.Image, "departments", _environment);
+                dept.ImageUrl = await ImageHelper.SaveImageAsync(dto.Image, "departments", _environment);
             }
 
             await _context.SaveChangesAsync();
 
             Log.Information("Department updated - Id: {DepartmentId}, Name: {Name}", dept.Id, dept.Name);
-    return new DepartmentDto
+
+            return new DepartmentDto
             {
                 Id = dept.Id,
                 Name = dept.Name,
@@ -162,17 +173,23 @@ namespace SkyLearnApi.Services.Implementations
                 ImageUrl = dept.ImageUrl,
                 HeadId = dept.HeadId,
                 HeadName = head?.FullName ?? "Not Assigned",
-
                 CreatedAt = dept.CreatedAt,
                 UpdatedAt = dept.UpdatedAt
             };
         }
 
-
         public async Task<bool> DeleteAsync(int id)
         {
             var dept = await _context.Departments.FindAsync(id);
             if (dept == null) return false;
+
+            // Check if department has years
+            var hasYears = await _context.Years.AnyAsync(y => y.DepartmentId == id);
+            if (hasYears)
+            {
+                throw new InvalidOperationException($"Cannot delete department '{dept.Name}' because it has academic years.");
+            }
+
             if (!string.IsNullOrEmpty(dept.ImageUrl))
                 ImageHelper.DeleteImage(dept.ImageUrl, _environment);
 

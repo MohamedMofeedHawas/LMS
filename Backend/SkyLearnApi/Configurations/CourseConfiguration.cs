@@ -1,3 +1,5 @@
+
+
 namespace SkyLearnApi.Configurations
 {
     public class CourseConfiguration : IEntityTypeConfiguration<Course>

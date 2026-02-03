@@ -15,14 +15,20 @@ namespace SkyLearnApi.Controllers
         {
             _userService = userService;
         }
+
+      
         /// Get all users with pagination, filtering, and sorting
+        
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] UserFilterParams filterParams)
         {
             var result = await _userService.GetAllUsersAsync(filterParams);
             return Ok(result);
         }
+
+        
         /// Get a user by ID
+        
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -37,7 +43,7 @@ namespace SkyLearnApi.Controllers
         /// Create a new user with specified role
        
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateUserDto dto)
+        public async Task<IActionResult> Create([FromForm] CreateUserDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -53,7 +59,7 @@ namespace SkyLearnApi.Controllers
         /// Update an existing user
 
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] UpdateUserDto dto)
+        public async Task<IActionResult> Update(int id, [FromForm] UpdateUserDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

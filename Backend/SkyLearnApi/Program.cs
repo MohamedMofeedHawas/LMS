@@ -27,10 +27,10 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Issue #8 fix: Register ActivityTrackingFilter globally for all controllers
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ActivityTrackingFilter>();
+    options.Filters.Add<AllowOptionsAuthorizationFilter>();
 })
 .AddJsonOptions(options =>
 {

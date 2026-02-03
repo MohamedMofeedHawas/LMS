@@ -1,12 +1,7 @@
+
+
 namespace SkyLearnApi.Services.Implementation
-{
-    /// Authentication service for the Air Force Academy closed system.
-    /// Implements the complete authentication flow:
-    /// - Account verification (check existence and activation status)
-    /// - Account activation (first-time password setup)
-    /// - Standard login (for activated users)
-    /// - Password recovery (without revealing account existence    
-    public class AuthService : IAuthService
+{public class AuthService : IAuthService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;

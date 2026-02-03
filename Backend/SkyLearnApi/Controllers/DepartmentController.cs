@@ -1,3 +1,5 @@
+
+
 namespace SkyLearnApi.Controllers
 { 
     [ApiController]
@@ -11,7 +13,6 @@ namespace SkyLearnApi.Controllers
         {
             _departmentService = departmentService;
         }
-
         /// Create a new department (Admin only)
         [HttpPost]
         [Authorize(Roles = Roles.Admin)]
@@ -20,7 +21,6 @@ namespace SkyLearnApi.Controllers
             var result = await _departmentService.CreateAsync(dto);
             return Ok(result);
         }
-
         /// Get all departments
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -68,6 +68,7 @@ namespace SkyLearnApi.Controllers
             {
                 return NotFound(new { message = "Department not found" });
             }
+
             return Ok(new { message = "Department deleted successfully" });
         }
     }

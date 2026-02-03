@@ -1,7 +1,15 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace SkyLearnApi.Dtos.Users
-{  
+{
+     
+    /// DTO for creating a new user (Admin only).
+    /// 
+    /// BUSINESS RULE: In this closed system, Admins create users WITHOUT passwords.
+    /// Users must set their own password during first-time activation.
+    /// This ensures Admins never know user passwords.
+     
     public class CreateUserDto
     {
         [Required(ErrorMessage = "Email is required")]
@@ -15,17 +23,16 @@ namespace SkyLearnApi.Dtos.Users
         [Required(ErrorMessage = "Role is required")]
         [RegularExpression("^(Admin|Instructor|Student)$", ErrorMessage = "Role must be Admin, Instructor, or Student")]
         public string Role { get; set; } = string.Empty;
-
         public string? NationalId { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public string? Gender { get; set; }
         public string? City { get; set; }
-        public string? ProfileImageUrl { get; set; }
-        
-         
-        /// Whether the user account is enabled.
-        /// Defaults to true. Set to false to create a disabled account.
-         
+        public IFormFile? ImageFile { get; set; }
         public bool IsActive { get; set; } = true;
+        
+        // Student Fields
+        public int? DepartmentId { get; set; }
+        public int? YearId { get; set; }
+        public int? SquadronId { get; set; }
     }
 }

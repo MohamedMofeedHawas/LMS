@@ -2,6 +2,13 @@ using System.Text.Json.Serialization;
 
 namespace SkyLearnApi.DTOs.Auth
 {
+    
+    /// User profile DTO for the /api/auth/me endpoint and auth responses.
+    /// Contains comprehensive user information extracted from JWT claims.
+    /// 
+    /// Note: Internal flags (IsActive, IsActivated) are NOT exposed directly.
+    /// Instead, a computed AccountStatus field provides a business-friendly representation.
+  
     public class UserProfileDto
     {
         [JsonPropertyName("id")]

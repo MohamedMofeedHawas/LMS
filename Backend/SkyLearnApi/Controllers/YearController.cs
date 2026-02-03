@@ -1,3 +1,4 @@
+
 namespace SkyLearnApi.Controllers
 {
     /// Year management controller 
@@ -7,7 +8,6 @@ namespace SkyLearnApi.Controllers
     public class YearController : ControllerBase
     {
         private readonly IYearService _yearService;
-
         private readonly ICourseService _courseService;
 
         public YearController(IYearService yearService, ICourseService courseService)
@@ -115,7 +115,7 @@ namespace SkyLearnApi.Controllers
             }
         }
 
-        /// Get all courses for a specific year
+        /// Get all courses for a specific year.
         [HttpGet("{id:int}/courses")]
         public async Task<IActionResult> GetCoursesByYear(int id)
         {
@@ -127,7 +127,7 @@ namespace SkyLearnApi.Controllers
                 startDate: null, 
                 endDate: null, 
                 page: 1, 
-                pageSize: 1000); // Retrieve all for this year or reasonable max
+                pageSize: 1000); // Retrieve all for this year, or reasonable max
 
             return Ok(courses);
         }

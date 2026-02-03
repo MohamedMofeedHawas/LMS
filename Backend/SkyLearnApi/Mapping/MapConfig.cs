@@ -23,6 +23,6 @@ namespace SkyLearnApi.Mappings
                      src => src.Department != null ? src.Department.Name : string.Empty)
                 .Map(dest => dest.YearName,
                      src => src.Year != null ? src.Year.Name : string.Empty);
-}
+        }
     }
 }

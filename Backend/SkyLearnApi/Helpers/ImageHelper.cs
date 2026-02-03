@@ -1,3 +1,5 @@
+
+
 namespace SkyLearnApi.Helpers
 {
     public static class ImageHelper

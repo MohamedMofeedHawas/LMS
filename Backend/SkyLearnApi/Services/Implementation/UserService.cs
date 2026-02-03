@@ -8,17 +8,20 @@ namespace SkyLearnApi.Services.Implementation
         private readonly RoleManager<IdentityRole<int>> _roleManager;
         private readonly IActivityService _activityService;
         private readonly AppDbContext _dbContext;
+        private readonly IWebHostEnvironment _environment;
 
         public UserService(
             UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole<int>> roleManager,
             IActivityService activityService,
-            AppDbContext dbContext)
+            AppDbContext dbContext,
+            IWebHostEnvironment environment)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _activityService = activityService;
             _dbContext = dbContext;
+            _environment = environment;
         }
 
         public async Task<PagedUsersResponseDto> GetAllUsersAsync(UserFilterParams filterParams)
@@ -149,6 +152,28 @@ namespace SkyLearnApi.Services.Implementation
                 return (null, $"Role '{dto.Role}' does not exist. Valid roles: Admin, Instructor, Student");
             }
 
+            // BUSINESS RULE VALIDATION: Student Fields
+            if (dto.Role == Roles.Student)
+            {
+                if (!dto.DepartmentId.HasValue || !dto.YearId.HasValue || !dto.SquadronId.HasValue)
+                    return (null, "For Student role, Department, Academic Year, and Class/Group are required.");
+
+                 // Validate Cross-Reference Logic: Year must belong to Department
+                 var year = await _dbContext.Years.AsNoTracking().FirstOrDefaultAsync(y => y.Id == dto.YearId.Value);
+                 if (year == null) return (null, "Academic Year not found");
+                 
+                 if (year.DepartmentId != dto.DepartmentId.Value) 
+                     return (null, "The selected Academic Year does not belong to the selected Department.");
+
+                 if (!await _dbContext.Squadrons.AnyAsync(s => s.Id == dto.SquadronId.Value))
+                      return (null, "Class/Group not found");
+            }
+            else
+            {
+                if (dto.DepartmentId.HasValue || dto.YearId.HasValue || dto.SquadronId.HasValue)
+                    return (null, $"For {dto.Role} role, Department, Academic Year, and Class/Group must NOT be provided.");
+            }
+
             var user = new ApplicationUser
             {
                 UserName = dto.Email,
@@ -158,12 +183,18 @@ namespace SkyLearnApi.Services.Implementation
                 DateOfBirth = dto.DateOfBirth,
                 Gender = dto.Gender,
                 City = dto.City,
-                ProfileImageUrl = dto.ProfileImageUrl,
+
+                // ProfileImageUrl handled below
                 IsActive = dto.IsActive,
                 EmailConfirmed = true, // Trusted - entered by Admin
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
+
+            if (dto.ImageFile != null)
+            {
+                user.ProfileImageUrl = await ImageHelper.SaveImageAsync(dto.ImageFile, "users", _environment);
+            }
             //Create user WITHOUT password
             //Users set their own password during first-time activation
             //This ensures Admins NEVER know user passwords
@@ -182,6 +213,29 @@ namespace SkyLearnApi.Services.Implementation
                 return (null, $"Failed to assign role: {errors}");
             }
 
+            StudentProfile? profile = null;
+            // Create Student Profile if Role is Student
+            if (dto.Role == Roles.Student)
+            {
+                profile = new StudentProfile
+                {
+                    UserId = user.Id,
+                    DepartmentId = dto.DepartmentId!.Value,
+                    YearId = dto.YearId!.Value,
+                    SquadronId = dto.SquadronId!.Value,
+                    AdmissionYear = DateTime.UtcNow.Year,
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow
+                };
+                _dbContext.StudentProfiles.Add(profile);
+                await _dbContext.SaveChangesAsync();
+                
+                // Reload navigation properties for response
+                await _dbContext.Entry(profile).Reference(p => p.Department).LoadAsync();
+                await _dbContext.Entry(profile).Reference(p => p.Year).LoadAsync();
+                await _dbContext.Entry(profile).Reference(p => p.Squadron).LoadAsync();
+            }
+
             // Use IActivityService interface
             await _activityService.TrackEntityActionAsync(
                 ActivityActions.UserCreated,
@@ -193,7 +247,7 @@ namespace SkyLearnApi.Services.Implementation
             Log.Information("User created by Admin: {Email} with role {Role} (pending activation)", 
                 user.Email, dto.Role);
 
-            return (MapToResponseDto(user, dto.Role), null);
+            return (MapToResponseDto(user, dto.Role, profile), null);
         }
 
         public async Task<(UserResponseDto? User, string? Error)> UpdateUserAsync(int userId, UpdateUserDto dto)
@@ -202,6 +256,47 @@ namespace SkyLearnApi.Services.Implementation
             if (user == null)
             {
                 return (null, "User not found");
+            }
+
+            var currentRoles = await _userManager.GetRolesAsync(user);
+            var currentRole = currentRoles.FirstOrDefault() ?? "";
+            var targetRole = dto.Role ?? currentRole;
+
+            // BUSINESS RULE VALIDATION
+            if (targetRole == Roles.Student)
+            {
+                // If switching TO Student, all fields required
+                if (currentRole != Roles.Student)
+                {
+                    if (!dto.DepartmentId.HasValue || !dto.YearId.HasValue || !dto.SquadronId.HasValue)
+                        return (null, "When changing role to Student; Department, Academic Year, and Class/Group are required.");
+                    
+                    // Validate hierarchy for fresh profile
+                    var year = await _dbContext.Years.AsNoTracking().FirstOrDefaultAsync(y => y.Id == dto.YearId.Value);
+                    if (year == null) return (null, "Academic Year not found");
+                    if (year.DepartmentId != dto.DepartmentId.Value) return (null, "Academic Year does not belong to Department");
+                }
+                else
+                {
+                    // Existing Student Updating Fields
+                    // Logic: Get Current or New IDs and validate relationship if changed
+                     var existingProfile = await _dbContext.StudentProfiles.AsNoTracking().FirstOrDefaultAsync(sp => sp.UserId == userId);
+                     int effectiveDeptId = dto.DepartmentId ?? existingProfile?.DepartmentId ?? 0;
+                     int effectiveYearId = dto.YearId ?? existingProfile?.YearId ?? 0;
+                     
+                     if (dto.DepartmentId.HasValue || dto.YearId.HasValue)
+                     {
+                         var year = await _dbContext.Years.AsNoTracking().FirstOrDefaultAsync(y => y.Id == effectiveYearId);
+                         if (year == null) return (null, "Academic Year not found");
+                         if (year.DepartmentId != effectiveDeptId) return (null, "Academic Year does not belong to Department");
+                     }
+                }
+            }
+            else
+            {
+                // Non-student roles shouldn't have these fields
+                if (dto.DepartmentId.HasValue || dto.YearId.HasValue || dto.SquadronId.HasValue)
+                     return (null, $"For {targetRole} role, Department, Academic Year, and Class/Group must NOT be provided.");
             }
 
             // Check email uniqueness if changing email
@@ -227,8 +322,14 @@ namespace SkyLearnApi.Services.Implementation
                 user.Gender = dto.Gender;
             if (dto.City != null)
                 user.City = dto.City;
-            if (dto.ProfileImageUrl != null)
-                user.ProfileImageUrl = dto.ProfileImageUrl;
+
+            if (dto.ImageFile != null)
+            {
+                if (!string.IsNullOrEmpty(user.ProfileImageUrl))
+                    ImageHelper.DeleteImage(user.ProfileImageUrl, _environment);
+
+                user.ProfileImageUrl = await ImageHelper.SaveImageAsync(dto.ImageFile, "users", _environment);
+            }
             if (dto.IsActive.HasValue)
                 user.IsActive = dto.IsActive.Value;
 
@@ -240,12 +341,6 @@ namespace SkyLearnApi.Services.Implementation
                 var errors = string.Join(", ", updateResult.Errors.Select(e => e.Description));
                 return (null, $"Failed to update user: {errors}");
             }
-
-            // BUSINESS RULE: Admins CANNOT change user passwords
-            // Password management is user-controlled via:
-            // - /api/auth/activate-account (first-time setup)
-            // - /api/auth/reset-password (password recovery)
-
             // Update role if provided
             if (!string.IsNullOrWhiteSpace(dto.Role))
             {
@@ -254,11 +349,57 @@ namespace SkyLearnApi.Services.Implementation
                     return (null, $"Role '{dto.Role}' does not exist");
                 }
 
-                var currentRoles = await _userManager.GetRolesAsync(user);
+                // currentRoles already fetched at start of method
                 if (!currentRoles.Contains(dto.Role))
                 {
                     await _userManager.RemoveFromRolesAsync(user, currentRoles);
                     await _userManager.AddToRoleAsync(user, dto.Role);
+                }
+            }
+
+            StudentProfile? studentProfile = null;
+            // Handle Student Profile Changes
+            if (targetRole == Roles.Student)
+            {
+                studentProfile = await _dbContext.StudentProfiles.FirstOrDefaultAsync(sp => sp.UserId == user.Id);
+                
+                if (studentProfile == null)
+                {
+                     studentProfile = new StudentProfile
+                    {
+                        UserId = user.Id,
+                        DepartmentId = dto.DepartmentId ?? 0,
+                        YearId = dto.YearId ?? 0,
+                        SquadronId = dto.SquadronId ?? 0,
+                        AdmissionYear = DateTime.UtcNow.Year,
+                        CreatedAt = DateTime.UtcNow,
+                        UpdatedAt = DateTime.UtcNow
+                    };
+                    _dbContext.StudentProfiles.Add(studentProfile);
+                }
+                else
+                {
+                    // Update existing
+                    if (dto.DepartmentId.HasValue) studentProfile.DepartmentId = dto.DepartmentId.Value;
+                    if (dto.YearId.HasValue) studentProfile.YearId = dto.YearId.Value;
+                    if (dto.SquadronId.HasValue) studentProfile.SquadronId = dto.SquadronId.Value;
+                    studentProfile.UpdatedAt = DateTime.UtcNow;
+                }
+                await _dbContext.SaveChangesAsync();
+                
+                // Reload for response
+                await _dbContext.Entry(studentProfile).Reference(p => p.Department).LoadAsync();
+                await _dbContext.Entry(studentProfile).Reference(p => p.Year).LoadAsync();
+                await _dbContext.Entry(studentProfile).Reference(p => p.Squadron).LoadAsync();
+            }
+            else if (currentRole == Roles.Student && targetRole != Roles.Student)
+            {
+                // Remove profile if no longer Student
+                var profile = await _dbContext.StudentProfiles.FirstOrDefaultAsync(sp => sp.UserId == user.Id);
+                if (profile != null)
+                {
+                    _dbContext.StudentProfiles.Remove(profile);
+                    await _dbContext.SaveChangesAsync();
                 }
             }
 
@@ -269,7 +410,7 @@ namespace SkyLearnApi.Services.Implementation
                 description: $"Admin updated user {user.Email}");
 
             var roles = await _userManager.GetRolesAsync(user);
-            return (MapToResponseDto(user, roles.FirstOrDefault() ?? ""), null);
+            return (MapToResponseDto(user, roles.FirstOrDefault() ?? "", studentProfile), null);
         }
 
         public async Task<(bool Success, string? Error)> DeleteUserAsync(int userId, bool hardDelete = false)
@@ -284,6 +425,15 @@ namespace SkyLearnApi.Services.Implementation
 
             if (hardDelete)
             {
+                // Check if user is Head of any Department
+                var department = await _dbContext.Departments
+                    .FirstOrDefaultAsync(d => d.HeadId == userId);
+                    
+                if (department != null)
+                {
+                    return (false, $"Cannot delete user {userId} because they are assigned as Head of Department '{department.Name}'.");
+                }
+
                 var deleteResult = await _userManager.DeleteAsync(user);
                 if (!deleteResult.Succeeded)
                 {
@@ -380,6 +530,7 @@ namespace SkyLearnApi.Services.Implementation
             };
 
             // Polymorphic: Only populate AcademicInfo for Students with a profile
+            // Note: Enrollment history is available via GET /api/enrollment/history endpoint
             if (role == Roles.Student && profile != null)
             {
                 dto.AcademicInfo = new SkyLearnApi.DTOs.Users.AcademicInfoDto
@@ -406,3 +557,4 @@ namespace SkyLearnApi.Services.Implementation
         }
     }
 }
+

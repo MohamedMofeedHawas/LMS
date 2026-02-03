@@ -30,8 +30,6 @@ namespace SkyLearnApi.Services.Implementations
             if (yearId.HasValue)
                 query = query.Where(c => c.YearId == yearId.Value);
 
-
-            //Null-safe search 
             if (!string.IsNullOrWhiteSpace(search))
             {
                 query = query.Where(c =>
@@ -42,7 +40,7 @@ namespace SkyLearnApi.Services.Implementations
             if (startDate.HasValue)
                 query = query.Where(c => c.CreatedAt >= startDate.Value);
 
-    if (endDate.HasValue)
+            if (endDate.HasValue)
                 query = query.Where(c => c.CreatedAt <= endDate.Value);
 
             var courses = await query
@@ -51,7 +49,32 @@ namespace SkyLearnApi.Services.Implementations
                 .Take(pageSize)
                 .ToListAsync();
 
-            return _mapper.Map<IEnumerable<CourseResponseDto>>(courses);
+            // Get enrolled student counts for these courses
+            // Students are automatically enrolled in all courses of their academic year
+            var yearIds = courses.Select(c => c.YearId).Distinct().ToList();
+            var enrollmentCounts = await _context.StudentProfiles
+                .Where(sp => yearIds.Contains(sp.YearId))
+                .GroupBy(sp => sp.YearId)
+                .Select(g => new { YearId = g.Key, Count = g.Count() })
+                .ToDictionaryAsync(x => x.YearId, x => x.Count);
+
+            return courses.Select(c => new CourseResponseDto
+            {
+                Id = c.Id,
+                Title = c.Title,
+                Description = c.Description,
+                DepartmentId = c.DepartmentId,
+                DepartmentName = c.Department.Name,
+                YearId = c.YearId,
+                YearName = c.Year.Name,
+                CreditHours = c.CreditHours,
+                EnrolledStudentsCount = enrollmentCounts.GetValueOrDefault(c.YearId, 0),
+                ImageUrl = c.ImageUrl,
+                InstructorId = c.CreatedById,
+                InstructorName = c.CreatedBy.FullName,
+                CreatedAt = c.CreatedAt,
+                UpdatedAt = c.UpdatedAt
+            });
         }
 
         public async Task<CourseResponseDto?> GetByIdAsync(int id)
@@ -62,19 +85,45 @@ namespace SkyLearnApi.Services.Implementations
                 .Include(c => c.CreatedBy)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            return course == null ? null : _mapper.Map<CourseResponseDto>(course);
+            if (course == null) return null;
+
+            // Students are automatically enrolled in all courses of their academic year
+            var enrolledCount = await _context.StudentProfiles.CountAsync(sp => sp.YearId == course.YearId);
+
+            return new CourseResponseDto
+            {
+                Id = course.Id,
+                Title = course.Title,
+                Description = course.Description,
+                DepartmentId = course.DepartmentId,
+                DepartmentName = course.Department.Name,
+                YearId = course.YearId,
+                YearName = course.Year.Name,
+                CreditHours = course.CreditHours,
+                EnrolledStudentsCount = enrolledCount,
+                ImageUrl = course.ImageUrl,
+                InstructorId = course.CreatedById,
+                InstructorName = course.CreatedBy.FullName,
+                CreatedAt = course.CreatedAt,
+                UpdatedAt = course.UpdatedAt
+            };
         }
 
         public async Task<CourseResponseDto> CreateAsync(CourseRequestDto dto, int userId)
         {
+            var department = await _context.Departments
+                .FirstOrDefaultAsync(d => d.Name == dto.DepartmentName);
+            if (department == null)
+                throw new ArgumentException($"Department '{dto.DepartmentName}' not found.");
 
-            if (!await _context.Departments.AnyAsync(d => d.Id == dto.DepartmentId))
-                throw new ArgumentException("Invalid DepartmentId.");
-
-            if (!await _context.Years.AnyAsync(y => y.Id == dto.YearId))
-                throw new ArgumentException("Invalid YearId.");
+            var year = await _context.Years
+                .FirstOrDefaultAsync(y => y.Name == dto.YearName && y.DepartmentId == department.Id);
+            if (year == null)
+                throw new ArgumentException($"Year '{dto.YearName}' not found in department '{dto.DepartmentName}'.");
 
             var course = _mapper.Map<Course>(dto);
+            course.DepartmentId = department.Id;
+            course.YearId = year.Id;
             course.CreatedById = userId;
 
             if (dto.ImageFile != null)
@@ -82,7 +131,7 @@ namespace SkyLearnApi.Services.Implementations
                 if (string.IsNullOrEmpty(_env.WebRootPath))
                     throw new InvalidOperationException("WebRootPath is not configured.");
 
-              var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads", "courses");
+                var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads", "courses");
                 Directory.CreateDirectory(uploadsFolder);
 
                 var fileName = $"{Guid.NewGuid()}_{dto.ImageFile.FileName}";
@@ -96,9 +145,28 @@ namespace SkyLearnApi.Services.Implementations
 
             _context.Courses.Add(course);
             await _context.SaveChangesAsync();
-           await UpdateYearTotalsAsync(course.YearId);
 
-            return _mapper.Map<CourseResponseDto>(course);
+            await UpdateYearTotalsAsync(course.YearId);
+
+            var instructor = await _context.Users.FindAsync(userId);
+            
+            return new CourseResponseDto
+            {
+                Id = course.Id,
+                Title = course.Title,
+                Description = course.Description,
+                DepartmentId = department.Id,
+                DepartmentName = department.Name,
+                YearId = year.Id,
+                YearName = year.Name,
+                CreditHours = course.CreditHours,
+                EnrolledStudentsCount = 0,
+                ImageUrl = course.ImageUrl,
+                InstructorId = userId,
+                InstructorName = instructor?.FullName ?? "",
+                CreatedAt = course.CreatedAt,
+                UpdatedAt = course.UpdatedAt
+            };
         }
 
         public async Task<CourseResponseDto?> UpdateAsync(int id, CourseRequestDto dto, int userId)
@@ -110,17 +178,22 @@ namespace SkyLearnApi.Services.Implementations
             if (course.CreatedById != userId)
                 throw new UnauthorizedAccessException("You are not allowed to update this course.");
 
-            if (dto.DepartmentId != course.DepartmentId &&
-                !await _context.Departments.AnyAsync(d => d.Id == dto.DepartmentId))
-                throw new ArgumentException("Invalid DepartmentId.");
+            var department = await _context.Departments
+                .FirstOrDefaultAsync(d => d.Name == dto.DepartmentName);
+            if (department == null)
+                throw new ArgumentException($"Department '{dto.DepartmentName}' not found.");
 
-            if (dto.YearId != course.YearId &&
-                !await _context.Years.AnyAsync(y => y.Id == dto.YearId))
-                throw new ArgumentException("Invalid YearId.");
-
+            var year = await _context.Years
+                .FirstOrDefaultAsync(y => y.Name == dto.YearName && y.DepartmentId == department.Id);
+            if (year == null)
+                throw new ArgumentException($"Year '{dto.YearName}' not found in department '{dto.DepartmentName}'.");
+            
             var oldYearId = course.YearId;
 
             _mapper.Map(dto, course);
+            
+            course.DepartmentId = department.Id;
+            course.YearId = year.Id;
             course.UpdatedAt = DateTime.UtcNow;
 
             if (dto.ImageFile != null)
@@ -146,7 +219,7 @@ namespace SkyLearnApi.Services.Implementations
             if (oldYearId != course.YearId)
                 await UpdateYearTotalsAsync(oldYearId);
 
-            return _mapper.Map<CourseResponseDto>(course);
+            return await GetByIdAsync(id);
         }
 
         public async Task<bool> DeleteAsync(int id, int userId)
@@ -162,6 +235,7 @@ namespace SkyLearnApi.Services.Implementations
 
             _context.Courses.Remove(course);
             await _context.SaveChangesAsync();
+
             await UpdateYearTotalsAsync(yearId);
 
             return true;

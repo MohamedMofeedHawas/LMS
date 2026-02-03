@@ -1,6 +1,4 @@
-
 namespace SkyLearnApi.Services.Implementation
-
 {
     public class YearService : IYearService
     {
@@ -46,7 +44,7 @@ namespace SkyLearnApi.Services.Implementation
             if (!departmentExists)
                 throw new KeyNotFoundException("Department not found");
 
-              var years = await _db.Years
+            var years = await _db.Years
                 .Where(y => y.DepartmentId == departmentId)
                 .Include(y => y.Department)
                 .Include(y => y.CreatedBy)
@@ -73,6 +71,9 @@ namespace SkyLearnApi.Services.Implementation
             if (department == null)
                 throw new KeyNotFoundException($"Department '{dto.DepartmentName}' not found");
 
+            if (await _db.Years.AnyAsync(y => y.Name == dto.Name && y.DepartmentId == department.Id))
+                throw new InvalidOperationException($"Year '{dto.Name}' already exists in department '{department.Name}'.");
+
             var year = dto.Adapt<Year>();
             year.CreatedById = parsedUserId;
             year.CreatedAt = DateTime.UtcNow;
@@ -81,10 +82,11 @@ namespace SkyLearnApi.Services.Implementation
             year.TotalHours = 0;
 
             year.DepartmentId = department.Id;
-       _db.Years.Add(year);
+
+            _db.Years.Add(year);
             await _db.SaveChangesAsync();
 
-           await _db.Entry(year).Reference(y => y.Department).LoadAsync();
+            await _db.Entry(year).Reference(y => y.Department).LoadAsync();
             await _db.Entry(year).Reference(y => y.CreatedBy).LoadAsync();
 
             return year.Adapt<YearResponseDto>();
@@ -108,19 +110,35 @@ namespace SkyLearnApi.Services.Implementation
                  year.DepartmentId = department.Id;
             }
 
+            if (dto.Name != year.Name || year.Department.Name != dto.DepartmentName)
+            {
+                 var targetDeptId = year.DepartmentId; // Default to current dept
+                 if (year.Department.Name != dto.DepartmentName)
+                 {
+                     // Already resolved department above, but getting ID again for clarity or reusing local var if I had refactored better.
+                     // The code above updates year.DepartmentId. Let's rely on that.
+                     targetDeptId = year.DepartmentId;
+                 }
+
+                 if (await _db.Years.AnyAsync(y => y.Name == dto.Name && y.DepartmentId == targetDeptId && y.Id != id))
+                     throw new InvalidOperationException($"Year '{dto.Name}' already exists in the target department.");
+            }
+
             year.Name = dto.Name;
             year.Description = dto.Description;
             // DepartmentId already updated above if needed
-          year.StartDate = dto.StartDate;
+            year.StartDate = dto.StartDate;
             year.EndDate = dto.EndDate;
             year.UpdatedAt = DateTime.UtcNow;
 
             await _db.SaveChangesAsync();
-         await _db.Entry(year).Reference(y => y.Department).LoadAsync();
+
+            await _db.Entry(year).Reference(y => y.Department).LoadAsync();
             await _db.Entry(year).Reference(y => y.CreatedBy).LoadAsync();
 
             return year.Adapt<YearResponseDto>();
         }
+
         public async Task<bool> DeleteAsync(int id, string userId)
         {
             var year = await _db.Years.FindAsync(id);
@@ -137,5 +155,5 @@ namespace SkyLearnApi.Services.Implementation
             await _db.SaveChangesAsync();
             return true;
         }
-     }
+    }
 }
