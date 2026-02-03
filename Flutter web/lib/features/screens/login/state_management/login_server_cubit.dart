@@ -33,8 +33,7 @@ class LoginCubit extends Cubit<LoginState> {
         emit(LoginSuccessState());
         final model = UserModel.fromJson(response.data);
         await PrefHelper.saveLoginData(model);
-        await TokenStorageHelper.saveTokenSecure(model);
-
+        await TokenStorageHelper.saveTokenSecure(response.data['token']);
 
 
 
@@ -65,15 +64,10 @@ class LoginCubit extends Cubit<LoginState> {
           ),
 
 
-          // ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
-          //   SnackBar(
-          //     content: Text(response.data["message"] ?? "Login successful",),
-          //     backgroundColor: Colors.green,
-          //   ),
+
         );
 
 
-        ///ToDO: authentication flow
         if (model.user!.role == "Student"){
           Navigator.pushReplacement(navigatorKey.currentContext!, MaterialPageRoute(builder: (context) =>  StudentCourseScreen() ,));
         }else if (model.user!.role == "Instructor"){

@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
@@ -6,12 +7,29 @@ import 'package:flutter/foundation.dart';
 import 'package:lms/features/screens/courses/student/view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/cons/Colors/app_colors.dart';
+import '../../../core/cons/api_helper_resources/api_resources.dart';
 import '../../../core/helpers/logout_server/logout.dart';
+import '../Announcement/view.dart';
+import '../Create_department/view.dart';
+import '../add_course/Adding_view.dart';
+import '../courses/admin/view.dart';
+import '../create_years/view.dart';
+import '../get_department/model/model.dart';
+import '../get_department/state_mangment/cubit.dart';
+import '../get_department/state_mangment/states.dart';
+import '../get_squadron/model/view.dart';
+import '../get_squadron/state_mangment/cubit.dart';
+import '../get_squadron/state_mangment/states.dart';
+import '../get_users/view.dart';
+import '../get_years/model.dart';
+import '../get_years/state_managment/cubit.dart';
+import '../get_years/state_managment/states.dart';
+import '../profiles/admin_profile/view.dart';
 import 'State_managment/Create_user_cubit.dart';
 import 'State_managment/Create_user_state.dart';
 
 Uint8List? _webImage;
-String selectedMenuItem = 'Assign new User';
+String selectedMenuItem = 'Create Users';
 String? hoveredMenuItem;
 String selectedGender = "gender";
 String selectedRole = "Select Role";
@@ -77,7 +95,8 @@ class _ProfileScreenState extends State<CreateUserScreen> {
   final FocusNode fullNameFocus = FocusNode();
   final FocusNode emailFocus = FocusNode();
   final FocusNode nationalIdFocus = FocusNode();
-  final FocusNode passwordFocus = FocusNode();
+
+  // final FocusNode passwordFocus = FocusNode();
   final FocusNode academicLevelFocus = FocusNode();
   final FocusNode roleFocus = FocusNode();
   final FocusNode dateOfBirthFocus = FocusNode();
@@ -89,16 +108,30 @@ class _ProfileScreenState extends State<CreateUserScreen> {
   final TextEditingController fullNameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController nationalIdController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+
   final TextEditingController academicLevelController = TextEditingController();
 
-  // final TextEditingController roleController = TextEditingController();
-  // final TextEditingController dateOfBirthController = TextEditingController();
   final TextEditingController genderController = TextEditingController();
 
-  // final TextEditingController isActiveController = TextEditingController();
-  // final TextEditingController cityController = TextEditingController();
   final TextEditingController dobController = TextEditingController();
+  final TextEditingController departmentController = TextEditingController();
+  final TextEditingController yearController = TextEditingController();
+  final TextEditingController squadronController = TextEditingController();
+
+  String selectedDepartmentName = "Select Department";
+  String selectedYearName = "Select Year";
+  String selectedSquadronName = "Select Squadron";
+
+  String? selectedDepartmentId;
+  String? selectedYearId;
+  String? selectedSquadronId;
+
+  List<GetDepartmentModel> availableDepartments = [];
+  List<YearModel> availableYears = [];
+
+  bool isDepartmentExpanded = false;
+  bool isYearExpanded = false;
+  bool isSquadronExpanded = false;
 
   @override
   void dispose() {
@@ -108,25 +141,40 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     emailFocus.dispose();
     nationalIdController.dispose();
     nationalIdFocus.dispose();
-    passwordController.dispose();
-    passwordFocus.dispose();
+
     academicLevelController.dispose();
     academicLevelFocus.dispose();
     genderController.dispose();
     genderFocus.dispose();
-    // roleController.dispose();
-    // roleFocus.dispose();
-    // dateOfBirthController.dispose();
-    // isActiveController.dispose();
-    // cityController.dispose();
 
-    // dateOfBirthFocus.dispose();
-
-    // isActiveFocus.dispose();
-    // cityFocus.dispose();
-
-    // dobFocus.dispose();
     super.dispose();
+  }
+  void _clearAllFields() {
+    fullNameController.clear();
+    emailController.clear();
+    nationalIdController.clear();
+    genderController.clear();
+    dobController.clear();
+
+    setState(() {
+      selectedDepartmentName = "Select Department";
+      selectedYearName = "Select Year";
+      selectedSquadronName = "Select Squadron";
+      selectedCity = 'Select City';
+      selectedRole = "Select Role";
+
+      selectedDepartmentId = null;
+      selectedYearId = null;
+      selectedSquadronId = null;
+
+      availableYears = [];
+
+      isDepartmentExpanded = false;
+      isYearExpanded = false;
+      isSquadronExpanded = false;
+      isCityExpanded = false;
+      isRoleExpanded = false;
+    });
   }
 
   @override
@@ -158,7 +206,6 @@ class _ProfileScreenState extends State<CreateUserScreen> {
       ),
     );
   }
-
   Widget _buildSidebar() {
     return Container(
       width: 250,
@@ -186,25 +233,106 @@ class _ProfileScreenState extends State<CreateUserScreen> {
           _buildMenuItem(
             Icons.person_outline,
             Icons.person,
-            'Assign new User',
-            'Assign new User',
-            () {},
+            'Profile',
+            'Profile',
+                () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AdminProfileScreen(),));
+                },
           ),
           _buildMenuItem(
             Icons.book_outlined,
             Icons.book,
-            'All Users Created',
-            'All Users Created',
-            () {
+            'My Courses',
+            'My Courses',
+                () {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const StudentCourseScreen(),
+                  builder: (context) => const AdminCourseScreen(),
                 ),
               );
             },
           ),
+          _buildMenuItem(
+            Icons.notifications_active_outlined,
+            Icons.notifications_active_rounded,
+            'Announcements',
+            'Announcements',
+                () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AnnouncementScreen(),
+                ),
+              );
 
+            },
+          ),
+          _buildMenuItem(
+            Icons.person_add_alt_1_outlined,
+            Icons.person_add_alt_1,
+            'Create Users',
+            'Create users',
+                () {
+
+
+            },
+          ),
+          _buildMenuItem(
+            Icons.folder_copy_outlined,
+            Icons.folder_copy_rounded,
+            'Create Departments',
+            'Create Departments',
+                () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>  CreateDepartmentPage(),
+                ),
+              );
+
+            },
+          ),
+          _buildMenuItem(
+            Icons.calendar_month,
+            Icons.calendar_month_outlined,
+            'Create Years',
+            'Create Years',
+                () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>  CreateYearPage(),
+                ),
+              );
+
+            },
+          ),
+          _buildMenuItem(
+            Icons.play_circle_outline,
+            Icons.play_circle_fill,
+            'Create New Course',
+            'Create New Course',
+                () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>  CreateNewCoursePage(),
+                ),
+              );
+
+            },
+          ),
+          _buildMenuItem(
+            Icons.grade_outlined,
+            Icons.grade,
+            'Grades overview',
+            'Grades overview',
+                () {},
+          ),
           const Spacer(),
           _buildLogoutButton(),
           const SizedBox(height: 20),
@@ -213,13 +341,80 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     );
   }
 
+
+
+
+  Widget _buildLogoutButton() {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => isLogoutHovered = true),
+      onExit: (_) => setState(() => isLogoutHovered = false),
+      child: GestureDetector(
+        onTap: () {
+          showDialog(
+            context: context,
+            builder: (context) => AlertDialog(
+              title: const Text('Logout'),
+              content: const Text('Are you sure you want to logout?'),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text('Cancel'),
+                ),
+                ElevatedButton(
+                  onPressed: () async {
+                    await LogoutServer.logout();
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFEF4444),
+                  ),
+                  child: const Text('Logout'),
+                ),
+              ],
+            ),
+          );
+        },
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          margin: const EdgeInsets.symmetric(horizontal: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          decoration: BoxDecoration(
+            color: isLogoutHovered
+                ? const Color(0xFFEF4444).withOpacity(0.1)
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: isLogoutHovered
+                  ? const Color(0xFFEF4444).withOpacity(0.3)
+                  : Colors.transparent,
+              width: 1,
+            ),
+          ),
+          child: Row(
+            children: [
+              Icon(Icons.logout, color: const Color(0xFFEF4444), size: 20),
+              const SizedBox(width: 12),
+              const Text(
+                'Logout',
+                style: TextStyle(
+                  color: Color(0xFFEF4444),
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
   Widget _buildMenuItem(
-    IconData outlinedIcon,
-    IconData filledIcon,
-    String title,
-    String value,
-    onTap,
-  ) {
+      IconData outlinedIcon,
+      IconData filledIcon,
+      String title,
+      String value,
+      onTap,
+      ) {
     final isSelected = selectedMenuItem == value;
     final isHovered = hoveredMenuItem == value;
 
@@ -289,71 +484,6 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     );
   }
 
-  Widget _buildLogoutButton() {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => isLogoutHovered = true),
-      onExit: (_) => setState(() => isLogoutHovered = false),
-      child: GestureDetector(
-        onTap: () {
-          showDialog(
-            context: context,
-            builder: (context) => AlertDialog(
-              title: const Text('Logout'),
-              content: const Text('Are you sure you want to logout?'),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: const Text('Cancel'),
-                ),
-                ElevatedButton(
-                  onPressed: () async {
-                    await LogoutServer.logout();
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFEF4444),
-                  ),
-                  child: const Text('Logout'),
-                ),
-              ],
-            ),
-          );
-        },
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          margin: const EdgeInsets.symmetric(horizontal: 12),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          decoration: BoxDecoration(
-            color: isLogoutHovered
-                ? const Color(0xFFEF4444).withOpacity(0.1)
-                : Colors.transparent,
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(
-              color: isLogoutHovered
-                  ? const Color(0xFFEF4444).withOpacity(0.3)
-                  : Colors.transparent,
-              width: 1,
-            ),
-          ),
-          child: Row(
-            children: [
-              Icon(Icons.logout, color: const Color(0xFFEF4444), size: 20),
-              const SizedBox(width: 12),
-              const Text(
-                'Logout',
-                style: TextStyle(
-                  color: Color(0xFFEF4444),
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
   Widget _buildProfileContent() {
     return Center(
       child: Padding(
@@ -374,388 +504,897 @@ class _ProfileScreenState extends State<CreateUserScreen> {
               ),
             ],
           ),
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 40),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                const Text(
-                  'New User',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
-                    color: Color(0xFF2563EB),
+          child: MultiBlocProvider(
+            providers: [
+              BlocProvider(
+                create: (_) => DepartmentsCubitDrop()..fetchDepartments(),
+              ),
+              BlocProvider(
+                create: (_) => YearsCubitDrop()..fetchYears(),
+              ),
+              BlocProvider(
+                create: (_) => SquadronsCubitDrop()..fetchSquadrons(),
+              ),
+            ],
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Text(
+                    'New User',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xFF2563EB),
+                    ),
                   ),
-                ),
-                const SizedBox(height: 8),
-                const Text(
-                  'Here are all User personal details that you can add and update anytime',
-                  style: TextStyle(fontSize: 14, color: Color(0xFF64748B)),
-                ),
-                const SizedBox(height: 32),
-                _buildProfilePicture(),
-                const SizedBox(height: 24),
-                _buildTextField(
-                  'Full Name',
-                  fullNameController,
-                  fullNameFocus,
-                  Icons.person,
-                  "Mohamed Mofeed",
-                ),
-                const SizedBox(height: 16),
-                _buildTextField(
-                  'Email address',
-                  emailController,
-                  emailFocus,
-                  Icons.email,
-                  "mohamed@gmail.com",
-                ),
-                const SizedBox(height: 16),
-                _buildTextField(
-                  'Password',
-                  passwordController,
-                  passwordFocus,
-                  Icons.password,
-                  "Mofeed123#*znu",
-                ),
-                const SizedBox(height: 16),
-                _buildTextField(
-                  'National ID',
-                  nationalIdController,
-                  nationalIdFocus,
-                  Icons.badge,
-                  "3040105050096",
-                ),
-                const SizedBox(height: 16),
-                _buildTextField(
-                  'Gender',
-                  genderController,
-                  genderFocus,
-                  Icons.badge,
-                  "Male",
-                ),
-                const SizedBox(height: 16),
-                _buildTextField(
-                  'Academic Level',
-                  academicLevelController,
-                  academicLevelFocus,
-                  Icons.badge,
-                  "Level Four",
-                ),
-                const SizedBox(height: 16),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Here are all User personal details that you can add and update anytime',
+                    style: TextStyle(fontSize: 14, color: Color(0xFF64748B)),
+                  ),
+                  const SizedBox(height: 32),
+                  _buildProfilePicture(),
+                  const SizedBox(height: 24),
+                  _buildTextField(
+                    'Full Name',
+                    fullNameController,
+                    fullNameFocus,
+                    Icons.person,
+                    "Mohamed Mofeed",
+                  ),
+                  const SizedBox(height: 16),
+                  _buildTextField(
+                    'Email address',
+                    emailController,
+                    emailFocus,
+                    Icons.email,
+                    "mohamed@gmail.com",
+                  ),
+                  const SizedBox(height: 16),
+                  _buildTextField(
+                    'National ID',
+                    nationalIdController,
+                    nationalIdFocus,
+                    Icons.badge,
+                    "3040105050096",
+                  ),
+                  const SizedBox(height: 16),
+                  _buildTextField(
+                    'Gender',
+                    genderController,
+                    genderFocus,
+                    Icons.badge,
+                    "Male",
+                  ),
+                  const SizedBox(height: 16),
+                  _buildDateField(
+                    'Date of Birth',
+                    dobController,
+                    dobFocus,
+                    "Select Date",
+                  ),
+                  const SizedBox(height: 16),
+                  _buildStringDropdownField(
+                    'City',
+                    selectedCity,
+                    cities,
+                    isCityExpanded,
+                        (value) {
+                      setState(() {
+                        selectedCity = value;
+                        isCityExpanded = false;
+                      });
+                    },
+                        () => setState(() => isCityExpanded = !isCityExpanded),
+                  ),
+                  const SizedBox(height: 16),
+                  RoleDropdownField(),
+                  const SizedBox(height: 16),
 
-                _buildDateField(
-                  'Date of Birth',
-                  dobController,
-                  dobFocus,
-                  "Select Date",
-                ),
+                  BlocBuilder<DepartmentsCubitDrop, DepartmentsStateDrop>(
+                    builder: (context, departmentState) {
+                      final isReadOnly = selectedRole != 'Student';
 
-                const SizedBox(height: 16),
-                _buildDropdownField(
-                  'City',
-                  selectedCity,
-                  cities,
-                  isCityExpanded,
-                  (value) {
-                    setState(() {
-                      selectedCity = value;
-                      isCityExpanded = false;
-                    });
-                  },
-                  () {
-                    setState(() {
-                      isCityExpanded = !isCityExpanded;
-                    });
-                  },
-                ),
-                const SizedBox(height: 16),
-
-                RoleDropdownField(),
-                const SizedBox(height: 16),
-
-                ToggleButtonActiveOrDeactive(),
-
-                const SizedBox(height: 16),
-                BlocListener<CreateUserCubit, CreateState>(
-                  listener: (context, state) {
-                    // Success State - مع الـ status code
-                    if (state is CreateUserSuccessState) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Row(
-                            children: [
-                              const Icon(Icons.check_circle, color: Colors.white),
-                              const SizedBox(width: 10),
-                              Expanded(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      state.message ?? "User Created Successfully",
-                                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                                    ),
-                                    if (state.statusCode != null)
-                                      Text(
-                                        "Status Code: ${state.statusCode}",
-                                        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
-                                      ),
-                                  ],
-                                ),
-                              ),
-                            ],
+                      if (departmentState is DepartmentLoadingState) {
+                        return const Padding(
+                          padding: EdgeInsets.only(top: 16, bottom: 16),
+                          child: Center(
+                            child: CircularProgressIndicator(),
                           ),
-                          backgroundColor: Colors.green.shade600,
-                          behavior: SnackBarBehavior.floating,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                          duration: const Duration(seconds: 3),
-                          elevation: 6,
-                        ),
-                      );
-                    }
+                        );
+                      }
 
-                    // Error State - مع الـ status code
-                    if (state is CreateUserErrorState) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Row(
-                            children: [
-                              const Icon(Icons.error_outline, color: Colors.white),
-                              const SizedBox(width: 10),
-                              Expanded(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      state.errorMessage,
-                                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                                    ),
-                                    if (state.statusCode != null)
-                                      Text(
-                                        "Status Code: ${state.statusCode}",
-                                        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
-                                      ),
-                                  ],
-                                ),
-                              ),
-                            ],
+                      if (departmentState is DepartmentsErrorState) {
+                        return Padding(
+                          padding: const EdgeInsets.only(top: 16, bottom: 16),
+                          child: Text(
+                            "Error: ${departmentState.message}",
+                            style: const TextStyle(color: Colors.red),
                           ),
-                          backgroundColor: Colors.redAccent,
-                          behavior: SnackBarBehavior.floating,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                          duration: const Duration(seconds: 3),
-                          elevation: 6,
-                        ),
-                      );
-                    }
-                  },
-                  child: BlocBuilder<CreateUserCubit, CreateState>(
-                    builder: (context, state) {
-                      final isLoading = state is LoadingCreateUserState;
+                        );
+                      }
 
-                      return InkWell(
-                        onTap: isLoading
-                            ? null
-                            : () {
-                          if (dobController.text.isEmpty) {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text("Please select date of birth"),
-                              ),
-                            );
-                            return;
-                          }
-
-                          SystemSound.play(SystemSoundType.click);
-                          context.read<CreateUserCubit>().postCreatedUserData(
-                            emailController,
-                            passwordController,
-                            fullNameController,
-                            nationalIdController,
-                            genderController,
-                            academicLevelController,
-                            selectedDateOfBirth,
-                            selectedCity,
-                            selectedRole,
-                            isActive,
-                            context,
-                            profileImageBytes: kIsWeb
-                                ? _webImage
-                                : _selectedImage?.readAsBytesSync(),
+                      if (departmentState is DepartmentLoadedState) {
+                        if (departmentState.departments.isEmpty) {
+                          return const Padding(
+                            padding: EdgeInsets.only(top: 16, bottom: 16),
+                            child: Text("No departments found"),
                           );
-                        },
-                        child: Center(
-                          child: Container(
-                            width: 470,
-                            height: 45,
-                            decoration: const BoxDecoration(
-                              gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                                colors: [Color(0xFF1849A9), Color(0xFF53B1FD)],
-                              ),
-                              borderRadius: BorderRadius.all(Radius.circular(12)),
-                            ),
-                            child: Center(
-                              child: isLoading
-                                  ? const Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  SizedBox(
-                                    width: 20,
-                                    height: 20,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                      valueColor: AlwaysStoppedAnimation<Color>(
-                                        Colors.white,
-                                      ),
-                                    ),
+                        }
+
+                        List<GetDepartmentModel> departments =
+                        departmentState.departments
+                            .whereType<GetDepartmentModel>()
+                            .toList();
+
+                        return Column(
+                          children: [
+                            Opacity(
+                              opacity: isReadOnly ? 0.5 : 1.0,
+                              child: IgnorePointer(
+                                ignoring: isReadOnly,
+                                child: _buildDropdownField(
+                                  selectedDepartmentName,
+                                  departments,
+                                  isDepartmentExpanded,
+                                      (chosenDep) {
+                                    setState(() {
+                                      selectedDepartmentId = chosenDep.id.toString();
+                                      availableYears = chosenDep.years;
+                                      selectedYearName = "Select Year";
+                                      selectedYearId = null;
+                                      selectedDepartmentName = chosenDep.name;
+                                      isDepartmentExpanded = false;
+                                    });
+                                  },
+                                      () => setState(
+                                        () => isDepartmentExpanded = !isDepartmentExpanded,
                                   ),
-                                  SizedBox(width: 10),
-                                  Text(
-                                    "Creating User...",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
-                                      fontFamily: "inter",
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ],
-                              )
-                                  : const Text(
-                                "Create User",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                  fontFamily: "inter",
-                                  color: Colors.white,
                                 ),
                               ),
                             ),
-                          ),
-                        ),
-                      );
+                            const SizedBox(height: 16),
+                          ],
+                        );
+                      }
+
+                      return const SizedBox.shrink();
                     },
                   ),
-                )
-                // BlocBuilder<CreateUserCubit, CreateState>(
-                //   bloc: CreateUserCubit(),
-                //   builder: (context, state) {
-                //     final isLoading = state is LoadingCreateUserState;
-                //
-                //     return InkWell(
-                //       onTap: isLoading
-                //           ? null
-                //           : () {
-                //               if (dobController.text.isEmpty) {
-                //                 ScaffoldMessenger.of(context).showSnackBar(
-                //                   const SnackBar(
-                //                     content: Text(
-                //                       "Please select date of birth",
-                //                     ),
-                //                   ),
-                //                 );
-                //                 return;
-                //               }
-                //
-                //               // if (selectedGender == null || selectedGender!.isEmpty) {
-                //               //   ScaffoldMessenger.of(context).showSnackBar(
-                //               //     const SnackBar(content: Text("Please select gender")),
-                //               //   );
-                //               //   return;
-                //               // }
-                //               SystemSound.play(SystemSoundType.click);
-                //               context
-                //                   .read<CreateUserCubit>()
-                //                   .postCreatedUserData(
-                //                     emailController,
-                //                     passwordController,
-                //                     fullNameController,
-                //                     nationalIdController,
-                //                     genderController,
-                //                     academicLevelController,
-                //                     selectedDateOfBirth,
-                //                     selectedCity,
-                //                     selectedRole,
-                //                     isActive,
-                //                     context,
-                //                     profileImageBytes: kIsWeb
-                //                         ? _webImage
-                //                         : _selectedImage?.readAsBytesSync(),
-                //                   );
-                //             },
-                //       child: Center(
-                //         child: Container(
-                //           width: 470,
-                //           height: 45,
-                //           decoration: BoxDecoration(
-                //             gradient: LinearGradient(
-                //               begin: Alignment.topLeft,
-                //               end: Alignment.bottomRight,
-                //               colors: [Color(0xFF1849A9), Color(0xFF53B1FD)],
-                //             ),
-                //             borderRadius: BorderRadius.circular(12),
-                //           ),
-                //           child: Center(
-                //             child: isLoading
-                //                 ? Row(
-                //                     mainAxisAlignment: MainAxisAlignment.center,
-                //                     children: [
-                //                       SizedBox(
-                //                         width: 20,
-                //                         height: 20,
-                //                         child: CircularProgressIndicator(
-                //                           strokeWidth: 2,
-                //                           valueColor:
-                //                               AlwaysStoppedAnimation<Color>(
-                //                                 Colors.white,
-                //                               ),
-                //                         ),
-                //                       ),
-                //                       SizedBox(width: 10),
-                //                       Text(
-                //                         "Creating User...",
-                //                         style: TextStyle(
-                //                           fontSize: 16,
-                //                           fontWeight: FontWeight.w600,
-                //                           fontFamily: "inter",
-                //                           color: Colors.white,
-                //                         ),
-                //                       ),
-                //                     ],
-                //                   )
-                //                 : Text(
-                //                     "Create User",
-                //                     style: TextStyle(
-                //                       fontSize: 16,
-                //                       fontWeight: FontWeight.w600,
-                //                       fontFamily: "inter",
-                //                       color: Colors.white,
-                //                     ),
-                //                   ),
-                //           ),
-                //         ),
-                //       ),
-                //     );
-                //   },
-                // ),
-                // _buildCreateButton(),
-              ],
+
+                  BlocBuilder<YearsCubitDrop, YearsStateDrop>(
+                    builder: (context, yearState) {
+                      final isReadOnly = selectedRole != 'Student';
+
+                      if (yearState is YearLoadingState) {
+                        return const Padding(
+                          padding: EdgeInsets.only(bottom: 16),
+                          child: Center(child: CircularProgressIndicator()),
+                        );
+                      }
+
+                      if (yearState is YearsErrorState) {
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: Text(
+                            "Error: ${yearState.message}",
+                            style: const TextStyle(color: Colors.red),
+                          ),
+                        );
+                      }
+
+                      if (yearState is YearLoadedState) {
+                        if (yearState.years.isEmpty) {
+                          return const Padding(
+                            padding: EdgeInsets.only(bottom: 16),
+                            child: Text("No years found"),
+                          );
+                        }
+
+                        return Column(
+                          children: [
+                            Opacity(
+                              opacity: isReadOnly ? 0.5 : 1.0,
+                              child: IgnorePointer(
+                                ignoring: isReadOnly,
+                                child: _buildSecondDropdownField(
+                                  selectedYearName,
+                                  availableYears,
+                                  isYearExpanded,
+                                      (chosenYear) {
+                                    setState(() {
+                                      selectedYearName = chosenYear.name;
+                                      selectedYearId = chosenYear.id.toString();
+                                      isYearExpanded = false;
+                                    });
+                                  },
+                                      () => setState(
+                                        () => isYearExpanded = !isYearExpanded,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                          ],
+                        );
+                      }
+
+                      return const SizedBox.shrink();
+                    },
+                  ),
+
+                  BlocBuilder<SquadronsCubitDrop, GetSquadronsState>(
+                    builder: (context, squadronState) {
+                      final isReadOnly = selectedRole != 'Student';
+
+                      if (squadronState is GetSquadronsLoading) {
+                        return const Padding(
+                          padding: EdgeInsets.only(bottom: 16),
+                          child: Center(child: CircularProgressIndicator()),
+                        );
+                      }
+
+                      if (squadronState is GetSquadronsError) {
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: Text(
+                            "Error: ${squadronState.message}",
+                            style: const TextStyle(color: Colors.red),
+                          ),
+                        );
+                      }
+
+                      if (squadronState is GetSquadronsLoaded) {
+                        if (squadronState.squadrons.isEmpty) {
+                          return const Padding(
+                            padding: EdgeInsets.only(bottom: 16),
+                            child: Text("No Squadrons found"),
+                          );
+                        }
+
+                        List<SquadronModel> squadrons = squadronState.squadrons
+                            .whereType<SquadronModel>()
+                            .toList();
+
+                        return Column(
+                          children: [
+                            Opacity(
+                              opacity: isReadOnly ? 0.5 : 1.0,
+                              child: IgnorePointer(
+                                ignoring: isReadOnly,
+                                child: _buildThirdDropdownField(
+                                  selectedSquadronName,
+                                  squadrons,
+                                  isSquadronExpanded,
+                                      (chosenSquadron) {
+                                    setState(() {
+                                      selectedSquadronName = chosenSquadron.name;
+                                      selectedSquadronId = chosenSquadron.id.toString();
+                                      isSquadronExpanded = false;
+                                    });
+                                  },
+                                      () => setState(
+                                        () => isSquadronExpanded = !isSquadronExpanded,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                          ],
+                        );
+                      }
+
+                      return const SizedBox.shrink();
+                    },
+                  ),
+
+                  BlocListener<CreateUserCubit, CreateState>(
+                    listener: (context, state) {
+                      if (state is CreateUserSuccessState) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Row(
+                              children: [
+                                const Icon(
+                                  Icons.check_circle,
+                                  color: Colors.white,
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        state.message ?? "User Created Successfully",
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      if (state.statusCode != null)
+                                        Text(
+                                          "Status Code: ${state.statusCode}",
+                                          style: const TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w400,
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            backgroundColor: Colors.green.shade600,
+                            behavior: SnackBarBehavior.floating,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            margin: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 10,
+                            ),
+                            duration: const Duration(seconds: 3),
+                            elevation: 6,
+                          ),
+                        );
+                        _clearAllFields();
+                      }
+
+                      if (state is CreateUserErrorState) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Row(
+                              children: [
+                                const Icon(
+                                  Icons.error_outline,
+                                  color: Colors.white,
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        state.errorMessage,
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      if (state.statusCode != null)
+                                        Text(
+                                          "Status Code: ${state.statusCode}",
+                                          style: const TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w400,
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            backgroundColor: Colors.redAccent,
+                            behavior: SnackBarBehavior.floating,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            margin: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 10,
+                            ),
+                            duration: const Duration(seconds: 3),
+                            elevation: 6,
+                          ),
+                        );
+                      }
+                    },
+                    child: BlocBuilder<CreateUserCubit, CreateState>(
+                      builder: (context, state) {
+                        final isLoading = state is LoadingCreateUserState;
+
+                        return InkWell(
+                          onTap: isLoading
+                              ? null
+                              : () {
+                            if (dobController.text.isEmpty) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text(
+                                    "Please select date of birth",
+                                  ),
+                                ),
+                              );
+                              return;
+                            }
+
+                            SystemSound.play(SystemSoundType.click);
+                            context.read<CreateUserCubit>().postCreatedUserData(
+                              emailController,
+                              fullNameController,
+                              nationalIdController,
+                              genderController,
+                              selectedDateOfBirth,
+                              selectedCity,
+                              selectedRole,
+                              context,
+                              profileImageBytes: kIsWeb
+                                  ? _webImage
+                                  : _selectedImage?.readAsBytesSync(),
+                              departmentId: selectedRole == 'Student'
+                                  ? selectedDepartmentId
+                                  : null,
+                              yearId: selectedRole == 'Student'
+                                  ? selectedYearId
+                                  : null,
+                              squadronId: selectedRole == 'Student'
+                                  ? selectedSquadronId
+                                  : null,
+                            );
+                          },
+                          child: Center(
+                            child: Container(
+                              width: 470,
+                              height: 45,
+                              decoration: const BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [Color(0xFF1849A9), Color(0xFF53B1FD)],
+                                ),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(12),
+                                ),
+                              ),
+                              child: Center(
+                                child: isLoading
+                                    ? Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    SizedBox(
+                                      width: 20,
+                                      height: 20,
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        valueColor: AlwaysStoppedAnimation<Color>(
+                                          Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(width: 10),
+                                    Text(
+                                      "Creating User...",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                        fontFamily: "inter",
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                )
+                                    : const Text(
+                                  "Create User",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: "inter",
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
       ),
     );
   }
+
+
+  Widget _buildSecondDropdownField(
+      String displayValue,
+      List<YearModel> years,
+      bool isExpanded,
+      Function(YearModel) onSelected,
+      Function() onToggle,
+      ) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Year Name",
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF2563EB),
+          ),
+        ),
+        const SizedBox(height: 8),
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: onToggle,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              decoration: BoxDecoration(
+                color: isExpanded ? Colors.white : const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: isExpanded
+                      ? const Color(0xFF2563EB)
+                      : const Color(0xFFE2E8F0),
+                  width: isExpanded ? 2 : 1,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.person_outline,
+                        color: isExpanded
+                            ? const Color(0xFF2563EB)
+                            : const Color(0xFF94A3B8),
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Text(
+                        displayValue,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF1E293B),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Icon(
+                    isExpanded
+                        ? Icons.keyboard_arrow_up
+                        : Icons.keyboard_arrow_down,
+                    color: const Color(0xFF94A3B8),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        if (isExpanded)
+          Container(
+            margin: const EdgeInsets.only(top: 4),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.05),
+                  blurRadius: 10,
+                ),
+              ],
+            ),
+            constraints: const BoxConstraints(maxHeight: 250),
+            child: years.isEmpty
+                ? Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              child: Center(
+                child: Text(
+                  "No years already created for this department",
+                  style: TextStyle(
+                    color: Colors.red[600],
+                    fontSize: 14,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )
+                : ListView.builder(
+              shrinkWrap: true,
+              itemCount: years.length,
+              itemBuilder: (context, index) {
+                final year = years[index];
+                return InkWell(
+                  onTap: () => onSelected(year),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            year.name,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: Color(0xFF1E293B),
+                            ),
+                          ),
+                        ),
+                        if (displayValue == year.name)
+                          const Icon(
+                            Icons.check,
+                            color: Color(0xFF2563EB),
+                            size: 18,
+                          ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildDropdownField(
+    String displayValue,
+    List<GetDepartmentModel> departments,
+    bool isExpanded,
+    Function(GetDepartmentModel) onSelected,
+    Function() onToggle,
+  ) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Department Name",
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF2563EB),
+          ),
+        ),
+        const SizedBox(height: 8),
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: onToggle,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              decoration: BoxDecoration(
+                color: isExpanded ? Colors.white : const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: isExpanded
+                      ? const Color(0xFF2563EB)
+                      : const Color(0xFFE2E8F0),
+                  width: isExpanded ? 2 : 1,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.person_outline,
+                        color: isExpanded
+                            ? const Color(0xFF2563EB)
+                            : const Color(0xFF94A3B8),
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Text(
+                        displayValue,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF1E293B),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Icon(
+                    isExpanded
+                        ? Icons.keyboard_arrow_up
+                        : Icons.keyboard_arrow_down,
+                    color: const Color(0xFF94A3B8),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        if (isExpanded)
+          Container(
+            margin: const EdgeInsets.only(top: 4),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.05),
+                  blurRadius: 10,
+                ),
+              ],
+            ),
+            constraints: const BoxConstraints(maxHeight: 250),
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: departments.length,
+              itemBuilder: (context, index) {
+                final department = departments[index];
+                return InkWell(
+                  onTap: () => onSelected(department),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            "${department.name} (${department.headName})",
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: Color(0xFF1E293B),
+                            ),
+                          ),
+                        ),
+                        if (displayValue == department.name)
+                          const Icon(
+                            Icons.check,
+                            color: Color(0xFF2563EB),
+                            size: 18,
+                          ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildThirdDropdownField(
+      String displayValue,
+      List<SquadronModel> squadrons,
+      bool isExpanded,
+      Function(SquadronModel) onSelected,
+      Function() onToggle,
+      ) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Squadron Name",
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF2563EB),
+          ),
+        ),
+        const SizedBox(height: 8),
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: onToggle,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              decoration: BoxDecoration(
+                color: isExpanded ? Colors.white : const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: isExpanded
+                      ? const Color(0xFF2563EB)
+                      : const Color(0xFFE2E8F0),
+                  width: isExpanded ? 2 : 1,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.person_outline,
+                        color: isExpanded
+                            ? const Color(0xFF2563EB)
+                            : const Color(0xFF94A3B8),
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Text(
+                        displayValue,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF1E293B),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Icon(
+                    isExpanded
+                        ? Icons.keyboard_arrow_up
+                        : Icons.keyboard_arrow_down,
+                    color: const Color(0xFF94A3B8),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        if (isExpanded)
+          Container(
+            margin: const EdgeInsets.only(top: 4),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.05),
+                  blurRadius: 10,
+                ),
+              ],
+            ),
+            constraints: const BoxConstraints(maxHeight: 250),
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: squadrons.length,
+              itemBuilder: (context, index) {
+                final squadron = squadrons[index];
+                return InkWell(
+                  onTap: () => onSelected(squadron),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            "${squadron.name} (${squadron.studentCount})",
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: Color(0xFF1E293B),
+                            ),
+                          ),
+                        ),
+                        if (displayValue == squadron.name)
+                          const Icon(
+                            Icons.check,
+                            color: Color(0xFF2563EB),
+                            size: 18,
+                          ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+      ],
+    );
+  }
+
+
+
 
   Widget _buildProfilePicture() {
     return Center(
@@ -919,7 +1558,7 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     //         const SizedBox(height: 12),
     //         _buildImageSourceOption(
     //           icon: Icons.camera_alt,
-    //           title: 'Take a Photo',
+    //           title: 'Take admin_profile Photo',
     //           subtitle: 'Use your camera',
     //           onTap: () {
     //             Navigator.pop(context);
@@ -948,70 +1587,6 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     //   ),
     // );
   }
-
-  // Widget _buildImageSourceOption({
-  //   required IconData icon,
-  //   required String title,
-  //   required String subtitle,
-  //   required VoidCallback onTap,
-  //   Color color = const Color(0xFF2563EB),
-  // }) {
-  //   return MouseRegion(
-  //     cursor: SystemMouseCursors.click,
-  //     child: GestureDetector(
-  //       onTap: onTap,
-  //       child: Container(
-  //         padding: const EdgeInsets.all(16),
-  //         decoration: BoxDecoration(
-  //           color: color.withOpacity(0.05),
-  //           borderRadius: BorderRadius.circular(12),
-  //           border: Border.all(color: color.withOpacity(0.2), width: 1),
-  //         ),
-  //         child: Row(
-  //           children: [
-  //             Container(
-  //               padding: const EdgeInsets.all(12),
-  //               decoration: BoxDecoration(
-  //                 color: color.withOpacity(0.1),
-  //                 borderRadius: BorderRadius.circular(10),
-  //               ),
-  //               child: Icon(icon, color: color, size: 24),
-  //             ),
-  //             const SizedBox(width: 16),
-  //             Expanded(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: [
-  //                   Text(
-  //                     title,
-  //                     style: TextStyle(
-  //                       fontSize: 16,
-  //                       fontWeight: FontWeight.w600,
-  //                       color: color,
-  //                     ),
-  //                   ),
-  //                   const SizedBox(height: 2),
-  //                   Text(
-  //                     subtitle,
-  //                     style: const TextStyle(
-  //                       fontSize: 12,
-  //                       color: Color(0xFF64748B),
-  //                     ),
-  //                   ),
-  //                 ],
-  //               ),
-  //             ),
-  //             Icon(
-  //               Icons.arrow_forward_ios,
-  //               color: color.withOpacity(0.5),
-  //               size: 16,
-  //             ),
-  //           ],
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
 
   Future<void> _pickImageFromSource(ImageSource source) async {
     try {
@@ -1213,6 +1788,8 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     );
   }
 
+
+
   Widget _buildDateField(
     String label,
     TextEditingController controller,
@@ -1316,7 +1893,7 @@ class _ProfileScreenState extends State<CreateUserScreen> {
     );
   }
 
-  Widget _buildDropdownField(
+  Widget _buildStringDropdownField(
     String label,
     String value,
     List<String> options,

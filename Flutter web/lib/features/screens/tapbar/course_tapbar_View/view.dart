@@ -293,7 +293,7 @@ class CustomCardScreen extends StatelessWidget {
                         ),
                       ),
                       const Text(
-                        "Educators around the world use a variety of phrases and acronyms. Add yours to this glossary.",
+                        "Educators around the world use admin_profile variety of phrases and acronyms. Add yours to this glossary.",
                         style: TextStyle(fontSize: 14, color: Colors.grey),
                       ),
                     ],

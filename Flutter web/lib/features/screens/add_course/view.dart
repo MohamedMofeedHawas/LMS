@@ -58,7 +58,7 @@ class DashboardScreen extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.all(32.0),
             child: Text(
-              'This view is optimized for desktop and web. Please view on a larger screen.',
+              'This view is optimized for desktop and web. Please view on admin_profile larger screen.',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18),
             ),

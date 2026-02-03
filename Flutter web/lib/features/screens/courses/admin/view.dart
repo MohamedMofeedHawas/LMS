@@ -3,12 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lms/core/widgets/app_bar.dart';
 import 'package:lms/features/screens/Create_user/View.dart';
+import 'package:lms/features/screens/get_squadron/get_all%20squadrons/view.dart';
 import 'package:lms/features/screens/get_users/view.dart';
 
 import '../../../../core/cons/Colors/app_colors.dart';
 import '../../../../core/cons/context/navigation_key.dart';
 import '../../../../core/helpers/logout_server/logout.dart';
 import '../../../../generated/assets.dart';
+import '../../../draft/comments.dart';
+import '../../../draft/test.dart';
+import '../../get_department/get_All_departments/view.dart';
 import '../course_model/courses.dart';
 
 class AdminCourseScreen extends StatefulWidget {
@@ -513,7 +517,7 @@ class _CourseCardWidgetState extends State<_CourseCardWidget> {
       },
       child: GestureDetector(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => CreateUserScreen(),));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => GetSquadronPage(),));
 
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
@@ -654,7 +658,7 @@ class _CourseCardWidgetState extends State<_CourseCardWidget> {
                             /// TODO : ADJUST EDIT COURSE
                             InkWell(
                               onTap: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => GetUsersScreen(),));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => DepartmentsScreen(),));
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(content: Text("data"),
                                   )

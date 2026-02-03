@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:lms/features/screens/student_profile/view.dart';
 
 import '../../../../core/cons/Colors/app_colors.dart';
 import '../../../../core/helpers/cach_helper/shared_pref_helper.dart';
 import '../../../../core/helpers/logout_server/logout.dart';
 import '../../../../generated/assets.dart';
+import '../../profiles/student_profile/view.dart';
 import '../course_model/courses.dart';
 
 class StudentCourseScreen extends StatefulWidget {
@@ -722,5 +722,8 @@ Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Stude
 
   } else if (result == 'settings') {
     // TODO: Add settings action later
+  } else if (result == 'profile') {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => StudentProfileScreen(),));
+
   }
 }

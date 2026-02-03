@@ -40,7 +40,7 @@ List<CourseModel> courses = [
   CourseModel(
     imageUrl: "assets/test_images/course_5.png",
     title: "A1/A2 English with H5P",
-    subTitle: "English as a Foreign Language",
+    subTitle: "English as admin_profile Foreign Language",
     rate: "100%",
   ),
   CourseModel(

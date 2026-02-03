@@ -6,7 +6,6 @@ import 'package:lms/features/screens/login/state_management/login_state.dart';
 
 import '../../../core/cons/Colors/app_colors.dart';
 import '../../../generated/assets.dart';
-import '../Sign-up screen/view.dart';
 
 
 class LoginScreen extends StatefulWidget {
@@ -99,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: EdgeInsets.all(20),
 
                         width: 514,
-                        height: 351,
+                        height: 310,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(24),
@@ -109,7 +108,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             SizedBox(height: 20),
                             Text(
-                              "Username",
+                              "Email",
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
@@ -117,7 +116,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 color: Color(0xFF175CD3),
                               ),
                             ),
-                            SizedBox(height: 12),
+                            SizedBox(height: 8),
                             TextFormField(
                               controller: usernameController,
                               decoration: InputDecoration(
@@ -127,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 contentPadding: EdgeInsets.symmetric(
                                   horizontal: 16,
                                 ),
-                                hintText: "Enter your username",
+                                hintText: "Enter your Email",
                                 hintStyle: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -136,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                               ),
                             ),
-                            SizedBox(height: 25),
+                            SizedBox(height: 10),
                             Text(
                               "Password",
                               style: TextStyle(
@@ -146,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 color: Color(0xFF175CD3),
                               ),
                             ),
-                            SizedBox(height: 12),
+                            SizedBox(height: 8),
                             TextFormField(
                               controller: passwordController,
                               obscureText: isObscure,
@@ -183,23 +182,23 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             SizedBox(height: 9),
-                            InkWell(
-                              onTap: () {},
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                  Text(
-                                    "Forget Password?",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w400,
-                                      fontFamily: "inter",
-                                      color: Color(0xff38BDF8),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
+                            // InkWell(
+                            //   onTap: () {},
+                            //   child: Row(
+                            //     mainAxisAlignment: MainAxisAlignment.end,
+                            //     children: [
+                            //       Text(
+                            //         "Forget Password?",
+                            //         style: TextStyle(
+                            //           fontSize: 14,
+                            //           fontWeight: FontWeight.w400,
+                            //           fontFamily: "inter",
+                            //           color: Color(0xff38BDF8),
+                            //         ),
+                            //       ),
+                            //     ],
+                            //   ),
+                            // ),
                             SizedBox(height: 30),
 
                             BlocBuilder<LoginCubit, LoginState>(
@@ -209,12 +208,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
                                 return
 
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
 
-                                  children: [
-                                    Expanded(
-                                      child: InkWell(
+                                      InkWell(
                                         onTap: isLoading ? null : () {
                                           SystemSound.play(
                                             SystemSoundType.click,
@@ -228,7 +223,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                           );
                                         },
                                         child: Center(
-                                          child: Container(
+                                          child:
+                                          Container(
                                             width: 470,
                                             height: 45,
                                             decoration: BoxDecoration(
@@ -240,6 +236,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                                   Color(0xFF53B1FD),
                                                 ],
                                               ),
+                                              borderRadius: BorderRadius.circular(12),
                                             ),
                                             child: Center(
                                               child: isLoading
@@ -276,53 +273,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                                 ),
                                               ),
                                             ),
-                                          ],
-                                        )
-                                            : Text(
-                                          "Login",
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w600,
-                                            fontFamily: "inter",
-                                            color: Colors.white,
                                           ),
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 16),
 
-                                    Expanded(
-                                      flex: 1,
-                                      child: InkWell(
-                                        onTap: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));
-                                        },
-                                        child: Container(
-                                          height: 45,
-                                          decoration: BoxDecoration(
-                                            color: Colors.transparent,
-                                            border: Border.all(
-                                              color: const Color(0xFF1849A9),
-                                              width: 2,
-                                            ),
-                                            borderRadius: BorderRadius.circular(12),
-                                          ),
-                                          child: const Center(
-                                            child: Text(
-                                              "Sign Up",
-                                              style: TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: "inter",
-                                                color: Color(0xFF1849A9),
-                                              ),
-                                            ),
-                                          ),
                                         ),
-                                      ),
-                                    ),
-                                  ],
-                                );
+                                      );
+
+
+
                               },
                             ),
                           ],

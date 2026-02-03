@@ -13,7 +13,7 @@ class CreateUserModel {
   final DateTime createdAt;
   final DateTime updatedAt;
   final DateTime? lastLoginAt;
-  final AcademicInfo? academicInfo; // ممكن تكون null
+  final AcademicInfo? academicInfo;
 
   CreateUserModel({
     required this.id,
