@@ -40,8 +40,7 @@
 - 🌱 Learning advanced Flutter patterns and state management
 - 💼 Open to collaboration on Flutter projects
 - 🎓 Student at **Zagazig National University**
-- ✈️ Major: **Aviation Information Systems**
-- 📱 **Flutter Developer**
+- ✈️ Department: **Aviation Information Systems**
 - 🧠 Strong in **State Management & Clean Architecture**
 - 💙 Passionate about combining **Aviation + Technology**
 
