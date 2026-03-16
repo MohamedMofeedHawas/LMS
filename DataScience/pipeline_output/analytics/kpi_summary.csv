@@ -1,0 +1,2 @@
+TotalStudents,AtRiskStudents,TotalUsers,ActiveUsers,TotalCourses,ActiveCourses,DeadCourses,TotalEnrollments,TotalActivityLogs,TotalActivities,TotalQuizAttempts,TotalSubmissions,AvgProcessingTimeMs,OverallCompletionRate
+5000,750,2060,1905,200,98,45,9944,15000,2161,11088,6673,497.38,55.4

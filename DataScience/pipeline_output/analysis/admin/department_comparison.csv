@@ -1,0 +1,4 @@
+DepartmentName,Students,AvgCreditLoad,AvgQuizScore,AvgGrade,QuizPassRate,CompletionRate
+Artificial Intelligence,1378,5.95,15.15,8.15,0.09,0.29
+Computer Science,2943,5.64,14.29,7.8,0.08,0.27
+Cyber Security,679,5.99,15.15,6.79,0.09,0.27

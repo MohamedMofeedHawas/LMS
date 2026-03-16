@@ -1,0 +1,27 @@
+CourseId,Title,DepartmentName,CompletionRate,DropoutRate,TotalAttempts
+5,Discrete Mathematics,Artificial Intelligence,0.0,1.0,27.0
+6,Artificial Intelligence,Computer Science,0.0,1.0,0.0
+12,Discrete Mathematics,Computer Science,0.0,1.0,0.0
+14,Computer Architecture,Computer Science,0.0,1.0,16.0
+15,Discrete Mathematics,Artificial Intelligence,0.0,1.0,0.0
+50,Discrete Mathematics,Artificial Intelligence,0.0,1.0,0.0
+55,Computer Networks,Artificial Intelligence,0.0,1.0,40.0
+57,Web Development,Computer Science,0.0,1.0,0.0
+59,Machine Learning,Computer Science,0.0,1.0,0.0
+60,Algorithms,Artificial Intelligence,0.0,1.0,69.0
+64,Database Systems,Artificial Intelligence,0.0,1.0,0.0
+78,Artificial Intelligence,Artificial Intelligence,0.0,1.0,151.0
+83,Machine Learning,Artificial Intelligence,0.0,1.0,0.0
+96,Database Systems,Computer Science,0.0,1.0,0.0
+104,Mobile App Development,Artificial Intelligence,0.0,1.0,0.0
+108,Software Engineering,Computer Science,0.0,1.0,51.0
+115,Artificial Intelligence,Cyber Security,0.0,1.0,37.0
+126,Machine Learning,Artificial Intelligence,0.0,1.0,0.0
+133,Computer Networks,Artificial Intelligence,0.0,1.0,0.0
+134,Web Development,Artificial Intelligence,0.0,1.0,0.0
+162,Cloud Computing,Computer Science,0.0,1.0,0.0
+168,Web Development,Cyber Security,0.0,1.0,59.0
+199,Cloud Computing,Artificial Intelligence,0.0,1.0,86.0
+195,Computer Architecture,Artificial Intelligence,0.0,1.0,0.0
+200,Algorithms,Cyber Security,0.0,1.0,0.0
+157,Mobile App Development,Cyber Security,0.381,0.619,73.0

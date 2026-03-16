@@ -1,0 +1,196 @@
+CourseId,QuizId,ActivityTitle,TotalAttempts,FailCount,AvgAttempts,AvgScore,FailRate,Title
+1,1,SQL Joins,32,23,1.0,67.917,0.719,Cyber Security Fundamentals
+2,11,Machine Learning Basics,79,57,1.671,46.579,0.722,Machine Learning
+2,21,Trees and Graphs,27,15,1.0,58.937,0.556,Machine Learning
+4,43,Data Structures Overview,56,40,1.768,48.325,0.714,Computer Networks
+4,32,Dynamic Programming,76,49,1.737,52.573,0.645,Computer Networks
+5,53,Neural Networks,27,11,1.0,69.944,0.407,Discrete Mathematics
+8,84,Cybersecurity Fundamentals,54,36,1.37,49.081,0.667,Data Science
+9,87,Encryption Methods,68,48,1.765,51.124,0.706,Artificial Intelligence
+13,122,Cybersecurity Fundamentals,69,52,1.565,48.954,0.754,Software Engineering
+14,126,Encryption Methods,16,9,1.0,55.44,0.562,Computer Architecture
+16,141,Memory Management,36,28,1.0,55.8,0.778,Algorithms
+16,143,Indexing & Performance,42,28,1.0,55.167,0.667,Algorithms
+16,138,Computer Vision Intro,52,34,1.365,56.087,0.654,Algorithms
+17,160,SQL Joins,22,21,1.0,35.464,0.955,Operating Systems
+19,176,REST APIs,90,61,1.722,55.491,0.678,Machine Learning
+19,2141,REST APIs,98,59,1.714,57.905,0.602,Machine Learning
+20,181,Introduction to the Course,33,25,1.0,52.973,0.758,Computer Architecture
+20,196,Linked Lists,55,40,1.727,47.325,0.727,Computer Architecture
+20,193,OS Scheduling,56,36,1.321,57.618,0.643,Computer Architecture
+23,222,OS Scheduling,61,41,1.361,56.924,0.672,Data Structures
+27,277,Sorting Algorithms,64,40,1.625,58.278,0.625,Cloud Computing
+28,286,Introduction to the Course,86,66,1.698,46.109,0.767,Mobile App Development
+28,2155,Dynamic Programming,60,41,1.7,56.084,0.683,Mobile App Development
+29,296,Indexing & Performance,61,46,1.377,43.924,0.754,Algorithms
+29,291,Python for Data Science,28,20,1.0,51.714,0.714,Algorithms
+30,311,Indexing & Performance,46,34,1.261,55.13,0.739,Machine Learning
+31,327,Untitled,38,27,1.0,46.738,0.711,Computer Architecture
+31,328,Network Protocols,74,51,1.622,51.012,0.689,Computer Architecture
+32,337,Memory Management,52,36,1.365,46.061,0.692,Computer Architecture
+33,351,Memory Management,64,51,1.688,41.514,0.797,Data Science
+33,350,Introduction to the Course,57,33,1.632,60.543,0.579,Data Science
+37,389,REST APIs,58,47,1.552,41.771,0.81,Database Systems
+39,410,Cybersecurity Fundamentals,76,56,1.684,47.114,0.737,Computer Networks
+40,422,Introduction to the Course,35,26,1.0,46.847,0.743,Discrete Mathematics
+40,419,Data Structures Overview,49,34,1.327,56.957,0.694,Discrete Mathematics
+40,411,Ethics in AI,72,49,1.681,50.568,0.681,Discrete Mathematics
+41,435,Big Data Overview,63,48,1.698,48.903,0.762,Database Systems
+43,446,Indexing & Performance,49,35,1.306,45.757,0.714,Database Systems
+43,448,Linked Lists,62,36,1.323,51.843,0.581,Database Systems
+48,518,Encryption Methods,79,57,1.646,50.218,0.722,Data Structures
+48,510,Untitled,66,47,1.758,53.314,0.712,Data Structures
+49,524,Search Algorithms,37,22,1.0,58.174,0.595,Data Structures
+51,535,Untitled,82,57,1.659,55.096,0.695,Discrete Mathematics
+51,537,Database Normalization,44,30,1.0,50.704,0.682,Discrete Mathematics
+52,549,Python for Data Science,47,36,1.0,58.316,0.766,Operating Systems
+52,547,Computer Vision Intro,24,18,1.0,51.545,0.75,Operating Systems
+53,559,OOP Concepts,49,33,1.571,53.363,0.673,Discrete Mathematics
+53,560,OOP Concepts,33,21,1.303,62.406,0.636,Discrete Mathematics
+54,565,Encryption Methods,34,25,1.0,56.412,0.735,Artificial Intelligence
+55,577,Untitled,40,29,1.0,52.75,0.725,Computer Networks
+56,587,Ethics in AI,67,52,1.701,42.095,0.776,Data Science
+56,2192,Ethics in AI,64,43,1.625,55.068,0.672,Data Science
+58,595,Machine Learning Basics,52,33,1.635,54.803,0.635,Software Engineering
+60,610,Python for Data Science,69,49,1.493,54.249,0.71,Algorithms
+61,623,Search Algorithms,37,30,1.0,40.714,0.811,Mobile App Development
+61,620,Sorting Algorithms,59,46,1.61,48.373,0.78,Mobile App Development
+61,624,Linked Lists,35,22,1.0,62.324,0.629,Mobile App Development
+62,632,Neural Networks,31,19,1.258,62.474,0.613,Machine Learning
+63,642,Untitled,33,25,1.0,47.608,0.758,Computer Networks
+63,636,Neural Networks,50,32,1.74,56.567,0.64,Computer Networks
+63,646,OOP Concepts,41,24,1.0,59.135,0.585,Computer Networks
+65,655,Concurrency,68,53,1.662,35.0,0.779,Algorithms
+65,657,Indexing & Performance,60,44,1.483,47.025,0.733,Algorithms
+65,2212,Concurrency,85,61,1.671,51.783,0.718,Algorithms
+67,670,Web Development Basics,49,29,1.327,61.22,0.592,Operating Systems
+68,682,Python for Data Science,38,30,1.0,49.5,0.789,Computer Networks
+68,687,Cybersecurity Fundamentals,42,30,1.0,57.548,0.714,Computer Networks
+69,690,Trees and Graphs,35,26,1.0,54.289,0.743,Computer Networks
+71,708,Neural Networks,35,27,1.0,53.389,0.771,Algorithms
+72,726,Ethics in AI,55,46,1.618,41.315,0.836,Artificial Intelligence
+72,727,Python for Data Science,74,53,1.338,54.141,0.716,Artificial Intelligence
+72,716,Data Structures Overview,29,20,1.0,53.812,0.69,Artificial Intelligence
+73,742,Introduction to the Course,53,42,1.321,44.469,0.792,Web Development
+74,752,Concurrency,71,53,1.761,48.105,0.746,Computer Architecture
+74,745,Introduction to the Course,77,54,1.649,52.1,0.701,Computer Architecture
+76,776,Sorting Algorithms,42,32,1.238,44.282,0.762,Computer Networks
+76,773,Network Protocols,65,49,1.538,48.408,0.754,Computer Networks
+77,785,Trees and Graphs,38,23,1.316,63.27,0.605,Mobile App Development
+78,795,Python for Data Science,75,59,1.693,45.743,0.787,Artificial Intelligence
+78,789,Database Normalization,76,54,1.303,44.528,0.711,Artificial Intelligence
+79,802,OS Scheduling,66,49,1.758,52.503,0.742,Cyber Security Fundamentals
+80,817,Ethics in AI,71,56,1.634,43.965,0.789,Computer Architecture
+82,846,OOP Concepts,61,43,1.344,48.889,0.705,Data Science
+84,863,Encryption Methods,91,65,1.692,48.221,0.714,Database Systems
+85,871,Indexing & Performance,55,43,1.618,42.915,0.782,Artificial Intelligence
+85,878,Computer Vision Intro,53,41,1.623,46.097,0.774,Artificial Intelligence
+86,887,Concurrency,59,42,1.373,51.271,0.712,Database Systems
+86,888,Memory Management,56,39,1.607,61.808,0.696,Database Systems
+86,893,Sorting Algorithms,60,41,1.65,55.871,0.683,Database Systems
+87,909,Database Normalization,33,27,1.0,46.969,0.818,Web Development
+87,905,Concurrency,48,29,1.375,61.133,0.604,Web Development
+89,934,Untitled,42,33,1.214,40.25,0.786,Cyber Security Fundamentals
+90,939,Concurrency,72,54,1.708,57.235,0.75,Discrete Mathematics
+91,954,Computer Vision Intro,67,52,1.701,50.345,0.776,Computer Architecture
+93,982,Linked Lists,65,45,1.569,59.353,0.692,Machine Learning
+94,986,Indexing & Performance,45,35,1.289,48.253,0.778,Data Science
+94,985,Untitled,32,21,1.0,56.089,0.656,Data Science
+97,1015,Machine Learning Basics,32,22,1.0,49.091,0.688,Computer Networks
+97,1008,OOP Concepts,72,40,1.389,61.348,0.556,Computer Networks
+98,1021,Memory Management,59,45,1.78,47.207,0.763,Machine Learning
+99,1036,Trees and Graphs,70,55,1.329,52.155,0.786,Mobile App Development
+100,1042,Machine Learning Basics,73,53,1.699,43.777,0.726,Software Engineering
+101,1048,Dynamic Programming,71,47,1.648,55.26,0.662,Web Development
+102,1051,Neural Networks,33,22,1.333,63.42,0.667,Discrete Mathematics
+103,1070,Cloud Architecture,77,55,1.688,48.66,0.714,Web Development
+105,1079,Ethics in AI,65,49,1.708,46.722,0.754,Computer Networks
+105,1080,SQL Joins,70,47,1.729,53.865,0.671,Computer Networks
+106,1095,Dynamic Programming,85,58,1.659,55.042,0.682,Software Engineering
+106,1089,Encryption Methods,44,28,1.0,60.304,0.636,Software Engineering
+108,1118,Indexing & Performance,51,35,1.686,52.486,0.686,Software Engineering
+110,1142,OOP Concepts,29,19,1.0,54.026,0.655,Software Engineering
+111,1150,Database Normalization,67,52,1.672,48.971,0.776,Cyber Security Fundamentals
+111,1151,Encryption Methods,56,42,1.375,49.733,0.75,Cyber Security Fundamentals
+112,1164,Dynamic Programming,50,39,1.26,43.327,0.78,Operating Systems
+113,1175,Cloud Architecture,38,29,1.0,53.219,0.763,Database Systems
+114,1188,Data Structures Overview,69,50,1.71,57.459,0.725,Mobile App Development
+114,1190,Untitled,81,56,1.778,50.898,0.691,Mobile App Development
+114,1189,Sorting Algorithms,72,49,1.708,51.278,0.681,Mobile App Development
+115,1201,Neural Networks,37,29,1.378,44.878,0.784,Artificial Intelligence
+116,1217,OOP Concepts,31,21,1.0,56.424,0.677,Data Structures
+117,1239,Machine Learning Basics,50,37,1.4,48.044,0.74,Data Structures
+117,1225,Python for Data Science,72,50,1.778,48.36,0.694,Data Structures
+118,1246,Concurrency,63,42,1.365,58.12,0.667,Computer Networks
+119,1264,Neural Networks,65,48,1.615,46.625,0.738,Cyber Security Fundamentals
+120,1289,REST APIs,59,41,1.627,52.129,0.695,Data Science
+123,1314,Cybersecurity Fundamentals,53,33,1.321,54.65,0.623,Cloud Computing
+127,1331,Memory Management,50,39,1.6,52.8,0.78,Computer Architecture
+128,1351,REST APIs,77,66,1.636,42.29,0.857,Artificial Intelligence
+128,1344,OOP Concepts,62,43,1.661,52.497,0.694,Artificial Intelligence
+129,1371,Search Algorithms,64,45,1.75,49.692,0.703,Discrete Mathematics
+130,1383,Linked Lists,33,23,1.0,45.933,0.697,Computer Architecture
+131,1398,Neural Networks,53,39,1.321,55.3,0.736,Machine Learning
+131,1389,OOP Concepts,26,19,1.0,53.375,0.731,Machine Learning
+132,1408,Encryption Methods,33,25,1.0,49.789,0.758,Mobile App Development
+139,1463,Memory Management,36,27,1.0,46.469,0.75,Artificial Intelligence
+140,1467,Database Normalization,48,38,1.0,50.6,0.792,Operating Systems
+141,1489,Trees and Graphs,55,41,1.673,44.0,0.745,Computer Networks
+141,1493,SQL Joins,67,44,1.672,53.564,0.657,Computer Networks
+142,1500,Big Data Overview,74,54,1.73,50.422,0.73,Algorithms
+142,1499,Network Protocols,89,60,1.708,53.489,0.674,Algorithms
+143,1505,Dynamic Programming,72,49,1.625,56.053,0.681,Database Systems
+143,1508,Network Protocols,70,46,1.371,58.735,0.657,Database Systems
+143,1514,Computer Vision Intro,34,22,1.0,55.06,0.647,Database Systems
+143,1503,Computer Vision Intro,49,31,1.653,55.939,0.633,Database Systems
+146,1546,Untitled,71,50,1.366,48.37,0.704,Operating Systems
+147,1564,Big Data Overview,68,50,1.706,51.676,0.735,Data Science
+148,1570,Machine Learning Basics,64,41,1.625,55.372,0.641,Algorithms
+149,1590,Web Development Basics,45,34,1.289,59.5,0.756,Web Development
+149,1589,Indexing & Performance,33,23,1.0,50.088,0.697,Web Development
+151,1607,Machine Learning Basics,54,38,1.778,50.586,0.704,Software Engineering
+153,1638,Machine Learning Basics,40,29,1.0,45.52,0.725,Algorithms
+155,1667,Network Protocols,36,28,1.0,46.956,0.778,Data Structures
+155,1653,OS Scheduling,35,27,1.0,49.453,0.771,Data Structures
+155,1656,Concurrency,53,38,1.679,45.344,0.717,Data Structures
+155,1665,Indexing & Performance,61,41,1.41,59.065,0.672,Data Structures
+155,1659,Web Development Basics,88,58,1.75,58.221,0.659,Data Structures
+156,1669,Cybersecurity Fundamentals,62,44,1.71,46.426,0.71,Algorithms
+156,1675,Machine Learning Basics,81,57,1.79,49.791,0.704,Algorithms
+156,1677,Encryption Methods,63,41,1.651,56.265,0.651,Algorithms
+157,1685,Neural Networks,73,57,1.726,40.333,0.781,Mobile App Development
+159,1705,SQL Joins,37,28,1.0,57.667,0.757,Data Science
+160,1719,OOP Concepts,74,54,1.581,49.821,0.73,Computer Architecture
+161,1732,OOP Concepts,106,74,1.717,50.754,0.698,Cyber Security Fundamentals
+161,1739,Design Patterns,27,17,1.0,52.825,0.63,Cyber Security Fundamentals
+165,1772,Memory Management,67,52,1.672,44.955,0.776,Computer Networks
+166,1789,Python for Data Science,56,39,1.375,47.057,0.696,Discrete Mathematics
+168,1811,Untitled,59,41,1.356,57.161,0.695,Web Development
+169,1828,Dynamic Programming,56,40,1.321,49.891,0.714,Cyber Security Fundamentals
+170,1841,Computer Vision Intro,64,48,1.375,46.05,0.75,Data Science
+173,1864,Sorting Algorithms,102,76,1.725,51.445,0.745,Mobile App Development
+173,1858,Database Normalization,77,55,1.39,54.108,0.714,Mobile App Development
+174,1869,Dynamic Programming,29,20,1.0,55.679,0.69,Web Development
+175,1885,Big Data Overview,41,30,1.317,49.438,0.732,Discrete Mathematics
+176,1891,Indexing & Performance,53,39,1.302,52.48,0.736,Cyber Security Fundamentals
+176,1890,Introduction to the Course,80,57,1.688,52.941,0.712,Cyber Security Fundamentals
+176,1888,Introduction to the Course,24,14,1.0,64.025,0.583,Cyber Security Fundamentals
+180,1912,Encryption Methods,59,46,1.542,46.935,0.78,Discrete Mathematics
+180,1916,Trees and Graphs,63,44,1.54,48.368,0.698,Discrete Mathematics
+181,1925,Encryption Methods,65,49,1.369,59.467,0.754,Operating Systems
+181,1927,Machine Learning Basics,43,31,1.674,46.174,0.721,Operating Systems
+181,1936,Cloud Architecture,57,40,1.667,53.987,0.702,Operating Systems
+181,1932,Network Protocols,56,39,1.375,50.119,0.696,Operating Systems
+181,1938,Memory Management,62,43,1.758,51.0,0.694,Operating Systems
+182,1945,Computer Vision Intro,50,37,1.58,53.885,0.74,Data Structures
+184,1972,Design Patterns,63,47,1.746,48.952,0.746,Algorithms
+184,1978,Data Structures Overview,80,55,1.812,56.489,0.688,Algorithms
+186,1993,Linked Lists,36,29,1.0,42.417,0.806,Algorithms
+186,1999,Ethics in AI,38,28,1.342,50.684,0.737,Algorithms
+186,1997,Sorting Algorithms,69,46,1.362,51.089,0.667,Algorithms
+187,2003,Cloud Architecture,42,33,1.0,50.667,0.786,Operating Systems
+190,2047,Data Structures Overview,31,25,1.0,44.1,0.806,Computer Architecture
+191,2056,Introduction to the Course,60,39,1.617,53.303,0.65,Data Structures
+194,2079,Cybersecurity Fundamentals,45,29,1.622,54.517,0.644,Algorithms
+198,2114,OOP Concepts,39,28,1.0,53.667,0.718,Machine Learning
+199,2124,Ethics in AI,86,62,1.686,53.714,0.721,Cloud Computing

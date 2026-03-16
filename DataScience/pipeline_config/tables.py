@@ -1,0 +1,122 @@
+CSV_MAP = {
+    "students":      "students_profile_dataset.csv",
+    "activity_log":  "activity_log_dataset.csv",
+    "courses":       "courses_dataset.csv",
+    "enrollments":   "enrollments_dataset.csv",
+    "years":         "years_dataset.csv",
+    "squadrons":     "squadrons_dataset.csv",
+    "departments":   "departments_dataset.csv",
+    "users":         "aspnetusers_dataset.csv",
+    "activities":    "activities_dataset.csv",
+    "questions":     "questions_dataset.csv",
+    "options":       "question_options_dataset.csv",
+    "attempts":      "quiz_attempts_dataset.csv",
+    "answers":       "student_answers_dataset.csv",
+    "submissions":   "assignment_submissions_dataset.csv",
+    "progress":      "student_activity_progress_dataset.csv",
+    "notifications": "notifications_dataset.csv",
+    "comments":      "comments_dataset.csv",
+    "likes":         "comment_likes_dataset.csv",
+}
+
+SCHEMAS = {
+    "students": {
+        "Id": "i", "UserId": "f", "DepartmentId": "f", "YearId": "f",
+        "SquadronId": "f", "AdmissionYear": "f", "CreatedAt": "M", "UpdatedAt": "M",
+    },
+    "activity_log": {
+        "Id": "i", "ActionName": "O", "EntityName": "O", "EntityId": "f",
+        "Description": "O", "UserId": "f", "IpAddress": "O", "UserAgent": "O",
+        "TokenExpiresAt": "O", "Metadata": "O", "Timestamp": "M",
+        "ProcessingTimeMs": "f", "UserFullName": "O",
+    },
+    "courses": {
+        "Id": "i", "Title": "O", "Description": "O", "ImageUrl": "O",
+        "CreditHours": "i", "EnrolledStudentsCount": "i", "DepartmentId": "f",
+        "YearId": "f", "CreatedById": "i", "IsArchived": "b",
+        "InstructorId": "f", "CreatedAt": "M", "UpdatedAt": "M",
+    },
+    "enrollments": {
+        "Id": "i", "StudentProfileId": "f", "CourseId": "f",
+        "EnrolledById": "f", "EnrollmentDate": "M",
+    },
+    "years": {
+        "Id": "i", "Name": "O", "Description": "O", "DepartmentId": "i",
+        "AcademicYear": "i", "IsArchived": "b", "CreatedById": "i",
+        "StartDate": "M", "EndDate": "M", "TotalCourses": "i",
+        "TotalHours": "i", "CreatedAt": "M", "UpdatedAt": "M",
+    },
+    "squadrons": {
+        "Id": "i", "Name": "O", "Description": "O",
+        "IsActive": "b", "CreatedAt": "M", "UpdatedAt": "M",
+    },
+    "departments": {
+        "Id": "i", "Name": "O", "Description": "O", "ImageUrl": "O", "HeadId": "i",
+    },
+    "users": {
+        "Id": "i", "FullName": "O", "NationalId": "O", "DateOfBirth": "M",
+        "Gender": "O", "City": "O", "IsActive": "i", "CreatedAt": "M",
+        "UpdatedAt": "M", "LastLoginAt": "M", "Email": "O",
+        "EmailConfirmed": "i", "AccessFailedCount": "i",
+        "LockoutEnabled": "i", "TwoFactorEnabled": "i", "IsActivated": "i",
+    },
+    "activities": {
+        "Id": "i", "CourseId": "f", "Title": "O", "Description": "O",
+        "SortOrder": "i", "IsVisible": "i", "DueDate": "M",
+        "TargetSquadronId": "f", "CreatedById": "i", "CreatedAt": "M", "UpdatedAt": "M",
+        "ActivityType": "O", "ContentType": "O", "DifficultyLevel": "O",
+        "MaxGrade": "f", "PassingScore": "f", "TotalMarks": "f",
+        "TimeLimitMinutes": "f", "MaxAttempts": "f",
+        "ShuffleQuestions": "f", "ShowCorrectAnswers": "f", "ShowExplanations": "f",
+        "IsAiGenerated": "i", "EstimatedCompletionMinutes": "f",
+        "GradingMode": "O", "AllowLateSubmission": "f",
+        "SummaryStatus": "O", "QuizScope": "O",
+    },
+    "questions": {
+        "Id": "i", "QuizId": "i", "QuestionText": "O", "QuestionTextAr": "O",
+        "QuestionType": "O", "Marks": "f", "Explanation": "O",
+        "ExplanationAr": "O", "SortOrder": "i",
+    },
+    "options": {
+        "Id": "i", "QuestionId": "i", "OptionText": "O", "OptionTextAr": "O",
+        "IsCorrect": "i", "SortOrder": "i",
+    },
+    "attempts": {
+        "Id": "i", "QuizId": "i", "StudentId": "f", "AttemptNumber": "i",
+        "StartedAt": "M", "SubmittedAt": "M",
+        "Score": "f", "MaxScore": "f", "ScorePercent": "f",
+        "Status": "O", "IsGraded": "i",
+        "GradedById": "f", "GradedAt": "M", "TimeSpentSeconds": "f",
+    },
+    "answers": {
+        "Id": "i", "QuizAttemptId": "i", "QuestionId": "i",
+        "SelectedOptionId": "f", "WrittenAnswer": "O",
+        "IsCorrect": "f", "MarksAwarded": "f", "InstructorFeedback": "O",
+    },
+    "submissions": {
+        "Id": "i", "AssignmentId": "f", "StudentId": "f",
+        "FileUrl": "O", "FileName": "O", "FileSizeBytes": "f",
+        "SubmittedAt": "M", "Grade": "f", "Feedback": "O",
+        "GradedById": "f", "GradedAt": "M", "Status": "O", "IsLate": "i",
+    },
+    "progress": {
+        "Id": "i", "ActivityId": "f", "StudentId": "f",
+        "Status": "O", "ProgressPercent": "f",
+        "FirstAccessedAt": "M", "LastAccessedAt": "M",
+        "TotalTimeSpentSeconds": "f", "CompletedAt": "M",
+    },
+    "notifications": {
+        "Id": "i", "UserId": "f", "Title": "O", "Body": "O",
+        "Type": "O", "IsRead": "i", "ReadAt": "M",
+        "EmailSent": "i", "EmailSentAt": "M",
+        "ReferenceActivityId": "f", "CreatedAt": "M",
+    },
+    "comments": {
+        "Id": "i", "ActivityId": "f", "UserId": "f",
+        "Content": "O", "ParentCommentId": "f",
+        "LikeCount": "i", "CreatedAt": "M", "UpdatedAt": "M", "IsDeleted": "i",
+    },
+    "likes": {
+        "Id": "i", "CommentId": "i", "UserId": "i", "CreatedAt": "M",
+    },
+}

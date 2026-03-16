@@ -1,0 +1,156 @@
+CourseId,Avg_ActionCount,Avg_LoginCount,Avg_CommentsCount,Avg_LikesGiven,Std_ActionCount,Std_LoginCount,Std_CommentsCount,Std_LikesGiven,EngagementCV,EngagementBalance,Title
+1,0.0,0.0,0.78,2.05,0.0,0.0,1.18,2.71,,,Cyber Security Fundamentals
+2,0.0,0.0,0.7,1.77,0.0,0.0,1.47,2.65,,,Machine Learning
+3,0.0,0.0,1.25,2.78,0.0,0.0,1.65,3.04,,,Data Structures
+4,0.0,0.0,0.92,2.35,0.0,0.0,1.56,3.23,,,Computer Networks
+5,0.0,0.0,1.2,2.75,0.0,0.0,1.64,3.55,,,Discrete Mathematics
+6,0.0,0.0,0.9,2.23,0.0,0.0,1.35,3.11,,,Artificial Intelligence
+7,0.0,0.0,1.2,2.46,0.0,0.0,1.71,3.11,,,Operating Systems
+8,0.0,0.0,0.58,1.89,0.0,0.0,1.06,2.96,,,Data Science
+9,0.0,0.0,0.72,2.36,0.0,0.0,1.2,3.31,,,Artificial Intelligence
+11,0.0,0.0,0.77,1.81,0.0,0.0,1.26,2.73,,,Computer Networks
+12,0.0,0.0,0.63,1.44,0.0,0.0,1.17,2.52,,,Discrete Mathematics
+14,0.0,0.0,0.98,2.42,0.0,0.0,1.37,2.95,,,Computer Architecture
+16,0.0,0.0,0.73,2.01,0.0,0.0,1.34,3.01,,,Algorithms
+18,0.0,0.0,0.79,2.65,0.0,0.0,1.44,3.36,,,Computer Networks
+20,0.0,0.0,0.75,1.81,0.0,0.0,1.37,2.79,,,Computer Architecture
+21,0.0,0.0,0.65,1.74,0.0,0.0,1.29,2.58,,,Algorithms
+22,0.0,0.0,0.84,1.95,0.0,0.0,1.42,3.04,,,Data Science
+23,0.0,0.0,0.81,1.94,0.0,0.0,1.28,2.77,,,Data Structures
+24,0.0,0.0,0.79,1.94,0.0,0.0,1.28,2.86,,,Cloud Computing
+25,0.0,0.0,0.95,2.34,0.0,0.0,1.33,2.81,,,Cloud Computing
+26,0.0,0.0,0.83,1.87,0.0,0.0,1.34,2.64,,,Mobile App Development
+28,0.0,0.0,0.54,1.54,0.0,0.0,1.25,2.67,,,Mobile App Development
+29,0.0,0.0,0.85,1.85,0.0,0.0,1.37,2.65,,,Algorithms
+30,0.0,0.0,1.02,2.65,0.0,0.0,1.31,3.19,,,Machine Learning
+31,0.0,0.0,0.72,2.26,0.0,0.0,1.21,3.22,,,Computer Architecture
+32,0.0,0.0,0.63,1.74,0.0,0.0,1.21,2.76,,,Computer Architecture
+33,0.0,0.0,1.05,2.47,0.0,0.0,1.48,3.08,,,Data Science
+34,0.0,0.0,0.92,2.17,0.0,0.0,1.34,2.99,,,Algorithms
+35,0.0,0.0,1.2,1.95,0.0,0.0,1.8,2.61,,,Data Structures
+36,0.0,0.0,0.97,2.13,0.0,0.0,1.54,2.85,,,Software Engineering
+37,0.0,0.0,0.65,1.58,0.0,0.0,1.12,2.89,,,Database Systems
+38,0.0,0.0,0.85,2.18,0.0,0.0,1.41,3.16,,,Database Systems
+40,0.0,0.0,0.87,2.63,0.0,0.0,1.33,3.04,,,Discrete Mathematics
+41,22.13,9.96,0.91,2.34,181.18,81.49,1.37,2.9,8.187,High Inequality,Database Systems
+43,0.0,0.0,0.73,1.85,0.0,0.0,1.16,2.81,,,Database Systems
+46,0.0,0.0,0.73,1.6,0.0,0.0,1.35,2.45,,,Mobile App Development
+47,0.0,0.0,0.69,2.15,0.0,0.0,1.2,3.02,,,Machine Learning
+48,0.0,0.0,1.06,2.22,0.0,0.0,1.79,3.3,,,Data Structures
+49,0.0,0.0,0.85,1.75,0.0,0.0,1.5,2.86,,,Data Structures
+50,0.0,0.0,0.81,1.83,0.0,0.0,1.22,2.62,,,Discrete Mathematics
+51,0.0,0.0,0.98,2.1,0.0,0.0,1.46,3.06,,,Discrete Mathematics
+52,0.0,0.0,0.75,2.44,0.0,0.0,1.08,3.26,,,Operating Systems
+53,0.0,0.0,0.95,1.79,0.0,0.0,1.54,2.52,,,Discrete Mathematics
+54,0.0,0.0,0.91,2.34,0.0,0.0,1.49,3.09,,,Artificial Intelligence
+56,0.0,0.0,1.07,2.88,0.0,0.0,1.65,3.2,,,Data Science
+57,0.0,0.0,0.85,1.88,0.0,0.0,1.31,2.87,,,Web Development
+58,0.0,0.0,1.16,2.15,0.0,0.0,1.64,2.85,,,Software Engineering
+59,0.0,0.0,1.0,2.4,0.0,0.0,1.62,3.26,,,Machine Learning
+61,0.0,0.0,0.77,1.61,0.0,0.0,1.43,2.44,,,Mobile App Development
+62,0.0,0.0,1.14,2.52,0.0,0.0,1.56,2.83,,,Machine Learning
+63,0.0,0.0,0.75,2.28,0.0,0.0,1.31,2.95,,,Computer Networks
+64,0.0,0.0,1.0,2.56,0.0,0.0,1.49,3.1,,,Database Systems
+65,0.0,0.0,0.77,1.95,0.0,0.0,1.23,2.61,,,Algorithms
+67,0.0,0.0,0.75,2.09,0.0,0.0,1.21,2.92,,,Operating Systems
+69,0.0,0.0,0.8,2.29,0.0,0.0,1.19,2.88,,,Computer Networks
+70,0.0,0.0,1.1,2.23,0.0,0.0,1.62,2.89,,,Operating Systems
+71,0.0,0.0,0.72,2.38,0.0,0.0,1.2,3.53,,,Algorithms
+72,0.0,0.0,1.03,2.61,0.0,0.0,1.42,3.08,,,Artificial Intelligence
+73,0.0,0.0,0.92,2.3,0.0,0.0,1.33,3.14,,,Web Development
+74,0.0,0.0,0.66,1.88,0.0,0.0,1.08,2.55,,,Computer Architecture
+75,0.0,0.0,0.96,2.0,0.0,0.0,1.49,3.12,,,Data Science
+76,0.0,0.0,0.67,2.14,0.0,0.0,1.23,3.0,,,Computer Networks
+77,23.54,10.59,1.0,2.33,186.84,84.03,1.45,2.73,7.937,High Inequality,Mobile App Development
+78,0.0,0.0,0.92,2.64,0.0,0.0,1.38,3.29,,,Artificial Intelligence
+79,0.0,0.0,0.58,2.38,0.0,0.0,1.03,3.49,,,Cyber Security Fundamentals
+80,0.0,0.0,0.74,2.28,0.0,0.0,1.07,3.01,,,Computer Architecture
+81,0.0,0.0,0.43,1.15,0.0,0.0,1.06,2.47,,,Artificial Intelligence
+84,0.0,0.0,0.57,1.54,0.0,0.0,1.21,2.81,,,Database Systems
+85,0.0,0.0,1.29,2.5,0.0,0.0,1.66,2.79,,,Artificial Intelligence
+86,0.0,0.0,0.72,2.0,0.0,0.0,1.25,3.15,,,Database Systems
+87,0.0,0.0,0.76,2.41,0.0,0.0,1.1,3.01,,,Web Development
+88,0.0,0.0,1.13,2.78,0.0,0.0,1.41,2.99,,,Cloud Computing
+89,0.0,0.0,1.12,2.38,0.0,0.0,1.58,2.88,,,Cyber Security Fundamentals
+91,0.0,0.0,1.08,2.38,0.0,0.0,1.52,2.86,,,Computer Architecture
+92,0.0,0.0,0.88,2.04,0.0,0.0,1.33,2.77,,,Web Development
+93,0.0,0.0,0.71,1.97,0.0,0.0,1.17,2.88,,,Machine Learning
+94,0.0,0.0,0.98,2.26,0.0,0.0,1.43,3.06,,,Data Science
+95,22.13,9.96,0.85,2.13,181.18,81.49,1.22,2.93,8.187,High Inequality,Software Engineering
+96,0.0,0.0,0.82,1.71,0.0,0.0,1.26,2.6,,,Database Systems
+98,0.0,0.0,0.95,1.79,0.0,0.0,1.54,2.64,,,Machine Learning
+99,0.0,0.0,0.6,1.68,0.0,0.0,1.24,2.49,,,Mobile App Development
+100,0.0,0.0,1.06,2.58,0.0,0.0,1.54,3.22,,,Software Engineering
+101,0.0,0.0,0.88,2.31,0.0,0.0,1.17,2.96,,,Web Development
+106,27.8,11.75,0.88,1.71,208.06,87.93,1.45,2.25,7.484,High Inequality,Software Engineering
+107,0.0,0.0,0.9,2.35,0.0,0.0,1.28,2.91,,,Software Engineering
+108,0.0,0.0,0.69,1.82,0.0,0.0,1.24,2.65,,,Software Engineering
+109,0.0,0.0,0.77,1.73,0.0,0.0,1.42,2.65,,,Artificial Intelligence
+110,0.0,0.0,0.8,1.71,0.0,0.0,1.57,2.95,,,Software Engineering
+111,0.0,0.0,0.81,1.89,0.0,0.0,1.37,2.83,,,Cyber Security Fundamentals
+115,0.0,0.0,0.85,2.02,0.0,0.0,1.39,2.93,,,Artificial Intelligence
+117,0.0,0.0,0.59,1.98,0.0,0.0,1.16,2.97,,,Data Structures
+118,0.0,0.0,0.77,2.39,0.0,0.0,1.2,3.31,,,Computer Networks
+119,0.0,0.0,0.84,1.59,0.0,0.0,1.52,2.51,,,Cyber Security Fundamentals
+120,0.0,0.0,0.75,2.03,0.0,0.0,1.34,2.98,,,Data Science
+121,0.0,0.0,0.67,1.53,0.0,0.0,1.28,2.5,,,Mobile App Development
+123,0.0,0.0,0.74,2.29,0.0,0.0,1.15,3.14,,,Cloud Computing
+124,25.95,11.34,0.6,1.57,197.62,86.4,1.11,2.57,7.615,High Inequality,Discrete Mathematics
+126,0.0,0.0,1.06,2.35,0.0,0.0,1.41,2.98,,,Machine Learning
+127,23.82,10.71,0.78,1.88,192.01,86.33,1.37,3.03,8.061,High Inequality,Computer Architecture
+128,0.0,0.0,0.89,2.02,0.0,0.0,1.43,2.91,,,Artificial Intelligence
+129,0.0,0.0,0.65,2.32,0.0,0.0,1.19,3.33,,,Discrete Mathematics
+130,0.0,0.0,0.87,2.64,0.0,0.0,1.23,3.06,,,Computer Architecture
+131,0.0,0.0,1.18,2.56,0.0,0.0,1.7,3.13,,,Machine Learning
+133,22.83,9.98,1.02,2.34,184.07,80.5,1.47,2.86,8.063,High Inequality,Computer Networks
+134,0.0,0.0,0.98,2.74,0.0,0.0,1.3,3.14,,,Web Development
+135,24.57,11.05,0.7,1.57,195.03,87.69,1.28,2.58,7.938,High Inequality,Data Science
+136,0.0,0.0,0.96,2.65,0.0,0.0,1.39,3.18,,,Operating Systems
+137,0.0,0.0,0.59,1.68,0.0,0.0,1.27,2.92,,,Computer Networks
+138,0.0,0.0,0.56,1.79,0.0,0.0,0.93,2.51,,,Algorithms
+140,0.0,0.0,1.09,2.42,0.0,0.0,1.6,3.07,,,Operating Systems
+141,0.0,0.0,0.62,1.7,0.0,0.0,1.07,2.43,,,Computer Networks
+143,0.0,0.0,0.67,1.67,0.0,0.0,1.33,2.51,,,Database Systems
+145,0.0,0.0,0.9,2.63,0.0,0.0,1.17,3.26,,,Web Development
+146,0.0,0.0,0.91,2.2,0.0,0.0,1.54,3.02,,,Operating Systems
+147,0.0,0.0,0.86,2.13,0.0,0.0,1.54,3.15,,,Data Science
+149,0.0,0.0,0.94,1.97,0.0,0.0,1.63,3.0,,,Web Development
+150,0.0,0.0,0.74,2.18,0.0,0.0,1.24,3.08,,,Cyber Security Fundamentals
+151,0.0,0.0,1.0,2.49,0.0,0.0,1.49,3.05,,,Software Engineering
+152,0.0,0.0,0.76,1.4,0.0,0.0,1.34,2.32,,,Operating Systems
+153,0.0,0.0,0.85,2.07,0.0,0.0,1.53,2.83,,,Algorithms
+154,0.0,0.0,0.81,1.85,0.0,0.0,1.34,2.73,,,Software Engineering
+156,0.0,0.0,0.92,2.28,0.0,0.0,1.42,2.9,,,Algorithms
+157,0.0,0.0,0.54,1.52,0.0,0.0,1.28,2.47,,,Mobile App Development
+158,0.0,0.0,0.63,2.33,0.0,0.0,1.06,3.32,,,Mobile App Development
+159,21.91,9.68,0.64,1.73,177.99,78.66,0.97,2.69,8.124,High Inequality,Data Science
+160,0.0,0.0,0.81,1.36,0.0,0.0,1.39,2.3,,,Computer Architecture
+162,0.0,0.0,0.68,1.69,0.0,0.0,1.34,2.74,,,Cloud Computing
+164,0.0,0.0,0.97,2.28,0.0,0.0,1.6,3.06,,,Data Science
+166,0.0,0.0,0.75,2.06,0.0,0.0,1.25,3.12,,,Discrete Mathematics
+167,0.0,0.0,0.8,2.06,0.0,0.0,1.29,2.95,,,Operating Systems
+168,0.0,0.0,0.66,1.34,0.0,0.0,1.17,2.34,,,Web Development
+169,0.0,0.0,0.72,2.15,0.0,0.0,1.13,2.93,,,Cyber Security Fundamentals
+170,0.0,0.0,0.94,1.82,0.0,0.0,1.58,2.65,,,Data Science
+171,23.1,10.39,1.09,2.6,189.12,85.03,1.57,3.37,8.187,High Inequality,Mobile App Development
+173,0.0,0.0,1.06,2.38,0.0,0.0,1.46,3.0,,,Mobile App Development
+177,0.0,0.0,0.62,1.57,0.0,0.0,1.09,2.57,,,Data Science
+178,0.0,0.0,0.69,2.12,0.0,0.0,1.1,2.92,,,Algorithms
+179,0.0,0.0,0.81,2.53,0.0,0.0,1.14,3.22,,,Data Science
+180,20.05,8.77,0.74,1.92,172.51,75.44,1.38,3.12,8.604,High Inequality,Discrete Mathematics
+181,0.0,0.0,0.83,2.06,0.0,0.0,1.41,2.88,,,Operating Systems
+182,0.0,0.0,0.84,1.67,0.0,0.0,1.36,2.67,,,Data Structures
+183,20.96,9.26,0.8,2.49,174.08,76.93,1.2,3.06,8.305,High Inequality,Computer Architecture
+186,0.0,0.0,0.86,2.38,0.0,0.0,1.26,3.02,,,Algorithms
+187,0.0,0.0,0.7,1.79,0.0,0.0,1.28,2.75,,,Operating Systems
+188,0.0,0.0,1.1,2.79,0.0,0.0,1.45,3.26,,,Web Development
+189,0.0,0.0,0.93,2.13,0.0,0.0,1.4,2.97,,,Artificial Intelligence
+190,0.0,0.0,0.89,2.28,0.0,0.0,1.37,3.0,,,Computer Architecture
+191,25.14,11.31,0.92,2.22,193.07,86.84,1.33,2.83,7.68,High Inequality,Data Structures
+192,0.0,0.0,0.9,2.21,0.0,0.0,1.49,3.02,,,Computer Networks
+193,0.0,0.0,1.11,2.61,0.0,0.0,1.42,3.1,,,Operating Systems
+194,0.0,0.0,1.03,2.49,0.0,0.0,1.43,2.99,,,Algorithms
+196,0.0,0.0,1.09,2.72,0.0,0.0,1.62,3.44,,,Database Systems
+197,0.0,0.0,0.87,1.87,0.0,0.0,1.51,2.78,,,Computer Networks
+198,0.0,0.0,0.9,2.0,0.0,0.0,1.43,2.64,,,Machine Learning
+200,0.0,0.0,0.97,2.01,0.0,0.0,1.55,2.91,,,Algorithms

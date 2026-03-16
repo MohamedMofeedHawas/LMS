@@ -1,0 +1,15 @@
+Feature,MeanAbsSHAP,MeanSHAP,Rank
+AvgTimePerActivity,0.12094,-0.08993,1
+AvgAttemptsBeforeSuccess,0.07042,-0.03448,2
+AvgAttemptsPerQuiz,0.06611,-0.03402,3
+WorkloadPressure,0.06494,-0.0491,4
+AvgTimePerQuizMin,0.06263,-0.03408,5
+QuizAttempts,0.05627,-0.02649,6
+DaytimeActivityRatio,0.02826,-0.01771,7
+FailureRatio,0.02074,-0.01361,8
+AvgScore,0.01608,-0.01282,9
+MinScore,0.01014,-0.00795,10
+NightActivityRatio,0.00802,-0.00582,11
+EnrolledCourseCount,0.00739,-0.0035,12
+DifficultyExposure,0.00711,-0.00549,13
+AdmissionYear,0.00658,-0.00387,14

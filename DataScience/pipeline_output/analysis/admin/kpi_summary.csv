@@ -1,0 +1,12 @@
+KPI,Value
+TotalStudents,5000.0
+TotalUsers,2060.0
+ActiveUsers,1905.0
+TotalCourses,200.0
+ActiveCourses,155.0
+TotalEnrollments,9944.0
+TotalQuizAttempts,11088.0
+TotalSubmissions,6673.0
+OverallCompletionRate,55.4
+OverallQuizPassRate,28.8
+PlatformHealthScore,65.6

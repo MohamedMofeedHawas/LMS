@@ -1,0 +1,3 @@
+IsWeekend,Attempts,AvgScore,PassRate
+Weekday,7869,51.701,0.289
+Weekend,3219,50.961,0.286

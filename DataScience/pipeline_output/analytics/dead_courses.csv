@@ -1,0 +1,46 @@
+Id,Title,DepartmentId,DepartmentName,IsArchived,CreditHours
+10,Operating Systems,2,Artificial Intelligence,True,4
+13,Software Engineering,2,Artificial Intelligence,False,3
+15,Discrete Mathematics,2,Artificial Intelligence,True,2
+17,Operating Systems,2,Artificial Intelligence,True,1
+19,Machine Learning,2,Artificial Intelligence,False,6
+27,Cloud Computing,2,Artificial Intelligence,True,2
+39,Computer Networks,2,Artificial Intelligence,False,2
+42,Web Development,2,Artificial Intelligence,False,2
+44,Database Systems,2,Artificial Intelligence,False,3
+45,Discrete Mathematics,2,Artificial Intelligence,True,4
+55,Computer Networks,2,Artificial Intelligence,True,4
+60,Algorithms,2,Artificial Intelligence,False,3
+66,Computer Architecture,2,Artificial Intelligence,False,3
+68,Computer Networks,2,Artificial Intelligence,False,2
+82,Data Science,2,Artificial Intelligence,True,4
+83,Machine Learning,2,Artificial Intelligence,False,2
+90,Discrete Mathematics,2,Artificial Intelligence,False,2
+97,Computer Networks,2,Artificial Intelligence,False,4
+102,Discrete Mathematics,2,Artificial Intelligence,True,3
+103,Web Development,2,Artificial Intelligence,True,4
+104,Mobile App Development,2,Artificial Intelligence,True,1
+105,Computer Networks,2,Artificial Intelligence,False,2
+112,Operating Systems,2,Artificial Intelligence,True,1
+113,Database Systems,2,Artificial Intelligence,False,4
+114,Mobile App Development,2,Artificial Intelligence,True,4
+116,Data Structures,2,Artificial Intelligence,True,3
+122,Mobile App Development,2,Artificial Intelligence,False,2
+125,Operating Systems,2,Artificial Intelligence,True,4
+132,Mobile App Development,2,Artificial Intelligence,True,2
+139,Artificial Intelligence,2,Artificial Intelligence,False,4
+142,Algorithms,2,Artificial Intelligence,False,3
+144,Software Engineering,2,Artificial Intelligence,True,2
+148,Algorithms,2,Artificial Intelligence,True,2
+155,Data Structures,2,Artificial Intelligence,True,4
+161,Cyber Security Fundamentals,2,Artificial Intelligence,False,2
+163,Data Science,2,Artificial Intelligence,True,3
+165,Computer Networks,2,Artificial Intelligence,True,3
+172,Database Systems,2,Artificial Intelligence,False,3
+174,Web Development,2,Artificial Intelligence,False,2
+175,Discrete Mathematics,2,Artificial Intelligence,True,4
+176,Cyber Security Fundamentals,2,Artificial Intelligence,True,2
+184,Algorithms,2,Artificial Intelligence,True,3
+185,Data Science,2,Artificial Intelligence,True,2
+195,Computer Architecture,2,Artificial Intelligence,True,4
+199,Cloud Computing,2,Artificial Intelligence,True,4

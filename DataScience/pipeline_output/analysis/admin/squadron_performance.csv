@@ -1,0 +1,6 @@
+SquadronId,StudentCount,SquadronName,AvgQuizScore,QuizPassRate,CompletionRate,OverallScore,Rank
+1,897,Alpha,15.74,0.09,0.27,5.37,1
+4,963,Delta,14.76,0.09,0.27,5.04,2
+3,881,Charlie,14.72,0.09,0.28,5.03,3
+2,879,Bravo,14.32,0.08,0.29,4.9,4
+5,1380,Echo,14.02,0.08,0.27,4.79,5

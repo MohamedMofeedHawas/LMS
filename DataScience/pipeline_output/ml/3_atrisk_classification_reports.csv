@@ -1,0 +1,21 @@
+Class,precision,recall,f1-score,support,Model
+0,0.9786,0.5833,0.7309,1099.0,LogisticRegression
+1,0.2303,0.9073,0.3673,151.0,LogisticRegression
+accuracy,0.6224,0.6224,0.6224,0.6224,LogisticRegression
+macro avg,0.6044,0.7453,0.5491,1250.0,LogisticRegression
+weighted avg,0.8882,0.6224,0.687,1250.0,LogisticRegression
+0,0.8848,0.9854,0.9324,1099.0,RandomForest
+1,0.3846,0.0662,0.113,151.0,RandomForest
+accuracy,0.8744,0.8744,0.8744,0.8744,RandomForest
+macro avg,0.6347,0.5258,0.5227,1250.0,RandomForest
+weighted avg,0.8244,0.8744,0.8334,1250.0,RandomForest
+0,0.894,0.9745,0.9325,1099.0,GradientBoosting
+1,0.4615,0.1589,0.2365,151.0,GradientBoosting
+accuracy,0.876,0.876,0.876,0.876,GradientBoosting
+macro avg,0.6778,0.5667,0.5845,1250.0,GradientBoosting
+weighted avg,0.8417,0.876,0.8484,1250.0,GradientBoosting
+0,0.987,0.6224,0.7634,1099.0,SVM
+1,0.2549,0.9404,0.4011,151.0,SVM
+accuracy,0.6608,0.6608,0.6608,0.6608,SVM
+macro avg,0.621,0.7814,0.5823,1250.0,SVM
+weighted avg,0.8986,0.6608,0.7196,1250.0,SVM

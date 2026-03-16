@@ -1,0 +1,127 @@
+CourseId,TotalAttempts,AvgScore,PassRate,RetryRate,DifficultyIndex,DifficultyLabel,Title
+17,22,35.464,0.045,0.0,0.8,Hard,Operating Systems
+37,58,41.771,0.19,0.431,0.696,Hard,Database Systems
+89,42,40.25,0.214,0.214,0.692,Hard,Cyber Security Fundamentals
+157,73,40.333,0.219,0.548,0.689,Hard,Mobile App Development
+190,31,44.1,0.194,0.0,0.682,Hard,Computer Architecture
+80,71,43.965,0.211,0.493,0.675,Hard,Computer Architecture
+73,53,44.469,0.208,0.321,0.674,Hard,Web Development
+112,50,43.327,0.22,0.26,0.673,Hard,Operating Systems
+115,37,44.878,0.216,0.378,0.668,Hard,Artificial Intelligence
+85,108,44.403,0.222,0.463,0.667,Hard,Artificial Intelligence
+165,67,44.955,0.224,0.507,0.663,Hard,Computer Networks
+128,139,47.844,0.216,0.468,0.653,Hard,Artificial Intelligence
+78,151,45.045,0.252,0.404,0.649,Hard,Artificial Intelligence
+65,213,44.972,0.258,0.474,0.646,Hard,Algorithms
+98,59,47.207,0.237,0.559,0.645,Hard,Machine Learning
+170,64,46.05,0.25,0.375,0.645,Hard,Data Science
+76,107,46.843,0.243,0.346,0.644,Hard,Computer Networks
+100,73,43.777,0.274,0.521,0.644,Hard,Software Engineering
+139,36,46.469,0.25,0.0,0.643,Hard,Artificial Intelligence
+140,48,50.6,0.208,0.0,0.643,Hard,Operating Systems
+29,89,46.021,0.258,0.258,0.641,Hard,Algorithms
+187,42,50.667,0.214,0.0,0.64,Hard,Operating Systems
+91,67,50.345,0.224,0.522,0.636,Hard,Computer Architecture
+41,63,48.903,0.238,0.524,0.636,Hard,Database Systems
+119,65,46.625,0.262,0.462,0.636,Hard,Cyber Security Fundamentals
+111,123,49.328,0.236,0.455,0.635,Hard,Cyber Security Fundamentals
+153,40,45.52,0.275,0.0,0.635,Hard,Algorithms
+39,76,47.114,0.263,0.513,0.633,Hard,Computer Networks
+99,70,52.155,0.214,0.329,0.632,Hard,Mobile App Development
+13,69,48.954,0.246,0.449,0.632,Hard,Software Engineering
+180,122,47.786,0.262,0.418,0.63,Hard,Discrete Mathematics
+132,33,49.789,0.242,0.0,0.63,Hard,Mobile App Development
+72,158,49.746,0.247,0.323,0.628,Hard,Artificial Intelligence
+127,50,52.8,0.22,0.46,0.626,Hard,Computer Architecture
+56,131,48.581,0.275,0.496,0.62,Hard,Data Science
+175,41,49.438,0.268,0.317,0.619,Hard,Discrete Mathematics
+71,35,53.389,0.229,0.0,0.619,Hard,Algorithms
+130,33,45.933,0.303,0.0,0.619,Hard,Computer Architecture
+61,131,51.231,0.252,0.214,0.618,Hard,Mobile App Development
+186,143,48.68,0.28,0.266,0.617,Hard,Algorithms
+32,52,46.061,0.308,0.365,0.616,Hard,Computer Architecture
+160,74,49.821,0.27,0.459,0.616,Hard,Computer Architecture
+84,91,48.221,0.286,0.516,0.616,Hard,Database Systems
+117,122,48.239,0.287,0.492,0.615,Medium,Data Structures
+28,146,50.201,0.267,0.521,0.615,Medium,Mobile App Development
+113,38,53.219,0.237,0.0,0.615,Medium,Database Systems
+103,77,48.66,0.286,0.519,0.614,Medium,Web Development
+166,56,47.057,0.304,0.375,0.613,Medium,Discrete Mathematics
+74,148,50.154,0.277,0.514,0.611,Medium,Computer Architecture
+146,71,48.37,0.296,0.366,0.61,Medium,Operating Systems
+147,68,51.676,0.265,0.515,0.609,Medium,Data Science
+82,61,48.889,0.295,0.344,0.608,Medium,Data Science
+169,56,49.891,0.286,0.321,0.608,Medium,Cyber Security Fundamentals
+79,66,52.503,0.258,0.53,0.608,Medium,Cyber Security Fundamentals
+68,80,53.907,0.25,0.0,0.605,Medium,Computer Networks
+105,135,50.342,0.289,0.541,0.604,Medium,Computer Networks
+129,64,49.692,0.297,0.547,0.603,Medium,Discrete Mathematics
+94,77,52.065,0.273,0.169,0.603,Medium,Data Science
+173,179,52.674,0.268,0.469,0.603,Medium,Mobile App Development
+141,122,49.329,0.303,0.492,0.602,Medium,Computer Networks
+31,112,49.378,0.304,0.312,0.601,Medium,Computer Architecture
+52,71,55.833,0.239,0.0,0.601,Medium,Operating Systems
+182,50,53.885,0.26,0.44,0.601,Medium,Data Structures
+48,145,51.632,0.283,0.524,0.6,Medium,Data Structures
+69,35,54.289,0.257,0.0,0.6,Medium,Computer Networks
+151,54,50.586,0.296,0.556,0.599,Medium,Software Engineering
+55,40,52.75,0.275,0.0,0.599,Medium,Computer Networks
+9,68,51.124,0.294,0.559,0.597,Medium,Artificial Intelligence
+181,283,52.345,0.286,0.456,0.595,Medium,Operating Systems
+131,79,54.584,0.266,0.215,0.594,Medium,Machine Learning
+30,46,55.13,0.261,0.261,0.594,Medium,Machine Learning
+33,121,50.764,0.306,0.496,0.593,Medium,Data Science
+199,86,53.714,0.279,0.523,0.592,Medium,Cloud Computing
+40,156,51.455,0.301,0.333,0.592,Medium,Discrete Mathematics
+156,206,50.718,0.311,0.524,0.591,Medium,Algorithms
+149,78,54.929,0.269,0.167,0.591,Medium,Web Development
+198,39,53.667,0.282,0.0,0.591,Medium,Machine Learning
+159,37,57.667,0.243,0.0,0.59,Medium,Data Science
+184,143,53.373,0.287,0.566,0.59,Medium,Algorithms
+90,72,57.235,0.25,0.514,0.589,Medium,Discrete Mathematics
+2,106,50.084,0.321,0.387,0.589,Medium,Machine Learning
+8,54,49.081,0.333,0.37,0.588,Medium,Data Science
+142,163,52.262,0.301,0.528,0.588,Medium,Algorithms
+120,59,52.129,0.305,0.475,0.587,Easy,Data Science
+20,144,52.691,0.299,0.326,0.587,Easy,Computer Architecture
+155,273,53.083,0.297,0.363,0.586,Easy,Data Structures
+161,133,51.184,0.316,0.436,0.586,Easy,Cyber Security Fundamentals
+114,222,52.87,0.302,0.541,0.585,Easy,Mobile App Development
+54,34,56.412,0.265,0.0,0.585,Easy,Artificial Intelligence
+60,69,54.249,0.29,0.42,0.584,Easy,Algorithms
+4,132,50.808,0.326,0.545,0.583,Easy,Computer Networks
+108,51,52.486,0.314,0.51,0.581,Easy,Software Engineering
+51,126,53.632,0.31,0.325,0.577,Easy,Discrete Mathematics
+176,157,54.892,0.299,0.376,0.576,Easy,Cyber Security Fundamentals
+43,111,49.441,0.36,0.315,0.573,Easy,Database Systems
+86,175,55.799,0.303,0.44,0.57,Easy,Database Systems
+16,130,55.703,0.308,0.146,0.567,Easy,Algorithms
+174,29,55.679,0.31,0.0,0.567,Easy,Web Development
+168,59,57.161,0.305,0.356,0.562,Easy,Web Development
+87,81,56.851,0.309,0.222,0.561,Easy,Web Development
+191,60,53.303,0.35,0.467,0.558,Easy,Data Structures
+110,29,54.026,0.345,0.0,0.557,Easy,Software Engineering
+116,31,56.424,0.323,0.0,0.556,Easy,Data Structures
+101,71,55.26,0.338,0.479,0.555,Easy,Web Development
+63,124,54.54,0.347,0.218,0.554,Easy,Computer Networks
+23,61,56.924,0.328,0.361,0.551,Easy,Data Structures
+93,65,59.353,0.308,0.446,0.549,Easy,Machine Learning
+106,129,56.844,0.333,0.318,0.549,Easy,Software Engineering
+194,45,54.517,0.356,0.489,0.549,Easy,Algorithms
+143,225,56.692,0.342,0.373,0.546,Easy,Database Systems
+53,82,56.98,0.341,0.39,0.545,Easy,Discrete Mathematics
+148,64,55.372,0.359,0.5,0.544,Easy,Algorithms
+58,52,54.803,0.365,0.462,0.543,Easy,Software Engineering
+118,63,58.12,0.333,0.365,0.543,Easy,Computer Networks
+123,53,54.65,0.377,0.321,0.538,Easy,Cloud Computing
+19,188,56.802,0.362,0.537,0.535,Easy,Machine Learning
+27,64,58.278,0.375,0.469,0.521,Easy,Cloud Computing
+1,32,67.917,0.281,0.0,0.52,Easy,Cyber Security Fundamentals
+102,33,63.42,0.333,0.333,0.516,Easy,Discrete Mathematics
+97,104,57.382,0.404,0.269,0.511,Easy,Computer Networks
+49,37,58.174,0.405,0.0,0.507,Easy,Data Structures
+14,16,55.44,0.438,0.0,0.504,Easy,Computer Architecture
+62,31,62.474,0.387,0.258,0.494,Easy,Machine Learning
+67,49,61.22,0.408,0.327,0.49,Easy,Operating Systems
+77,38,63.27,0.395,0.316,0.486,Easy,Mobile App Development
+5,27,69.944,0.593,0.0,0.354,Easy,Discrete Mathematics

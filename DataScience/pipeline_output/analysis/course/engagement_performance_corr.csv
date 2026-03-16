@@ -1,0 +1,156 @@
+CourseId,StudentCount,r_ActionCount_vs_AvgQuizScore,r_ActionCount_vs_CompletionRate,r_LoginCount_vs_AvgQuizScore,r_LoginCount_vs_CompletionRate,EngagementImpact,Title
+1,63,,,,,,Cyber Security Fundamentals
+2,66,,,,,,Machine Learning
+3,69,,,,,,Data Structures
+4,75,,,,,,Computer Networks
+5,55,,,,,,Discrete Mathematics
+6,62,,,,,,Artificial Intelligence
+7,54,,,,,,Operating Systems
+8,62,,,,,,Data Science
+9,64,,,,,,Artificial Intelligence
+11,69,,,,,,Computer Networks
+12,68,,,,,,Discrete Mathematics
+14,57,,,,,,Computer Architecture
+16,70,,,,,,Algorithms
+18,63,,,,,,Computer Networks
+20,69,,,,,,Computer Architecture
+21,65,,,,,,Algorithms
+22,61,,,,,,Data Science
+23,64,,,,,,Data Structures
+24,62,,,,,,Cloud Computing
+25,64,,,,,,Cloud Computing
+26,77,,,,,,Mobile App Development
+28,65,,,,,,Mobile App Development
+29,71,,,,,,Algorithms
+30,60,,,,,,Machine Learning
+31,76,,,,,,Computer Architecture
+32,76,,,,,,Computer Architecture
+33,66,,,,,,Data Science
+34,59,,,,,,Algorithms
+35,55,,,,,,Data Structures
+36,71,,,,,,Software Engineering
+37,65,,,,,,Database Systems
+38,62,,,,,,Database Systems
+40,54,,,,,,Discrete Mathematics
+41,67,-0.062,0.011,-0.062,0.011,Weak / None,Database Systems
+43,55,,,,,,Database Systems
+46,73,,,,,,Mobile App Development
+47,65,,,,,,Machine Learning
+48,68,,,,,,Data Structures
+49,75,,,,,,Data Structures
+50,64,,,,,,Discrete Mathematics
+51,60,,,,,,Discrete Mathematics
+52,48,,,,,,Operating Systems
+53,78,,,,,,Discrete Mathematics
+54,68,,,,,,Artificial Intelligence
+56,75,,,,,,Data Science
+57,59,,,,,,Web Development
+58,62,,,,,,Software Engineering
+59,68,,,,,,Machine Learning
+61,61,,,,,,Mobile App Development
+62,64,,,,,,Machine Learning
+63,69,,,,,,Computer Networks
+64,68,,,,,,Database Systems
+65,62,,,,,,Algorithms
+67,56,,,,,,Operating Systems
+69,70,,,,,,Computer Networks
+70,62,,,,,,Operating Systems
+71,69,,,,,,Algorithms
+72,72,,,,,,Artificial Intelligence
+73,80,,,,,,Web Development
+74,50,,,,,,Computer Architecture
+75,54,,,,,,Data Science
+76,57,,,,,,Computer Networks
+77,63,-0.087,0.03,-0.087,0.03,Weak / None,Mobile App Development
+78,59,,,,,,Artificial Intelligence
+79,69,,,,,,Cyber Security Fundamentals
+80,58,,,,,,Computer Architecture
+81,61,,,,,,Artificial Intelligence
+84,72,,,,,,Database Systems
+85,68,,,,,,Artificial Intelligence
+86,61,,,,,,Database Systems
+87,79,,,,,,Web Development
+88,68,,,,,,Cloud Computing
+89,65,,,,,,Cyber Security Fundamentals
+91,52,,,,,,Computer Architecture
+92,68,,,,,,Web Development
+93,68,,,,,,Machine Learning
+94,53,,,,,,Data Science
+95,67,-0.072,0.028,-0.072,0.028,Weak / None,Software Engineering
+96,55,,,,,,Database Systems
+98,57,,,,,,Machine Learning
+99,63,,,,,,Mobile App Development
+100,65,,,,,,Software Engineering
+101,58,,,,,,Web Development
+106,56,0.258,0.198,0.258,0.198,Weak / None,Software Engineering
+107,60,,,,,,Software Engineering
+108,78,,,,,,Software Engineering
+109,60,,,,,,Artificial Intelligence
+110,56,,,,,,Software Engineering
+111,64,,,,,,Cyber Security Fundamentals
+115,65,,,,,,Artificial Intelligence
+117,66,,,,,,Data Structures
+118,74,,,,,,Computer Networks
+119,56,,,,,,Cyber Security Fundamentals
+120,72,,,,,,Data Science
+121,58,,,,,,Mobile App Development
+123,70,,,,,,Cloud Computing
+124,58,0.35,0.14,0.35,0.14,Positive,Discrete Mathematics
+126,65,,,,,,Machine Learning
+127,65,-0.087,-0.09,-0.087,-0.09,Weak / None,Computer Architecture
+128,47,,,,,,Artificial Intelligence
+129,60,,,,,,Discrete Mathematics
+130,70,,,,,,Computer Architecture
+131,57,,,,,,Machine Learning
+133,65,-0.064,0.171,-0.064,0.171,Weak / None,Computer Networks
+134,65,,,,,,Web Development
+135,63,-0.084,-0.1,-0.084,-0.1,Weak / None,Data Science
+136,57,,,,,,Operating Systems
+137,63,,,,,,Computer Networks
+138,57,,,,,,Algorithms
+140,66,,,,,,Operating Systems
+141,61,,,,,,Computer Networks
+143,61,,,,,,Database Systems
+145,51,,,,,,Web Development
+146,64,,,,,,Operating Systems
+147,71,,,,,,Data Science
+149,69,,,,,,Web Development
+150,65,,,,,,Cyber Security Fundamentals
+151,71,,,,,,Software Engineering
+152,58,,,,,,Operating Systems
+153,59,,,,,,Algorithms
+154,67,,,,,,Software Engineering
+156,71,,,,,,Algorithms
+157,69,,,,,,Mobile App Development
+158,76,,,,,,Mobile App Development
+159,66,-0.086,-0.104,-0.086,-0.104,Weak / None,Data Science
+160,53,,,,,,Computer Architecture
+162,71,,,,,,Cloud Computing
+164,65,,,,,,Data Science
+166,64,,,,,,Discrete Mathematics
+167,69,,,,,,Operating Systems
+168,70,,,,,,Web Development
+169,68,,,,,,Cyber Security Fundamentals
+170,66,,,,,,Data Science
+171,67,-0.048,-0.086,-0.048,-0.086,Weak / None,Mobile App Development
+173,64,,,,,,Mobile App Development
+177,60,,,,,,Data Science
+178,68,,,,,,Algorithms
+179,59,,,,,,Data Science
+180,74,-0.087,0.085,-0.087,0.085,Weak / None,Discrete Mathematics
+181,65,,,,,,Operating Systems
+182,64,,,,,,Data Structures
+183,69,-0.073,-0.107,-0.073,-0.107,Weak / None,Computer Architecture
+186,50,,,,,,Algorithms
+187,61,,,,,,Operating Systems
+188,58,,,,,,Web Development
+189,69,,,,,,Artificial Intelligence
+190,72,,,,,,Computer Architecture
+191,59,-0.082,0.027,-0.082,0.027,Weak / None,Data Structures
+192,72,,,,,,Computer Networks
+193,44,,,,,,Operating Systems
+194,68,,,,,,Algorithms
+196,64,,,,,,Database Systems
+197,52,,,,,,Computer Networks
+198,72,,,,,,Machine Learning
+200,68,,,,,,Algorithms

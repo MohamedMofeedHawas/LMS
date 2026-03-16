@@ -1,0 +1,228 @@
+23:20:39  INFO     Pipeline started at 2026-03-14 23:20:39
+23:20:39  INFO     --- Stage 1: Ingestion ---
+23:20:39  INFO     [students] Loaded 5080 rows × 8 cols (sep=',')
+23:20:40  INFO     [activity_log] Loaded 15200 rows × 13 cols (sep=',')
+23:20:40  INFO     [courses] Loaded 200 rows × 13 cols (sep=',')
+23:20:40  INFO     [enrollments] Loaded 10200 rows × 5 cols (sep=',')
+23:20:40  INFO     [years] Loaded 56 rows × 13 cols (sep=',')
+23:20:40  INFO     [squadrons] Loaded 79 rows × 6 cols (sep=',')
+23:20:40  INFO     [departments] Loaded 6 rows × 5 cols (sep=',')
+23:20:40  INFO     [users] Loaded 2060 rows × 24 cols (sep=';')
+23:20:40  INFO     [activities] Loaded 2218 rows × 39 cols (sep=';')
+23:20:40  INFO     [questions] Loaded 5350 rows × 10 cols (sep=';')
+23:20:40  INFO     [options] Loaded 15684 rows × 6 cols (sep=';')
+23:20:40  INFO     [attempts] Loaded 11198 rows × 14 cols (sep=';')
+23:20:40  INFO     [answers] Loaded 89039 rows × 8 cols (sep=';')
+23:20:40  INFO     [submissions] Loaded 7139 rows × 13 cols (sep=';')
+23:20:41  INFO     [progress] Loaded 27212 rows × 9 cols (sep=';')
+23:20:41  INFO     [notifications] Loaded 14255 rows × 11 cols (sep=';')
+23:20:41  INFO     [comments] Loaded 4452 rows × 9 cols (sep=';')
+23:20:41  INFO     [likes] Loaded 10963 rows × 4 cols (sep=';')
+23:20:41  INFO     Loaded 18 / 18 tables
+23:20:41  INFO     --- Stage 2: Cleaning ---
+23:20:41  INFO     [departments] Cleaning...
+23:20:41  INFO     [departments] Removed 1 duplicate rows
+23:20:41  INFO     [departments] Imputed Description → No description (1 values)
+23:20:41  INFO     [years] Cleaning...
+23:20:41  INFO     [years] Removed 8 duplicate rows
+23:20:41  INFO     [years] Fixed 5 inverted date ranges
+23:20:41  INFO     [squadrons] Cleaning...
+23:20:41  INFO     [squadrons] Removed 6 oversized Id rows
+23:20:41  INFO     [squadrons] Imputed Description → No description (8 values)
+23:20:41  INFO     [users] Cleaning...
+23:20:41  INFO     [users] Nulled 1960 invalid NationalId values
+23:20:41  INFO     [users] Added missing-value flags: ['FullName_WasNull', 'Gender_WasNull', 'City_WasNull']
+23:20:41  INFO     [users] Imputed FullName → Unknown (25 values)
+23:20:41  INFO     [users] Imputed Gender → Unknown (106 values)
+23:20:41  INFO     [users] Imputed City → Unknown (216 values)
+23:20:41  INFO     [users] Imputed NationalId → Unknown (2060 values)
+23:20:41  INFO     [users] Done: 2060 → 2060 rows
+23:20:41  INFO     [students] Cleaning...
+23:20:41  INFO     [students] Removed 80 duplicate rows
+23:20:41  INFO     [students] Added missing-value flags: ['DepartmentId_WasNull', 'YearId_WasNull', 'SquadronId_WasNull', 'AdmissionYear_WasNull']
+23:20:41  INFO     [students] Imputed DepartmentId → 1.0 (400 values)
+23:20:41  INFO     [students] Imputed YearId → 1.0 (300 values)
+23:20:41  INFO     [students] Imputed SquadronId → 5.0 (350 values)
+23:20:41  INFO     [students] Imputed AdmissionYear → 2024.0 (50 values)
+23:20:41  INFO     [students] Fixed 19 invalid values in SquadronId → mode=5.0
+23:20:41  INFO     [students] Done: 5080 → 5000 rows
+23:20:41  INFO     [courses] Cleaning...
+23:20:41  INFO     [courses] Imputed DepartmentId → 2.0 (22 values)
+23:20:41  INFO     [courses] Imputed YearId → 17.0 (28 values)
+23:20:41  INFO     [courses] Imputed InstructorId → 10.0 (14 values)
+23:20:41  INFO     [courses] Imputed Description → No description (8 values)
+23:20:41  INFO     [courses] Fixed 23 invalid values in DepartmentId → mode=2.0
+23:20:41  INFO     [courses] Clipped 12 values in CreditHours to [1, 6]
+23:20:41  INFO     [courses] Capped 2 extreme values in EnrolledStudentsCount at p99=1042.5
+23:20:41  INFO     [courses] Done: 200 → 200 rows
+23:20:41  INFO     [courses] FK fix: 43 invalid YearId → mode=17
+23:20:41  INFO     [activity_log] Cleaning...
+23:20:41  INFO     [activity_log] Removed 200 duplicate rows
+23:20:41  INFO     [activity_log] Added missing-value flags: ['UserId_WasNull', 'ProcessingTimeMs_WasNull', 'EntityId_WasNull']
+23:20:41  INFO     [activity_log] Imputed UserId → -1 (3007 values)
+23:20:41  INFO     [activity_log] Imputed EntityId → -1 (5221 values)
+23:20:41  INFO     [activity_log] Imputed Description → No description (1177 values)
+23:20:41  INFO     [activity_log] Imputed IpAddress → Unknown (798 values)
+23:20:41  INFO     [activity_log] Imputed UserAgent → Unknown (475 values)
+23:20:41  INFO     [activity_log] Imputed ProcessingTimeMs → 303.0 (1791 values)
+23:20:41  INFO     [activity_log] Imputed Metadata → {} (1856 values)
+23:20:41  INFO     [activity_log] Imputed EntityName → Unknown (3059 values)
+23:20:41  INFO     [activity_log] Capped 130 extreme values in ProcessingTimeMs at p99=9999.0
+23:20:41  INFO     [activity_log] Done: 15200 → 15000 rows
+23:20:41  INFO     [enrollments] Cleaning...
+23:20:41  INFO     [enrollments] Dropped 30 rows with null in ['StudentProfileId', 'CourseId']
+23:20:41  INFO     [enrollments] Removed 20 invalid CourseId rows
+23:20:41  INFO     [enrollments] Removed 206 duplicate rows
+23:20:41  INFO     [enrollments] Imputed EnrolledById → -1 (911 values)
+23:20:41  INFO     [enrollments] Done: 10200 → 9944 rows
+23:20:41  INFO     [activities] Cleaning...
+23:20:41  WARNING  [activities] Dropped 57 orphan CourseId rows
+23:20:41  INFO     [activities] Fixed 32 invalid MaxGrade values → median=25.0
+23:20:41  INFO     [activities] Added missing-value flags: ['Title_WasNull', 'MaxGrade_WasNull']
+23:20:41  INFO     [activities] Imputed Title → Untitled (98 values)
+23:20:41  INFO     [activities] Imputed Description → No description (563 values)
+23:20:41  INFO     [activities] Imputed MaxGrade → 25.0 (1187 values)
+23:20:41  INFO     [activities] Imputed PassingScore → 13.5 (1187 values)
+23:20:41  INFO     [activities] Done: 2218 → 2161 rows
+23:20:41  INFO     [questions] Cleaning...
+23:20:41  WARNING  [questions] Dropped 153 orphan QuizId rows
+23:20:41  INFO     [questions] Fixed 217 invalid Marks values
+23:20:41  INFO     [questions] Dropped 167 rows with null in ['QuestionText']
+23:20:41  INFO     [questions] Done: 5350 → 5030 rows
+23:20:41  INFO     [options] Cleaning...
+23:20:41  WARNING  [options] Dropped 840 orphan QuestionId rows
+23:20:41  INFO     [options] Done: 15684 → 14844 rows
+23:20:41  INFO     [attempts] Cleaning...
+23:20:41  INFO     [attempts] Removed 60 duplicate rows
+23:20:41  WARNING  [attempts] Dropped 50 orphan StudentId rows
+23:20:41  INFO     [attempts] Clamped 397 Score > MaxScore rows
+23:20:42  INFO     [attempts] Added missing-value flags: ['Score_WasNull', 'TimeSpentSeconds_WasNull']
+23:20:42  INFO     [attempts] Imputed TimeSpentSeconds → 1131.0 (439 values)
+23:20:42  INFO     [attempts] Imputed GradedById → -1 (4424 values)
+23:20:42  INFO     [attempts] Done: 11198 → 11088 rows
+23:20:42  INFO     [answers] Cleaning...
+23:20:42  WARNING  [answers] Dropped 249 orphan QuizAttemptId rows
+23:20:42  INFO     [answers] Imputed IsCorrect → -1 (7087 values)
+23:20:42  INFO     [answers] Imputed MarksAwarded → 0 (4762 values)
+23:20:42  INFO     [answers] Done: 89039 → 88790 rows
+23:20:42  INFO     [submissions] Cleaning...
+23:20:42  INFO     [submissions] Removed 55 duplicate rows
+23:20:42  INFO     [submissions] Dropped 35 rows with null in ['StudentId', 'AssignmentId']
+23:20:42  WARNING  [submissions] Dropped 376 orphan AssignmentId rows
+23:20:42  INFO     [submissions] Nulled 106 negative Grade values
+23:20:42  INFO     [submissions] Nulled 19 Grade > max values
+23:20:42  INFO     [submissions] Added missing-value flags: ['Grade_WasNull']
+23:20:42  INFO     [submissions] Imputed Grade → 14.0 (2943 values)
+23:20:42  INFO     [submissions] Imputed Feedback → No feedback (3612 values)
+23:20:42  INFO     [submissions] Imputed GradedById → -1 (2818 values)
+23:20:42  INFO     [submissions] Done: 7139 → 6673 rows
+23:20:42  INFO     [progress] Cleaning...
+23:20:42  INFO     [progress] Removed 636 duplicate rows
+23:20:42  INFO     [progress] Dropped 455 rows with null in ['StudentId', 'ActivityId']
+23:20:42  INFO     [progress] Clipped 985 values in ProgressPercent to [0, 100]
+23:20:42  INFO     [progress] Fixed 563 Completed rows with ProgressPercent < 100
+23:20:42  INFO     [progress] Added missing-value flags: ['TotalTimeSpentSeconds_WasNull']
+23:20:42  INFO     [progress] Imputed TotalTimeSpentSeconds → 2780.0 (5456 values)
+23:20:42  INFO     [progress] Done: 27212 → 24835 rows
+23:20:42  INFO     [notifications] Cleaning...
+23:20:42  INFO     [notifications] Added missing-value flags: ['UserId_WasNull']
+23:20:42  INFO     [notifications] Imputed UserId → -1 (30 values)
+23:20:42  INFO     [notifications] Imputed Title → System Notification (30 values)
+23:20:42  INFO     [notifications] Imputed Body → No details (758 values)
+23:20:42  INFO     [notifications] Done: 14255 → 14255 rows
+23:20:42  INFO     [comments] Cleaning...
+23:20:42  WARNING  [comments] Dropped 79 orphan ActivityId rows
+23:20:42  INFO     [comments] Added missing-value flags: ['UserId_WasNull']
+23:20:42  INFO     [comments] Imputed UserId → -1 (126 values)
+23:20:42  INFO     [comments] Done: 4452 → 4373 rows
+23:20:42  INFO     [likes] Cleaning...
+23:20:42  INFO     [likes] Removed 50 duplicate rows
+23:20:42  WARNING  [likes] Dropped 193 orphan CommentId rows
+23:20:42  INFO     [likes] Done: 10963 → 10720 rows
+23:20:42  INFO     Cleaning complete.
+23:20:42  INFO     --- Stage 3: Transformation ---
+23:20:42  INFO     [enrollments] Transforming...
+23:20:42  INFO     [students] Transforming...
+23:20:42  INFO     [activity_log] Transforming...
+23:20:42  INFO     [courses] Transforming...
+23:20:42  INFO     [users] Transforming...
+23:20:42  INFO     [activities] Transforming...
+23:20:42  INFO     [attempts] Transforming...
+23:20:42  INFO     [submissions] Transforming...
+23:20:42  INFO     [progress] Transforming...
+23:20:43  INFO     Transformation complete.
+23:20:43  INFO     --- Stage 4: Validation ---
+23:20:43  INFO     [PASS] students
+23:20:43  INFO     [PASS] activity_log_ml
+23:20:43  INFO     [PASS] courses
+23:20:43  INFO     [PASS] enrollments
+23:20:43  INFO     [PASS] users
+23:20:43  INFO     [PASS] activities
+23:20:43  INFO     [PASS] attempts
+23:20:43  INFO     [PASS] submissions
+23:20:43  INFO     [PASS] progress
+23:20:43  INFO     [PASS] notifications
+23:20:43  INFO     [PASS] students: timestamps OK
+23:20:43  INFO     [PASS] courses: timestamps OK
+23:20:43  INFO     [PASS] activities: timestamps OK
+23:20:43  INFO     [PASS] comments: timestamps OK
+23:20:43  INFO     --- Stage 5: Analytics ---
+23:20:43  INFO     KPIs:
+TotalStudents           5000.00
+AtRiskStudents           750.00
+TotalUsers              2060.00
+ActiveUsers             1905.00
+TotalCourses             200.00
+ActiveCourses             98.00
+DeadCourses               45.00
+TotalEnrollments        9944.00
+TotalActivityLogs      15000.00
+TotalActivities         2161.00
+TotalQuizAttempts      11088.00
+TotalSubmissions        6673.00
+AvgProcessingTimeMs      497.38
+OverallCompletionRate     55.40
+23:20:43  INFO     At-risk students: 750 / 5000
+23:20:43  INFO     Analytics complete — 13 result tables
+23:20:43  INFO     --- Stage 5.5: Building Feature Tables ---
+23:20:43  INFO       engagement: 5000 rows
+23:20:43  INFO       student_performance: 5000 rows
+23:20:43  INFO       course_metrics: 200 rows
+23:20:43  INFO       ml_features_dataset: 5000 rows, AtRisk=4031
+23:20:43  INFO     --- Stage 6: Export ---
+23:20:43  INFO       Saved students_clean.csv (5000 rows)
+23:20:43  INFO       Saved activity_log_clean.csv (15000 rows)
+23:20:43  INFO       Saved courses_clean.csv (200 rows)
+23:20:44  INFO       Saved enrollments_clean.csv (9944 rows)
+23:20:44  INFO       Saved years_clean.csv (48 rows)
+23:20:44  INFO       Saved squadrons_clean.csv (73 rows)
+23:20:44  INFO       Saved departments_clean.csv (5 rows)
+23:20:44  INFO       Saved users_clean.csv (2060 rows)
+23:20:44  INFO       Saved activities_clean.csv (2161 rows)
+23:20:44  INFO       Saved attempts_clean.csv (11088 rows)
+23:20:44  INFO       Saved submissions_clean.csv (6673 rows)
+23:20:45  INFO       Saved progress_clean.csv (24835 rows)
+23:20:45  INFO       Saved notifications_clean.csv (14255 rows)
+23:20:45  INFO       Saved comments_clean.csv (4373 rows)
+23:20:45  INFO       Saved likes_clean.csv (10720 rows)
+23:20:45  INFO       Saved questions_clean.csv (5030 rows)
+23:20:45  INFO       Saved options_clean.csv (14844 rows)
+23:20:46  INFO       Saved answers_clean.csv (88790 rows)
+23:20:46  INFO       Saved students_ml.csv (5000 rows)
+23:20:46  INFO       Saved activity_log_ml.csv (15000 rows)
+23:20:46  INFO       Saved courses_ml.csv (200 rows)
+23:20:46  INFO       Saved enrollments_ml.csv (9944 rows)
+23:20:46  INFO       Saved users_ml.csv (2060 rows)
+23:20:46  INFO       Saved activities_ml.csv (2161 rows)
+23:20:47  INFO       Saved attempts_ml.csv (11088 rows)
+23:20:47  INFO       Saved submissions_ml.csv (6673 rows)
+23:20:47  INFO       Saved progress_ml.csv (24835 rows)
+23:20:49  INFO       Saved insights_summary.xlsx
+23:20:49  INFO       Saved engagement_clean.csv (5000 rows)
+23:20:49  INFO       Saved student_performance_clean.csv (5000 rows)
+23:20:49  INFO       Saved course_metrics_clean.csv (200 rows)
+23:20:49  INFO       Saved ml_features_dataset_clean.csv (5000 rows)
+23:20:49  INFO       Saved ml_features_dataset.csv
+23:20:49  INFO     Audit trail saved → audit_trail.json
+23:20:49  INFO     Export complete.
+23:20:49  INFO     Pipeline PASSED in 9.8s

@@ -1,0 +1,15 @@
+Feature,MeanAbsSHAP,MeanSHAP,Rank
+AvgTimePerActivity,0.1565,-0.11232,1
+WorkloadPressure,0.10691,-0.09102,2
+EnrolledCourseCount,0.02472,-0.0202,3
+AdmissionYear,0.02263,-0.02124,4
+SquadronId,0.02164,-0.01915,5
+AvgGrade,0.01856,-0.01759,6
+AvgSubmitHour,0.01845,-0.01747,7
+SocialIsolationScore,0.01784,-0.01633,8
+YearId,0.01727,-0.01565,9
+LikesGiven,0.01385,-0.01263,10
+DepartmentId,0.0137,-0.01071,11
+Submissions,0.01087,-0.00942,12
+CommentsCount,0.01032,-0.0096,13
+LateRate,0.00661,-0.00585,14

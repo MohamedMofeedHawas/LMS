@@ -1,0 +1,9 @@
+AssignmentBucket,QuizBucket,StudentCount,Pattern
+Low,Low,4126,Balanced
+Low,Mid,672,Balanced
+Low,High,130,Weak Assignments / Strong Quizzes
+Mid,Low,41,Balanced
+Mid,Mid,3,Balanced
+Mid,High,1,Balanced
+High,Low,14,Strong Assignments / Weak Quizzes
+High,Mid,4,Balanced

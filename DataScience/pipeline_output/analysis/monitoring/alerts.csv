@@ -1,0 +1,9 @@
+Rule,Count,Severity
+Inactive Students (>30 days),8,Critical
+High Risk Students (active only),867,Critical
+High Course Dropout (>60%),26,High
+Inactive Students (>14 days),8,High
+Students with 5+ Failed Attempts,846,High
+Inactive Students (>7 days),8,Medium
+Difficult Activities (avg attempts > 2 or pass rate < 40%),190,Medium
+Students with 50%+ Late Submissions,341,Medium

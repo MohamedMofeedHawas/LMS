@@ -1,0 +1,2162 @@
+ActivityId,CourseId,Title,ActivityType,DifficultyLevel,MaxGrade
+1415,133,Indexing & Performance,Assignment,,10.0
+664,66,Sorting Algorithms,Quiz,Hard,20.0
+834,81,OOP Concepts,Lecture,,25.0
+299,29,Encryption Methods,Quiz,,20.0
+1524,144,Database Normalization,Lecture,,25.0
+1885,175,Big Data Overview,Quiz,,100.0
+938,90,Data Structures Overview,Assignment,,50.0
+457,44,OOP Concepts,Lecture,,25.0
+509,48,OS Scheduling,Assignment,,20.0
+665,66,OOP Concepts,Assignment,,100.0
+2214,17,Linked Lists,Lecture,,25.0
+1626,152,Concurrency,Lecture,,25.0
+1956,183,Big Data Overview,Lecture,,25.0
+1300,121,Web Development Basics,Quiz,Easy,10.0
+81,8,Big Data Overview,Quiz,Hard,50.0
+508,48,Concurrency,Assignment,,50.0
+2078,193,Design Patterns,Lecture,,25.0
+643,63,Cloud Architecture,Assignment,,50.0
+1219,116,Network Protocols,Lecture,,25.0
+831,81,Data Structures Overview,Quiz,Hard,20.0
+313,30,Computer Vision Intro,Lecture,,25.0
+1526,144,REST APIs,Quiz,Hard,25.0
+199,21,Cloud Architecture,Lecture,,25.0
+1098,107,Design Patterns,Quiz,Easy,10.0
+1497,142,Concurrency,Lecture,,25.0
+777,76,Indexing & Performance,Assignment,,10.0
+1924,181,Concurrency,Quiz,Hard,25.0
+1737,161,SQL Joins,Lecture,,25.0
+30,4,OS Scheduling,Quiz,Hard,100.0
+1699,159,Sorting Algorithms,Lecture,,25.0
+654,65,SQL Joins,Lecture,,25.0
+636,63,Neural Networks,Quiz,Easy,10.0
+773,76,Network Protocols,Quiz,Easy,25.0
+206,22,Linked Lists,Assignment,,50.0
+1010,97,Computer Vision Intro,Lecture,,25.0
+2161,117,Untitled,Quiz,,100.0
+1992,186,Sorting Algorithms,Quiz,,20.0
+601,58,Untitled,Assignment,,50.0
+435,41,Big Data Overview,Quiz,Hard,10.0
+748,74,Indexing & Performance,Lecture,,25.0
+1406,132,Computer Vision Intro,Lecture,,25.0
+397,38,Introduction to the Course,Lecture,,25.0
+884,85,Untitled,Lecture,,25.0
+1205,115,REST APIs,Quiz,Hard,20.0
+711,71,Encryption Methods,Assignment,,50.0
+1779,165,Memory Management,Quiz,Hard,25.0
+1746,162,Linked Lists,Lecture,,25.0
+652,64,Concurrency,Lecture,,25.0
+2049,190,Web Development Basics,Quiz,,25.0
+1777,165,Design Patterns,Lecture,,25.0
+1733,161,Search Algorithms,Quiz,Easy,20.0
+212,22,Introduction to the Course,Assignment,,50.0
+139,16,Big Data Overview,Lecture,,25.0
+1868,174,Design Patterns,Lecture,,25.0
+846,82,OOP Concepts,Quiz,Medium,10.0
+380,36,Dynamic Programming,Assignment,,10.0
+989,94,Indexing & Performance,Assignment,,20.0
+683,68,Concurrency,Lecture,,25.0
+1477,140,Dynamic Programming,Quiz,,100.0
+1344,128,OOP Concepts,Quiz,,50.0
+764,76,OS Scheduling,Quiz,Hard,100.0
+207,22,Big Data Overview,Lecture,,25.0
+368,35,Cybersecurity Fundamentals,Assignment,,20.0
+1954,183,SQL Joins,Assignment,,100.0
+716,72,Data Structures Overview,Quiz,,25.0
+304,30,Design Patterns,Lecture,,25.0
+1802,167,OOP Concepts,Lecture,,25.0
+1695,159,Trees and Graphs,Quiz,,100.0
+493,47,Indexing & Performance,Lecture,,25.0
+1641,153,Web Development Basics,Quiz,Hard,10.0
+1009,97,Neural Networks,Lecture,,25.0
+571,54,Indexing & Performance,Assignment,,50.0
+1511,143,Search Algorithms,Lecture,,25.0
+1401,132,Memory Management,Lecture,,25.0
+449,43,OOP Concepts,Lecture,,25.0
+1757,163,Cloud Architecture,Lecture,,25.0
+1555,146,Indexing & Performance,Quiz,Hard,50.0
+922,89,REST APIs,Lecture,,25.0
+1884,175,Design Patterns,Assignment,,100.0
+1305,122,REST APIs,Lecture,,25.0
+774,76,Big Data Overview,Assignment,,10.0
+1540,145,Ethics in AI,Lecture,,25.0
+1910,179,Introduction to the Course,Lecture,,25.0
+1807,167,SQL Joins,Quiz,Easy,100.0
+1342,127,Trees and Graphs,Lecture,,25.0
+1599,150,Design Patterns,Quiz,Hard,100.0
+1586,149,Database Normalization,Quiz,Medium,50.0
+1037,99,Search Algorithms,Lecture,,25.0
+138,16,Computer Vision Intro,Quiz,Easy,100.0
+833,81,Neural Networks,Quiz,Medium,25.0
+1519,144,Dynamic Programming,Lecture,,25.0
+1086,106,Web Development Basics,Lecture,,25.0
+1759,163,Big Data Overview,Lecture,,25.0
+243,25,Design Patterns,Lecture,,25.0
+1559,147,Design Patterns,Assignment,,25.0
+1579,148,Neural Networks,Assignment,,25.0
+829,81,Network Protocols,Lecture,,25.0
+1423,134,Encryption Methods,Lecture,,25.0
+1983,185,Python for Data Science,Assignment,,100.0
+2200,50,Design Patterns,Quiz,Medium,10.0
+135,16,Design Patterns,Assignment,,100.0
+1875,174,Memory Management,Lecture,,25.0
+452,43,Trees and Graphs,Assignment,,20.0
+1838,170,Database Normalization,Quiz,,100.0
+353,33,Sorting Algorithms,Lecture,,25.0
+1422,134,Linked Lists,Lecture,,25.0
+1934,181,Database Normalization,Assignment,,100.0
+1170,112,Concurrency,Lecture,,25.0
+1537,145,Web Development Basics,Lecture,,25.0
+1801,167,Memory Management,Lecture,,25.0
+343,32,OOP Concepts,Lecture,,25.0
+2056,191,Introduction to the Course,Quiz,Medium,100.0
+1624,152,Indexing & Performance,Lecture,,25.0
+2191,70,OOP Concepts,Lecture,,25.0
+1878,175,Search Algorithms,Lecture,,25.0
+700,70,Trees and Graphs,Lecture,,25.0
+259,26,Sorting Algorithms,Lecture,,25.0
+735,73,Web Development Basics,Lecture,,25.0
+1424,135,Cybersecurity Fundamentals,Quiz,Hard,10.0
+937,90,Data Structures Overview,Lecture,,25.0
+280,28,Design Patterns,Lecture,,25.0
+569,54,Database Normalization,Assignment,,50.0
+868,85,Cloud Architecture,Lecture,,25.0
+72,7,Cybersecurity Fundamentals,Lecture,,25.0
+814,80,Python for Data Science,Quiz,Hard,25.0
+1831,169,Big Data Overview,Lecture,,25.0
+126,14,Encryption Methods,Quiz,Hard,25.0
+1613,151,OS Scheduling,Lecture,,25.0
+274,27,Linked Lists,Quiz,,50.0
+330,32,Neural Networks,Quiz,Hard,100.0
+1602,150,Design Patterns,Lecture,,25.0
+2043,190,Encryption Methods,Lecture,,25.0
+1538,145,SQL Joins,Assignment,,25.0
+469,45,Introduction to the Course,Lecture,,25.0
+1455,138,Neural Networks,Lecture,,25.0
+241,24,Search Algorithms,Lecture,,25.0
+2135,200,Memory Management,Lecture,,25.0
+242,24,Computer Vision Intro,Lecture,,25.0
+1507,143,Web Development Basics,Lecture,,25.0
+2184,62,Cybersecurity Fundamentals,Lecture,,25.0
+544,51,Concurrency,Lecture,,25.0
+1945,182,Computer Vision Intro,Quiz,Easy,20.0
+349,33,Untitled,Lecture,,25.0
+630,62,SQL Joins,Assignment,,100.0
+1078,105,Memory Management,Lecture,,25.0
+987,94,Introduction to the Course,Lecture,,25.0
+1834,169,Network Protocols,Lecture,,25.0
+1714,160,Ethics in AI,Lecture,,25.0
+1249,118,Trees and Graphs,Lecture,,25.0
+1456,139,Cybersecurity Fundamentals,Quiz,Easy,10.0
+919,88,Neural Networks,Assignment,,100.0
+103,11,Concurrency,Lecture,,25.0
+1460,139,Cloud Architecture,Quiz,Hard,25.0
+579,55,Python for Data Science,Lecture,,25.0
+995,95,Sorting Algorithms,Assignment,,20.0
+805,79,Data Structures Overview,Assignment,,10.0
+976,93,Big Data Overview,Lecture,,25.0
+2206,181,Database Normalization,Assignment,,100.0
+1468,140,SQL Joins,Lecture,,25.0
+344,33,Search Algorithms,Quiz,,100.0
+264,27,Cybersecurity Fundamentals,Lecture,,25.0
+940,90,Design Patterns,Quiz,,20.0
+462,45,Computer Vision Intro,Lecture,,25.0
+294,29,Introduction to the Course,Quiz,Easy,20.0
+1790,166,Introduction to the Course,Lecture,,25.0
+1921,180,Data Structures Overview,Lecture,,25.0
+693,69,Search Algorithms,Quiz,Medium,25.0
+704,70,Python for Data Science,Lecture,,25.0
+1635,153,Network Protocols,Quiz,,25.0
+964,92,Linked Lists,Assignment,,25.0
+1563,147,REST APIs,Lecture,,25.0
+290,29,Neural Networks,Quiz,Medium,50.0
+2126,199,Data Structures Overview,Assignment,,50.0
+41,4,Machine Learning Basics,Lecture,,25.0
+1705,159,SQL Joins,Quiz,Hard,50.0
+316,30,Computer Vision Intro,Assignment,,25.0
+286,28,Introduction to the Course,Quiz,Hard,100.0
+422,40,Introduction to the Course,Quiz,Hard,100.0
+1253,118,Computer Vision Intro,Lecture,,25.0
+499,47,Machine Learning Basics,Assignment,,25.0
+1770,165,Concurrency,Assignment,,20.0
+891,86,Ethics in AI,Lecture,,25.0
+1481,141,Introduction to the Course,Assignment,,100.0
+1100,107,Cybersecurity Fundamentals,Assignment,,20.0
+1174,113,Data Structures Overview,Quiz,,100.0
+183,20,Search Algorithms,Lecture,,25.0
+1089,106,Encryption Methods,Quiz,Medium,25.0
+1583,149,Database Normalization,Lecture,,25.0
+504,47,Cloud Architecture,Lecture,,25.0
+761,75,Python for Data Science,Quiz,Medium,20.0
+1536,145,Machine Learning Basics,Assignment,,20.0
+1830,169,Encryption Methods,Lecture,,25.0
+1202,115,Trees and Graphs,Lecture,,25.0
+1466,140,Data Structures Overview,Lecture,,25.0
+1518,143,Encryption Methods,Assignment,,25.0
+1748,163,Network Protocols,Quiz,Easy,25.0
+979,93,Untitled,Lecture,,25.0
+1051,102,Neural Networks,Quiz,Medium,100.0
+738,73,SQL Joins,Lecture,,25.0
+554,53,Introduction to the Course,Lecture,,25.0
+1883,175,Design Patterns,Lecture,,25.0
+757,75,Ethics in AI,Lecture,,25.0
+2092,194,Untitled,Lecture,,25.0
+616,61,Dynamic Programming,Assignment,,25.0
+1994,186,Big Data Overview,Assignment,,10.0
+1339,127,Trees and Graphs,Lecture,,25.0
+1293,121,Data Structures Overview,Lecture,,25.0
+1244,118,Indexing & Performance,Assignment,,10.0
+1855,173,Concurrency,Lecture,,25.0
+550,52,Untitled,Lecture,,25.0
+488,46,Cybersecurity Fundamentals,Assignment,,25.0
+648,63,Introduction to the Course,Lecture,,25.0
+1200,114,Database Normalization,Lecture,,25.0
+307,30,OOP Concepts,Lecture,,25.0
+173,19,Network Protocols,Lecture,,25.0
+48,5,Design Patterns,Lecture,,25.0
+474,45,Web Development Basics,Assignment,,20.0
+1950,183,REST APIs,Assignment,,20.0
+656,65,Web Development Basics,Lecture,,25.0
+291,29,Python for Data Science,Quiz,Hard,10.0
+1552,146,Search Algorithms,Assignment,,10.0
+674,67,Database Normalization,Lecture,,25.0
+131,15,Cloud Architecture,Lecture,,25.0
+1589,149,Indexing & Performance,Quiz,,20.0
+1571,148,Cybersecurity Fundamentals,Lecture,,25.0
+74,7,Python for Data Science,Lecture,,25.0
+1036,99,Trees and Graphs,Quiz,,25.0
+878,85,Computer Vision Intro,Quiz,Easy,50.0
+880,85,Introduction to the Course,Assignment,,10.0
+1828,169,Dynamic Programming,Quiz,Medium,100.0
+2136,200,Concurrency,Assignment,,25.0
+1311,123,Data Structures Overview,Lecture,,25.0
+875,85,Search Algorithms,Assignment,,10.0
+1815,168,Data Structures Overview,Lecture,,25.0
+34,4,Ethics in AI,Lecture,,25.0
+1947,182,Ethics in AI,Lecture,,25.0
+963,92,OOP Concepts,Assignment,,25.0
+866,84,Data Structures Overview,Assignment,,50.0
+583,56,Indexing & Performance,Lecture,,25.0
+117,12,Trees and Graphs,Lecture,,25.0
+2199,38,Cloud Architecture,Lecture,,25.0
+522,49,Neural Networks,Lecture,,25.0
+2036,190,Database Normalization,Lecture,,25.0
+1053,102,Computer Vision Intro,Assignment,,25.0
+870,85,OOP Concepts,Lecture,,25.0
+132,15,Big Data Overview,Quiz,Easy,50.0
+858,84,REST APIs,Lecture,,25.0
+1483,141,Cloud Architecture,Lecture,,25.0
+885,86,REST APIs,Lecture,,25.0
+494,47,Memory Management,Lecture,,25.0
+1523,144,SQL Joins,Quiz,,20.0
+1277,120,Untitled,Lecture,,25.0
+705,70,Encryption Methods,Quiz,Easy,50.0
+1596,149,OOP Concepts,Lecture,,25.0
+1149,111,Network Protocols,Quiz,,10.0
+163,18,Python for Data Science,Assignment,,100.0
+1165,112,Machine Learning Basics,Lecture,,25.0
+2055,191,Introduction to the Course,Lecture,,25.0
+1327,126,Data Structures Overview,Quiz,Hard,10.0
+1741,161,Design Patterns,Quiz,Hard,100.0
+1607,151,Machine Learning Basics,Quiz,Hard,20.0
+1052,102,Indexing & Performance,Lecture,,25.0
+1169,112,REST APIs,Lecture,,25.0
+724,72,Python for Data Science,Lecture,,25.0
+1870,174,Python for Data Science,Lecture,,25.0
+611,60,Database Normalization,Lecture,,25.0
+1391,131,Memory Management,Lecture,,25.0
+1508,143,Network Protocols,Quiz,Medium,50.0
+1863,173,Big Data Overview,Assignment,,10.0
+1461,139,OOP Concepts,Lecture,,25.0
+1248,118,OS Scheduling,Lecture,,25.0
+1901,177,Database Normalization,Lecture,,25.0
+709,71,Computer Vision Intro,Assignment,,10.0
+826,81,Untitled,Quiz,Hard,50.0
+591,57,Dynamic Programming,Lecture,,25.0
+1530,144,Linked Lists,Lecture,,25.0
+115,12,Neural Networks,Lecture,,25.0
+1267,119,Python for Data Science,Quiz,Hard,50.0
+1981,184,Linked Lists,Lecture,,25.0
+1978,184,Data Structures Overview,Quiz,Medium,20.0
+176,19,REST APIs,Quiz,Hard,10.0
+1819,169,Computer Vision Intro,Assignment,,100.0
+1042,100,Machine Learning Basics,Quiz,Hard,20.0
+1109,107,Introduction to the Course,Assignment,,25.0
+1203,115,Ethics in AI,Quiz,Hard,100.0
+378,36,Big Data Overview,Lecture,,25.0
+402,38,Sorting Algorithms,Lecture,,25.0
+2010,187,Cloud Architecture,Lecture,,25.0
+40,4,Computer Vision Intro,Assignment,,20.0
+53,5,Neural Networks,Quiz,Medium,20.0
+1274,120,Trees and Graphs,Lecture,,25.0
+269,27,Indexing & Performance,Lecture,,25.0
+329,32,Indexing & Performance,Lecture,,25.0
+1973,184,OS Scheduling,Lecture,,25.0
+750,74,Encryption Methods,Assignment,,50.0
+2027,188,Data Structures Overview,Lecture,,25.0
+933,89,Introduction to the Course,Quiz,Hard,10.0
+1116,108,SQL Joins,Lecture,,25.0
+1187,114,Linked Lists,Lecture,,25.0
+1472,140,Dynamic Programming,Lecture,,25.0
+1427,135,Database Normalization,Lecture,,25.0
+1734,161,Neural Networks,Assignment,,10.0
+1980,184,Linked Lists,Lecture,,25.0
+1856,173,Introduction to the Course,Assignment,,25.0
+1409,132,Computer Vision Intro,Lecture,,25.0
+311,30,Indexing & Performance,Quiz,,10.0
+1612,151,Neural Networks,Lecture,,25.0
+361,34,Search Algorithms,Assignment,,50.0
+1355,128,Search Algorithms,Lecture,,25.0
+2089,194,SQL Joins,Quiz,Hard,50.0
+1688,158,Trees and Graphs,Assignment,,25.0
+1411,132,Python for Data Science,Assignment,,100.0
+1959,183,Computer Vision Intro,Lecture,,25.0
+276,27,Design Patterns,Lecture,,25.0
+261,26,Untitled,Quiz,,20.0
+1412,132,Data Structures Overview,Lecture,,25.0
+739,73,Big Data Overview,Lecture,,25.0
+1628,152,Concurrency,Lecture,,25.0
+722,72,Sorting Algorithms,Quiz,,50.0
+913,87,Network Protocols,Lecture,,25.0
+124,13,REST APIs,Assignment,,25.0
+2137,200,Untitled,Assignment,,25.0
+953,91,Big Data Overview,Lecture,,25.0
+1162,112,Cybersecurity Fundamentals,Lecture,,25.0
+1356,128,Big Data Overview,Lecture,,25.0
+1715,160,Neural Networks,Quiz,Hard,20.0
+2014,187,Search Algorithms,Quiz,Hard,25.0
+1251,118,Sorting Algorithms,Quiz,,100.0
+1499,142,Network Protocols,Quiz,Medium,25.0
+130,14,Indexing & Performance,Lecture,,25.0
+363,34,Web Development Basics,Lecture,,25.0
+92,9,Machine Learning Basics,Lecture,,25.0
+1110,107,Database Normalization,Lecture,,25.0
+2132,200,Linked Lists,Lecture,,25.0
+960,92,Trees and Graphs,Quiz,,10.0
+2187,67,Encryption Methods,Lecture,,25.0
+1168,112,Trees and Graphs,Lecture,,25.0
+1343,128,Web Development Basics,Lecture,,25.0
+2198,77,Network Protocols,Quiz,Easy,50.0
+1207,115,Network Protocols,Lecture,,25.0
+528,49,Big Data Overview,Lecture,,25.0
+1296,121,Trees and Graphs,Lecture,,25.0
+121,13,Python for Data Science,Lecture,,25.0
+78,7,OS Scheduling,Lecture,,25.0
+743,73,OOP Concepts,Quiz,,20.0
+1033,99,Linked Lists,Assignment,,10.0
+524,49,Search Algorithms,Quiz,Hard,10.0
+918,88,Concurrency,Lecture,,25.0
+1216,116,SQL Joins,Lecture,,25.0
+639,63,Big Data Overview,Assignment,,20.0
+171,19,OOP Concepts,Lecture,,25.0
+234,24,Data Structures Overview,Lecture,,25.0
+151,17,Ethics in AI,Quiz,Hard,20.0
+244,25,Design Patterns,Assignment,,20.0
+1680,157,Data Structures Overview,Lecture,,25.0
+1003,96,Computer Vision Intro,Lecture,,25.0
+1763,164,Memory Management,Lecture,,25.0
+1385,130,Memory Management,Assignment,,25.0
+1345,128,Data Structures Overview,Quiz,Hard,25.0
+1467,140,Database Normalization,Quiz,Medium,50.0
+865,84,Dynamic Programming,Lecture,,25.0
+1600,150,Concurrency,Quiz,,25.0
+2077,193,Untitled,Assignment,,20.0
+338,32,Design Patterns,Lecture,,25.0
+614,60,Neural Networks,Lecture,,25.0
+2073,193,Web Development Basics,Lecture,,25.0
+203,22,Memory Management,Assignment,,10.0
+324,31,Data Structures Overview,Assignment,,10.0
+786,77,Python for Data Science,Lecture,,25.0
+980,93,Dynamic Programming,Lecture,,25.0
+779,77,Encryption Methods,Assignment,,25.0
+1502,143,Introduction to the Course,Lecture,,25.0
+2170,151,Ethics in AI,Quiz,,100.0
+231,24,Concurrency,Assignment,,25.0
+1702,159,Indexing & Performance,Assignment,,20.0
+1020,98,Dynamic Programming,Lecture,,25.0
+1617,151,Cybersecurity Fundamentals,Quiz,Easy,25.0
+585,56,Concurrency,Quiz,,20.0
+1071,104,SQL Joins,Assignment,,20.0
+336,32,SQL Joins,Assignment,,20.0
+1888,176,Introduction to the Course,Quiz,Hard,25.0
+1474,140,OOP Concepts,Lecture,,25.0
+2164,181,Network Protocols,Quiz,Hard,50.0
+943,90,Big Data Overview,Assignment,,50.0
+390,38,Computer Vision Intro,Quiz,Hard,10.0
+1124,109,Data Structures Overview,Lecture,,25.0
+1459,139,SQL Joins,Lecture,,25.0
+1791,166,Untitled,Assignment,,100.0
+886,86,REST APIs,Quiz,Hard,25.0
+156,17,Python for Data Science,Assignment,,100.0
+950,90,Concurrency,Lecture,,25.0
+1434,137,Dynamic Programming,Quiz,,100.0
+428,41,Untitled,Lecture,,25.0
+1450,138,Computer Vision Intro,Lecture,,25.0
+1299,121,Network Protocols,Lecture,,25.0
+1189,114,Sorting Algorithms,Quiz,Easy,25.0
+1615,151,Dynamic Programming,Lecture,,25.0
+799,79,SQL Joins,Assignment,,10.0
+948,90,Neural Networks,Quiz,,25.0
+975,93,Database Normalization,Assignment,,100.0
+1026,98,OOP Concepts,Lecture,,25.0
+967,93,Untitled,Lecture,,25.0
+2158,103,Computer Vision Intro,Quiz,Easy,25.0
+1418,133,REST APIs,Assignment,,20.0
+620,61,Sorting Algorithms,Quiz,Medium,100.0
+2110,198,Cloud Architecture,Assignment,,100.0
+43,4,Data Structures Overview,Quiz,Easy,100.0
+1771,165,Data Structures Overview,Lecture,,25.0
+1212,116,OS Scheduling,Lecture,,25.0
+1285,120,Database Normalization,Assignment,,10.0
+2114,198,OOP Concepts,Quiz,Easy,20.0
+22,2,Design Patterns,Assignment,,25.0
+314,30,Python for Data Science,Lecture,,25.0
+888,86,Memory Management,Quiz,Medium,10.0
+1142,110,OOP Concepts,Quiz,Medium,20.0
+1097,107,Memory Management,Lecture,,25.0
+1683,157,Sorting Algorithms,Lecture,,25.0
+262,27,Untitled,Lecture,,25.0
+1403,132,Cybersecurity Fundamentals,Lecture,,25.0
+2064,192,OS Scheduling,Lecture,,25.0
+2212,65,Concurrency,Quiz,Easy,25.0
+791,78,Untitled,Lecture,,25.0
+715,71,Introduction to the Course,Lecture,,25.0
+1245,118,Trees and Graphs,Quiz,Hard,100.0
+789,78,Database Normalization,Quiz,Hard,50.0
+1073,104,Design Patterns,Quiz,Hard,10.0
+996,95,Dynamic Programming,Lecture,,25.0
+2163,20,Untitled,Assignment,,100.0
+1859,173,Data Structures Overview,Lecture,,25.0
+1093,106,Cloud Architecture,Lecture,,25.0
+2069,193,Introduction to the Course,Lecture,,25.0
+296,29,Indexing & Performance,Quiz,Easy,100.0
+1335,127,Computer Vision Intro,Lecture,,25.0
+679,67,Network Protocols,Assignment,,25.0
+1294,121,Data Structures Overview,Lecture,,25.0
+2062,192,Indexing & Performance,Assignment,,25.0
+629,62,OOP Concepts,Lecture,,25.0
+450,43,Web Development Basics,Lecture,,25.0
+2112,198,Dynamic Programming,Lecture,,25.0
+1250,118,Web Development Basics,Quiz,Hard,10.0
+287,29,Data Structures Overview,Quiz,Medium,25.0
+2003,187,Cloud Architecture,Quiz,,25.0
+1,1,SQL Joins,Quiz,Hard,20.0
+1273,119,Database Normalization,Lecture,,25.0
+977,93,Search Algorithms,Assignment,,25.0
+1491,141,Indexing & Performance,Lecture,,25.0
+1126,109,Encryption Methods,Assignment,,25.0
+672,67,Memory Management,Lecture,,25.0
+60,5,Big Data Overview,Quiz,Medium,10.0
+388,37,Introduction to the Course,Assignment,,10.0
+1912,180,Encryption Methods,Quiz,Easy,100.0
+221,23,Concurrency,Assignment,,50.0
+619,61,Trees and Graphs,Quiz,Hard,50.0
+1560,147,Data Structures Overview,Quiz,,50.0
+2066,192,Sorting Algorithms,Lecture,,25.0
+306,30,Memory Management,Quiz,,100.0
+649,63,Trees and Graphs,Lecture,,25.0
+1654,155,Untitled,Lecture,,25.0
+2038,190,Database Normalization,Lecture,,25.0
+17,2,Indexing & Performance,Lecture,,25.0
+1366,129,Introduction to the Course,Assignment,,50.0
+94,9,Computer Vision Intro,Lecture,,25.0
+345,33,Trees and Graphs,Lecture,,25.0
+451,43,Web Development Basics,Lecture,,25.0
+625,62,Trees and Graphs,Lecture,,25.0
+224,23,Design Patterns,Lecture,,25.0
+1275,120,Design Patterns,Assignment,,50.0
+2053,191,REST APIs,Lecture,,25.0
+1268,119,Python for Data Science,Lecture,,25.0
+1905,178,Cloud Architecture,Lecture,,25.0
+35,4,SQL Joins,Lecture,,25.0
+1735,161,SQL Joins,Assignment,,50.0
+1944,182,REST APIs,Lecture,,25.0
+526,49,OS Scheduling,Lecture,,25.0
+988,94,REST APIs,Lecture,,25.0
+887,86,Concurrency,Quiz,Medium,20.0
+1846,171,Python for Data Science,Assignment,,25.0
+862,84,Neural Networks,Lecture,,25.0
+236,24,Encryption Methods,Assignment,,25.0
+558,53,Python for Data Science,Lecture,,25.0
+1111,107,Encryption Methods,Lecture,,25.0
+893,86,Sorting Algorithms,Quiz,Easy,10.0
+1990,186,Web Development Basics,Assignment,,25.0
+769,76,Untitled,Lecture,,25.0
+841,82,Big Data Overview,Quiz,Easy,10.0
+399,38,SQL Joins,Lecture,,25.0
+1326,126,Cloud Architecture,Lecture,,25.0
+292,29,Data Structures Overview,Lecture,,25.0
+1198,114,Ethics in AI,Lecture,,25.0
+1975,184,Design Patterns,Assignment,,100.0
+490,46,Cybersecurity Fundamentals,Assignment,,10.0
+650,63,OOP Concepts,Assignment,,50.0
+400,38,Design Patterns,Lecture,,25.0
+1290,120,Concurrency,Quiz,Hard,50.0
+1638,153,Machine Learning Basics,Quiz,Hard,25.0
+149,17,Dynamic Programming,Lecture,,25.0
+80,8,Untitled,Lecture,,25.0
+1772,165,Memory Management,Quiz,Easy,20.0
+1698,159,Network Protocols,Assignment,,20.0
+418,40,Data Structures Overview,Assignment,,20.0
+2113,198,Untitled,Lecture,,25.0
+1500,142,Big Data Overview,Quiz,,50.0
+516,48,Linked Lists,Lecture,,25.0
+2060,191,Computer Vision Intro,Lecture,,25.0
+666,66,Computer Vision Intro,Lecture,,25.0
+1720,160,Cybersecurity Fundamentals,Lecture,,25.0
+1323,125,Sorting Algorithms,Lecture,,25.0
+1457,139,Concurrency,Lecture,,25.0
+1573,148,Search Algorithms,Lecture,,25.0
+82,8,Linked Lists,Lecture,,25.0
+136,16,Sorting Algorithms,Lecture,,25.0
+2168,46,Big Data Overview,Lecture,,25.0
+1354,128,Introduction to the Course,Lecture,,25.0
+1389,131,OOP Concepts,Quiz,Easy,50.0
+1933,181,Encryption Methods,Lecture,,25.0
+797,79,SQL Joins,Lecture,,25.0
+99,10,Cloud Architecture,Assignment,,10.0
+971,93,Linked Lists,Lecture,,25.0
+1551,146,Design Patterns,Lecture,,25.0
+1565,147,Linked Lists,Lecture,,25.0
+76,7,Indexing & Performance,Assignment,,20.0
+714,71,Database Normalization,Quiz,,10.0
+1120,109,REST APIs,Lecture,,25.0
+1852,172,Sorting Algorithms,Lecture,,25.0
+540,51,Network Protocols,Quiz,Hard,20.0
+473,45,Cybersecurity Fundamentals,Quiz,Easy,100.0
+75,7,Data Structures Overview,Lecture,,25.0
+1860,173,Memory Management,Lecture,,25.0
+1639,153,Web Development Basics,Lecture,,25.0
+1332,127,Dynamic Programming,Assignment,,10.0
+1758,163,Sorting Algorithms,Lecture,,25.0
+26,3,Computer Vision Intro,Quiz,Easy,20.0
+768,76,Computer Vision Intro,Lecture,,25.0
+1136,110,Data Structures Overview,Assignment,,25.0
+1280,120,OS Scheduling,Lecture,,25.0
+942,90,Sorting Algorithms,Lecture,,25.0
+194,20,Sorting Algorithms,Assignment,,10.0
+305,30,Design Patterns,Assignment,,50.0
+897,86,OS Scheduling,Quiz,Medium,25.0
+333,32,Untitled,Lecture,,25.0
+16,2,Untitled,Quiz,,25.0
+1709,160,REST APIs,Assignment,,25.0
+1435,137,Design Patterns,Lecture,,25.0
+2189,23,Dynamic Programming,Lecture,,25.0
+819,80,Machine Learning Basics,Assignment,,20.0
+1899,177,Cybersecurity Fundamentals,Lecture,,25.0
+395,38,Encryption Methods,Quiz,Hard,20.0
+153,17,Indexing & Performance,Quiz,,10.0
+250,25,Introduction to the Course,Lecture,,25.0
+1864,173,Sorting Algorithms,Quiz,,100.0
+191,20,Python for Data Science,Quiz,,25.0
+515,48,Web Development Basics,Lecture,,25.0
+1283,120,Web Development Basics,Assignment,,20.0
+460,44,OOP Concepts,Lecture,,25.0
+1069,103,OS Scheduling,Lecture,,25.0
+158,17,Cybersecurity Fundamentals,Quiz,Medium,20.0
+1827,169,REST APIs,Lecture,,25.0
+1218,116,OOP Concepts,Assignment,,10.0
+2101,196,Data Structures Overview,Lecture,,25.0
+1087,106,Linked Lists,Quiz,,25.0
+803,79,Machine Learning Basics,Lecture,,25.0
+1498,142,Ethics in AI,Lecture,,25.0
+1183,113,Computer Vision Intro,Lecture,,25.0
+849,82,Trees and Graphs,Lecture,,25.0
+1369,129,Computer Vision Intro,Quiz,Hard,25.0
+1333,127,Indexing & Performance,Lecture,,25.0
+180,19,SQL Joins,Assignment,,100.0
+1240,117,OOP Concepts,Assignment,,20.0
+177,19,Big Data Overview,Lecture,,25.0
+1317,124,Untitled,Quiz,,25.0
+902,87,Network Protocols,Quiz,Easy,50.0
+8,1,Network Protocols,Lecture,,25.0
+348,33,Trees and Graphs,Lecture,,25.0
+1130,109,Database Normalization,Lecture,,25.0
+621,61,Cybersecurity Fundamentals,Lecture,,25.0
+1350,128,Computer Vision Intro,Lecture,,25.0
+2204,178,Untitled,Assignment,,50.0
+966,92,Linked Lists,Lecture,,25.0
+114,12,Dynamic Programming,Quiz,,20.0
+1677,156,Encryption Methods,Quiz,Medium,10.0
+2148,43,Linked Lists,Quiz,Easy,100.0
+455,43,Memory Management,Quiz,,100.0
+920,88,Network Protocols,Lecture,,25.0
+1998,186,Cloud Architecture,Assignment,,50.0
+365,34,Web Development Basics,Assignment,,25.0
+2202,173,Memory Management,Lecture,,25.0
+1063,103,Sorting Algorithms,Quiz,,10.0
+1099,107,Linked Lists,Lecture,,25.0
+1985,185,REST APIs,Lecture,,25.0
+753,74,REST APIs,Assignment,,50.0
+1190,114,Untitled,Quiz,Medium,10.0
+1484,141,Untitled,Assignment,,50.0
+736,73,Network Protocols,Lecture,,25.0
+582,56,Dynamic Programming,Lecture,,25.0
+1019,98,SQL Joins,Lecture,,25.0
+37,4,Ethics in AI,Lecture,,25.0
+1222,116,Neural Networks,Lecture,,25.0
+13,2,Cloud Architecture,Lecture,,25.0
+780,77,Linked Lists,Lecture,,25.0
+1725,160,Linked Lists,Lecture,,25.0
+1535,144,OS Scheduling,Lecture,,25.0
+896,86,Big Data Overview,Assignment,,25.0
+1153,111,Big Data Overview,Assignment,,20.0
+1930,181,Python for Data Science,Lecture,,25.0
+1163,112,Cloud Architecture,Lecture,,25.0
+908,87,OOP Concepts,Lecture,,25.0
+1375,130,REST APIs,Quiz,Medium,100.0
+1816,168,Ethics in AI,Lecture,,25.0
+1400,132,Dynamic Programming,Assignment,,50.0
+1058,103,Network Protocols,Lecture,,25.0
+1007,97,Computer Vision Intro,Quiz,,25.0
+567,54,Cloud Architecture,Lecture,,25.0
+1515,143,Design Patterns,Assignment,,25.0
+982,93,Linked Lists,Quiz,Hard,100.0
+189,20,Indexing & Performance,Lecture,,25.0
+1150,111,Database Normalization,Quiz,Easy,50.0
+489,46,Big Data Overview,Lecture,,25.0
+1520,144,OS Scheduling,Lecture,,25.0
+252,25,Web Development Basics,Quiz,,25.0
+1963,183,SQL Joins,Assignment,,20.0
+458,44,Machine Learning Basics,Lecture,,25.0
+2067,192,Search Algorithms,Assignment,,20.0
+1470,140,Ethics in AI,Lecture,,25.0
+765,76,Untitled,Lecture,,25.0
+818,80,Search Algorithms,Assignment,,100.0
+446,43,Indexing & Performance,Quiz,Hard,100.0
+1810,168,Linked Lists,Lecture,,25.0
+1125,109,Indexing & Performance,Assignment,,25.0
+79,7,REST APIs,Lecture,,25.0
+1794,167,Web Development Basics,Lecture,,25.0
+1825,169,Database Normalization,Lecture,,25.0
+1464,139,Memory Management,Lecture,,25.0
+1803,167,Linked Lists,Lecture,,25.0
+467,45,Dynamic Programming,Lecture,,25.0
+1346,128,Machine Learning Basics,Lecture,,25.0
+1417,133,REST APIs,Lecture,,25.0
+1590,149,Web Development Basics,Quiz,,20.0
+249,25,Computer Vision Intro,Assignment,,25.0
+626,62,Machine Learning Basics,Quiz,,25.0
+1014,97,OS Scheduling,Quiz,,50.0
+1532,144,Ethics in AI,Lecture,,25.0
+1676,156,Machine Learning Basics,Assignment,,100.0
+1689,158,Trees and Graphs,Lecture,,25.0
+798,79,Computer Vision Intro,Lecture,,25.0
+2021,188,Introduction to the Course,Lecture,,25.0
+1940,182,OS Scheduling,Lecture,,25.0
+1430,136,Computer Vision Intro,Assignment,,10.0
+2154,74,REST APIs,Assignment,,50.0
+2051,191,Memory Management,Lecture,,25.0
+1185,113,Web Development Basics,Assignment,,50.0
+430,41,Sorting Algorithms,Assignment,,25.0
+1329,127,Design Patterns,Lecture,,25.0
+986,94,Indexing & Performance,Quiz,Hard,25.0
+1903,178,Python for Data Science,Lecture,,25.0
+1722,160,Big Data Overview,Lecture,,25.0
+1703,159,Data Structures Overview,Lecture,,25.0
+782,77,Computer Vision Intro,Quiz,Hard,50.0
+2174,155,Machine Learning Basics,Lecture,,25.0
+1121,109,Design Patterns,Lecture,,25.0
+1850,172,Web Development Basics,Quiz,Medium,25.0
+67,6,Ethics in AI,Assignment,,10.0
+101,10,Search Algorithms,Quiz,Hard,10.0
+970,93,Database Normalization,Quiz,Easy,20.0
+542,51,Sorting Algorithms,Lecture,,25.0
+392,38,Neural Networks,Lecture,,25.0
+255,25,Neural Networks,Lecture,,25.0
+309,30,Web Development Basics,Quiz,,10.0
+323,31,Ethics in AI,Lecture,,25.0
+1531,144,Introduction to the Course,Assignment,,20.0
+1492,141,Trees and Graphs,Quiz,,25.0
+39,4,Data Structures Overview,Lecture,,25.0
+204,22,Network Protocols,Lecture,,25.0
+1776,165,Dynamic Programming,Lecture,,25.0
+497,47,Data Structures Overview,Lecture,,25.0
+360,34,Search Algorithms,Lecture,,25.0
+351,33,Memory Management,Quiz,Hard,50.0
+2098,196,Indexing & Performance,Lecture,,25.0
+1694,159,Data Structures Overview,Assignment,,100.0
+1452,138,Design Patterns,Assignment,,25.0
+1752,163,Untitled,Lecture,,25.0
+172,19,Concurrency,Assignment,,10.0
+965,92,Linked Lists,Lecture,,25.0
+426,41,OS Scheduling,Lecture,,25.0
+1750,163,OS Scheduling,Assignment,,100.0
+2192,56,Ethics in AI,Quiz,Medium,25.0
+1141,110,Concurrency,Lecture,,25.0
+371,35,Concurrency,Lecture,,25.0
+1214,116,Database Normalization,Lecture,,25.0
+1685,157,Neural Networks,Quiz,Medium,10.0
+1313,123,Search Algorithms,Lecture,,25.0
+898,86,Indexing & Performance,Lecture,,25.0
+1048,101,Dynamic Programming,Quiz,,25.0
+1496,142,Cloud Architecture,Lecture,,25.0
+2082,194,Machine Learning Basics,Lecture,,25.0
+419,40,Data Structures Overview,Quiz,Easy,25.0
+1668,156,Database Normalization,Lecture,,25.0
+2013,187,Design Patterns,Quiz,Easy,20.0
+1996,186,REST APIs,Quiz,Hard,10.0
+1593,149,Introduction to the Course,Lecture,,25.0
+847,82,Database Normalization,Lecture,,25.0
+842,82,Machine Learning Basics,Lecture,,25.0
+560,53,OOP Concepts,Quiz,,100.0
+1358,128,Introduction to the Course,Quiz,Medium,100.0
+807,79,Indexing & Performance,Assignment,,100.0
+584,56,Neural Networks,Lecture,,25.0
+1609,151,Ethics in AI,Quiz,,100.0
+1080,105,SQL Joins,Quiz,,100.0
+538,51,Concurrency,Lecture,,25.0
+823,81,Web Development Basics,Quiz,Easy,100.0
+710,71,Encryption Methods,Lecture,,25.0
+827,81,Cybersecurity Fundamentals,Assignment,,10.0
+213,23,Linked Lists,Assignment,,100.0
+1789,166,Python for Data Science,Quiz,Hard,10.0
+1046,101,Computer Vision Intro,Quiz,Hard,10.0
+2018,188,OOP Concepts,Quiz,Easy,50.0
+219,23,Dynamic Programming,Lecture,,25.0
+796,78,Cybersecurity Fundamentals,Lecture,,25.0
+1842,170,Linked Lists,Lecture,,25.0
+905,87,Concurrency,Quiz,Medium,10.0
+2146,148,Database Normalization,Lecture,,25.0
+593,57,Cloud Architecture,Lecture,,25.0
+1013,97,Web Development Basics,Lecture,,25.0
+495,47,Trees and Graphs,Lecture,,25.0
+407,39,Search Algorithms,Quiz,Medium,20.0
+737,73,Dynamic Programming,Lecture,,25.0
+2153,19,OOP Concepts,Lecture,,25.0
+635,63,Big Data Overview,Lecture,,25.0
+1788,166,OS Scheduling,Lecture,,25.0
+1585,149,Big Data Overview,Lecture,,25.0
+1428,136,Memory Management,Quiz,Hard,20.0
+1469,140,Design Patterns,Lecture,,25.0
+10,2,Linked Lists,Lecture,,25.0
+1637,153,Linked Lists,Quiz,Easy,20.0
+936,89,Network Protocols,Lecture,,25.0
+1380,130,Dynamic Programming,Quiz,Hard,25.0
+483,46,Neural Networks,Assignment,,25.0
+914,88,Neural Networks,Assignment,,10.0
+1557,147,Python for Data Science,Lecture,,25.0
+947,90,Data Structures Overview,Lecture,,25.0
+1367,129,Neural Networks,Assignment,,50.0
+1922,181,Machine Learning Basics,Lecture,,25.0
+931,89,Introduction to the Course,Lecture,,25.0
+1795,167,Python for Data Science,Lecture,,25.0
+1857,173,Design Patterns,Lecture,,25.0
+1359,128,Untitled,Lecture,,25.0
+853,83,Ethics in AI,Assignment,,100.0
+1865,173,Search Algorithms,Lecture,,25.0
+64,6,Neural Networks,Lecture,,25.0
+1490,141,Indexing & Performance,Lecture,,25.0
+991,94,OS Scheduling,Lecture,,25.0
+992,95,Memory Management,Lecture,,25.0
+486,46,Indexing & Performance,Lecture,,25.0
+934,89,Untitled,Quiz,Medium,50.0
+1134,110,Sorting Algorithms,Lecture,,25.0
+166,19,Python for Data Science,Quiz,,20.0
+788,77,Network Protocols,Quiz,Easy,50.0
+476,46,Untitled,Assignment,,50.0
+1043,101,Machine Learning Basics,Lecture,,25.0
+1923,181,Network Protocols,Quiz,Easy,10.0
+1977,184,REST APIs,Quiz,,50.0
+45,4,Design Patterns,Assignment,,50.0
+2072,193,Design Patterns,Lecture,,25.0
+317,30,Introduction to the Course,Lecture,,25.0
+1706,159,Design Patterns,Lecture,,25.0
+838,82,Introduction to the Course,Lecture,,25.0
+1340,127,Trees and Graphs,Assignment,,50.0
+912,87,Web Development Basics,Lecture,,25.0
+222,23,OS Scheduling,Quiz,Easy,50.0
+334,32,Database Normalization,Lecture,,25.0
+1760,164,Design Patterns,Lecture,,25.0
+1543,146,Design Patterns,Quiz,,10.0
+50,5,Machine Learning Basics,Lecture,,25.0
+498,47,SQL Joins,Quiz,Hard,100.0
+187,20,Big Data Overview,Lecture,,25.0
+1281,120,Search Algorithms,Lecture,,25.0
+170,19,Big Data Overview,Lecture,,25.0
+2039,190,Database Normalization,Quiz,Medium,25.0
+543,51,OOP Concepts,Lecture,,25.0
+15,2,Cybersecurity Fundamentals,Lecture,,25.0
+1756,163,Memory Management,Lecture,,25.0
+2172,155,OOP Concepts,Lecture,,25.0
+1480,141,Design Patterns,Lecture,,25.0
+1210,116,Neural Networks,Lecture,,25.0
+959,92,Linked Lists,Lecture,,25.0
+2149,21,Cloud Architecture,Lecture,,25.0
+1890,176,Introduction to the Course,Quiz,Easy,50.0
+1986,185,Cybersecurity Fundamentals,Lecture,,25.0
+1655,155,Sorting Algorithms,Assignment,,10.0
+1636,153,Untitled,Assignment,,50.0
+911,87,Introduction to the Course,Lecture,,25.0
+990,94,Network Protocols,Lecture,,25.0
+303,30,Neural Networks,Lecture,,25.0
+1678,156,SQL Joins,Assignment,,10.0
+1039,100,Concurrency,Assignment,,20.0
+828,81,Search Algorithms,Lecture,,25.0
+1919,180,SQL Joins,Quiz,,10.0
+2155,28,Dynamic Programming,Quiz,,100.0
+537,51,Database Normalization,Quiz,Hard,50.0
+2081,194,Ethics in AI,Assignment,,10.0
+1692,159,Dynamic Programming,Lecture,,25.0
+685,68,Machine Learning Basics,Assignment,,20.0
+2006,187,Memory Management,Assignment,,25.0
+941,90,SQL Joins,Lecture,,25.0
+98,10,SQL Joins,Lecture,,25.0
+1562,147,Encryption Methods,Quiz,Medium,20.0
+1027,98,OS Scheduling,Lecture,,25.0
+2145,20,Big Data Overview,Lecture,,25.0
+148,17,Encryption Methods,Quiz,Easy,100.0
+1682,157,Data Structures Overview,Assignment,,50.0
+1289,120,REST APIs,Quiz,Medium,25.0
+956,91,Python for Data Science,Lecture,,25.0
+2190,48,Concurrency,Assignment,,50.0
+245,25,SQL Joins,Lecture,,25.0
+420,40,SQL Joins,Lecture,,25.0
+2117,198,Cybersecurity Fundamentals,Quiz,Hard,20.0
+1279,120,OOP Concepts,Lecture,,25.0
+928,89,REST APIs,Lecture,,25.0
+1057,103,Trees and Graphs,Assignment,,25.0
+331,32,Database Normalization,Lecture,,25.0
+813,80,Computer Vision Intro,Lecture,,25.0
+1031,99,Machine Learning Basics,Assignment,,20.0
+1159,112,SQL Joins,Lecture,,25.0
+1264,119,Neural Networks,Quiz,Hard,10.0
+932,89,Network Protocols,Lecture,,25.0
+127,14,SQL Joins,Lecture,,25.0
+246,25,Computer Vision Intro,Lecture,,25.0
+924,89,Sorting Algorithms,Quiz,Easy,10.0
+1390,131,Dynamic Programming,Lecture,,25.0
+1648,154,Introduction to the Course,Quiz,Easy,20.0
+1780,165,Encryption Methods,Lecture,,25.0
+645,63,Memory Management,Lecture,,25.0
+687,68,Cybersecurity Fundamentals,Quiz,Medium,25.0
+1646,154,Indexing & Performance,Lecture,,25.0
+1318,124,Computer Vision Intro,Lecture,,25.0
+1421,134,Database Normalization,Lecture,,25.0
+2070,193,Cloud Architecture,Lecture,,25.0
+129,14,Indexing & Performance,Lecture,,25.0
+1113,108,OS Scheduling,Lecture,,25.0
+339,32,Concurrency,Lecture,,25.0
+1408,132,Encryption Methods,Quiz,Hard,10.0
+1591,149,Search Algorithms,Lecture,,25.0
+575,54,REST APIs,Assignment,,10.0
+1647,154,Sorting Algorithms,Assignment,,100.0
+1658,155,Neural Networks,Lecture,,25.0
+2,1,Trees and Graphs,Lecture,,25.0
+1765,164,Memory Management,Quiz,Easy,25.0
+2118,198,Linked Lists,Quiz,Medium,20.0
+2215,101,Big Data Overview,Lecture,,25.0
+598,58,Computer Vision Intro,Assignment,,10.0
+56,5,Big Data Overview,Assignment,,10.0
+298,29,Data Structures Overview,Assignment,,20.0
+783,77,Introduction to the Course,Lecture,,25.0
+100,10,Encryption Methods,Lecture,,25.0
+1897,176,Database Normalization,Lecture,,25.0
+994,95,Dynamic Programming,Assignment,,10.0
+1021,98,Memory Management,Quiz,Easy,20.0
+1444,138,Network Protocols,Lecture,,25.0
+387,37,Encryption Methods,Assignment,,10.0
+27,3,Neural Networks,Lecture,,25.0
+487,46,Neural Networks,Assignment,,50.0
+442,42,Concurrency,Quiz,Hard,100.0
+225,24,Ethics in AI,Lecture,,25.0
+694,69,REST APIs,Lecture,,25.0
+2026,188,Computer Vision Intro,Lecture,,25.0
+1252,118,SQL Joins,Lecture,,25.0
+1974,184,Trees and Graphs,Lecture,,25.0
+1712,160,Cybersecurity Fundamentals,Assignment,,50.0
+573,54,Computer Vision Intro,Lecture,,25.0
+1674,156,OOP Concepts,Lecture,,25.0
+1503,143,Computer Vision Intro,Quiz,Medium,10.0
+874,85,Database Normalization,Quiz,,100.0
+282,28,Network Protocols,Quiz,Hard,25.0
+747,74,Dynamic Programming,Lecture,,25.0
+1018,97,Big Data Overview,Lecture,,25.0
+352,33,SQL Joins,Assignment,,100.0
+863,84,Encryption Methods,Quiz,,25.0
+2090,194,Neural Networks,Lecture,,25.0
+1462,139,Concurrency,Lecture,,25.0
+1967,183,Ethics in AI,Quiz,Hard,10.0
+295,29,Computer Vision Intro,Assignment,,10.0
+595,58,Machine Learning Basics,Quiz,,100.0
+9,2,Cybersecurity Fundamentals,Assignment,,50.0
+1301,121,Introduction to the Course,Lecture,,25.0
+2079,194,Cybersecurity Fundamentals,Quiz,Hard,20.0
+2116,198,Python for Data Science,Assignment,,100.0
+795,78,Python for Data Science,Quiz,Hard,25.0
+275,27,Sorting Algorithms,Lecture,,25.0
+1747,162,Ethics in AI,Lecture,,25.0
+1041,100,REST APIs,Lecture,,25.0
+1927,181,Machine Learning Basics,Quiz,Hard,10.0
+1867,174,Ethics in AI,Lecture,,25.0
+1029,99,Machine Learning Basics,Assignment,,25.0
+1839,170,SQL Joins,Lecture,,25.0
+340,32,Cloud Architecture,Assignment,,50.0
+1634,153,Cybersecurity Fundamentals,Lecture,,25.0
+1287,120,Data Structures Overview,Assignment,,10.0
+46,5,Cybersecurity Fundamentals,Assignment,,100.0
+507,47,OOP Concepts,Assignment,,20.0
+2209,147,Cybersecurity Fundamentals,Quiz,,25.0
+1953,183,OS Scheduling,Lecture,,25.0
+1608,151,Encryption Methods,Assignment,,25.0
+536,51,Network Protocols,Assignment,,20.0
+181,20,Introduction to the Course,Quiz,Easy,25.0
+545,51,Computer Vision Intro,Lecture,,25.0
+59,5,SQL Joins,Lecture,,25.0
+237,24,Linked Lists,Quiz,Easy,20.0
+190,20,OS Scheduling,Lecture,,25.0
+2143,153,Network Protocols,Quiz,,25.0
+766,76,Cybersecurity Fundamentals,Assignment,,50.0
+1809,167,Ethics in AI,Quiz,Hard,50.0
+216,23,Dynamic Programming,Assignment,,25.0
+1525,144,OS Scheduling,Lecture,,25.0
+1000,95,Design Patterns,Lecture,,25.0
+2128,200,Neural Networks,Assignment,,10.0
+102,11,Memory Management,Lecture,,25.0
+557,53,Python for Data Science,Quiz,,20.0
+2104,197,Sorting Algorithms,Lecture,,25.0
+1606,151,Ethics in AI,Quiz,Medium,20.0
+1485,141,Memory Management,Lecture,,25.0
+1786,166,Network Protocols,Assignment,,25.0
+570,54,Introduction to the Course,Lecture,,25.0
+2185,142,REST APIs,Lecture,,25.0
+930,89,Database Normalization,Quiz,,25.0
+2086,194,SQL Joins,Lecture,,25.0
+1123,109,OOP Concepts,Quiz,Easy,100.0
+354,33,SQL Joins,Quiz,Easy,20.0
+1156,112,Machine Learning Basics,Lecture,,25.0
+1696,159,Design Patterns,Quiz,Medium,50.0
+1643,153,REST APIs,Lecture,,25.0
+2034,189,Web Development Basics,Lecture,,25.0
+2208,105,SQL Joins,Quiz,,100.0
+2171,187,Web Development Basics,Lecture,,25.0
+1399,131,Concurrency,Assignment,,50.0
+746,74,Sorting Algorithms,Lecture,,25.0
+1106,107,Data Structures Overview,Lecture,,25.0
+347,33,Web Development Basics,Lecture,,25.0
+477,46,REST APIs,Quiz,,25.0
+910,87,SQL Joins,Lecture,,25.0
+398,38,OS Scheduling,Lecture,,25.0
+379,36,Concurrency,Lecture,,25.0
+1407,132,Dynamic Programming,Lecture,,25.0
+680,68,Machine Learning Basics,Lecture,,25.0
+1920,180,Web Development Basics,Assignment,,50.0
+1371,129,Search Algorithms,Quiz,Medium,50.0
+1721,160,Big Data Overview,Lecture,,25.0
+1004,96,Search Algorithms,Lecture,,25.0
+1891,176,Indexing & Performance,Quiz,Easy,25.0
+239,24,Neural Networks,Assignment,,20.0
+667,66,SQL Joins,Lecture,,25.0
+731,73,Design Patterns,Lecture,,25.0
+695,69,Cloud Architecture,Lecture,,25.0
+332,32,Introduction to the Course,Quiz,Medium,50.0
+1440,137,OOP Concepts,Lecture,,25.0
+1315,124,Untitled,Lecture,,25.0
+1937,181,REST APIs,Lecture,,25.0
+1717,160,Dynamic Programming,Lecture,,25.0
+2159,25,Design Patterns,Assignment,,20.0
+617,61,SQL Joins,Quiz,Hard,10.0
+327,31,Untitled,Quiz,Hard,25.0
+633,62,Cybersecurity Fundamentals,Lecture,,25.0
+228,24,Python for Data Science,Lecture,,25.0
+1426,135,Cybersecurity Fundamentals,Lecture,,25.0
+1416,133,Concurrency,Assignment,,10.0
+1173,113,Sorting Algorithms,Lecture,,25.0
+1738,161,Network Protocols,Lecture,,25.0
+258,25,Machine Learning Basics,Lecture,,25.0
+699,70,OOP Concepts,Lecture,,25.0
+1316,124,Machine Learning Basics,Lecture,,25.0
+1382,130,SQL Joins,Assignment,,100.0
+484,46,REST APIs,Lecture,,25.0
+1495,142,REST APIs,Lecture,,25.0
+530,50,Design Patterns,Quiz,Medium,10.0
+1773,165,Neural Networks,Lecture,,25.0
+907,87,Neural Networks,Quiz,Hard,10.0
+1814,168,Cloud Architecture,Assignment,,25.0
+125,14,Untitled,Lecture,,25.0
+381,36,Big Data Overview,Lecture,,25.0
+561,53,Sorting Algorithms,Lecture,,25.0
+448,43,Linked Lists,Quiz,Easy,100.0
+1298,121,Memory Management,Assignment,,10.0
+1131,110,OOP Concepts,Assignment,,50.0
+278,27,Introduction to the Course,Lecture,,25.0
+116,12,Indexing & Performance,Lecture,,25.0
+1272,119,Search Algorithms,Assignment,,20.0
+1232,117,Cybersecurity Fundamentals,Quiz,,20.0
+357,33,Big Data Overview,Lecture,,25.0
+1893,176,Sorting Algorithms,Lecture,,25.0
+21,2,Trees and Graphs,Quiz,Easy,100.0
+923,89,Ethics in AI,Lecture,,25.0
+96,9,OS Scheduling,Lecture,,25.0
+1826,169,Concurrency,Lecture,,25.0
+144,17,Computer Vision Intro,Lecture,,25.0
+1045,101,Concurrency,Lecture,,25.0
+1853,172,Python for Data Science,Lecture,,25.0
+755,75,Trees and Graphs,Lecture,,25.0
+209,22,Memory Management,Assignment,,50.0
+1575,148,Indexing & Performance,Quiz,Medium,25.0
+2106,197,SQL Joins,Quiz,Easy,25.0
+2109,198,Indexing & Performance,Lecture,,25.0
+2004,187,Design Patterns,Lecture,,25.0
+2046,190,Ethics in AI,Lecture,,25.0
+1405,132,Introduction to the Course,Assignment,,25.0
+944,90,Linked Lists,Lecture,,25.0
+1550,146,Indexing & Performance,Lecture,,25.0
+1453,138,Search Algorithms,Quiz,Hard,100.0
+376,36,Indexing & Performance,Lecture,,25.0
+1744,162,Network Protocols,Quiz,Hard,50.0
+607,60,Encryption Methods,Lecture,,25.0
+1233,117,Untitled,Quiz,,100.0
+1376,130,Encryption Methods,Lecture,,25.0
+1620,152,Indexing & Performance,Lecture,,25.0
+883,85,Web Development Basics,Lecture,,25.0
+1660,155,Dynamic Programming,Quiz,Hard,25.0
+168,19,OOP Concepts,Lecture,,25.0
+1621,152,Web Development Basics,Lecture,,25.0
+1062,103,Design Patterns,Quiz,Easy,10.0
+1049,101,Big Data Overview,Lecture,,25.0
+1916,180,Trees and Graphs,Quiz,Hard,20.0
+1119,108,Big Data Overview,Quiz,Hard,20.0
+1971,184,Memory Management,Assignment,,10.0
+915,88,SQL Joins,Assignment,,10.0
+1257,118,SQL Joins,Assignment,,20.0
+997,95,Encryption Methods,Lecture,,25.0
+1564,147,Big Data Overview,Quiz,Easy,10.0
+1829,169,Cloud Architecture,Lecture,,25.0
+1258,118,REST APIs,Quiz,,50.0
+70,6,Untitled,Assignment,,25.0
+1662,155,Machine Learning Basics,Lecture,,25.0
+227,24,Python for Data Science,Lecture,,25.0
+1197,114,Neural Networks,Lecture,,25.0
+165,19,Network Protocols,Lecture,,25.0
+1505,143,Dynamic Programming,Quiz,Hard,100.0
+1675,156,Machine Learning Basics,Quiz,,25.0
+1383,130,Linked Lists,Quiz,Easy,25.0
+1374,129,Python for Data Science,Lecture,,25.0
+1642,153,Search Algorithms,Lecture,,25.0
+754,74,Neural Networks,Lecture,,25.0
+2057,191,Dynamic Programming,Lecture,,25.0
+824,81,Concurrency,Lecture,,25.0
+1208,115,Cloud Architecture,Quiz,,20.0
+421,40,Ethics in AI,Lecture,,25.0
+1623,152,REST APIs,Quiz,Easy,10.0
+112,12,REST APIs,Lecture,,25.0
+618,61,Web Development Basics,Lecture,,25.0
+502,47,Trees and Graphs,Lecture,,25.0
+1143,110,Introduction to the Course,Lecture,,25.0
+962,92,Untitled,Lecture,,25.0
+1894,176,Sorting Algorithms,Lecture,,25.0
+651,64,Database Normalization,Assignment,,20.0
+744,73,Network Protocols,Lecture,,25.0
+1724,160,Concurrency,Lecture,,25.0
+1088,106,OS Scheduling,Lecture,,25.0
+1085,106,Dynamic Programming,Lecture,,25.0
+851,82,Python for Data Science,Lecture,,25.0
+463,45,Web Development Basics,Lecture,,25.0
+1331,127,Memory Management,Quiz,Hard,50.0
+547,52,Computer Vision Intro,Quiz,,10.0
+745,74,Introduction to the Course,Quiz,,10.0
+1266,119,Sorting Algorithms,Quiz,Easy,20.0
+1196,114,Indexing & Performance,Lecture,,25.0
+253,25,Data Structures Overview,Lecture,,25.0
+1851,172,Ethics in AI,Quiz,Easy,50.0
+182,20,Python for Data Science,Quiz,Hard,50.0
+83,8,Encryption Methods,Assignment,,20.0
+1478,140,Computer Vision Intro,Lecture,,25.0
+657,65,Indexing & Performance,Quiz,,25.0
+1545,146,Big Data Overview,Lecture,,25.0
+373,35,Search Algorithms,Assignment,,50.0
+1707,159,Cloud Architecture,Lecture,,25.0
+240,24,Database Normalization,Lecture,,25.0
+634,62,Data Structures Overview,Assignment,,25.0
+1144,110,Data Structures Overview,Lecture,,25.0
+1833,169,Search Algorithms,Lecture,,25.0
+1521,144,SQL Joins,Lecture,,25.0
+1701,159,Untitled,Quiz,Hard,10.0
+1962,183,Encryption Methods,Lecture,,25.0
+945,90,Cloud Architecture,Quiz,,20.0
+423,41,Introduction to the Course,Quiz,Medium,20.0
+1952,183,Introduction to the Course,Lecture,,25.0
+2102,196,OOP Concepts,Lecture,,25.0
+856,84,Ethics in AI,Assignment,,50.0
+88,9,Untitled,Lecture,,25.0
+1321,124,Network Protocols,Lecture,,25.0
+1065,103,Big Data Overview,Lecture,,25.0
+464,45,Data Structures Overview,Lecture,,25.0
+1372,129,Untitled,Assignment,,20.0
+916,88,Big Data Overview,Lecture,,25.0
+802,79,OS Scheduling,Quiz,Hard,25.0
+1107,107,Untitled,Lecture,,25.0
+90,9,Machine Learning Basics,Quiz,Easy,50.0
+1260,119,Design Patterns,Lecture,,25.0
+2182,61,Introduction to the Course,Lecture,,25.0
+367,35,SQL Joins,Lecture,,25.0
+1025,98,Computer Vision Intro,Lecture,,25.0
+719,72,Ethics in AI,Lecture,,25.0
+1576,148,OOP Concepts,Lecture,,25.0
+668,67,Encryption Methods,Lecture,,25.0
+1223,116,Data Structures Overview,Assignment,,20.0
+1432,136,Web Development Basics,Quiz,Easy,25.0
+1849,172,Introduction to the Course,Assignment,,20.0
+174,19,Database Normalization,Lecture,,25.0
+873,85,Database Normalization,Quiz,,10.0
+1055,102,REST APIs,Quiz,Hard,10.0
+1228,117,Machine Learning Basics,Assignment,,25.0
+63,6,Ethics in AI,Lecture,,25.0
+549,52,Python for Data Science,Quiz,,10.0
+429,41,Indexing & Performance,Lecture,,25.0
+42,4,Linked Lists,Lecture,,25.0
+653,64,Ethics in AI,Lecture,,25.0
+517,48,Trees and Graphs,Assignment,,50.0
+1044,101,REST APIs,Lecture,,25.0
+844,82,Dynamic Programming,Assignment,,10.0
+235,24,Dynamic Programming,Lecture,,25.0
+1906,178,Computer Vision Intro,Assignment,,20.0
+1286,120,Computer Vision Intro,Lecture,,25.0
+425,41,Data Structures Overview,Quiz,Medium,100.0
+1155,112,Sorting Algorithms,Lecture,,25.0
+1568,147,Sorting Algorithms,Lecture,,25.0
+1679,157,Untitled,Quiz,Easy,10.0
+1556,147,Network Protocols,Assignment,,20.0
+265,27,Introduction to the Course,Lecture,,25.0
+673,67,Untitled,Lecture,,25.0
+1334,127,Web Development Basics,Lecture,,25.0
+812,80,Design Patterns,Assignment,,25.0
+1887,176,Network Protocols,Lecture,,25.0
+767,76,Ethics in AI,Assignment,,25.0
+1987,185,Ethics in AI,Quiz,,100.0
+817,80,Ethics in AI,Quiz,Medium,50.0
+195,20,Untitled,Assignment,,100.0
+708,71,Neural Networks,Quiz,Easy,20.0
+133,15,OOP Concepts,Assignment,,50.0
+2218,106,Untitled,Lecture,,25.0
+1966,183,Network Protocols,Lecture,,25.0
+2093,195,Python for Data Science,Quiz,,20.0
+2103,196,Big Data Overview,Assignment,,25.0
+2028,188,Web Development Basics,Lecture,,25.0
+610,60,Python for Data Science,Quiz,,100.0
+1077,105,Encryption Methods,Lecture,,25.0
+2178,84,Machine Learning Basics,Lecture,,25.0
+1778,165,Data Structures Overview,Lecture,,25.0
+95,9,Neural Networks,Lecture,,25.0
+1812,168,Untitled,Lecture,,25.0
+613,60,OOP Concepts,Lecture,,25.0
+341,32,SQL Joins,Lecture,,25.0
+691,69,Sorting Algorithms,Assignment,,100.0
+1835,169,Cloud Architecture,Assignment,,25.0
+581,55,Linked Lists,Lecture,,25.0
+179,19,Machine Learning Basics,Lecture,,25.0
+562,53,Big Data Overview,Assignment,,100.0
+1669,156,Cybersecurity Fundamentals,Quiz,Medium,100.0
+1911,179,Machine Learning Basics,Lecture,,25.0
+689,69,Concurrency,Assignment,,50.0
+1068,103,Search Algorithms,Lecture,,25.0
+881,85,Cloud Architecture,Lecture,,25.0
+1084,106,Linked Lists,Assignment,,20.0
+510,48,Untitled,Quiz,Hard,50.0
+615,61,Concurrency,Quiz,Medium,25.0
+1032,99,Neural Networks,Assignment,,100.0
+2124,199,Ethics in AI,Quiz,Hard,10.0
+702,70,Trees and Graphs,Lecture,,25.0
+2096,196,Python for Data Science,Lecture,,25.0
+1785,166,Computer Vision Intro,Lecture,,25.0
+385,37,Data Structures Overview,Lecture,,25.0
+1929,181,Linked Lists,Assignment,,25.0
+1793,166,Web Development Basics,Quiz,Hard,100.0
+108,11,Computer Vision Intro,Lecture,,25.0
+1288,120,Trees and Graphs,Lecture,,25.0
+62,6,Design Patterns,Assignment,,20.0
+1209,115,Cybersecurity Fundamentals,Lecture,,25.0
+1154,111,Search Algorithms,Lecture,,25.0
+1489,141,Trees and Graphs,Quiz,Medium,20.0
+501,47,Neural Networks,Lecture,,25.0
+1075,104,SQL Joins,Lecture,,25.0
+1151,111,Encryption Methods,Quiz,Easy,25.0
+2207,132,Computer Vision Intro,Lecture,,25.0
+1194,114,Memory Management,Assignment,,50.0
+1549,146,Machine Learning Basics,Lecture,,25.0
+1129,109,Trees and Graphs,Assignment,,10.0
+1948,182,Encryption Methods,Quiz,,25.0
+784,77,Introduction to the Course,Quiz,Medium,50.0
+903,87,Untitled,Assignment,,25.0
+1148,111,Linked Lists,Quiz,,100.0
+763,76,SQL Joins,Lecture,,25.0
+602,59,Memory Management,Lecture,,25.0
+730,73,Network Protocols,Lecture,,25.0
+369,35,OOP Concepts,Assignment,,25.0
+1501,142,Neural Networks,Lecture,,25.0
+1964,183,Computer Vision Intro,Lecture,,25.0
+120,13,Database Normalization,Lecture,,25.0
+1076,105,Memory Management,Quiz,Medium,10.0
+1030,99,Linked Lists,Lecture,,25.0
+555,53,Trees and Graphs,Lecture,,25.0
+164,19,Indexing & Performance,Assignment,,10.0
+1181,113,Design Patterns,Lecture,,25.0
+377,36,Linked Lists,Lecture,,25.0
+1338,127,Computer Vision Intro,Lecture,,25.0
+496,47,Neural Networks,Quiz,Easy,20.0
+1713,160,Search Algorithms,Lecture,,25.0
+2068,192,Web Development Basics,Quiz,Hard,10.0
+2142,82,Big Data Overview,Quiz,Easy,10.0
+1114,108,Ethics in AI,Assignment,,50.0
+2050,190,Sorting Algorithms,Lecture,,25.0
+1711,160,Introduction to the Course,Assignment,,20.0
+1578,148,Introduction to the Course,Assignment,,25.0
+2080,194,Trees and Graphs,Assignment,,100.0
+1618,151,Encryption Methods,Quiz,Medium,50.0
+1751,163,OOP Concepts,Lecture,,25.0
+785,77,Trees and Graphs,Quiz,Hard,100.0
+1892,176,Indexing & Performance,Quiz,Medium,20.0
+1454,138,Encryption Methods,Lecture,,25.0
+1420,133,OOP Concepts,Lecture,,25.0
+1192,114,Machine Learning Basics,Assignment,,100.0
+443,43,Cybersecurity Fundamentals,Quiz,Easy,50.0
+671,67,Linked Lists,Assignment,,10.0
+342,32,Trees and Graphs,Quiz,Easy,20.0
+790,78,Concurrency,Assignment,,100.0
+2041,190,Indexing & Performance,Quiz,Medium,20.0
+1308,122,OS Scheduling,Quiz,Hard,50.0
+1035,99,SQL Joins,Lecture,,25.0
+1176,113,Introduction to the Course,Quiz,Medium,20.0
+406,38,Memory Management,Quiz,,10.0
+627,62,Sorting Algorithms,Assignment,,10.0
+2029,188,Ethics in AI,Lecture,,25.0
+1117,108,Ethics in AI,Lecture,,25.0
+2023,188,Encryption Methods,Lecture,,25.0
+68,6,Indexing & Performance,Quiz,Hard,10.0
+440,42,Introduction to the Course,Lecture,,25.0
+2122,198,Network Protocols,Lecture,,25.0
+839,82,OS Scheduling,Quiz,Hard,20.0
+1166,112,Network Protocols,Quiz,Medium,20.0
+1008,97,OOP Concepts,Quiz,,10.0
+1925,181,Encryption Methods,Quiz,Hard,10.0
+65,6,Cybersecurity Fundamentals,Lecture,,25.0
+1238,117,Network Protocols,Lecture,,25.0
+1392,131,Python for Data Science,Lecture,,25.0
+2005,187,Database Normalization,Quiz,Medium,50.0
+383,37,Python for Data Science,Lecture,,25.0
+11,2,Machine Learning Basics,Quiz,Hard,50.0
+1832,169,Data Structures Overview,Lecture,,25.0
+1494,142,Concurrency,Lecture,,25.0
+1889,176,Design Patterns,Lecture,,25.0
+2094,195,Neural Networks,Lecture,,25.0
+1844,171,OOP Concepts,Assignment,,100.0
+810,80,Web Development Basics,Lecture,,25.0
+836,81,Encryption Methods,Lecture,,25.0
+2063,192,Computer Vision Intro,Assignment,,10.0
+1442,138,Linked Lists,Assignment,,100.0
+1360,129,Indexing & Performance,Quiz,,20.0
+565,54,Encryption Methods,Quiz,Easy,10.0
+2134,200,Dynamic Programming,Lecture,,25.0
+527,49,Data Structures Overview,Lecture,,25.0
+917,88,SQL Joins,Lecture,,25.0
+277,27,Sorting Algorithms,Quiz,Hard,10.0
+1139,110,Encryption Methods,Lecture,,25.0
+318,31,OS Scheduling,Assignment,,50.0
+1188,114,Data Structures Overview,Quiz,Medium,20.0
+384,37,Network Protocols,Lecture,,25.0
+2141,19,REST APIs,Quiz,Hard,10.0
+389,37,REST APIs,Quiz,Easy,100.0
+468,45,Web Development Basics,Lecture,,25.0
+1067,103,SQL Joins,Assignment,,25.0
+1932,181,Network Protocols,Quiz,Hard,50.0
+906,87,Encryption Methods,Lecture,,25.0
+1656,155,Concurrency,Quiz,Medium,10.0
+1854,173,SQL Joins,Lecture,,25.0
+436,41,OS Scheduling,Quiz,,10.0
+481,46,SQL Joins,Lecture,,25.0
+1247,118,Sorting Algorithms,Lecture,,25.0
+603,59,Ethics in AI,Lecture,,25.0
+362,34,Computer Vision Intro,Quiz,,50.0
+1112,108,Python for Data Science,Quiz,Medium,20.0
+869,85,Cybersecurity Fundamentals,Assignment,,20.0
+1201,115,Neural Networks,Quiz,Hard,100.0
+659,65,Encryption Methods,Lecture,,25.0
+1762,164,Neural Networks,Assignment,,25.0
+417,40,Machine Learning Basics,Assignment,,100.0
+1728,161,OOP Concepts,Lecture,,25.0
+2047,190,Data Structures Overview,Quiz,,50.0
+1011,97,Linked Lists,Assignment,,25.0
+1295,121,Python for Data Science,Lecture,,25.0
+310,30,Machine Learning Basics,Lecture,,25.0
+1225,117,Python for Data Science,Quiz,Hard,100.0
+2211,151,Ethics in AI,Quiz,Medium,20.0
+1242,118,Machine Learning Basics,Assignment,,50.0
+1541,145,Search Algorithms,Lecture,,25.0
+1799,167,OOP Concepts,Assignment,,20.0
+1561,147,Data Structures Overview,Lecture,,25.0
+1135,110,Design Patterns,Lecture,,25.0
+23,2,Ethics in AI,Lecture,,25.0
+1781,165,OOP Concepts,Lecture,,25.0
+1096,107,Computer Vision Intro,Assignment,,50.0
+1231,117,REST APIs,Lecture,,25.0
+577,55,Untitled,Quiz,,20.0
+957,92,REST APIs,Quiz,Easy,25.0
+300,29,Dynamic Programming,Lecture,,25.0
+646,63,OOP Concepts,Quiz,Easy,100.0
+1425,135,SQL Joins,Lecture,,25.0
+185,20,Web Development Basics,Assignment,,25.0
+1373,129,Web Development Basics,Assignment,,100.0
+315,30,Sorting Algorithms,Lecture,,25.0
+55,5,Sorting Algorithms,Lecture,,25.0
+1284,120,Memory Management,Lecture,,25.0
+1782,165,Python for Data Science,Lecture,,25.0
+1002,96,Database Normalization,Assignment,,50.0
+1969,184,Indexing & Performance,Lecture,,25.0
+140,16,REST APIs,Lecture,,25.0
+370,35,Web Development Basics,Lecture,,25.0
+535,51,Untitled,Quiz,,25.0
+513,48,Computer Vision Intro,Assignment,,100.0
+758,75,Data Structures Overview,Quiz,Easy,25.0
+792,78,Trees and Graphs,Assignment,,10.0
+1292,121,Trees and Graphs,Quiz,,50.0
+1269,119,Network Protocols,Lecture,,25.0
+1572,148,Data Structures Overview,Quiz,Easy,50.0
+1936,181,Cloud Architecture,Quiz,Medium,25.0
+588,56,Python for Data Science,Lecture,,25.0
+1206,115,Cybersecurity Fundamentals,Assignment,,100.0
+391,38,Python for Data Science,Lecture,,25.0
+308,30,SQL Joins,Lecture,,25.0
+401,38,Untitled,Lecture,,25.0
+1681,157,SQL Joins,Lecture,,25.0
+1822,169,Dynamic Programming,Assignment,,20.0
+852,83,Database Normalization,Quiz,,25.0
+556,53,Python for Data Science,Lecture,,25.0
+512,48,Neural Networks,Lecture,,25.0
+1066,103,Concurrency,Lecture,,25.0
+2022,188,Machine Learning Basics,Lecture,,25.0
+1951,183,Ethics in AI,Lecture,,25.0
+1215,116,Data Structures Overview,Lecture,,25.0
+1059,103,Untitled,Lecture,,25.0
+1224,117,Cybersecurity Fundamentals,Lecture,,25.0
+93,9,Search Algorithms,Lecture,,25.0
+320,31,Big Data Overview,Lecture,,25.0
+1160,112,Neural Networks,Lecture,,25.0
+1351,128,REST APIs,Quiz,Easy,10.0
+459,44,Untitled,Lecture,,25.0
+321,31,SQL Joins,Lecture,,25.0
+1592,149,Cybersecurity Fundamentals,Assignment,,25.0
+801,79,OOP Concepts,Assignment,,100.0
+682,68,Python for Data Science,Quiz,Easy,20.0
+1997,186,Sorting Algorithms,Quiz,Hard,100.0
+107,11,Machine Learning Basics,Assignment,,25.0
+1259,119,Cloud Architecture,Quiz,Hard,20.0
+969,93,Network Protocols,Quiz,,25.0
+434,41,OOP Concepts,Quiz,Easy,10.0
+466,45,Trees and Graphs,Lecture,,25.0
+1926,181,Ethics in AI,Assignment,,20.0
+1017,97,OS Scheduling,Assignment,,50.0
+411,40,Ethics in AI,Quiz,Hard,20.0
+1723,160,Database Normalization,Lecture,,25.0
+1691,159,Design Patterns,Quiz,Medium,20.0
+1968,184,Network Protocols,Lecture,,25.0
+403,38,Cloud Architecture,Lecture,,25.0
+1517,143,Machine Learning Basics,Lecture,,25.0
+413,40,Big Data Overview,Lecture,,25.0
+949,90,Neural Networks,Lecture,,25.0
+14,2,OS Scheduling,Quiz,,10.0
+1995,186,Trees and Graphs,Quiz,Hard,10.0
+2162,6,Cybersecurity Fundamentals,Lecture,,25.0
+662,65,Concurrency,Lecture,,25.0
+1965,183,Dynamic Programming,Assignment,,25.0
+1716,160,Indexing & Performance,Lecture,,25.0
+587,56,Ethics in AI,Quiz,Medium,25.0
+1775,165,Computer Vision Intro,Lecture,,25.0
+1262,119,OOP Concepts,Lecture,,25.0
+1630,153,Indexing & Performance,Lecture,,25.0
+192,20,Python for Data Science,Lecture,,25.0
+1876,175,Design Patterns,Assignment,,10.0
+1509,143,Database Normalization,Quiz,Medium,50.0
+951,90,Machine Learning Basics,Lecture,,25.0
+217,23,Data Structures Overview,Quiz,,10.0
+2017,188,Sorting Algorithms,Lecture,,25.0
+1447,138,Cybersecurity Fundamentals,Assignment,,20.0
+143,16,Indexing & Performance,Quiz,Medium,50.0
+1145,110,Machine Learning Basics,Lecture,,25.0
+1328,126,SQL Joins,Assignment,,10.0
+574,54,Computer Vision Intro,Lecture,,25.0
+1580,148,Data Structures Overview,Quiz,Hard,25.0
+1840,170,Search Algorithms,Lecture,,25.0
+414,40,Linked Lists,Quiz,Hard,25.0
+229,24,Cybersecurity Fundamentals,Assignment,,100.0
+1798,167,Linked Lists,Lecture,,25.0
+2169,74,Encryption Methods,Assignment,,50.0
+147,17,Indexing & Performance,Assignment,,25.0
+230,24,Indexing & Performance,Lecture,,25.0
+110,11,Linked Lists,Lecture,,25.0
+2176,80,Python for Data Science,Quiz,Hard,20.0
+2091,194,Cloud Architecture,Lecture,,25.0
+1935,181,Database Normalization,Lecture,,25.0
+1909,179,OS Scheduling,Lecture,,25.0
+491,46,OS Scheduling,Lecture,,25.0
+1946,182,Untitled,Lecture,,25.0
+1644,153,Ethics in AI,Lecture,,25.0
+811,80,Machine Learning Basics,Quiz,,50.0
+632,62,Neural Networks,Quiz,Medium,10.0
+1393,131,Data Structures Overview,Quiz,Medium,50.0
+1882,175,Neural Networks,Lecture,,25.0
+734,73,Linked Lists,Lecture,,25.0
+1605,150,Dynamic Programming,Lecture,,25.0
+1874,174,Untitled,Quiz,Easy,100.0
+589,56,Ethics in AI,Lecture,,25.0
+1982,185,Dynamic Programming,Lecture,,25.0
+1818,168,Encryption Methods,Quiz,,100.0
+1398,131,Neural Networks,Quiz,Easy,100.0
+1999,186,Ethics in AI,Quiz,Medium,10.0
+198,21,Database Normalization,Lecture,,25.0
+1673,156,Untitled,Lecture,,25.0
+193,20,OS Scheduling,Quiz,Easy,10.0
+1671,156,Machine Learning Basics,Lecture,,25.0
+1302,121,Linked Lists,Lecture,,25.0
+1387,130,Network Protocols,Quiz,Medium,25.0
+1739,161,Design Patterns,Quiz,Medium,25.0
+2177,88,SQL Joins,Assignment,,10.0
+531,50,Linked Lists,Lecture,,25.0
+1378,130,Dynamic Programming,Lecture,,25.0
+119,13,Indexing & Performance,Lecture,,25.0
+1527,144,Encryption Methods,Quiz,Easy,10.0
+2205,158,Trees and Graphs,Lecture,,25.0
+776,76,Sorting Algorithms,Quiz,,100.0
+2216,108,Ethics in AI,Assignment,,50.0
+188,20,Introduction to the Course,Lecture,,25.0
+416,40,Search Algorithms,Lecture,,25.0
+1841,170,Computer Vision Intro,Quiz,Easy,50.0
+1755,163,Linked Lists,Lecture,,25.0
+49,5,Dynamic Programming,Lecture,,25.0
+293,29,Untitled,Assignment,,25.0
+1324,125,Database Normalization,Lecture,,25.0
+1546,146,Untitled,Quiz,Medium,10.0
+726,72,Ethics in AI,Quiz,Easy,20.0
+1320,124,Python for Data Science,Lecture,,25.0
+1895,176,Database Normalization,Lecture,,25.0
+1582,148,SQL Joins,Lecture,,25.0
+837,82,Linked Lists,Assignment,,20.0
+640,63,Dynamic Programming,Quiz,Medium,100.0
+273,27,Web Development Basics,Lecture,,25.0
+1384,130,Data Structures Overview,Lecture,,25.0
+211,22,OS Scheduling,Lecture,,25.0
+857,84,Computer Vision Intro,Lecture,,25.0
+521,48,Linked Lists,Lecture,,25.0
+604,59,Untitled,Quiz,Medium,20.0
+18,2,Ethics in AI,Lecture,,25.0
+283,28,Big Data Overview,Lecture,,25.0
+599,58,Dynamic Programming,Quiz,Hard,25.0
+123,13,Trees and Graphs,Assignment,,20.0
+2133,200,Big Data Overview,Quiz,Hard,50.0
+2100,196,Memory Management,Assignment,,25.0
+2001,187,Memory Management,Lecture,,25.0
+2095,195,Cloud Architecture,Quiz,Hard,50.0
+2175,2,Computer Vision Intro,Quiz,Easy,100.0
+1718,160,Introduction to the Course,Assignment,,50.0
+1726,160,Concurrency,Assignment,,100.0
+1730,161,Computer Vision Intro,Assignment,,10.0
+2012,187,Web Development Basics,Quiz,Medium,20.0
+925,89,SQL Joins,Lecture,,25.0
+981,93,Network Protocols,Quiz,Medium,100.0
+2195,196,Indexing & Performance,Lecture,,25.0
+162,18,Cybersecurity Fundamentals,Assignment,,100.0
+319,31,Computer Vision Intro,Lecture,,25.0
+1719,160,OOP Concepts,Quiz,Medium,50.0
+1070,103,Cloud Architecture,Quiz,,25.0
+2045,190,Neural Networks,Quiz,Medium,25.0
+1805,167,Introduction to the Course,Assignment,,100.0
+1431,136,Untitled,Lecture,,25.0
+1364,129,Encryption Methods,Lecture,,25.0
+1645,153,Concurrency,Lecture,,25.0
+2150,43,Sorting Algorithms,Lecture,,25.0
+2074,193,OOP Concepts,Lecture,,25.0
+806,79,Memory Management,Lecture,,25.0
+1684,157,Big Data Overview,Lecture,,25.0
+1603,150,Network Protocols,Quiz,Medium,10.0
+717,72,Sorting Algorithms,Quiz,Hard,10.0
+1479,140,SQL Joins,Lecture,,25.0
+720,72,Sorting Algorithms,Assignment,,20.0
+609,60,Indexing & Performance,Assignment,,50.0
+155,17,Cloud Architecture,Lecture,,25.0
+864,84,Machine Learning Basics,Lecture,,25.0
+1028,99,Encryption Methods,Assignment,,100.0
+197,21,Cloud Architecture,Lecture,,25.0
+1837,170,Trees and Graphs,Lecture,,25.0
+2033,189,Neural Networks,Lecture,,25.0
+1731,161,Big Data Overview,Lecture,,25.0
+606,60,Concurrency,Quiz,,25.0
+1439,137,Database Normalization,Lecture,,25.0
+2194,79,SQL Joins,Lecture,,25.0
+871,85,Indexing & Performance,Quiz,Easy,100.0
+901,86,Trees and Graphs,Quiz,Easy,50.0
+20,2,Cybersecurity Fundamentals,Lecture,,25.0
+1653,155,OS Scheduling,Quiz,,50.0
+109,11,SQL Joins,Lecture,,25.0
+44,4,Dynamic Programming,Lecture,,25.0
+210,22,Big Data Overview,Lecture,,25.0
+518,48,Encryption Methods,Quiz,Easy,25.0
+480,46,Data Structures Overview,Assignment,,25.0
+1665,155,Indexing & Performance,Quiz,Medium,10.0
+312,30,Big Data Overview,Lecture,,25.0
+1429,136,Python for Data Science,Lecture,,25.0
+787,77,Computer Vision Intro,Assignment,,20.0
+861,84,Data Structures Overview,Lecture,,25.0
+1710,160,Search Algorithms,Lecture,,25.0
+424,41,Concurrency,Lecture,,25.0
+266,27,Network Protocols,Lecture,,25.0
+1534,144,OS Scheduling,Quiz,Hard,25.0
+1270,119,REST APIs,Assignment,,100.0
+1904,178,Untitled,Assignment,,50.0
+2016,188,OS Scheduling,Lecture,,25.0
+1090,106,Untitled,Lecture,,25.0
+1513,143,Sorting Algorithms,Lecture,,25.0
+2087,194,Ethics in AI,Assignment,,10.0
+1182,113,REST APIs,Lecture,,25.0
+900,86,Web Development Basics,Lecture,,25.0
+1441,138,Trees and Graphs,Assignment,,50.0
+2015,188,Database Normalization,Lecture,,25.0
+548,52,OOP Concepts,Lecture,,25.0
+946,90,Neural Networks,Assignment,,25.0
+539,51,OS Scheduling,Lecture,,25.0
+2197,62,OOP Concepts,Lecture,,25.0
+25,2,Computer Vision Intro,Quiz,Easy,100.0
+1843,170,Computer Vision Intro,Lecture,,25.0
+2179,70,Python for Data Science,Lecture,,25.0
+2166,10,Encryption Methods,Lecture,,25.0
+36,4,OOP Concepts,Lecture,,25.0
+1133,110,Untitled,Assignment,,100.0
+921,88,Untitled,Lecture,,25.0
+2042,190,Concurrency,Lecture,,25.0
+2151,17,Computer Vision Intro,Lecture,,25.0
+608,60,Design Patterns,Lecture,,25.0
+677,67,Linked Lists,Quiz,,50.0
+2127,199,Encryption Methods,Lecture,,25.0
+1938,181,Memory Management,Quiz,Hard,10.0
+909,87,Database Normalization,Quiz,Medium,100.0
+1766,164,Database Normalization,Assignment,,100.0
+350,33,Introduction to the Course,Quiz,,10.0
+38,4,Machine Learning Basics,Lecture,,25.0
+2105,197,Design Patterns,Lecture,,25.0
+28,3,REST APIs,Lecture,,25.0
+1325,126,Machine Learning Basics,Quiz,Easy,20.0
+889,86,REST APIs,Lecture,,25.0
+61,6,Python for Data Science,Assignment,,25.0
+2059,191,Search Algorithms,Lecture,,25.0
+1361,129,Ethics in AI,Quiz,,100.0
+2007,187,SQL Joins,Lecture,,25.0
+1764,164,OOP Concepts,Lecture,,25.0
+1514,143,Computer Vision Intro,Quiz,Hard,25.0
+1704,159,Trees and Graphs,Assignment,,50.0
+1234,117,Database Normalization,Assignment,,10.0
+2156,19,Big Data Overview,Lecture,,25.0
+1034,99,Computer Vision Intro,Lecture,,25.0
+926,89,Cloud Architecture,Lecture,,25.0
+409,39,Web Development Basics,Quiz,,20.0
+1443,138,Big Data Overview,Quiz,Hard,20.0
+894,86,Trees and Graphs,Quiz,,10.0
+1960,183,Encryption Methods,Lecture,,25.0
+1961,183,Encryption Methods,Quiz,,25.0
+1553,146,Sorting Algorithms,Quiz,Hard,100.0
+57,5,Memory Management,Lecture,,25.0
+1177,113,OS Scheduling,Lecture,,25.0
+899,86,Dynamic Programming,Assignment,,20.0
+955,91,OOP Concepts,Lecture,,25.0
+437,41,Encryption Methods,Lecture,,25.0
+2186,30,Introduction to the Course,Lecture,,25.0
+1862,173,Memory Management,Lecture,,25.0
+2217,90,Linked Lists,Lecture,,25.0
+326,31,Ethics in AI,Lecture,,25.0
+1138,110,Trees and Graphs,Lecture,,25.0
+655,65,Concurrency,Quiz,Easy,25.0
+1319,124,Big Data Overview,Lecture,,25.0
+1122,109,Ethics in AI,Lecture,,25.0
+623,61,Search Algorithms,Quiz,Easy,25.0
+2152,8,Linked Lists,Lecture,,25.0
+1594,149,Trees and Graphs,Lecture,,25.0
+605,59,SQL Joins,Assignment,,25.0
+2009,187,Design Patterns,Lecture,,25.0
+519,48,Cybersecurity Fundamentals,Lecture,,25.0
+1584,149,Ethics in AI,Quiz,Hard,100.0
+882,85,Encryption Methods,Lecture,,25.0
+441,42,REST APIs,Lecture,,25.0
+1931,181,Memory Management,Quiz,,10.0
+1213,116,Untitled,Lecture,,25.0
+251,25,Memory Management,Quiz,,100.0
+2167,117,REST APIs,Lecture,,25.0
+771,76,Machine Learning Basics,Lecture,,25.0
+288,29,Design Patterns,Assignment,,20.0
+749,74,Cloud Architecture,Assignment,,10.0
+1761,164,Concurrency,Assignment,,50.0
+939,90,Concurrency,Quiz,Hard,10.0
+961,92,Introduction to the Course,Lecture,,25.0
+1012,97,SQL Joins,Lecture,,25.0
+1243,118,Neural Networks,Lecture,,25.0
+328,31,Network Protocols,Quiz,Easy,20.0
+1949,182,Cloud Architecture,Quiz,Medium,100.0
+1783,165,Cloud Architecture,Assignment,,20.0
+972,93,OS Scheduling,Lecture,,25.0
+233,24,Concurrency,Assignment,,20.0
+1989,185,Memory Management,Lecture,,25.0
+1005,96,Sorting Algorithms,Assignment,,50.0
+1414,132,Database Normalization,Assignment,,10.0
+506,47,Design Patterns,Assignment,,25.0
+271,27,REST APIs,Lecture,,25.0
+256,25,Linked Lists,Lecture,,25.0
+1072,104,Introduction to the Course,Lecture,,25.0
+1625,152,Ethics in AI,Assignment,,20.0
+358,34,Data Structures Overview,Assignment,,50.0
+1917,180,Cybersecurity Fundamentals,Lecture,,25.0
+1256,118,Linked Lists,Lecture,,25.0
+1512,143,Encryption Methods,Lecture,,25.0
+1175,113,Cloud Architecture,Quiz,,20.0
+335,32,Python for Data Science,Lecture,,25.0
+1348,128,Introduction to the Course,Assignment,,50.0
+775,76,Data Structures Overview,Assignment,,50.0
+1330,127,Big Data Overview,Lecture,,25.0
+128,14,Indexing & Performance,Assignment,,100.0
+1396,131,Untitled,Lecture,,25.0
+1239,117,Machine Learning Basics,Quiz,Hard,100.0
+157,17,Encryption Methods,Lecture,,25.0
+1475,140,Linked Lists,Lecture,,25.0
+511,48,Cloud Architecture,Lecture,,25.0
+1664,155,REST APIs,Lecture,,25.0
+1230,117,Linked Lists,Lecture,,25.0
+152,17,Sorting Algorithms,Quiz,,25.0
+134,16,Sorting Algorithms,Lecture,,25.0
+1276,120,Design Patterns,Lecture,,25.0
+642,63,Untitled,Quiz,Medium,50.0
+1261,119,Introduction to the Course,Lecture,,25.0
+1640,153,Cybersecurity Fundamentals,Lecture,,25.0
+1566,147,Cybersecurity Fundamentals,Quiz,,25.0
+1547,146,Data Structures Overview,Assignment,,10.0
+718,72,Memory Management,Quiz,Hard,50.0
+1164,112,Dynamic Programming,Quiz,Hard,100.0
+1091,106,Computer Vision Intro,Lecture,,25.0
+759,75,Machine Learning Basics,Lecture,,25.0
+586,56,OS Scheduling,Lecture,,25.0
+1094,106,Big Data Overview,Lecture,,25.0
+2076,193,OOP Concepts,Lecture,,25.0
+267,27,Untitled,Lecture,,25.0
+2008,187,Untitled,Lecture,,25.0
+568,54,Cloud Architecture,Lecture,,25.0
+1727,161,Design Patterns,Assignment,,50.0
+1186,114,Cloud Architecture,Assignment,,100.0
+1604,150,Encryption Methods,Quiz,Easy,25.0
+770,76,OS Scheduling,Lecture,,25.0
+1567,147,Ethics in AI,Lecture,,25.0
+983,93,Cybersecurity Fundamentals,Quiz,Easy,20.0
+752,74,Concurrency,Quiz,Medium,25.0
+1817,168,Computer Vision Intro,Lecture,,25.0
+553,52,Neural Networks,Assignment,,10.0
+1060,103,Indexing & Performance,Lecture,,25.0
+678,67,Computer Vision Intro,Quiz,Hard,25.0
+1958,183,OS Scheduling,Assignment,,50.0
+1663,155,Data Structures Overview,Assignment,,100.0
+1352,128,Cybersecurity Fundamentals,Quiz,Hard,20.0
+1404,132,Big Data Overview,Lecture,,25.0
+2125,199,Design Patterns,Assignment,,50.0
+1226,117,Neural Networks,Quiz,,100.0
+2025,188,Data Structures Overview,Lecture,,25.0
+492,46,Big Data Overview,Lecture,,25.0
+840,82,SQL Joins,Lecture,,25.0
+1310,122,Ethics in AI,Assignment,,25.0
+854,83,Trees and Graphs,Lecture,,25.0
+1601,150,Network Protocols,Lecture,,25.0
+2181,143,Database Normalization,Quiz,Medium,50.0
+2075,193,REST APIs,Quiz,Hard,100.0
+2088,194,Memory Management,Lecture,,25.0
+254,25,OS Scheduling,Quiz,,25.0
+892,86,Neural Networks,Lecture,,25.0
+1649,154,Big Data Overview,Assignment,,100.0
+433,41,Python for Data Science,Lecture,,25.0
+118,13,Concurrency,Lecture,,25.0
+1337,127,Data Structures Overview,Lecture,,25.0
+359,34,Neural Networks,Assignment,,50.0
+772,76,Search Algorithms,Lecture,,25.0
+1448,138,Encryption Methods,Lecture,,25.0
+415,40,SQL Joins,Lecture,,25.0
+845,82,REST APIs,Lecture,,25.0
+958,92,OS Scheduling,Assignment,,50.0
+260,26,Ethics in AI,Lecture,,25.0
+2031,188,Ethics in AI,Lecture,,25.0
+196,20,Linked Lists,Quiz,Easy,25.0
+1784,165,Neural Networks,Assignment,,100.0
+1395,131,Linked Lists,Lecture,,25.0
+1581,148,Computer Vision Intro,Lecture,,25.0
+268,27,Design Patterns,Quiz,,20.0
+505,47,Cloud Architecture,Quiz,,20.0
+520,48,Network Protocols,Lecture,,25.0
+1611,151,Untitled,Lecture,,25.0
+1271,119,Database Normalization,Assignment,,25.0
+566,54,Untitled,Lecture,,25.0
+974,93,Database Normalization,Quiz,Hard,10.0
+1687,158,OOP Concepts,Lecture,,25.0
+2129,200,Indexing & Performance,Assignment,,10.0
+721,72,SQL Joins,Lecture,,25.0
+2024,188,REST APIs,Assignment,,20.0
+1880,175,Database Normalization,Lecture,,25.0
+24,2,Cybersecurity Fundamentals,Quiz,Medium,25.0
+372,35,Untitled,Lecture,,25.0
+285,28,Search Algorithms,Assignment,,50.0
+1866,173,Memory Management,Lecture,,25.0
+1006,96,Untitled,Lecture,,25.0
+1322,125,Concurrency,Lecture,,25.0
+546,52,Dynamic Programming,Quiz,Easy,20.0
+529,50,Linked Lists,Lecture,,25.0
+1533,144,Database Normalization,Lecture,,25.0
+1970,184,Untitled,Assignment,,25.0
+624,61,Linked Lists,Quiz,,50.0
+2083,194,OS Scheduling,Assignment,,100.0
+2213,163,Big Data Overview,Lecture,,25.0
+1768,165,Encryption Methods,Quiz,Medium,50.0
+1619,151,Web Development Basics,Lecture,,25.0
+1024,98,Concurrency,Lecture,,25.0
+637,63,Cybersecurity Fundamentals,Quiz,Easy,10.0
+31,4,Web Development Basics,Lecture,,25.0
+1558,147,Dynamic Programming,Lecture,,25.0
+1881,175,Cloud Architecture,Lecture,,25.0
+375,36,Search Algorithms,Assignment,,10.0
+809,80,Introduction to the Course,Quiz,Easy,100.0
+594,57,Cybersecurity Fundamentals,Lecture,,25.0
+141,16,Memory Management,Quiz,Hard,25.0
+3,1,REST APIs,Lecture,,25.0
+19,2,Introduction to the Course,Assignment,,10.0
+848,82,Cloud Architecture,Assignment,,25.0
+559,53,OOP Concepts,Quiz,Easy,25.0
+1522,144,Memory Management,Lecture,,25.0
+2084,194,Ethics in AI,Assignment,,50.0
+1506,143,REST APIs,Lecture,,25.0
+6,1,SQL Joins,Lecture,,25.0
+1767,164,Big Data Overview,Lecture,,25.0
+2119,198,Introduction to the Course,Lecture,,25.0
+2193,131,Untitled,Lecture,,25.0
+1972,184,Design Patterns,Quiz,Medium,100.0
+503,47,Sorting Algorithms,Lecture,,25.0
+500,47,Untitled,Lecture,,25.0
+1482,141,SQL Joins,Lecture,,25.0
+872,85,OS Scheduling,Assignment,,20.0
+410,39,Cybersecurity Fundamentals,Quiz,Easy,20.0
+1465,140,Search Algorithms,Lecture,,25.0
+84,8,Cybersecurity Fundamentals,Quiz,,50.0
+578,55,OS Scheduling,Assignment,,20.0
+248,25,Linked Lists,Lecture,,25.0
+968,93,REST APIs,Lecture,,25.0
+1241,118,Sorting Algorithms,Lecture,,25.0
+563,54,Network Protocols,Quiz,,50.0
+146,17,Linked Lists,Lecture,,25.0
+1419,133,Linked Lists,Lecture,,25.0
+590,56,Indexing & Performance,Lecture,,25.0
+1487,141,REST APIs,Lecture,,25.0
+597,58,Untitled,Lecture,,25.0
+998,95,Web Development Basics,Assignment,,20.0
+2020,188,REST APIs,Lecture,,25.0
+706,70,Design Patterns,Lecture,,25.0
+178,19,Big Data Overview,Quiz,,25.0
+2121,198,OOP Concepts,Lecture,,25.0
+396,38,Introduction to the Course,Quiz,,25.0
+1847,171,Network Protocols,Assignment,,10.0
+201,21,Encryption Methods,Lecture,,25.0
+1357,128,Design Patterns,Lecture,,25.0
+1486,141,Big Data Overview,Quiz,Medium,25.0
+1667,155,Network Protocols,Quiz,Easy,50.0
+54,5,Search Algorithms,Assignment,,20.0
+688,68,Data Structures Overview,Assignment,,25.0
+322,31,OS Scheduling,Lecture,,25.0
+644,63,SQL Joins,Assignment,,100.0
+1792,166,Python for Data Science,Assignment,,20.0
+1379,130,Computer Vision Intro,Assignment,,100.0
+1769,165,Untitled,Quiz,Medium,50.0
+1157,112,OOP Concepts,Quiz,,100.0
+205,22,Introduction to the Course,Assignment,,20.0
+87,9,Encryption Methods,Quiz,Hard,25.0
+815,80,Neural Networks,Quiz,,10.0
+431,41,Trees and Graphs,Quiz,Hard,50.0
+257,25,Database Normalization,Lecture,,25.0
+1211,116,Search Algorithms,Lecture,,25.0
+404,38,OS Scheduling,Lecture,,25.0
+169,19,Web Development Basics,Assignment,,50.0
+2115,198,Network Protocols,Quiz,,10.0
+1873,174,Trees and Graphs,Lecture,,25.0
+725,72,Cloud Architecture,Lecture,,25.0
+1229,117,Network Protocols,Assignment,,100.0
+1282,120,Data Structures Overview,Lecture,,25.0
+1504,143,Linked Lists,Lecture,,25.0
+1349,128,Encryption Methods,Lecture,,25.0
+1297,121,Trees and Graphs,Quiz,Easy,50.0
+1804,167,Ethics in AI,Lecture,,25.0
+732,73,Introduction to the Course,Lecture,,25.0
+1092,106,Python for Data Science,Lecture,,25.0
+2157,116,Neural Networks,Lecture,,25.0
+1081,105,Introduction to the Course,Quiz,Hard,20.0
+1858,173,Database Normalization,Quiz,Medium,50.0
+2201,193,Web Development Basics,Lecture,,25.0
+727,72,Python for Data Science,Quiz,Hard,25.0
+161,18,Ethics in AI,Lecture,,25.0
+226,24,Sorting Algorithms,Lecture,,25.0
+1220,116,Sorting Algorithms,Lecture,,25.0
+675,67,OOP Concepts,Quiz,,25.0
+58,5,Design Patterns,Lecture,,25.0
+1040,100,Untitled,Quiz,Medium,25.0
+1587,149,Data Structures Overview,Assignment,,10.0
+272,27,Ethics in AI,Lecture,,25.0
+1362,129,Untitled,Assignment,,20.0
+1304,122,Dynamic Programming,Lecture,,25.0
+1528,144,Python for Data Science,Lecture,,25.0
+1064,103,Network Protocols,Lecture,,25.0
+142,16,Machine Learning Basics,Lecture,,25.0
+337,32,Memory Management,Quiz,Medium,10.0
+1473,140,Search Algorithms,Assignment,,10.0
+1061,103,Network Protocols,Assignment,,10.0
+1377,130,Search Algorithms,Lecture,,25.0
+2011,187,Dynamic Programming,Quiz,Hard,20.0
+1610,151,Data Structures Overview,Quiz,Medium,20.0
+1796,167,Python for Data Science,Assignment,,20.0
+1800,167,Dynamic Programming,Quiz,Hard,25.0
+1291,120,OOP Concepts,Lecture,,25.0
+876,85,Memory Management,Lecture,,25.0
+1732,161,OOP Concepts,Quiz,Hard,25.0
+676,67,Memory Management,Lecture,,25.0
+684,68,Untitled,Lecture,,25.0
+1493,141,SQL Joins,Quiz,Hard,10.0
+1368,129,SQL Joins,Quiz,Easy,10.0
+214,23,Computer Vision Intro,Assignment,,10.0
+1365,129,Dynamic Programming,Assignment,,100.0
+1957,183,OS Scheduling,Lecture,,25.0
+879,85,Sorting Algorithms,Lecture,,25.0
+160,17,SQL Joins,Quiz,Easy,20.0
+690,69,Trees and Graphs,Quiz,,25.0
+890,86,SQL Joins,Lecture,,25.0
+1672,156,Cybersecurity Fundamentals,Lecture,,25.0
+1650,154,Database Normalization,Lecture,,25.0
+51,5,Design Patterns,Lecture,,25.0
+867,85,SQL Joins,Quiz,Easy,25.0
+1172,113,Design Patterns,Assignment,,50.0
+2040,190,Sorting Algorithms,Quiz,Hard,100.0
+1193,114,Computer Vision Intro,Lecture,,25.0
+111,11,Cybersecurity Fundamentals,Assignment,,10.0
+1180,113,Design Patterns,Assignment,,50.0
+954,91,Computer Vision Intro,Quiz,Hard,10.0
+1118,108,Indexing & Performance,Quiz,Easy,100.0
+859,84,Machine Learning Basics,Lecture,,25.0
+1265,119,Machine Learning Basics,Lecture,,25.0
+686,68,Sorting Algorithms,Lecture,,25.0
+86,9,Dynamic Programming,Lecture,,25.0
+1908,178,Trees and Graphs,Assignment,,10.0
+2188,103,Cloud Architecture,Quiz,,25.0
+2085,194,Memory Management,Lecture,,25.0
+150,17,Computer Vision Intro,Quiz,Hard,20.0
+2196,111,Search Algorithms,Lecture,,25.0
+1433,137,Sorting Algorithms,Lecture,,25.0
+2147,33,Untitled,Lecture,,25.0
+1402,132,Concurrency,Lecture,,25.0
+830,81,Untitled,Assignment,,20.0
+681,68,Indexing & Performance,Lecture,,25.0
+1622,152,Design Patterns,Lecture,,25.0
+91,9,Concurrency,Assignment,,50.0
+1254,118,Python for Data Science,Lecture,,25.0
+1941,182,Cybersecurity Fundamentals,Lecture,,25.0
+1597,150,Concurrency,Quiz,,50.0
+1191,114,Untitled,Lecture,,25.0
+232,24,Design Patterns,Lecture,,25.0
+781,77,OOP Concepts,Assignment,,10.0
+482,46,Big Data Overview,Lecture,,25.0
+1047,101,Cloud Architecture,Lecture,,25.0
+218,23,Neural Networks,Lecture,,25.0
+1161,112,Big Data Overview,Quiz,,20.0
+952,91,Introduction to the Course,Assignment,,100.0
+472,45,Ethics in AI,Lecture,,25.0
+1869,174,Dynamic Programming,Quiz,,100.0
+1554,146,Cloud Architecture,Lecture,,25.0
+1652,155,SQL Joins,Lecture,,25.0
+281,28,Dynamic Programming,Quiz,,100.0
+1128,109,OOP Concepts,Quiz,Easy,20.0
+2044,190,Cloud Architecture,Quiz,Easy,50.0
+200,21,Ethics in AI,Assignment,,50.0
+1774,165,Introduction to the Course,Lecture,,25.0
+1806,167,OOP Concepts,Lecture,,25.0
+1845,171,Indexing & Performance,Quiz,,100.0
+1235,117,Indexing & Performance,Quiz,Hard,25.0
+1038,100,Python for Data Science,Lecture,,25.0
+405,38,Dynamic Programming,Quiz,Hard,25.0
+973,93,Machine Learning Basics,Lecture,,25.0
+1217,116,OOP Concepts,Quiz,,25.0
+1976,184,Cybersecurity Fundamentals,Assignment,,100.0
+145,17,Concurrency,Lecture,,25.0
+2131,200,Dynamic Programming,Lecture,,25.0
+2097,196,OS Scheduling,Lecture,,25.0
+1811,168,Untitled,Quiz,Easy,20.0
+2061,191,Introduction to the Course,Lecture,,25.0
+382,37,OS Scheduling,Assignment,,20.0
+2002,187,Web Development Basics,Lecture,,25.0
+32,4,Dynamic Programming,Quiz,Easy,50.0
+1140,110,Dynamic Programming,Lecture,,25.0
+692,69,Introduction to the Course,Lecture,,25.0
+733,73,Search Algorithms,Assignment,,20.0
+1306,122,Machine Learning Basics,Lecture,,25.0
+454,43,Dynamic Programming,Quiz,Medium,20.0
+741,73,Introduction to the Course,Quiz,Medium,25.0
+432,41,Cybersecurity Fundamentals,Quiz,Hard,100.0
+159,17,Encryption Methods,Quiz,Medium,100.0
+1314,123,Cybersecurity Fundamentals,Quiz,Medium,50.0
+270,27,Network Protocols,Lecture,,25.0
+935,89,Ethics in AI,Lecture,,25.0
+33,4,SQL Joins,Quiz,Hard,50.0
+1627,152,OOP Concepts,Lecture,,25.0
+927,89,Ethics in AI,Lecture,,25.0
+985,94,Untitled,Quiz,,25.0
+366,34,Ethics in AI,Quiz,Easy,10.0
+1749,163,Encryption Methods,Lecture,,25.0
+1877,175,Computer Vision Intro,Quiz,Medium,10.0
+1127,109,Machine Learning Basics,Assignment,,25.0
+445,43,Linked Lists,Quiz,Easy,20.0
+541,51,Dynamic Programming,Assignment,,100.0
+175,19,Memory Management,Quiz,Easy,25.0
+2019,188,Ethics in AI,Lecture,,25.0
+447,43,Indexing & Performance,Lecture,,25.0
+712,71,Dynamic Programming,Quiz,Medium,20.0
+622,61,Introduction to the Course,Lecture,,25.0
+647,63,Ethics in AI,Quiz,Hard,25.0
+1753,163,SQL Joins,Assignment,,10.0
+71,7,Dynamic Programming,Lecture,,25.0
+580,55,Indexing & Performance,Lecture,,25.0
+1074,104,Python for Data Science,Quiz,Medium,10.0
+1510,143,Design Patterns,Lecture,,25.0
+1736,161,Trees and Graphs,Quiz,Hard,10.0
+364,34,Dynamic Programming,Lecture,,25.0
+105,11,Python for Data Science,Lecture,,25.0
+29,3,Python for Data Science,Lecture,,25.0
+1574,148,Concurrency,Lecture,,25.0
+728,73,Indexing & Performance,Lecture,,25.0
+122,13,Cybersecurity Fundamentals,Quiz,Hard,25.0
+453,43,Dynamic Programming,Lecture,,25.0
+289,29,Indexing & Performance,Assignment,,25.0
+66,6,Python for Data Science,Lecture,,25.0
+1577,148,Database Normalization,Lecture,,25.0
+514,48,OOP Concepts,Quiz,,50.0
+1152,111,Machine Learning Basics,Quiz,Medium,10.0
+470,45,Linked Lists,Quiz,Medium,100.0
+1413,132,Network Protocols,Lecture,,25.0
+760,75,Data Structures Overview,Assignment,,100.0
+1820,169,Cloud Architecture,Lecture,,25.0
+1083,106,Network Protocols,Assignment,,25.0
+2052,191,Memory Management,Lecture,,25.0
+825,81,Search Algorithms,Quiz,,100.0
+1740,161,Dynamic Programming,Lecture,,25.0
+877,85,SQL Joins,Lecture,,25.0
+552,52,OS Scheduling,Assignment,,50.0
+444,43,Sorting Algorithms,Lecture,,25.0
+628,62,Search Algorithms,Lecture,,25.0
+993,95,Memory Management,Lecture,,25.0
+1943,182,SQL Joins,Lecture,,25.0
+1745,162,Introduction to the Course,Lecture,,25.0
+572,54,Memory Management,Lecture,,25.0
+1236,117,Sorting Algorithms,Lecture,,25.0
+1797,167,Computer Vision Intro,Lecture,,25.0
+355,33,SQL Joins,Assignment,,20.0
+167,19,Linked Lists,Lecture,,25.0
+478,46,Concurrency,Assignment,,20.0
+1666,155,Indexing & Performance,Lecture,,25.0
+1178,113,Memory Management,Quiz,,50.0
+1632,153,Memory Management,Assignment,,25.0
+1312,123,Untitled,Lecture,,25.0
+1446,138,Sorting Algorithms,Lecture,,25.0
+12,2,Introduction to the Course,Lecture,,25.0
+215,23,Search Algorithms,Lecture,,25.0
+1661,155,Indexing & Performance,Quiz,Easy,10.0
+1824,169,Computer Vision Intro,Lecture,,25.0
+794,78,Search Algorithms,Quiz,,10.0
+184,20,Encryption Methods,Assignment,,10.0
+1928,181,Encryption Methods,Assignment,,50.0
+729,73,Network Protocols,Lecture,,25.0
+762,75,Indexing & Performance,Assignment,,100.0
+97,9,Introduction to the Course,Lecture,,25.0
+778,77,Sorting Algorithms,Lecture,,25.0
+1147,111,REST APIs,Lecture,,25.0
+325,31,Cybersecurity Fundamentals,Lecture,,25.0
+2139,90,Concurrency,Lecture,,25.0
+2035,189,Sorting Algorithms,Assignment,,100.0
+137,16,Indexing & Performance,Quiz,Easy,50.0
+723,72,Computer Vision Intro,Lecture,,25.0
+1370,129,Neural Networks,Lecture,,25.0
+1054,102,Memory Management,Lecture,,25.0
+1872,174,Untitled,Lecture,,25.0
+1823,169,Web Development Basics,Lecture,,25.0
+1861,173,Neural Networks,Assignment,,100.0
+1199,114,OS Scheduling,Quiz,Easy,20.0
+461,44,Web Development Basics,Lecture,,25.0
+2065,192,Ethics in AI,Lecture,,25.0
+1686,158,Sorting Algorithms,Lecture,,25.0
+1942,182,Indexing & Performance,Quiz,Hard,10.0
+641,63,Indexing & Performance,Lecture,,25.0
+800,79,Search Algorithms,Quiz,Easy,10.0
+1449,138,Sorting Algorithms,Assignment,,20.0
+1651,154,Python for Data Science,Lecture,,25.0
+523,49,Encryption Methods,Lecture,,25.0
+832,81,Concurrency,Assignment,,20.0
+1471,140,Concurrency,Lecture,,25.0
+804,79,Network Protocols,Quiz,Medium,25.0
+186,20,Design Patterns,Assignment,,25.0
+1386,130,Dynamic Programming,Assignment,,25.0
+1221,116,Network Protocols,Lecture,,25.0
+596,58,Sorting Algorithms,Quiz,Medium,100.0
+113,12,Memory Management,Assignment,,25.0
+485,46,Introduction to the Course,Lecture,,25.0
+1529,144,Ethics in AI,Lecture,,25.0
+2120,198,Search Algorithms,Lecture,,25.0
+284,28,Ethics in AI,Lecture,,25.0
+929,89,Search Algorithms,Lecture,,25.0
+2144,117,Indexing & Performance,Quiz,Hard,25.0
+263,27,Linked Lists,Quiz,,100.0
+1278,120,Cybersecurity Fundamentals,Lecture,,25.0
+297,29,REST APIs,Lecture,,25.0
+220,23,Sorting Algorithms,Lecture,,25.0
+701,70,Sorting Algorithms,Quiz,Medium,25.0
+374,35,Design Patterns,Lecture,,25.0
+1616,151,Database Normalization,Lecture,,25.0
+835,81,Big Data Overview,Lecture,,25.0
+438,42,Introduction to the Course,Assignment,,10.0
+1588,149,SQL Joins,Assignment,,100.0
+1631,153,Cybersecurity Fundamentals,Assignment,,20.0
+2030,188,Introduction to the Course,Lecture,,25.0
+2173,113,Design Patterns,Assignment,,50.0
+1836,170,Network Protocols,Lecture,,25.0
+751,74,Machine Learning Basics,Lecture,,25.0
+904,87,Introduction to the Course,Lecture,,25.0
+1303,122,Network Protocols,Lecture,,25.0
+1001,95,Indexing & Performance,Lecture,,25.0
+742,73,Introduction to the Course,Quiz,Medium,100.0
+471,45,Introduction to the Course,Lecture,,25.0
+1394,131,Computer Vision Intro,Lecture,,25.0
+855,83,OS Scheduling,Lecture,,25.0
+408,39,Network Protocols,Lecture,,25.0
+1729,161,Encryption Methods,Lecture,,25.0
+663,66,Big Data Overview,Assignment,,25.0
+456,44,Network Protocols,Quiz,Hard,25.0
+1336,127,Python for Data Science,Lecture,,25.0
+77,7,Design Patterns,Lecture,,25.0
+1657,155,OOP Concepts,Lecture,,25.0
+713,71,Concurrency,Assignment,,100.0
+2183,112,Cloud Architecture,Lecture,,25.0
+1101,107,Cybersecurity Fundamentals,Lecture,,25.0
+2180,169,Data Structures Overview,Lecture,,25.0
+1105,107,Web Development Basics,Assignment,,20.0
+670,67,Web Development Basics,Quiz,Medium,100.0
+1902,177,Concurrency,Lecture,,25.0
+1898,177,Design Patterns,Lecture,,25.0
+1539,145,Python for Data Science,Lecture,,25.0
+1754,163,Linked Lists,Assignment,,10.0
+1914,180,Cybersecurity Fundamentals,Quiz,Hard,20.0
+2108,198,Sorting Algorithms,Lecture,,25.0
+1237,117,Neural Networks,Lecture,,25.0
+1437,137,Search Algorithms,Quiz,Hard,100.0
+1939,181,Linked Lists,Quiz,Medium,25.0
+793,78,Sorting Algorithms,Assignment,,10.0
+703,70,Network Protocols,Assignment,,100.0
+247,25,Cybersecurity Fundamentals,Assignment,,100.0
+1821,169,Sorting Algorithms,Lecture,,25.0
+756,75,Neural Networks,Quiz,,100.0
+2032,188,Dynamic Programming,Assignment,,10.0
+1103,107,Cloud Architecture,Quiz,,20.0
+1633,153,Cybersecurity Fundamentals,Lecture,,25.0
+479,46,OOP Concepts,Lecture,,25.0
+1871,174,OOP Concepts,Lecture,,25.0
+2000,187,REST APIs,Lecture,,25.0
+2203,78,Untitled,Lecture,,25.0
+1700,159,Search Algorithms,Lecture,,25.0
+1381,130,Cloud Architecture,Assignment,,100.0
+658,65,Dynamic Programming,Quiz,Medium,100.0
+1488,141,Introduction to the Course,Lecture,,25.0
+1137,110,Sorting Algorithms,Assignment,,100.0
+1886,176,Design Patterns,Lecture,,25.0
+850,82,Memory Management,Quiz,Hard,20.0
+696,70,Machine Learning Basics,Lecture,,25.0
+1263,119,Computer Vision Intro,Lecture,,25.0
+1659,155,Web Development Basics,Quiz,Easy,25.0
+1102,107,Untitled,Quiz,Hard,10.0
+1918,180,Sorting Algorithms,Quiz,,10.0
+1787,166,Neural Networks,Lecture,,25.0
+1079,105,Ethics in AI,Quiz,,10.0
+1915,180,Python for Data Science,Lecture,,25.0
+600,58,Database Normalization,Lecture,,25.0
+2054,191,Python for Data Science,Quiz,Medium,100.0
+1353,128,Design Patterns,Quiz,Hard,25.0
+1993,186,Linked Lists,Quiz,Hard,50.0
+2111,198,Web Development Basics,Lecture,,25.0
+1955,183,Concurrency,Assignment,,20.0
+393,38,Encryption Methods,Lecture,,25.0
+2037,190,OOP Concepts,Lecture,,25.0
+534,51,Data Structures Overview,Lecture,,25.0
+73,7,Network Protocols,Quiz,Hard,10.0
+2160,45,Linked Lists,Quiz,Medium,100.0
+1445,138,Introduction to the Course,Assignment,,20.0
+302,30,Network Protocols,Lecture,,25.0
+1629,153,Network Protocols,Lecture,,25.0
+1896,176,Introduction to the Course,Lecture,,25.0
+698,70,Search Algorithms,Lecture,,25.0
+439,42,Trees and Graphs,Lecture,,25.0
+822,81,Ethics in AI,Lecture,,25.0
+1451,138,Untitled,Lecture,,25.0
+1988,185,Computer Vision Intro,Lecture,,25.0
+1307,122,Ethics in AI,Lecture,,25.0
+208,22,Dynamic Programming,Lecture,,25.0
+2107,197,Untitled,Lecture,,25.0
+978,93,Python for Data Science,Lecture,,25.0
+1516,143,Concurrency,Assignment,,10.0
+2071,193,Ethics in AI,Lecture,,25.0
+1569,148,Database Normalization,Lecture,,25.0
+707,71,Encryption Methods,Lecture,,25.0
+1227,117,Database Normalization,Lecture,,25.0
+1195,114,Computer Vision Intro,Lecture,,25.0
+223,23,SQL Joins,Lecture,,25.0
+1363,129,Concurrency,Lecture,,25.0
+1476,140,REST APIs,Lecture,,25.0
+1548,146,Introduction to the Course,Assignment,,50.0
+279,28,Neural Networks,Quiz,Hard,100.0
+564,54,Encryption Methods,Quiz,Medium,10.0
+238,24,Network Protocols,Lecture,,25.0
+1246,118,Concurrency,Quiz,,50.0
+660,65,SQL Joins,Lecture,,25.0
+2138,200,Untitled,Assignment,,100.0
+808,80,Python for Data Science,Lecture,,25.0
+1347,128,Untitled,Quiz,Easy,20.0
+1095,106,Dynamic Programming,Quiz,Hard,50.0
+1146,110,Linked Lists,Assignment,,50.0
+1979,184,Database Normalization,Lecture,,25.0
+1614,151,Python for Data Science,Lecture,,25.0
+346,33,Database Normalization,Lecture,,25.0
+895,86,Ethics in AI,Lecture,,25.0
+1108,107,Concurrency,Lecture,,25.0
+820,81,Concurrency,Quiz,Hard,25.0
+1158,112,Cybersecurity Fundamentals,Quiz,Easy,25.0
+427,41,Web Development Basics,Assignment,,100.0
+984,93,OS Scheduling,Lecture,,25.0
+592,57,Network Protocols,Lecture,,25.0
+154,17,Computer Vision Intro,Lecture,,25.0
+2130,200,Design Patterns,Lecture,,25.0
+1056,103,Computer Vision Intro,Quiz,Easy,25.0
+1570,148,Machine Learning Basics,Quiz,Medium,100.0
+860,84,Neural Networks,Lecture,,25.0
+475,45,Computer Vision Intro,Quiz,Hard,20.0
+1697,159,Dynamic Programming,Quiz,Easy,50.0
+816,80,Python for Data Science,Quiz,Hard,20.0
+551,52,Computer Vision Intro,Assignment,,20.0
+104,11,Untitled,Lecture,,25.0
+1900,177,Concurrency,Lecture,,25.0
+1848,171,Python for Data Science,Lecture,,25.0
+1309,122,Big Data Overview,Assignment,,25.0
+2123,199,Memory Management,Assignment,,20.0
+1742,162,Design Patterns,Assignment,,100.0
+394,38,Indexing & Performance,Lecture,,25.0
+1388,131,SQL Joins,Lecture,,25.0
+1016,97,Sorting Algorithms,Lecture,,25.0
+612,60,Big Data Overview,Quiz,Hard,100.0
+1544,146,Network Protocols,Quiz,Medium,10.0
+85,9,Machine Learning Basics,Assignment,,10.0
+89,9,Big Data Overview,Assignment,,20.0
+1015,97,Machine Learning Basics,Quiz,,25.0
+1463,139,Memory Management,Quiz,Medium,20.0
+821,81,Sorting Algorithms,Lecture,,25.0
+1167,112,Cybersecurity Fundamentals,Assignment,,20.0
+1436,137,Network Protocols,Quiz,,100.0
+631,62,Computer Vision Intro,Quiz,Medium,50.0
+47,5,Trees and Graphs,Quiz,Hard,20.0
+1991,186,Web Development Basics,Lecture,,25.0
+1050,101,Machine Learning Basics,Lecture,,25.0
+1907,178,Database Normalization,Lecture,,25.0
+301,30,Machine Learning Basics,Lecture,,25.0

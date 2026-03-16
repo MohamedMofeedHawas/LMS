@@ -1,0 +1,5 @@
+Model,AUC,Accuracy,AvgPrecision,TrainSize,TestSize,Rank
+RandomForest,0.8525,0.8744,0.3549,3750,1250,1
+GradientBoosting,0.8466,0.876,0.3435,3750,1250,2
+SVM,0.8202,0.6608,0.2996,3750,1250,3
+LogisticRegression,0.7104,0.6224,0.1724,3750,1250,4

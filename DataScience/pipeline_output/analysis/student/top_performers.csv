@@ -1,0 +1,21 @@
+StudentId,AvgQuizScore,AvgGrade,QuizPassRate,CompletionRate,DepartmentName
+2431,100.0,9.45,1.0,0.0,Computer Science
+1336,100.0,0.0,0.5,0.73,Computer Science
+3243,100.0,24.45,1.0,0.33,Artificial Intelligence
+2852,98.0,0.0,0.33,0.0,Computer Science
+4080,97.0,0.0,0.33,0.4,Artificial Intelligence
+2181,96.0,14.0,1.0,0.0,Computer Science
+1334,96.0,10.63,0.2,0.0,Computer Science
+1437,95.2,0.0,0.4,0.5,Computer Science
+1878,95.0,0.0,0.33,0.7,Computer Science
+873,94.0,0.0,0.5,0.0,Computer Science
+3764,93.6,18.85,0.5,0.38,Computer Science
+2653,93.2,0.0,0.17,0.8,Computer Science
+1107,93.2,0.0,0.25,0.0,Cyber Security
+2251,93.0,0.0,0.33,0.62,Computer Science
+4672,92.8,0.0,0.5,0.57,Computer Science
+1046,92.5,14.0,1.0,0.0,Computer Science
+4215,92.0,14.0,1.0,0.67,Computer Science
+371,92.0,29.43,0.5,0.0,Computer Science
+3430,92.0,0.0,1.0,0.33,Artificial Intelligence
+1375,91.6,0.0,0.5,0.0,Artificial Intelligence

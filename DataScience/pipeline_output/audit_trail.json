@@ -1,0 +1,314 @@
+{
+  "students": [
+    {
+      "operation": "load",
+      "rows_affected": 5080,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:39"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 80,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 5000,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "activity_log": [
+    {
+      "operation": "load",
+      "rows_affected": 15200,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 200,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 15000,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "courses": [
+    {
+      "operation": "load",
+      "rows_affected": 200,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "fk_fix_YearId",
+      "rows_affected": 43,
+      "detail": "ref=Id, fill=17",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 200,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "enrollments": [
+    {
+      "operation": "load",
+      "rows_affected": 10200,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 206,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 9944,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "years": [
+    {
+      "operation": "load",
+      "rows_affected": 56,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 8,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    }
+  ],
+  "squadrons": [
+    {
+      "operation": "load",
+      "rows_affected": 79,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    }
+  ],
+  "departments": [
+    {
+      "operation": "load",
+      "rows_affected": 6,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 1,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    }
+  ],
+  "users": [
+    {
+      "operation": "load",
+      "rows_affected": 2060,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 2060,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "activities": [
+    {
+      "operation": "load",
+      "rows_affected": 2218,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 2161,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "questions": [
+    {
+      "operation": "load",
+      "rows_affected": 5350,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    }
+  ],
+  "options": [
+    {
+      "operation": "load",
+      "rows_affected": 15684,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    }
+  ],
+  "attempts": [
+    {
+      "operation": "load",
+      "rows_affected": 11198,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 60,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 11088,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "answers": [
+    {
+      "operation": "load",
+      "rows_affected": 89039,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "submissions": [
+    {
+      "operation": "load",
+      "rows_affected": 7139,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:40"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 55,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 6673,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "progress": [
+    {
+      "operation": "load",
+      "rows_affected": 27212,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 636,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    },
+    {
+      "operation": "transform",
+      "rows_affected": 24835,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:43"
+    }
+  ],
+  "notifications": [
+    {
+      "operation": "load",
+      "rows_affected": 14255,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "comments": [
+    {
+      "operation": "load",
+      "rows_affected": 4452,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 0,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ],
+  "likes": [
+    {
+      "operation": "load",
+      "rows_affected": 10963,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:41"
+    },
+    {
+      "operation": "drop_duplicates",
+      "rows_affected": 50,
+      "detail": "",
+      "timestamp": "2026-03-14T23:20:42"
+    }
+  ]
+}

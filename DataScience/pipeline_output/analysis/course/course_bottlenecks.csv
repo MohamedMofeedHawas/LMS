@@ -1,0 +1,490 @@
+CourseId,ActivityId,Title_x,ActivityType,Students,Completed,AvgProgress,AvgTimeMinutes,CompletionRate,IsBottleneck,Title_y
+1,3,REST APIs,Lecture,44,26,77.727,40.743,0.591,0,Cyber Security Fundamentals
+2,9,Cybersecurity Fundamentals,Assignment,43,28,76.628,49.019,0.651,0,Machine Learning
+3,27,Neural Networks,Lecture,52,29,71.212,52.956,0.558,0,Data Structures
+4,36,OOP Concepts,Lecture,53,25,65.811,46.498,0.472,0,Computer Networks
+4,31,Web Development Basics,Lecture,61,30,62.902,50.628,0.492,0,Computer Networks
+4,39,Data Structures Overview,Lecture,60,35,73.283,49.093,0.583,0,Computer Networks
+4,30,OS Scheduling,Quiz,70,41,73.0,50.123,0.586,0,Computer Networks
+4,40,Computer Vision Intro,Assignment,40,25,78.975,44.538,0.625,0,Computer Networks
+4,38,Machine Learning Basics,Lecture,54,38,78.648,56.926,0.704,0,Computer Networks
+7,74,Python for Data Science,Lecture,50,22,64.88,44.592,0.44,0,Operating Systems
+7,71,Dynamic Programming,Lecture,61,31,68.836,48.58,0.508,0,Operating Systems
+7,79,REST APIs,Lecture,47,25,68.745,46.351,0.532,0,Operating Systems
+7,73,Network Protocols,Quiz,62,35,71.968,50.092,0.565,0,Operating Systems
+7,72,Cybersecurity Fundamentals,Lecture,67,42,76.97,44.282,0.627,0,Operating Systems
+8,81,Big Data Overview,Quiz,50,24,65.18,53.394,0.48,0,Data Science
+8,84,Cybersecurity Fundamentals,Quiz,43,24,75.0,46.484,0.558,0,Data Science
+9,87,Encryption Methods,Quiz,57,29,68.596,40.3,0.509,0,Artificial Intelligence
+9,85,Machine Learning Basics,Assignment,45,24,69.978,49.213,0.533,0,Artificial Intelligence
+10,99,Cloud Architecture,Assignment,44,23,70.364,48.286,0.523,0,Operating Systems
+11,104,Untitled,Lecture,38,13,51.737,46.074,0.342,1,Computer Networks
+11,108,Computer Vision Intro,Lecture,55,28,66.182,46.769,0.509,0,Computer Networks
+11,103,Concurrency,Lecture,57,32,75.298,49.919,0.561,0,Computer Networks
+11,102,Memory Management,Lecture,48,29,74.75,55.223,0.604,0,Computer Networks
+11,105,Python for Data Science,Lecture,57,36,76.526,58.168,0.632,0,Computer Networks
+13,121,Python for Data Science,Lecture,46,25,77.304,46.217,0.543,0,Software Engineering
+16,142,Machine Learning Basics,Lecture,44,19,65.295,47.018,0.432,0,Algorithms
+16,143,Indexing & Performance,Quiz,53,32,73.208,48.755,0.604,0,Algorithms
+17,147,Indexing & Performance,Assignment,44,19,56.023,38.386,0.432,0,Operating Systems
+17,156,Python for Data Science,Assignment,44,24,77.182,50.277,0.545,0,Operating Systems
+18,161,Ethics in AI,Lecture,60,34,76.067,54.663,0.567,0,Computer Networks
+19,2153,OOP Concepts,Lecture,46,18,61.783,45.789,0.391,1,Machine Learning
+19,174,Database Normalization,Lecture,59,27,61.881,42.807,0.458,0,Machine Learning
+19,172,Concurrency,Assignment,47,22,65.085,45.685,0.468,0,Machine Learning
+19,169,Web Development Basics,Assignment,65,31,64.785,48.637,0.477,0,Machine Learning
+19,175,Memory Management,Quiz,55,28,66.055,52.165,0.509,0,Machine Learning
+19,177,Big Data Overview,Lecture,48,27,69.708,49.931,0.562,0,Machine Learning
+19,166,Python for Data Science,Quiz,57,33,71.947,51.874,0.579,0,Machine Learning
+20,2163,Untitled,Assignment,58,29,68.31,44.893,0.5,0,Computer Architecture
+20,193,OS Scheduling,Quiz,48,25,73.0,38.552,0.521,0,Computer Architecture
+20,187,Big Data Overview,Lecture,58,31,62.879,50.457,0.534,0,Computer Architecture
+20,183,Search Algorithms,Lecture,54,30,64.5,54.833,0.556,0,Computer Architecture
+21,198,Database Normalization,Lecture,55,34,73.982,54.4,0.618,0,Algorithms
+22,210,Big Data Overview,Lecture,54,29,68.463,48.2,0.537,0,Data Science
+22,207,Big Data Overview,Lecture,49,28,71.041,50.631,0.571,0,Data Science
+22,205,Introduction to the Course,Assignment,54,32,72.093,51.041,0.593,0,Data Science
+23,213,Linked Lists,Assignment,45,19,60.289,48.536,0.422,0,Data Structures
+23,220,Sorting Algorithms,Lecture,59,26,65.492,48.319,0.441,0,Data Structures
+23,215,Search Algorithms,Lecture,53,32,78.075,48.036,0.604,0,Data Structures
+23,2189,Dynamic Programming,Lecture,67,42,72.97,49.663,0.627,0,Data Structures
+23,222,OS Scheduling,Quiz,54,34,77.389,51.641,0.63,0,Data Structures
+24,240,Database Normalization,Lecture,48,24,73.333,51.3,0.5,0,Cloud Computing
+24,235,Dynamic Programming,Lecture,55,28,69.2,47.549,0.509,0,Cloud Computing
+24,228,Python for Data Science,Lecture,49,26,61.469,48.904,0.531,0,Cloud Computing
+24,231,Concurrency,Assignment,56,30,68.75,51.841,0.536,0,Cloud Computing
+24,230,Indexing & Performance,Lecture,67,39,69.134,49.16,0.582,0,Cloud Computing
+25,246,Computer Vision Intro,Lecture,55,34,75.364,45.565,0.618,0,Cloud Computing
+26,261,Untitled,Quiz,45,22,68.178,48.28,0.489,0,Mobile App Development
+27,272,Ethics in AI,Lecture,50,28,64.0,49.582,0.56,0,Cloud Computing
+27,276,Design Patterns,Lecture,55,31,71.182,49.655,0.564,0,Cloud Computing
+27,270,Network Protocols,Lecture,56,36,79.018,53.693,0.643,0,Cloud Computing
+28,279,Neural Networks,Quiz,49,24,64.592,46.951,0.49,0,Mobile App Development
+28,280,Design Patterns,Lecture,53,28,68.491,53.819,0.528,0,Mobile App Development
+28,281,Dynamic Programming,Quiz,59,33,70.864,42.998,0.559,0,Mobile App Development
+29,300,Dynamic Programming,Lecture,54,26,68.759,47.376,0.481,0,Algorithms
+29,289,Indexing & Performance,Assignment,44,24,72.523,46.489,0.545,0,Algorithms
+29,299,Encryption Methods,Quiz,54,34,76.389,52.483,0.63,0,Algorithms
+30,303,Neural Networks,Lecture,59,29,64.508,51.286,0.492,0,Machine Learning
+30,308,SQL Joins,Lecture,49,25,66.449,48.927,0.51,0,Machine Learning
+30,314,Python for Data Science,Lecture,49,25,65.306,53.529,0.51,0,Machine Learning
+30,306,Memory Management,Quiz,48,26,66.854,50.458,0.542,0,Machine Learning
+30,313,Computer Vision Intro,Lecture,30,17,67.967,50.47,0.567,0,Machine Learning
+30,307,OOP Concepts,Lecture,42,24,71.333,45.793,0.571,0,Machine Learning
+31,327,Untitled,Quiz,68,34,68.574,47.574,0.5,0,Computer Architecture
+31,323,Ethics in AI,Lecture,42,24,77.667,50.329,0.571,0,Computer Architecture
+31,326,Ethics in AI,Lecture,52,30,76.904,47.9,0.577,0,Computer Architecture
+31,318,OS Scheduling,Assignment,49,31,75.776,50.729,0.633,0,Computer Architecture
+32,336,SQL Joins,Assignment,49,21,66.633,42.714,0.429,0,Computer Architecture
+32,342,Trees and Graphs,Quiz,64,36,74.781,43.145,0.562,0,Computer Architecture
+32,331,Database Normalization,Lecture,57,34,73.632,50.121,0.596,0,Computer Architecture
+33,349,Untitled,Lecture,45,24,66.756,56.407,0.533,0,Data Science
+33,346,Database Normalization,Lecture,43,23,72.581,50.526,0.535,0,Data Science
+33,345,Trees and Graphs,Lecture,52,28,69.827,41.452,0.538,0,Data Science
+33,352,SQL Joins,Assignment,53,32,78.962,52.651,0.604,0,Data Science
+33,355,SQL Joins,Assignment,46,30,80.87,57.65,0.652,0,Data Science
+34,363,Web Development Basics,Lecture,52,23,61.212,48.956,0.442,0,Algorithms
+34,361,Search Algorithms,Assignment,47,26,77.553,48.43,0.553,0,Algorithms
+34,358,Data Structures Overview,Assignment,48,27,78.25,51.696,0.562,0,Algorithms
+34,364,Dynamic Programming,Lecture,58,35,75.397,49.428,0.603,0,Algorithms
+35,370,Web Development Basics,Lecture,53,29,68.774,55.317,0.547,0,Data Structures
+35,367,SQL Joins,Lecture,49,27,66.163,51.522,0.551,0,Data Structures
+36,379,Concurrency,Lecture,47,23,61.489,54.915,0.489,0,Software Engineering
+36,381,Big Data Overview,Lecture,46,24,70.261,41.076,0.522,0,Software Engineering
+36,378,Big Data Overview,Lecture,47,25,77.489,55.138,0.532,0,Software Engineering
+37,385,Data Structures Overview,Lecture,47,26,67.915,45.511,0.553,0,Database Systems
+37,388,Introduction to the Course,Assignment,47,32,75.957,55.121,0.681,0,Database Systems
+38,390,Computer Vision Intro,Quiz,62,31,68.0,49.487,0.5,0,Database Systems
+38,404,OS Scheduling,Lecture,41,22,75.829,48.551,0.537,0,Database Systems
+38,394,Indexing & Performance,Lecture,59,33,69.356,48.151,0.559,0,Database Systems
+39,409,Web Development Basics,Quiz,52,26,67.808,50.588,0.5,0,Computer Networks
+40,422,Introduction to the Course,Quiz,48,21,63.771,48.14,0.438,0,Discrete Mathematics
+40,411,Ethics in AI,Quiz,51,33,72.451,56.484,0.647,0,Discrete Mathematics
+41,437,Encryption Methods,Lecture,49,24,63.49,45.976,0.49,0,Database Systems
+41,435,Big Data Overview,Quiz,51,28,66.02,57.155,0.549,0,Database Systems
+41,426,OS Scheduling,Lecture,49,32,76.592,51.443,0.653,0,Database Systems
+41,432,Cybersecurity Fundamentals,Quiz,39,28,80.744,48.964,0.718,0,Database Systems
+42,441,REST APIs,Lecture,46,23,70.152,46.55,0.5,0,Web Development
+42,439,Trees and Graphs,Lecture,52,30,72.154,50.727,0.577,0,Web Development
+43,445,Linked Lists,Quiz,60,28,66.033,49.395,0.467,0,Database Systems
+43,448,Linked Lists,Quiz,50,27,69.86,48.498,0.54,0,Database Systems
+43,447,Indexing & Performance,Lecture,46,25,67.522,54.878,0.543,0,Database Systems
+43,444,Sorting Algorithms,Lecture,62,34,71.484,53.903,0.548,0,Database Systems
+43,455,Memory Management,Quiz,54,31,70.222,50.378,0.574,0,Database Systems
+43,452,Trees and Graphs,Assignment,63,37,79.524,50.411,0.587,0,Database Systems
+44,460,OOP Concepts,Lecture,39,22,71.718,53.477,0.564,0,Database Systems
+45,471,Introduction to the Course,Lecture,54,28,64.056,46.363,0.519,0,Discrete Mathematics
+45,472,Ethics in AI,Lecture,42,24,66.786,43.195,0.571,0,Discrete Mathematics
+45,462,Computer Vision Intro,Lecture,44,26,75.455,54.225,0.591,0,Discrete Mathematics
+45,2160,Linked Lists,Quiz,49,31,69.898,47.8,0.633,0,Discrete Mathematics
+46,484,REST APIs,Lecture,39,17,55.615,50.462,0.436,0,Mobile App Development
+46,480,Data Structures Overview,Assignment,47,22,66.191,49.126,0.468,0,Mobile App Development
+46,479,OOP Concepts,Lecture,38,19,66.053,45.258,0.5,0,Mobile App Development
+46,490,Cybersecurity Fundamentals,Assignment,66,38,71.591,47.971,0.576,0,Mobile App Development
+46,492,Big Data Overview,Lecture,60,35,76.9,53.002,0.583,0,Mobile App Development
+46,477,REST APIs,Quiz,44,27,70.364,50.616,0.614,0,Mobile App Development
+47,496,Neural Networks,Quiz,49,23,66.061,52.91,0.469,0,Machine Learning
+47,505,Cloud Architecture,Quiz,54,29,67.667,52.191,0.537,0,Machine Learning
+47,502,Trees and Graphs,Lecture,52,29,66.096,46.767,0.558,0,Machine Learning
+47,495,Trees and Graphs,Lecture,51,29,69.922,56.333,0.569,0,Machine Learning
+47,506,Design Patterns,Assignment,58,36,71.914,51.472,0.621,0,Machine Learning
+48,518,Encryption Methods,Quiz,40,23,68.95,49.53,0.575,0,Data Structures
+49,524,Search Algorithms,Quiz,47,29,77.489,48.434,0.617,0,Data Structures
+51,539,OS Scheduling,Lecture,50,25,67.74,48.652,0.5,0,Discrete Mathematics
+51,537,Database Normalization,Quiz,50,28,70.54,49.262,0.56,0,Discrete Mathematics
+52,553,Neural Networks,Assignment,46,21,60.0,52.891,0.457,0,Operating Systems
+52,547,Computer Vision Intro,Quiz,39,19,73.0,43.985,0.487,0,Operating Systems
+52,548,OOP Concepts,Lecture,45,24,73.667,46.744,0.533,0,Operating Systems
+52,552,OS Scheduling,Assignment,62,37,71.306,45.295,0.597,0,Operating Systems
+53,562,Big Data Overview,Assignment,52,27,67.923,49.242,0.519,0,Discrete Mathematics
+54,565,Encryption Methods,Quiz,47,27,78.532,52.211,0.574,0,Artificial Intelligence
+56,582,Dynamic Programming,Lecture,43,21,67.419,47.753,0.488,0,Data Science
+56,587,Ethics in AI,Quiz,51,28,73.902,44.651,0.549,0,Data Science
+56,586,OS Scheduling,Lecture,60,34,71.7,49.433,0.567,0,Data Science
+58,598,Computer Vision Intro,Assignment,59,26,68.169,47.275,0.441,0,Software Engineering
+61,620,Sorting Algorithms,Quiz,44,23,66.614,51.975,0.523,0,Mobile App Development
+61,623,Search Algorithms,Quiz,39,24,72.513,48.813,0.615,0,Mobile App Development
+62,2184,Cybersecurity Fundamentals,Lecture,45,22,60.178,52.282,0.489,0,Machine Learning
+62,2197,OOP Concepts,Lecture,52,35,74.981,56.265,0.673,0,Machine Learning
+63,646,OOP Concepts,Quiz,57,26,66.158,49.381,0.456,0,Computer Networks
+63,637,Cybersecurity Fundamentals,Quiz,53,30,74.887,53.836,0.566,0,Computer Networks
+63,635,Big Data Overview,Lecture,53,31,71.094,50.828,0.585,0,Computer Networks
+63,642,Untitled,Quiz,49,29,78.102,53.633,0.592,0,Computer Networks
+63,648,Introduction to the Course,Lecture,48,30,80.0,50.708,0.625,0,Computer Networks
+65,654,SQL Joins,Lecture,49,27,65.714,46.516,0.551,0,Algorithms
+66,667,SQL Joins,Lecture,57,29,69.877,50.06,0.509,0,Computer Architecture
+66,663,Big Data Overview,Assignment,53,29,71.038,46.581,0.547,0,Computer Architecture
+67,677,Linked Lists,Quiz,48,24,62.375,45.973,0.5,0,Operating Systems
+67,675,OOP Concepts,Quiz,46,25,75.543,50.089,0.543,0,Operating Systems
+67,668,Encryption Methods,Lecture,47,30,74.851,48.53,0.638,0,Operating Systems
+67,672,Memory Management,Lecture,46,30,77.804,54.791,0.652,0,Operating Systems
+68,685,Machine Learning Basics,Assignment,51,29,75.412,43.28,0.569,0,Computer Networks
+68,683,Concurrency,Lecture,58,35,73.276,49.031,0.603,0,Computer Networks
+69,689,Concurrency,Assignment,47,21,66.894,43.343,0.447,0,Computer Networks
+69,690,Trees and Graphs,Quiz,59,34,70.322,48.541,0.576,0,Computer Networks
+70,701,Sorting Algorithms,Quiz,51,21,64.451,52.092,0.412,0,Operating Systems
+70,696,Machine Learning Basics,Lecture,58,29,66.293,50.243,0.5,0,Operating Systems
+70,2179,Python for Data Science,Lecture,54,34,74.796,49.702,0.63,0,Operating Systems
+71,708,Neural Networks,Quiz,40,28,82.5,53.198,0.7,0,Algorithms
+72,718,Memory Management,Quiz,48,19,58.958,45.606,0.396,1,Artificial Intelligence
+72,727,Python for Data Science,Quiz,66,34,66.909,51.053,0.515,0,Artificial Intelligence
+72,723,Computer Vision Intro,Lecture,49,26,66.857,52.89,0.531,0,Artificial Intelligence
+72,726,Ethics in AI,Quiz,54,29,71.815,41.076,0.537,0,Artificial Intelligence
+72,721,SQL Joins,Lecture,55,38,78.327,55.993,0.691,0,Artificial Intelligence
+73,734,Linked Lists,Lecture,47,27,69.277,54.064,0.574,0,Web Development
+73,741,Introduction to the Course,Quiz,55,32,71.927,51.424,0.582,0,Web Development
+73,738,SQL Joins,Lecture,41,24,69.415,50.229,0.585,0,Web Development
+73,737,Dynamic Programming,Lecture,53,32,74.491,45.915,0.604,0,Web Development
+74,2154,REST APIs,Assignment,42,21,70.357,50.895,0.5,0,Computer Architecture
+74,754,Neural Networks,Lecture,52,29,74.115,53.31,0.558,0,Computer Architecture
+74,748,Indexing & Performance,Lecture,71,41,72.324,47.665,0.577,0,Computer Architecture
+74,750,Encryption Methods,Assignment,65,38,74.738,47.088,0.585,0,Computer Architecture
+75,755,Trees and Graphs,Lecture,53,30,69.151,57.142,0.566,0,Data Science
+76,776,Sorting Algorithms,Quiz,52,25,67.615,51.208,0.481,0,Computer Networks
+76,775,Data Structures Overview,Assignment,45,24,65.556,53.678,0.533,0,Computer Networks
+76,764,OS Scheduling,Quiz,61,39,75.016,57.225,0.639,0,Computer Networks
+77,781,OOP Concepts,Assignment,54,23,64.407,41.915,0.426,0,Mobile App Development
+77,778,Sorting Algorithms,Lecture,46,26,69.652,54.35,0.565,0,Mobile App Development
+77,786,Python for Data Science,Lecture,48,32,76.146,56.648,0.667,0,Mobile App Development
+79,2194,SQL Joins,Lecture,61,27,62.328,51.998,0.443,0,Cyber Security Fundamentals
+80,815,Neural Networks,Quiz,47,29,77.191,48.902,0.617,0,Computer Architecture
+80,816,Python for Data Science,Quiz,38,24,75.132,51.874,0.632,0,Computer Architecture
+80,812,Design Patterns,Assignment,56,36,78.679,53.668,0.643,0,Computer Architecture
+81,836,Encryption Methods,Lecture,54,30,72.037,43.181,0.556,0,Artificial Intelligence
+81,824,Concurrency,Lecture,48,29,76.792,53.712,0.604,0,Artificial Intelligence
+81,826,Untitled,Quiz,46,28,69.217,53.989,0.609,0,Artificial Intelligence
+82,2142,Big Data Overview,Quiz,52,24,67.115,47.456,0.462,0,Data Science
+82,845,REST APIs,Lecture,46,28,74.174,51.939,0.609,0,Data Science
+84,862,Neural Networks,Lecture,55,26,61.6,47.745,0.473,0,Database Systems
+84,865,Dynamic Programming,Lecture,49,28,78.959,51.055,0.571,0,Database Systems
+85,880,Introduction to the Course,Assignment,52,29,71.423,48.475,0.558,0,Artificial Intelligence
+85,879,Sorting Algorithms,Lecture,47,29,78.723,58.226,0.617,0,Artificial Intelligence
+85,878,Computer Vision Intro,Quiz,63,39,76.698,51.073,0.619,0,Artificial Intelligence
+86,900,Web Development Basics,Lecture,57,27,63.491,50.053,0.474,0,Database Systems
+86,896,Big Data Overview,Assignment,52,36,82.231,51.035,0.692,0,Database Systems
+87,909,Database Normalization,Quiz,47,23,65.043,48.309,0.489,0,Web Development
+87,904,Introduction to the Course,Lecture,54,31,75.204,53.983,0.574,0,Web Development
+87,902,Network Protocols,Quiz,53,33,76.792,50.172,0.623,0,Web Development
+87,906,Encryption Methods,Lecture,51,32,71.039,48.165,0.627,0,Web Development
+88,914,Neural Networks,Assignment,41,20,67.463,46.822,0.488,0,Cloud Computing
+88,2177,SQL Joins,Assignment,40,20,72.375,50.375,0.5,0,Cloud Computing
+88,921,Untitled,Lecture,49,25,68.061,51.224,0.51,0,Cloud Computing
+89,928,REST APIs,Lecture,41,22,69.39,54.598,0.537,0,Cyber Security Fundamentals
+89,931,Introduction to the Course,Lecture,49,31,80.224,49.896,0.633,0,Cyber Security Fundamentals
+89,925,SQL Joins,Lecture,48,31,72.25,48.954,0.646,0,Cyber Security Fundamentals
+90,950,Concurrency,Lecture,55,29,68.927,52.038,0.527,0,Discrete Mathematics
+90,943,Big Data Overview,Assignment,62,40,73.403,52.51,0.645,0,Discrete Mathematics
+90,948,Neural Networks,Quiz,49,34,85.408,57.01,0.694,0,Discrete Mathematics
+91,956,Python for Data Science,Lecture,48,26,73.688,47.512,0.542,0,Computer Architecture
+91,953,Big Data Overview,Lecture,55,30,70.691,51.515,0.545,0,Computer Architecture
+92,959,Linked Lists,Lecture,48,22,65.958,44.75,0.458,0,Web Development
+92,965,Linked Lists,Lecture,53,29,70.208,49.821,0.547,0,Web Development
+92,966,Linked Lists,Lecture,60,35,70.967,52.598,0.583,0,Web Development
+93,983,Cybersecurity Fundamentals,Quiz,46,19,54.239,52.535,0.413,0,Machine Learning
+93,968,REST APIs,Lecture,61,27,58.508,43.467,0.443,0,Machine Learning
+93,980,Dynamic Programming,Lecture,46,23,71.435,52.707,0.5,0,Machine Learning
+94,991,OS Scheduling,Lecture,51,28,65.216,57.296,0.549,0,Data Science
+95,998,Web Development Basics,Assignment,49,24,62.122,58.933,0.49,0,Software Engineering
+95,993,Memory Management,Lecture,31,17,69.258,41.51,0.548,0,Software Engineering
+97,1010,Computer Vision Intro,Lecture,49,20,61.551,44.208,0.408,0,Computer Networks
+97,1018,Big Data Overview,Lecture,47,21,62.064,51.232,0.447,0,Computer Networks
+97,1017,OS Scheduling,Assignment,50,23,66.02,47.942,0.46,0,Computer Networks
+98,1025,Computer Vision Intro,Lecture,42,23,63.381,52.298,0.548,0,Machine Learning
+98,1027,OS Scheduling,Lecture,43,27,75.186,55.86,0.628,0,Machine Learning
+99,1029,Machine Learning Basics,Assignment,40,17,65.075,45.64,0.425,0,Mobile App Development
+99,1037,Search Algorithms,Lecture,51,29,70.765,52.59,0.569,0,Mobile App Development
+99,1030,Linked Lists,Lecture,56,32,67.518,45.439,0.571,0,Mobile App Development
+99,1033,Linked Lists,Assignment,52,37,81.519,55.867,0.712,0,Mobile App Development
+100,1041,REST APIs,Lecture,52,27,71.981,53.281,0.519,0,Software Engineering
+100,1042,Machine Learning Basics,Quiz,49,28,68.878,50.461,0.571,0,Software Engineering
+101,1043,Machine Learning Basics,Lecture,53,23,61.962,39.8,0.434,0,Web Development
+101,1047,Cloud Architecture,Lecture,55,27,64.764,50.142,0.491,0,Web Development
+101,1046,Computer Vision Intro,Quiz,51,26,63.451,53.708,0.51,0,Web Development
+101,1049,Big Data Overview,Lecture,43,23,67.977,46.165,0.535,0,Web Development
+102,1053,Computer Vision Intro,Assignment,49,28,71.98,51.971,0.571,0,Discrete Mathematics
+102,1055,REST APIs,Quiz,48,28,72.812,53.038,0.583,0,Discrete Mathematics
+102,1052,Indexing & Performance,Lecture,52,33,79.365,55.173,0.635,0,Discrete Mathematics
+103,1070,Cloud Architecture,Quiz,48,24,73.0,56.208,0.5,0,Web Development
+103,1068,Search Algorithms,Lecture,39,20,72.872,51.844,0.513,0,Web Development
+103,1059,Untitled,Lecture,47,27,77.617,55.443,0.574,0,Web Development
+103,1058,Network Protocols,Lecture,62,38,76.629,48.798,0.613,0,Web Development
+105,1079,Ethics in AI,Quiz,54,31,73.944,50.639,0.574,0,Computer Networks
+105,1077,Encryption Methods,Lecture,56,42,85.357,52.782,0.75,0,Computer Networks
+106,1085,Dynamic Programming,Lecture,46,27,72.348,55.176,0.587,0,Software Engineering
+106,1090,Untitled,Lecture,50,31,73.62,52.076,0.62,0,Software Engineering
+107,1107,Untitled,Lecture,66,27,59.788,50.738,0.409,0,Software Engineering
+107,1111,Encryption Methods,Lecture,55,23,58.491,42.618,0.418,0,Software Engineering
+107,1108,Concurrency,Lecture,50,26,72.96,50.876,0.52,0,Software Engineering
+107,1100,Cybersecurity Fundamentals,Assignment,43,24,69.953,49.509,0.558,0,Software Engineering
+107,1099,Linked Lists,Lecture,50,28,64.68,49.948,0.56,0,Software Engineering
+107,1096,Computer Vision Intro,Assignment,55,32,72.964,52.087,0.582,0,Software Engineering
+107,1097,Memory Management,Lecture,53,34,72.755,63.13,0.642,0,Software Engineering
+109,1127,Machine Learning Basics,Assignment,43,27,75.86,50.802,0.628,0,Artificial Intelligence
+110,1136,Data Structures Overview,Assignment,52,27,68.231,50.994,0.519,0,Software Engineering
+110,1143,Introduction to the Course,Lecture,41,22,67.463,51.432,0.537,0,Software Engineering
+110,1141,Concurrency,Lecture,59,32,68.915,52.056,0.542,0,Software Engineering
+110,1137,Sorting Algorithms,Assignment,49,32,74.837,54.498,0.653,0,Software Engineering
+111,1154,Search Algorithms,Lecture,48,25,68.688,52.675,0.521,0,Cyber Security Fundamentals
+111,1151,Encryption Methods,Quiz,54,29,69.889,46.726,0.537,0,Cyber Security Fundamentals
+111,1153,Big Data Overview,Assignment,50,30,75.4,54.582,0.6,0,Cyber Security Fundamentals
+112,1162,Cybersecurity Fundamentals,Lecture,37,17,68.973,46.357,0.459,0,Operating Systems
+112,1167,Cybersecurity Fundamentals,Assignment,54,30,67.537,47.219,0.556,0,Operating Systems
+112,1160,Neural Networks,Lecture,61,35,72.328,52.49,0.574,0,Operating Systems
+112,1169,REST APIs,Lecture,45,28,76.756,49.562,0.622,0,Operating Systems
+113,2173,Design Patterns,Assignment,43,18,69.558,49.47,0.419,0,Database Systems
+113,1178,Memory Management,Quiz,36,18,70.861,50.828,0.5,0,Database Systems
+113,1173,Sorting Algorithms,Lecture,53,27,71.245,46.2,0.509,0,Database Systems
+113,1181,Design Patterns,Lecture,48,26,69.771,45.588,0.542,0,Database Systems
+113,1185,Web Development Basics,Assignment,49,27,76.776,53.308,0.551,0,Database Systems
+113,1177,OS Scheduling,Lecture,49,32,80.082,52.894,0.653,0,Database Systems
+113,1176,Introduction to the Course,Quiz,55,39,77.945,54.524,0.709,0,Database Systems
+114,1199,OS Scheduling,Quiz,54,25,66.148,51.587,0.463,0,Mobile App Development
+114,1186,Cloud Architecture,Assignment,65,39,74.538,52.186,0.6,0,Mobile App Development
+114,1188,Data Structures Overview,Quiz,45,30,82.489,46.06,0.667,0,Mobile App Development
+116,1210,Neural Networks,Lecture,53,27,70.547,47.058,0.509,0,Data Structures
+116,1212,OS Scheduling,Lecture,47,27,73.383,44.911,0.574,0,Data Structures
+116,1221,Network Protocols,Lecture,43,25,70.628,55.067,0.581,0,Data Structures
+116,1215,Data Structures Overview,Lecture,58,42,80.414,52.338,0.724,0,Data Structures
+117,1230,Linked Lists,Lecture,52,29,72.346,46.85,0.558,0,Data Structures
+117,1229,Network Protocols,Assignment,66,38,72.818,50.714,0.576,0,Data Structures
+117,1239,Machine Learning Basics,Quiz,58,35,75.103,44.388,0.603,0,Data Structures
+118,1251,Sorting Algorithms,Quiz,36,18,62.167,48.664,0.5,0,Computer Networks
+118,1244,Indexing & Performance,Assignment,41,23,70.244,52.532,0.561,0,Computer Networks
+118,1249,Trees and Graphs,Lecture,52,30,71.558,52.598,0.577,0,Computer Networks
+118,1247,Sorting Algorithms,Lecture,46,30,76.804,47.8,0.652,0,Computer Networks
+119,1259,Cloud Architecture,Quiz,39,22,70.436,50.095,0.564,0,Cyber Security Fundamentals
+119,1263,Computer Vision Intro,Lecture,49,29,72.653,52.576,0.592,0,Cyber Security Fundamentals
+119,1271,Database Normalization,Assignment,48,30,79.875,50.892,0.625,0,Cyber Security Fundamentals
+119,1262,OOP Concepts,Lecture,48,32,80.354,49.833,0.667,0,Cyber Security Fundamentals
+120,1277,Untitled,Lecture,47,21,61.277,45.594,0.447,0,Data Science
+120,1283,Web Development Basics,Assignment,41,20,67.805,49.68,0.488,0,Data Science
+120,1291,OOP Concepts,Lecture,56,30,71.536,51.118,0.536,0,Data Science
+120,1274,Trees and Graphs,Lecture,48,27,72.417,54.073,0.562,0,Data Science
+120,1281,Search Algorithms,Lecture,58,34,71.207,51.541,0.586,0,Data Science
+120,1290,Concurrency,Quiz,49,29,78.592,56.459,0.592,0,Data Science
+121,1296,Trees and Graphs,Lecture,48,23,67.396,53.219,0.479,0,Mobile App Development
+121,1302,Linked Lists,Lecture,45,24,73.067,42.196,0.533,0,Mobile App Development
+121,1293,Data Structures Overview,Lecture,65,35,71.262,47.792,0.538,0,Mobile App Development
+121,1295,Python for Data Science,Lecture,51,31,78.451,50.733,0.608,0,Mobile App Development
+122,1303,Network Protocols,Lecture,60,31,68.9,59.02,0.517,0,Mobile App Development
+122,1306,Machine Learning Basics,Lecture,53,30,71.321,50.308,0.566,0,Mobile App Development
+123,1311,Data Structures Overview,Lecture,58,28,64.345,54.845,0.483,0,Cloud Computing
+123,1312,Untitled,Lecture,60,29,62.75,44.448,0.483,0,Cloud Computing
+123,1314,Cybersecurity Fundamentals,Quiz,36,21,75.833,52.361,0.583,0,Cloud Computing
+124,1321,Network Protocols,Lecture,52,31,72.577,43.931,0.596,0,Discrete Mathematics
+125,1324,Database Normalization,Lecture,55,39,83.236,58.551,0.709,0,Operating Systems
+127,1338,Computer Vision Intro,Lecture,43,26,76.023,50.853,0.605,0,Computer Architecture
+127,1335,Computer Vision Intro,Lecture,49,35,84.143,59.067,0.714,0,Computer Architecture
+128,1343,Web Development Basics,Lecture,49,20,62.51,49.278,0.408,0,Artificial Intelligence
+128,1356,Big Data Overview,Lecture,50,25,66.02,49.826,0.5,0,Artificial Intelligence
+128,1348,Introduction to the Course,Assignment,61,33,66.344,51.049,0.541,0,Artificial Intelligence
+128,1359,Untitled,Lecture,63,39,73.635,57.741,0.619,0,Artificial Intelligence
+129,1371,Search Algorithms,Quiz,56,31,65.696,51.636,0.554,0,Discrete Mathematics
+129,1361,Ethics in AI,Quiz,57,36,78.439,50.07,0.632,0,Discrete Mathematics
+129,1364,Encryption Methods,Lecture,38,24,85.132,46.124,0.632,0,Discrete Mathematics
+130,1375,REST APIs,Quiz,46,21,65.413,45.022,0.457,0,Computer Architecture
+130,1382,SQL Joins,Assignment,47,32,79.617,55.56,0.681,0,Computer Architecture
+131,1388,SQL Joins,Lecture,52,26,59.942,53.617,0.5,0,Machine Learning
+131,1395,Linked Lists,Lecture,56,28,66.893,53.266,0.5,0,Machine Learning
+131,1399,Concurrency,Assignment,53,30,72.736,49.091,0.566,0,Machine Learning
+132,1407,Dynamic Programming,Lecture,53,25,65.283,47.175,0.472,0,Mobile App Development
+132,1405,Introduction to the Course,Assignment,65,39,73.954,54.454,0.6,0,Mobile App Development
+135,1424,Cybersecurity Fundamentals,Quiz,52,26,62.923,51.579,0.5,0,Data Science
+135,1425,SQL Joins,Lecture,58,33,67.431,47.412,0.569,0,Data Science
+136,1430,Computer Vision Intro,Assignment,55,28,75.382,47.533,0.509,0,Operating Systems
+136,1431,Untitled,Lecture,54,30,66.981,53.907,0.556,0,Operating Systems
+136,1432,Web Development Basics,Quiz,66,37,68.909,48.132,0.561,0,Operating Systems
+136,1428,Memory Management,Quiz,47,30,82.426,54.215,0.638,0,Operating Systems
+137,1434,Dynamic Programming,Quiz,39,18,68.564,53.654,0.462,0,Computer Networks
+137,1436,Network Protocols,Quiz,60,33,67.167,53.697,0.55,0,Computer Networks
+138,1443,Big Data Overview,Quiz,44,19,63.318,50.357,0.432,0,Algorithms
+138,1441,Trees and Graphs,Assignment,44,21,72.636,51.391,0.477,0,Algorithms
+138,1442,Linked Lists,Assignment,54,26,67.093,47.719,0.481,0,Algorithms
+138,1454,Encryption Methods,Lecture,66,39,75.773,45.747,0.591,0,Algorithms
+138,1452,Design Patterns,Assignment,60,40,75.367,50.718,0.667,0,Algorithms
+139,1456,Cybersecurity Fundamentals,Quiz,36,16,67.833,48.631,0.444,0,Artificial Intelligence
+139,1462,Concurrency,Lecture,44,20,67.955,45.618,0.455,0,Artificial Intelligence
+139,1459,SQL Joins,Lecture,48,28,69.146,54.785,0.583,0,Artificial Intelligence
+140,1471,Concurrency,Lecture,54,27,62.519,48.856,0.5,0,Operating Systems
+140,1465,Search Algorithms,Lecture,52,28,71.327,55.638,0.538,0,Operating Systems
+140,1469,Design Patterns,Lecture,42,25,72.143,55.462,0.595,0,Operating Systems
+140,1476,REST APIs,Lecture,45,28,72.178,57.842,0.622,0,Operating Systems
+141,1490,Indexing & Performance,Lecture,57,31,71.175,52.954,0.544,0,Computer Networks
+142,1498,Ethics in AI,Lecture,53,27,70.358,58.043,0.509,0,Algorithms
+142,1497,Concurrency,Lecture,41,22,65.293,51.198,0.537,0,Algorithms
+142,1494,Concurrency,Lecture,52,32,74.481,48.315,0.615,0,Algorithms
+143,2181,Database Normalization,Quiz,47,24,63.106,48.843,0.511,0,Database Systems
+143,1505,Dynamic Programming,Quiz,66,40,74.212,48.056,0.606,0,Database Systems
+143,1516,Concurrency,Assignment,55,35,76.491,55.613,0.636,0,Database Systems
+144,1522,Memory Management,Lecture,53,27,66.623,52.647,0.509,0,Software Engineering
+144,1524,Database Normalization,Lecture,63,34,73.079,50.408,0.54,0,Software Engineering
+144,1519,Dynamic Programming,Lecture,40,26,78.575,44.818,0.65,0,Software Engineering
+144,1520,OS Scheduling,Lecture,52,35,75.058,53.304,0.673,0,Software Engineering
+145,1536,Machine Learning Basics,Assignment,51,27,65.078,51.112,0.529,0,Web Development
+146,1548,Introduction to the Course,Assignment,45,25,70.533,49.644,0.556,0,Operating Systems
+146,1552,Search Algorithms,Assignment,54,31,72.5,47.941,0.574,0,Operating Systems
+146,1544,Network Protocols,Quiz,48,28,72.438,56.2,0.583,0,Operating Systems
+146,1553,Sorting Algorithms,Quiz,48,28,72.188,52.929,0.583,0,Operating Systems
+146,1555,Indexing & Performance,Quiz,63,40,75.841,50.997,0.635,0,Operating Systems
+146,1545,Big Data Overview,Lecture,44,29,76.591,56.448,0.659,0,Operating Systems
+147,1563,REST APIs,Lecture,40,18,67.075,50.87,0.45,0,Data Science
+147,2209,Cybersecurity Fundamentals,Quiz,57,42,79.246,53.491,0.737,0,Data Science
+148,1575,Indexing & Performance,Quiz,64,33,69.578,51.28,0.516,0,Algorithms
+148,1569,Database Normalization,Lecture,46,27,74.217,49.737,0.587,0,Algorithms
+148,1574,Concurrency,Lecture,51,31,69.02,53.61,0.608,0,Algorithms
+149,1583,Database Normalization,Lecture,43,20,63.302,57.558,0.465,0,Web Development
+149,1596,OOP Concepts,Lecture,46,23,62.283,49.398,0.5,0,Web Development
+150,1602,Design Patterns,Lecture,38,19,70.421,44.368,0.5,0,Cyber Security Fundamentals
+150,1605,Dynamic Programming,Lecture,51,28,70.373,50.171,0.549,0,Cyber Security Fundamentals
+150,1599,Design Patterns,Quiz,53,30,72.698,47.526,0.566,0,Cyber Security Fundamentals
+150,1601,Network Protocols,Lecture,46,27,69.913,47.052,0.587,0,Cyber Security Fundamentals
+150,1597,Concurrency,Quiz,51,30,79.706,52.965,0.588,0,Cyber Security Fundamentals
+151,1611,Untitled,Lecture,66,38,68.955,47.703,0.576,0,Software Engineering
+151,1612,Neural Networks,Lecture,40,24,72.075,46.418,0.6,0,Software Engineering
+151,1617,Cybersecurity Fundamentals,Quiz,46,29,79.457,43.967,0.63,0,Software Engineering
+152,1626,Concurrency,Lecture,51,28,66.51,50.408,0.549,0,Operating Systems
+153,1633,Cybersecurity Fundamentals,Lecture,59,32,71.78,47.054,0.542,0,Algorithms
+153,2143,Network Protocols,Quiz,55,35,71.782,52.282,0.636,0,Algorithms
+154,1647,Sorting Algorithms,Assignment,61,32,69.246,44.693,0.525,0,Software Engineering
+154,1651,Python for Data Science,Lecture,44,31,82.045,57.88,0.705,0,Software Engineering
+155,1659,Web Development Basics,Quiz,51,21,65.255,46.114,0.412,0,Data Structures
+155,2172,OOP Concepts,Lecture,45,20,64.4,44.316,0.444,0,Data Structures
+155,1663,Data Structures Overview,Assignment,45,23,66.978,51.618,0.511,0,Data Structures
+155,1661,Indexing & Performance,Quiz,48,25,68.146,54.517,0.521,0,Data Structures
+155,1654,Untitled,Lecture,55,30,65.764,55.975,0.545,0,Data Structures
+155,1664,REST APIs,Lecture,52,31,73.327,50.835,0.596,0,Data Structures
+155,1666,Indexing & Performance,Lecture,61,39,79.131,49.661,0.639,0,Data Structures
+156,1677,Encryption Methods,Quiz,51,24,62.784,49.612,0.471,0,Algorithms
+156,1671,Machine Learning Basics,Lecture,61,34,70.508,55.892,0.557,0,Algorithms
+156,1678,SQL Joins,Assignment,55,31,67.073,51.04,0.564,0,Algorithms
+157,1685,Neural Networks,Quiz,42,16,57.167,40.695,0.381,1,Mobile App Development
+158,1689,Trees and Graphs,Lecture,43,27,80.047,46.807,0.628,0,Mobile App Development
+159,1705,SQL Joins,Quiz,48,26,67.729,45.202,0.542,0,Data Science
+159,1703,Data Structures Overview,Lecture,47,27,68.894,46.413,0.574,0,Data Science
+159,1696,Design Patterns,Quiz,60,37,72.267,54.577,0.617,0,Data Science
+159,1700,Search Algorithms,Lecture,45,30,72.956,53.611,0.667,0,Data Science
+160,1720,Cybersecurity Fundamentals,Lecture,48,22,68.208,44.815,0.458,0,Computer Architecture
+160,1721,Big Data Overview,Lecture,46,22,62.804,48.52,0.478,0,Computer Architecture
+160,1723,Database Normalization,Lecture,54,31,73.648,49.22,0.574,0,Computer Architecture
+160,1718,Introduction to the Course,Assignment,44,26,73.727,48.986,0.591,0,Computer Architecture
+161,1728,OOP Concepts,Lecture,53,25,66.075,47.762,0.472,0,Cyber Security Fundamentals
+163,1751,OOP Concepts,Lecture,52,25,64.231,48.65,0.481,0,Data Science
+164,1766,Database Normalization,Assignment,51,26,68.176,42.892,0.51,0,Data Science
+164,1765,Memory Management,Quiz,50,27,69.48,49.604,0.54,0,Data Science
+165,1780,Encryption Methods,Lecture,45,20,66.422,49.582,0.444,0,Computer Networks
+165,1781,OOP Concepts,Lecture,40,22,60.55,51.565,0.55,0,Computer Networks
+165,1769,Untitled,Quiz,59,33,72.017,50.944,0.559,0,Computer Networks
+166,1788,OS Scheduling,Lecture,49,24,62.143,49.833,0.49,0,Discrete Mathematics
+166,1792,Python for Data Science,Assignment,45,26,68.067,50.28,0.578,0,Discrete Mathematics
+167,1809,Ethics in AI,Quiz,49,23,60.041,53.978,0.469,0,Operating Systems
+167,1798,Linked Lists,Lecture,44,23,71.091,47.348,0.523,0,Operating Systems
+167,1796,Python for Data Science,Assignment,45,24,66.889,55.644,0.533,0,Operating Systems
+169,1824,Computer Vision Intro,Lecture,50,21,55.38,49.186,0.42,0,Cyber Security Fundamentals
+169,1831,Big Data Overview,Lecture,54,23,60.889,51.354,0.426,0,Cyber Security Fundamentals
+169,1822,Dynamic Programming,Assignment,47,27,71.043,53.934,0.574,0,Cyber Security Fundamentals
+169,1833,Search Algorithms,Lecture,52,31,75.385,47.26,0.596,0,Cyber Security Fundamentals
+170,1841,Computer Vision Intro,Quiz,51,34,75.745,54.831,0.667,0,Data Science
+171,1848,Python for Data Science,Lecture,55,31,65.727,48.496,0.564,0,Mobile App Development
+171,1844,OOP Concepts,Assignment,70,40,76.957,47.049,0.571,0,Mobile App Development
+172,1850,Web Development Basics,Quiz,48,24,64.688,52.377,0.5,0,Database Systems
+173,1857,Design Patterns,Lecture,65,35,69.477,49.252,0.538,0,Mobile App Development
+173,1862,Memory Management,Lecture,47,27,73.085,50.045,0.574,0,Mobile App Development
+173,1861,Neural Networks,Assignment,44,26,74.432,42.159,0.591,0,Mobile App Development
+173,2202,Memory Management,Lecture,53,38,84.491,56.215,0.717,0,Mobile App Development
+174,1875,Memory Management,Lecture,54,27,66.333,49.53,0.5,0,Web Development
+174,1870,Python for Data Science,Lecture,54,29,70.722,56.189,0.537,0,Web Development
+174,1867,Ethics in AI,Lecture,39,21,66.667,47.487,0.538,0,Web Development
+174,1873,Trees and Graphs,Lecture,56,36,75.304,53.48,0.643,0,Web Development
+175,1881,Cloud Architecture,Lecture,51,26,69.471,51.173,0.51,0,Discrete Mathematics
+175,1876,Design Patterns,Assignment,46,24,66.348,48.233,0.522,0,Discrete Mathematics
+175,1882,Neural Networks,Lecture,57,40,80.825,52.677,0.702,0,Discrete Mathematics
+176,1892,Indexing & Performance,Quiz,59,29,71.729,49.332,0.492,0,Cyber Security Fundamentals
+177,1899,Cybersecurity Fundamentals,Lecture,46,24,70.217,45.854,0.522,0,Data Science
+178,1905,Cloud Architecture,Lecture,48,30,81.896,49.988,0.625,0,Algorithms
+179,1909,OS Scheduling,Lecture,51,35,83.608,50.829,0.686,0,Data Science
+180,1918,Sorting Algorithms,Quiz,43,23,65.558,46.13,0.535,0,Discrete Mathematics
+180,1916,Trees and Graphs,Quiz,59,35,71.508,53.853,0.593,0,Discrete Mathematics
+180,1920,Web Development Basics,Assignment,47,28,65.426,48.662,0.596,0,Discrete Mathematics
+180,1921,Data Structures Overview,Lecture,45,28,74.978,53.342,0.622,0,Discrete Mathematics
+180,1914,Cybersecurity Fundamentals,Quiz,50,32,77.52,54.57,0.64,0,Discrete Mathematics
+181,1937,REST APIs,Lecture,41,19,63.0,56.254,0.463,0,Operating Systems
+181,1931,Memory Management,Quiz,50,25,74.1,44.754,0.5,0,Operating Systems
+181,1925,Encryption Methods,Quiz,53,28,66.113,54.345,0.528,0,Operating Systems
+181,1930,Python for Data Science,Lecture,37,21,73.757,50.268,0.568,0,Operating Systems
+181,1935,Database Normalization,Lecture,42,25,70.405,47.329,0.595,0,Operating Systems
+181,1922,Machine Learning Basics,Lecture,40,25,76.85,44.772,0.625,0,Operating Systems
+181,1929,Linked Lists,Assignment,53,34,77.34,50.757,0.642,0,Operating Systems
+181,2206,Database Normalization,Assignment,47,32,76.468,49.749,0.681,0,Operating Systems
+182,1941,Cybersecurity Fundamentals,Lecture,46,25,67.565,50.657,0.543,0,Data Structures
+183,1951,Ethics in AI,Lecture,53,24,71.377,52.436,0.453,0,Computer Architecture
+183,1967,Ethics in AI,Quiz,52,26,66.154,47.233,0.5,0,Computer Architecture
+183,1964,Computer Vision Intro,Lecture,57,29,68.368,55.207,0.509,0,Computer Architecture
+183,1958,OS Scheduling,Assignment,46,24,66.587,58.85,0.522,0,Computer Architecture
+183,1962,Encryption Methods,Lecture,39,26,79.436,48.482,0.667,0,Computer Architecture
+184,1980,Linked Lists,Lecture,52,29,68.385,46.663,0.558,0,Algorithms
+184,1970,Untitled,Assignment,49,32,73.286,55.945,0.653,0,Algorithms
+185,1987,Ethics in AI,Quiz,51,29,67.784,50.024,0.569,0,Data Science
+186,1999,Ethics in AI,Quiz,51,31,72.176,54.404,0.608,0,Algorithms
+187,2007,SQL Joins,Lecture,59,34,70.136,49.054,0.576,0,Operating Systems
+188,2026,Computer Vision Intro,Lecture,59,26,67.305,43.495,0.441,0,Web Development
+188,2023,Encryption Methods,Lecture,55,25,66.527,53.436,0.455,0,Web Development
+188,2028,Web Development Basics,Lecture,54,35,72.463,53.165,0.648,0,Web Development
+189,2035,Sorting Algorithms,Assignment,51,33,72.49,56.614,0.647,0,Artificial Intelligence
+190,2047,Data Structures Overview,Quiz,41,20,64.537,51.18,0.488,0,Computer Architecture
+191,2051,Memory Management,Lecture,37,15,62.892,43.392,0.405,0,Data Structures
+191,2061,Introduction to the Course,Lecture,38,24,76.132,53.124,0.632,0,Data Structures
+192,2065,Ethics in AI,Lecture,45,26,72.556,57.711,0.578,0,Computer Networks
+192,2066,Sorting Algorithms,Lecture,39,24,74.231,55.874,0.615,0,Computer Networks
+193,2074,OOP Concepts,Lecture,56,27,66.839,58.971,0.482,0,Operating Systems
+193,2073,Web Development Basics,Lecture,41,22,75.415,55.583,0.537,0,Operating Systems
+193,2077,Untitled,Assignment,59,32,70.254,53.781,0.542,0,Operating Systems
+193,2071,Ethics in AI,Lecture,62,34,66.081,56.184,0.548,0,Operating Systems
+193,2070,Cloud Architecture,Lecture,56,35,69.75,46.609,0.625,0,Operating Systems
+194,2092,Untitled,Lecture,52,26,59.058,57.96,0.5,0,Algorithms
+194,2083,OS Scheduling,Assignment,55,30,70.309,47.973,0.545,0,Algorithms
+196,2097,OS Scheduling,Lecture,57,26,64.544,45.063,0.456,0,Database Systems
+196,2096,Python for Data Science,Lecture,58,31,67.793,45.462,0.534,0,Database Systems
+196,2103,Big Data Overview,Assignment,54,34,74.593,51.278,0.63,0,Database Systems
+197,2106,SQL Joins,Quiz,55,31,76.945,52.415,0.564,0,Computer Networks
+197,2104,Sorting Algorithms,Lecture,46,27,76.478,43.657,0.587,0,Computer Networks
+198,2120,Search Algorithms,Lecture,58,26,62.759,45.959,0.448,0,Machine Learning

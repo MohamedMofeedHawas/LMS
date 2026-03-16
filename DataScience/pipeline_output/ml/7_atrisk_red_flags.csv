@@ -1,0 +1,6 @@
+Feature,Flagged_Avg,Safe_Avg,Gap,GapPct
+PassRate,0.075,0.088,-0.013,-15.2
+WeekendRatio,0.076,0.088,-0.012,-13.4
+ScoreStd,6.165,6.989,-0.824,-11.8
+AvgAttemptsBeforeSuccess,0.378,0.418,-0.041,-9.7
+DaytimeActivityRatio,0.204,0.226,-0.022,-9.6

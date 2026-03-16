@@ -1,0 +1,5 @@
+Cluster,QuizAttempts,AvgScore,PassRate,FailureRatio,CompletionRate,ActivitiesCompleted,LearningVelocity,LateRate,AbandonRate,StudyConsistency,ClusterLabel
+0,0.062,0.23,0.0,0.035,0.002,0.01,0.0,0.082,0.007,0.0,At-Risk Students
+1,0.099,0.286,0.0,0.043,0.561,5.558,0.006,0.08,0.299,0.001,Passive Learners
+2,8.173,52.921,0.306,0.694,0.576,5.849,0.006,0.085,0.282,1.084,High Achievers
+3,7.737,53.644,0.334,0.666,0.002,0.012,0.0,0.076,0.009,1.032,Inconsistent Learners

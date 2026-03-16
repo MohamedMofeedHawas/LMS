@@ -1,0 +1,14 @@
+Feature,MeanAbsSHAP,MeanSHAP,Rank
+AvgTimePerQuizMin,0.08635,-0.0821,1
+DaytimeActivityRatio,0.0747,-0.06635,2
+QuizAttempts,0.06886,-0.05359,3
+WeekendRatio,0.04904,-0.04673,4
+NightActivityRatio,0.03544,-0.03374,5
+LearningVelocity,0.02549,-0.02498,6
+AdmissionYear,0.02532,-0.02518,7
+AvgTimePerActivity,0.02521,-0.02494,8
+AvgGrade,0.02328,-0.02317,9
+SquadronId,0.02253,-0.02224,10
+EnrolledCourseCount,0.02152,-0.02148,11
+WorkloadPressure,0.01864,-0.0185,12
+StudyConsistency,0.01067,-0.00899,13

@@ -1,0 +1,4 @@
+Alert,Count,Severity
+Courses with no students,45,Medium
+Students with zero enrollments,750,High
+Ungraded submissions pending,4258,Medium

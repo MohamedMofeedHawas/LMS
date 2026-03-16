@@ -1,0 +1,15 @@
+Feature,Importance,Rank,CumulativeImportance
+AvgTimePerActivity,0.4027,1,0.4027
+WorkloadPressure,0.2247,2,0.6274
+EnrolledCourseCount,0.0487,3,0.6761
+AdmissionYear,0.0451,4,0.7212
+SquadronId,0.0405,5,0.7618
+AvgGrade,0.0357,6,0.7975
+AvgSubmitHour,0.0355,7,0.833
+YearId,0.0329,8,0.8659
+SocialIsolationScore,0.0287,9,0.8946
+LikesGiven,0.0264,10,0.9209
+DepartmentId,0.0222,11,0.9431
+CommentsCount,0.0212,12,0.9643
+Submissions,0.0198,13,0.9841
+LateRate,0.0159,14,1.0

@@ -1,0 +1,6 @@
+Feature,Flagged_Avg,Safe_Avg,Gap,GapPct
+ActivitiesCompleted,0.118,3.254,-3.136,-96.4
+CompletionRate,0.014,0.326,-0.312,-95.7
+LearningVelocity,0.0,0.003,-0.003,-95.3
+WorkloadPressure,13.29,147.491,-134.201,-91.0
+AvgTimePerActivity,4.294,28.973,-24.678,-85.2

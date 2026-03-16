@@ -1,0 +1,156 @@
+CourseId,TotalStudents,AtRiskCount,AtRiskPct,RiskLevel,Title
+92,47,14,29.8,High,Web Development
+22,34,10,29.4,High,Data Science
+179,35,10,28.6,High,Data Science
+126,39,11,28.2,High,Machine Learning
+120,44,12,27.3,High,Data Science
+166,37,10,27.0,High,Discrete Mathematics
+160,37,10,27.0,High,Computer Architecture
+158,52,14,26.9,High,Mobile App Development
+57,41,11,26.8,High,Web Development
+177,41,11,26.8,High,Data Science
+67,34,9,26.5,High,Operating Systems
+24,38,10,26.3,High,Cloud Computing
+11,38,10,26.3,High,Computer Networks
+138,35,9,25.7,High,Algorithms
+93,39,10,25.6,High,Machine Learning
+167,39,10,25.6,High,Operating Systems
+130,43,11,25.6,High,Computer Architecture
+127,39,10,25.6,High,Computer Architecture
+40,36,9,25.0,High,Discrete Mathematics
+18,41,10,24.4,High,Computer Networks
+168,41,10,24.4,High,Web Development
+62,46,11,23.9,High,Machine Learning
+46,43,10,23.3,High,Mobile App Development
+106,30,7,23.3,High,Software Engineering
+87,52,12,23.1,High,Web Development
+84,48,11,22.9,High,Database Systems
+31,53,12,22.6,High,Computer Architecture
+99,40,9,22.5,High,Mobile App Development
+119,40,9,22.5,High,Cyber Security Fundamentals
+162,45,10,22.2,High,Cloud Computing
+70,36,8,22.2,High,Operating Systems
+80,32,7,21.9,High,Computer Architecture
+6,32,7,21.9,High,Artificial Intelligence
+183,46,10,21.7,High,Computer Architecture
+20,51,11,21.6,High,Computer Architecture
+196,37,8,21.6,High,Database Systems
+107,37,8,21.6,High,Software Engineering
+72,51,11,21.6,High,Artificial Intelligence
+117,37,8,21.6,High,Data Structures
+95,42,9,21.4,High,Software Engineering
+111,38,8,21.1,High,Cyber Security Fundamentals
+186,29,6,20.7,High,Algorithms
+101,39,8,20.5,High,Web Development
+157,39,8,20.5,High,Mobile App Development
+14,39,8,20.5,High,Computer Architecture
+29,44,9,20.5,High,Algorithms
+153,30,6,20.0,High,Algorithms
+59,45,9,20.0,High,Machine Learning
+88,40,8,20.0,High,Cloud Computing
+170,41,8,19.5,High,Data Science
+32,47,9,19.1,High,Computer Architecture
+178,42,8,19.0,Medium,Algorithms
+77,42,8,19.0,Medium,Mobile App Development
+169,42,8,19.0,Medium,Cyber Security Fundamentals
+191,37,7,18.9,Medium,Data Structures
+79,37,7,18.9,Medium,Cyber Security Fundamentals
+135,37,7,18.9,Medium,Data Science
+5,32,6,18.8,Medium,Discrete Mathematics
+133,32,6,18.8,Medium,Computer Networks
+3,38,7,18.4,Medium,Data Structures
+180,55,10,18.2,Medium,Discrete Mathematics
+16,44,8,18.2,Medium,Algorithms
+150,39,7,17.9,Medium,Cyber Security Fundamentals
+189,39,7,17.9,Medium,Artificial Intelligence
+193,28,5,17.9,Medium,Operating Systems
+173,45,8,17.8,Medium,Mobile App Development
+198,51,9,17.6,Medium,Machine Learning
+141,40,7,17.5,Medium,Computer Networks
+37,40,7,17.5,Medium,Database Systems
+192,46,8,17.4,Medium,Computer Networks
+108,41,7,17.1,Medium,Software Engineering
+187,41,7,17.1,Medium,Operating Systems
+194,41,7,17.1,Medium,Algorithms
+34,35,6,17.1,Medium,Algorithms
+38,41,7,17.1,Medium,Database Systems
+151,47,8,17.0,Medium,Software Engineering
+54,47,8,17.0,Medium,Artificial Intelligence
+140,42,7,16.7,Medium,Operating Systems
+154,42,7,16.7,Medium,Software Engineering
+81,42,7,16.7,Medium,Artificial Intelligence
+96,30,5,16.7,Medium,Database Systems
+36,43,7,16.3,Medium,Software Engineering
+63,49,8,16.3,Medium,Computer Networks
+49,49,8,16.3,Medium,Data Structures
+12,43,7,16.3,Medium,Discrete Mathematics
+123,43,7,16.3,Medium,Cloud Computing
+190,49,8,16.3,Medium,Computer Architecture
+188,31,5,16.1,Medium,Web Development
+200,44,7,15.9,Medium,Algorithms
+61,38,6,15.8,Medium,Mobile App Development
+50,38,6,15.8,Medium,Discrete Mathematics
+131,32,5,15.6,Medium,Machine Learning
+115,32,5,15.6,Medium,Artificial Intelligence
+145,32,5,15.6,Medium,Web Development
+181,39,6,15.4,Medium,Operating Systems
+23,39,6,15.4,Medium,Data Structures
+110,39,6,15.4,Medium,Software Engineering
+74,33,5,15.2,Medium,Computer Architecture
+149,46,7,15.2,Medium,Web Development
+7,33,5,15.2,Medium,Operating Systems
+121,40,6,15.0,Medium,Mobile App Development
+75,40,6,15.0,Medium,Data Science
+89,41,6,14.6,Medium,Cyber Security Fundamentals
+85,35,5,14.3,Low,Artificial Intelligence
+58,42,6,14.3,Low,Software Engineering
+33,42,6,14.3,Low,Data Science
+52,28,4,14.3,Low,Operating Systems
+51,42,6,14.3,Low,Discrete Mathematics
+164,36,5,13.9,Low,Data Science
+124,36,5,13.9,Low,Discrete Mathematics
+78,36,5,13.9,Low,Artificial Intelligence
+152,36,5,13.9,Low,Operating Systems
+171,29,4,13.8,Low,Mobile App Development
+197,29,4,13.8,Low,Computer Networks
+35,29,4,13.8,Low,Data Structures
+100,44,6,13.6,Low,Software Engineering
+1,37,5,13.5,Low,Cyber Security Fundamentals
+156,37,5,13.5,Low,Algorithms
+182,37,5,13.5,Low,Data Structures
+69,45,6,13.3,Low,Computer Networks
+143,38,5,13.2,Low,Database Systems
+64,46,6,13.0,Low,Database Systems
+76,39,5,12.8,Low,Computer Networks
+86,39,5,12.8,Low,Database Systems
+9,40,5,12.5,Low,Artificial Intelligence
+43,32,4,12.5,Low,Database Systems
+98,32,4,12.5,Low,Machine Learning
+71,40,5,12.5,Low,Algorithms
+129,42,5,11.9,Low,Discrete Mathematics
+137,42,5,11.9,Low,Computer Networks
+30,42,5,11.9,Low,Machine Learning
+28,43,5,11.6,Low,Mobile App Development
+94,35,4,11.4,Low,Data Science
+109,36,4,11.1,Low,Artificial Intelligence
+128,27,3,11.1,Low,Artificial Intelligence
+73,48,5,10.4,Low,Web Development
+134,39,4,10.3,Low,Web Development
+53,49,5,10.2,Low,Discrete Mathematics
+65,40,4,10.0,Low,Algorithms
+48,51,5,9.8,Low,Data Structures
+136,31,3,9.7,Low,Operating Systems
+146,42,4,9.5,Low,Operating Systems
+41,43,4,9.3,Low,Database Systems
+47,34,3,8.8,Low,Machine Learning
+91,34,3,8.8,Low,Computer Architecture
+118,46,4,8.7,Low,Computer Networks
+147,47,4,8.5,Low,Data Science
+25,36,3,8.3,Low,Cloud Computing
+26,49,4,8.2,Low,Mobile App Development
+21,39,3,7.7,Low,Algorithms
+56,53,4,7.5,Low,Data Science
+2,41,3,7.3,Low,Machine Learning
+159,41,3,7.3,Low,Data Science
+4,46,2,4.3,Low,Computer Networks
+8,36,1,2.8,Low,Data Science

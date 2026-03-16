@@ -1,0 +1,5 @@
+Segment,Students,AvgQuizScore,CompletionRate,AvgActions,Pct
+At Risk,6,0.0,0.35,1488.5,0.1
+Average Learner,322,62.48,0.61,9.51,6.4
+High Achiever,23,80.44,0.79,0.0,0.5
+Passive Learner,4649,11.03,0.25,0.0,93.0

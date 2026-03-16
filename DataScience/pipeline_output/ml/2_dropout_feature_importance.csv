@@ -1,0 +1,15 @@
+Feature,Importance,Rank,CumulativeImportance
+AvgTimePerActivity,0.1911,1,0.1911
+AvgAttemptsBeforeSuccess,0.1311,2,0.3222
+WorkloadPressure,0.1255,3,0.4477
+AvgAttemptsPerQuiz,0.1235,4,0.5712
+AvgTimePerQuizMin,0.1153,5,0.6865
+QuizAttempts,0.104,6,0.7904
+DaytimeActivityRatio,0.0562,7,0.8466
+FailureRatio,0.0437,8,0.8904
+AvgScore,0.0341,9,0.9245
+MinScore,0.0207,10,0.9452
+NightActivityRatio,0.0166,11,0.9618
+DifficultyExposure,0.0158,12,0.9776
+AdmissionYear,0.0119,13,0.9895
+EnrolledCourseCount,0.0105,14,1.0

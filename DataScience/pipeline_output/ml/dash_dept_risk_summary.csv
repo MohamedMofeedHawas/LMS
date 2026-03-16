@@ -1,0 +1,4 @@
+DepartmentName,Students,AvgRiskScore,DropoutCount,AvgCompletion,AvgScore
+Cyber Security,679,0.146,109,0.265,15.153
+Artificial Intelligence,1378,0.143,208,0.286,15.155
+Computer Science,2943,0.137,453,0.274,14.293

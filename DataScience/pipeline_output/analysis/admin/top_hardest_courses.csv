@@ -1,0 +1,11 @@
+CourseId,Title,DepartmentName,QuizPassRate,AvgQuizScore,TotalAttempts
+17,Operating Systems,Artificial Intelligence,0.046,35.464,22.0
+37,Database Systems,Cyber Security,0.19,41.771,58.0
+190,Computer Architecture,Cyber Security,0.194,44.1,31.0
+73,Web Development,Artificial Intelligence,0.208,44.469,53.0
+140,Operating Systems,Cyber Security,0.208,50.6,48.0
+80,Computer Architecture,Computer Science,0.211,43.965,71.0
+89,Cyber Security Fundamentals,Computer Science,0.214,40.25,42.0
+99,Mobile App Development,Cyber Security,0.214,52.155,70.0
+187,Operating Systems,Cyber Security,0.214,50.667,42.0
+128,Artificial Intelligence,Artificial Intelligence,0.216,47.844,139.0

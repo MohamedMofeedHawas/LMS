@@ -1,0 +1,80 @@
+Id,Name,Description,IsActive,CreatedAt,UpdatedAt
+1,Alpha,Access token generated for session.,True,2025-03-09 15:27:08,2025-04-20 15:27:08
+2,Bravo,Annual academic year data was synchronized.,True,2025-06-24 16:18:42,2025-07-29 16:18:42
+3,Charlie,Squadron assignment updated by admin.,False,2025-05-20 19:03:58,2025-09-08 19:03:58
+4,Delta,,False,2025-02-04 13:05:53,2025-04-17 13:05:53
+5,Echo,New student record was added to the system.,True,2022-11-22 02:51:59,2023-03-15 02:51:59
+6,Foxtrot,Record was archived by the administrator.,False,2024-09-16 09:09:32,2024-09-27 09:09:32
+7,Golf,The system processed the request successfully.,False,2023-02-20 14:50:55,2023-06-26 14:50:55
+1008,Hotel,Data import finished without errors.,True,2023-01-09 13:46:36,2023-05-03 13:46:36
+9,India,Data import finished without errors.,True,2024-07-17 01:30:38,2024-09-10 01:30:38
+10,Juliet,The system processed the request successfully.,True,2024-06-11 19:27:04,2024-11-08 19:27:04
+11,Kilo,Record was archived by the administrator.,False,2022-02-12 11:26:05,2022-03-19 11:26:05
+12,Lima,,False,2025-02-03 14:16:29,2025-06-20 14:16:29
+1013,Mike,User authentication was completed.,True,2022-08-27 19:39:59,2022-12-23 19:39:59
+14,November,New student record was added to the system.,False,2024-09-14 04:52:36,2024-10-17 04:52:36
+15,Oscar,Enrollment confirmed for the selected course.,False,2023-01-08 12:27:31,2023-03-11 12:27:31
+16,Papa,Enrollment confirmed for the selected course.,True,2025-02-23 08:06:52,2025-05-29 08:06:52
+17,Quebec,Enrollment confirmed for the selected course.,True,2023-04-07 15:25:10,2023-04-22 15:25:10
+18,Romeo,,False,2023-11-26 22:48:26,2024-03-07 22:48:26
+19,Sierra,User authentication was completed.,False,2024-12-10 11:05:56,2025-04-01 11:05:56
+20,Tango,Squadron assignment updated by admin.,False,2023-04-05 07:17:59,2023-07-14 07:17:59
+21,Uniform,Enrollment confirmed for the selected course.,False,2025-02-24 20:23:23,2025-06-14 20:23:23
+22,Victor,Squadron assignment updated by admin.,True,2024-11-06 05:06:17,2025-01-13 05:06:17
+23,Whiskey,The system processed the request successfully.,True,2025-04-09 02:31:58,2025-06-30 02:31:58
+24,X-ray,Access token generated for session.,False,2023-06-24 01:19:48,2023-07-02 01:19:48
+25,Yankee,Course registration period has been updated.,False,2023-01-15 08:19:45,2023-04-29 08:19:45
+26,Zulu,Password reset request was initiated.,False,2023-11-19 01:34:12,2024-01-17 01:34:12
+27,Alpha-2,Annual academic year data was synchronized.,True,2023-11-14 06:41:25,2024-01-19 06:41:25
+28,Bravo-2,Access token generated for session.,False,2024-09-25 16:53:13,2024-11-19 16:53:13
+29,Charlie-2,,True,2023-08-21 07:48:54,2023-12-04 07:48:54
+30,Delta-2,Annual academic year data was synchronized.,False,2023-01-15 10:54:27,2023-05-14 10:54:27
+31,Echo-2,Enrollment confirmed for the selected course.,True,2022-06-03 23:28:37,2022-06-23 23:28:37
+32,Foxtrot-2,Access token generated for session.,True,2025-06-05 20:48:47,2025-08-12 20:48:47
+33,Golf-2,System backup was completed successfully.,False,2022-01-22 06:35:39,2022-03-05 06:35:39
+34,Hotel-2,New student record was added to the system.,True,2024-02-19 17:36:20,2024-06-11 17:36:20
+35,India-2,User authentication was completed.,True,2024-03-10 05:57:37,2024-04-28 05:57:37
+36,Juliet-2,Access token generated for session.,False,2025-06-13 21:50:17,2025-10-03 21:50:17
+37,Kilo-2,Access token generated for session.,True,2022-04-13 09:23:59,2022-07-18 09:23:59
+38,Lima-2,System backup was completed successfully.,True,2022-06-29 00:55:35,2022-11-04 00:55:35
+39,Mike-2,,True,2025-05-14 22:05:31,2025-08-16 22:05:31
+40,November-2,System backup was completed successfully.,True,2022-12-26 11:31:17,2023-04-05 11:31:17
+41,Oscar-2,System backup was completed successfully.,False,2022-03-06 22:23:42,2022-05-19 22:23:42
+42,Papa-2,New student record was added to the system.,True,2022-11-27 09:02:59,2023-01-09 09:02:59
+1043,Quebec-2,Annual academic year data was synchronized.,False,2023-01-13 22:49:07,2023-01-19 22:49:07
+44,Romeo-2,Course registration period has been updated.,True,2023-02-27 18:38:08,2023-06-24 18:38:08
+45,Sierra-2,Password reset request was initiated.,False,2022-10-15 22:55:00,2022-11-28 22:55:00
+46,Tango-2,Annual academic year data was synchronized.,True,2025-02-17 12:28:09,2025-03-02 12:28:09
+47,Uniform-2,Data import finished without errors.,False,2022-03-01 08:56:51,2022-04-11 08:56:51
+48,Victor-2,The system processed the request successfully.,True,2022-02-24 22:28:07,2022-03-29 22:28:07
+49,Whiskey-2,Profile information was reviewed.,False,2024-02-06 10:35:54,2024-02-17 10:35:54
+50,X-ray-2,Course registration period has been updated.,True,2022-06-05 17:34:41,2022-08-08 17:34:41
+51,Yankee-2,The system processed the request successfully.,True,2025-05-15 03:22:39,2025-05-18 03:22:39
+52,Zulu-2,Password reset request was initiated.,True,2023-06-30 01:05:42,2023-09-06 01:05:42
+53,Alpha-3,Enrollment confirmed for the selected course.,True,2024-01-19 04:45:40,2024-05-08 04:45:40
+54,Bravo-3,Course registration period has been updated.,False,2023-06-27 13:20:56,2023-08-07 13:20:56
+55,Charlie-3,Squadron assignment updated by admin.,False,2024-03-24 01:18:30,2024-06-06 01:18:30
+56,Delta-3,,True,2024-03-28 15:12:30,2024-07-04 15:12:30
+57,Echo-3,System backup was completed successfully.,False,2024-10-19 14:15:04,2025-02-02 14:15:04
+58,Foxtrot-3,The system processed the request successfully.,False,2024-03-18 00:04:51,2024-05-15 00:04:51
+59,Golf-3,Enrollment confirmed for the selected course.,True,2022-02-26 14:01:06,2022-06-21 14:01:06
+60,Hotel-3,Bulk operation completed for selected records.,False,2022-06-01 14:39:10,2022-08-26 14:39:10
+61,India-3,Enrollment confirmed for the selected course.,False,2025-02-16 04:34:37,2025-03-18 04:34:37
+62,Juliet-3,Squadron assignment updated by admin.,True,2023-11-23 00:53:45,2024-03-08 00:53:45
+63,Kilo-3,,True,2023-11-21 14:54:39,2024-03-18 14:54:39
+64,Lima-3,Password reset request was initiated.,False,2023-09-24 01:06:06,2023-12-18 01:06:06
+1065,Mike-3,Bulk operation completed for selected records.,False,2023-10-27 23:07:29,2023-12-03 23:07:29
+66,November-3,User session expired and was terminated.,True,2022-05-18 12:42:24,2022-09-10 12:42:24
+67,Oscar-3,User authentication was completed.,False,2025-05-21 14:48:21,2025-08-27 14:48:21
+68,Papa-3,Course registration period has been updated.,False,2023-09-14 09:05:35,2023-09-24 09:05:35
+69,Quebec-3,Data import finished without errors.,True,2022-11-12 04:45:15,2022-12-22 04:45:15
+70,Romeo-3,Enrollment confirmed for the selected course.,False,2025-05-30 12:25:07,2025-06-25 12:25:07
+71,Sierra-3,,False,2023-07-05 08:33:43,2023-11-07 08:33:43
+72,Tango-3,Squadron assignment updated by admin.,True,2022-10-04 08:07:10,2023-02-13 08:07:10
+1073,Uniform-3,The system processed the request successfully.,True,2023-12-19 03:18:56,2024-05-17 03:18:56
+1074,Victor-3,The system processed the request successfully.,True,2022-11-23 19:05:41,2023-04-17 19:05:41
+75,Whiskey-3,Data import finished without errors.,True,2023-11-14 22:07:40,2024-01-03 22:07:40
+76,X-ray-3,User authentication was completed.,True,2025-04-10 08:38:44,2025-08-07 08:38:44
+77,Yankee-3,The system processed the request successfully.,False,2023-06-15 05:32:35,2023-07-30 05:32:35
+78,Zulu-3,Bulk operation completed for selected records.,False,2024-12-02 01:00:05,2025-03-06 01:00:05
+79,Alpha-4,Annual academic year data was synchronized.,True,2023-07-18 02:49:56,2023-10-07 02:49:56

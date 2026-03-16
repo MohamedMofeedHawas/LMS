@@ -1,0 +1,201 @@
+CourseId,Title,DepartmentName,CourseDifficultyIndex,QuizPassRate,CompletionRate,AvgQuizScore,TotalAttempts
+6,Artificial Intelligence,Computer Science,1.0,0.0,0.0,0.0,0.0
+64,Database Systems,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+59,Machine Learning,Computer Science,1.0,0.0,0.0,0.0,0.0
+57,Web Development,Computer Science,1.0,0.0,0.0,0.0,0.0
+50,Discrete Mathematics,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+12,Discrete Mathematics,Computer Science,1.0,0.0,0.0,0.0,0.0
+15,Discrete Mathematics,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+83,Machine Learning,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+162,Cloud Computing,Computer Science,1.0,0.0,0.0,0.0,0.0
+195,Computer Architecture,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+126,Machine Learning,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+133,Computer Networks,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+134,Web Development,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+104,Mobile App Development,Artificial Intelligence,1.0,0.0,0.0,0.0,0.0
+96,Database Systems,Computer Science,1.0,0.0,0.0,0.0,0.0
+200,Algorithms,Cyber Security,1.0,0.0,0.0,0.0,0.0
+163,Data Science,Artificial Intelligence,0.856,0.0,0.481,0.0,0.0
+26,Mobile App Development,Computer Science,0.853,0.0,0.489,0.0,0.0
+172,Database Systems,Artificial Intelligence,0.85,0.0,0.5,0.0,0.0
+88,Cloud Computing,Artificial Intelligence,0.85,0.0,0.5,0.0,0.0
+167,Operating Systems,Cyber Security,0.848,0.0,0.507,0.0,0.0
+36,Software Engineering,Cyber Security,0.846,0.0,0.514,0.0,0.0
+188,Web Development,Artificial Intelligence,0.846,0.0,0.512,0.0,0.0
+95,Software Engineering,Computer Science,0.846,0.0,0.512,0.0,0.0
+137,Computer Networks,Computer Science,0.845,0.0,0.515,0.0,0.0
+70,Operating Systems,Cyber Security,0.845,0.0,0.515,0.0,0.0
+107,Software Engineering,Artificial Intelligence,0.844,0.0,0.522,0.0,0.0
+10,Operating Systems,Artificial Intelligence,0.843,0.0,0.523,0.0,0.0
+164,Data Science,Artificial Intelligence,0.843,0.0,0.525,0.0,0.0
+183,Computer Architecture,Cyber Security,0.843,0.0,0.522,0.0,0.0
+177,Data Science,Computer Science,0.843,0.0,0.522,0.0,0.0
+66,Computer Architecture,Artificial Intelligence,0.842,0.0,0.527,0.0,0.0
+38,Database Systems,Artificial Intelligence,0.841,0.0,0.531,0.0,0.0
+145,Web Development,Artificial Intelligence,0.841,0.0,0.529,0.0,0.0
+92,Web Development,Artificial Intelligence,0.84,0.0,0.534,0.0,0.0
+24,Cloud Computing,Artificial Intelligence,0.84,0.0,0.534,0.0,0.0
+46,Mobile App Development,Artificial Intelligence,0.839,0.0,0.537,0.0,0.0
+135,Data Science,Artificial Intelligence,0.839,0.0,0.536,0.0,0.0
+42,Web Development,Artificial Intelligence,0.838,0.0,0.541,0.0,0.0
+7,Operating Systems,Cyber Security,0.838,0.0,0.54,0.0,0.0
+138,Algorithms,Computer Science,0.838,0.0,0.541,0.0,0.0
+11,Computer Networks,Artificial Intelligence,0.838,0.0,0.541,0.0,0.0
+34,Algorithms,Cyber Security,0.838,0.0,0.542,0.0,0.0
+121,Mobile App Development,Computer Science,0.838,0.0,0.541,0.0,0.0
+122,Mobile App Development,Artificial Intelligence,0.838,0.0,0.54,0.0,0.0
+196,Database Systems,Artificial Intelligence,0.838,0.0,0.538,0.0,0.0
+193,Operating Systems,Cyber Security,0.836,0.0,0.547,0.0,0.0
+152,Operating Systems,Computer Science,0.835,0.0,0.549,0.0,0.0
+35,Data Structures,Artificial Intelligence,0.835,0.0,0.549,0.0,0.0
+47,Machine Learning,Computer Science,0.834,0.0,0.553,0.0,0.0
+3,Data Structures,Cyber Security,0.833,0.0,0.558,0.0,0.0
+150,Cyber Security Fundamentals,Cyber Security,0.832,0.0,0.561,0.0,0.0
+44,Database Systems,Artificial Intelligence,0.831,0.0,0.564,0.0,0.0
+136,Operating Systems,Artificial Intelligence,0.831,0.0,0.563,0.0,0.0
+75,Data Science,Cyber Security,0.83,0.0,0.566,0.0,0.0
+22,Data Science,Computer Science,0.83,0.0,0.567,0.0,0.0
+18,Computer Networks,Cyber Security,0.83,0.0,0.567,0.0,0.0
+171,Mobile App Development,Artificial Intelligence,0.83,0.0,0.568,0.0,0.0
+185,Data Science,Artificial Intelligence,0.829,0.0,0.569,0.0,0.0
+197,Computer Networks,Artificial Intelligence,0.828,0.0,0.574,0.0,0.0
+45,Discrete Mathematics,Artificial Intelligence,0.827,0.0,0.577,0.0,0.0
+144,Software Engineering,Artificial Intelligence,0.824,0.0,0.586,0.0,0.0
+81,Artificial Intelligence,Computer Science,0.824,0.0,0.588,0.0,0.0
+124,Discrete Mathematics,Artificial Intelligence,0.821,0.0,0.596,0.0,0.0
+192,Computer Networks,Artificial Intelligence,0.821,0.0,0.595,0.0,0.0
+154,Software Engineering,Cyber Security,0.82,0.0,0.6,0.0,0.0
+21,Algorithms,Cyber Security,0.815,0.0,0.618,0.0,0.0
+25,Cloud Computing,Artificial Intelligence,0.815,0.0,0.618,0.0,0.0
+109,Artificial Intelligence,Computer Science,0.812,0.0,0.628,0.0,0.0
+158,Mobile App Development,Artificial Intelligence,0.812,0.0,0.628,0.0,0.0
+178,Algorithms,Cyber Security,0.812,0.0,0.625,0.0,0.0
+189,Artificial Intelligence,Artificial Intelligence,0.806,0.0,0.647,0.0,0.0
+179,Data Science,Computer Science,0.794,0.0,0.686,0.0,0.0
+125,Operating Systems,Artificial Intelligence,0.787,0.0,0.709,0.0,0.0
+115,Artificial Intelligence,Cyber Security,0.779,0.216,0.0,44.878,37.0
+78,Artificial Intelligence,Artificial Intelligence,0.764,0.252,0.0,45.045,151.0
+55,Computer Networks,Artificial Intelligence,0.732,0.275,0.0,52.75,40.0
+17,Operating Systems,Artificial Intelligence,0.729,0.046,0.489,35.464,22.0
+199,Cloud Computing,Artificial Intelligence,0.727,0.279,0.0,53.714,86.0
+60,Algorithms,Artificial Intelligence,0.721,0.29,0.0,54.249,69.0
+108,Software Engineering,Computer Science,0.717,0.314,0.0,52.486,51.0
+168,Web Development,Cyber Security,0.706,0.305,0.0,57.161,59.0
+157,Mobile App Development,Cyber Security,0.677,0.219,0.381,40.333,73.0
+14,Computer Architecture,Computer Science,0.659,0.438,0.0,55.44,16.0
+190,Computer Architecture,Cyber Security,0.644,0.194,0.488,44.1,31.0
+165,Computer Networks,Artificial Intelligence,0.619,0.224,0.521,44.954,67.0
+112,Operating Systems,Artificial Intelligence,0.614,0.22,0.558,43.327,50.0
+37,Database Systems,Cyber Security,0.614,0.19,0.617,41.771,58.0
+128,Artificial Intelligence,Artificial Intelligence,0.613,0.216,0.525,47.844,139.0
+89,Cyber Security Fundamentals,Computer Science,0.611,0.214,0.609,40.25,42.0
+139,Artificial Intelligence,Artificial Intelligence,0.611,0.25,0.5,46.469,36.0
+73,Web Development,Artificial Intelligence,0.608,0.208,0.587,44.469,53.0
+79,Cyber Security Fundamentals,Computer Science,0.607,0.258,0.443,52.503,66.0
+39,Computer Networks,Artificial Intelligence,0.603,0.263,0.5,47.114,76.0
+85,Artificial Intelligence,Artificial Intelligence,0.598,0.222,0.599,44.403,108.0
+65,Algorithms,Artificial Intelligence,0.597,0.258,0.551,44.972,213.0
+140,Operating Systems,Cyber Security,0.597,0.208,0.56,50.6,48.0
+100,Software Engineering,Computer Science,0.596,0.274,0.545,43.777,73.0
+91,Computer Architecture,Cyber Security,0.596,0.224,0.544,50.345,67.0
+76,Computer Networks,Cyber Security,0.595,0.243,0.557,46.843,107.0
+80,Computer Architecture,Computer Science,0.594,0.211,0.631,43.965,71.0
+29,Algorithms,Cyber Security,0.593,0.258,0.553,46.021,89.0
+198,Machine Learning,Cyber Security,0.592,0.282,0.448,53.667,39.0
+111,Cyber Security Fundamentals,Artificial Intelligence,0.592,0.236,0.553,49.328,123.0
+13,Software Engineering,Artificial Intelligence,0.592,0.246,0.544,48.954,69.0
+132,Mobile App Development,Artificial Intelligence,0.591,0.242,0.542,49.79,33.0
+72,Artificial Intelligence,Artificial Intelligence,0.591,0.247,0.537,49.746,158.0
+187,Operating Systems,Cyber Security,0.589,0.214,0.576,50.667,42.0
+98,Machine Learning,Cyber Security,0.587,0.237,0.588,47.207,59.0
+169,Cyber Security Fundamentals,Computer Science,0.585,0.286,0.502,49.891,56.0
+84,Database Systems,Artificial Intelligence,0.585,0.286,0.519,48.221,91.0
+160,Computer Architecture,Computer Science,0.585,0.27,0.526,49.821,74.0
+99,Mobile App Development,Cyber Security,0.584,0.214,0.578,52.155,70.0
+28,Mobile App Development,Computer Science,0.584,0.267,0.528,50.201,146.0
+56,Data Science,Computer Science,0.583,0.275,0.539,48.581,131.0
+149,Web Development,Cyber Security,0.583,0.269,0.483,54.929,78.0
+161,Cyber Security Fundamentals,Artificial Intelligence,0.579,0.316,0.472,51.184,133.0
+41,Database Systems,Computer Science,0.579,0.238,0.596,48.903,63.0
+69,Computer Networks,Computer Science,0.579,0.257,0.519,54.29,35.0
+52,Operating Systems,Computer Science,0.579,0.239,0.526,55.833,71.0
+32,Computer Architecture,Artificial Intelligence,0.578,0.308,0.535,46.061,52.0
+166,Discrete Mathematics,Artificial Intelligence,0.578,0.304,0.532,47.057,56.0
+113,Database Systems,Artificial Intelligence,0.577,0.237,0.562,53.219,38.0
+153,Algorithms,Artificial Intelligence,0.577,0.275,0.588,45.52,40.0
+82,Data Science,Artificial Intelligence,0.576,0.295,0.531,48.889,61.0
+61,Mobile App Development,Cyber Security,0.576,0.252,0.566,51.231,131.0
+103,Web Development,Artificial Intelligence,0.573,0.286,0.556,48.66,77.0
+131,Machine Learning,Artificial Intelligence,0.573,0.266,0.522,54.584,79.0
+9,Artificial Intelligence,Artificial Intelligence,0.573,0.294,0.52,51.124,68.0
+30,Machine Learning,Artificial Intelligence,0.572,0.261,0.527,55.13,46.0
+180,Discrete Mathematics,Artificial Intelligence,0.572,0.262,0.598,47.786,122.0
+119,Cyber Security Fundamentals,Computer Science,0.571,0.262,0.614,46.625,65.0
+182,Data Structures,Cyber Security,0.571,0.26,0.544,53.885,50.0
+130,Computer Architecture,Artificial Intelligence,0.57,0.303,0.57,45.933,33.0
+94,Data Science,Artificial Intelligence,0.57,0.273,0.549,52.065,77.0
+74,Computer Architecture,Cyber Security,0.57,0.277,0.561,50.154,148.0
+175,Discrete Mathematics,Artificial Intelligence,0.569,0.268,0.584,49.438,41.0
+176,Cyber Security Fundamentals,Artificial Intelligence,0.568,0.299,0.492,54.892,157.0
+141,Computer Networks,Cyber Security,0.568,0.303,0.544,49.329,122.0
+117,Data Structures,Artificial Intelligence,0.567,0.287,0.58,48.239,122.0
+8,Data Science,Computer Science,0.565,0.333,0.516,49.081,54.0
+93,Machine Learning,Computer Science,0.564,0.308,0.451,59.353,65.0
+156,Algorithms,Cyber Security,0.564,0.311,0.533,50.718,206.0
+20,Computer Architecture,Computer Science,0.564,0.299,0.528,52.691,144.0
+155,Data Structures,Artificial Intelligence,0.563,0.297,0.529,53.083,273.0
+170,Data Science,Computer Science,0.562,0.25,0.667,46.05,64.0
+68,Computer Networks,Artificial Intelligence,0.562,0.25,0.587,53.907,80.0
+40,Discrete Mathematics,Computer Science,0.561,0.301,0.546,51.455,156.0
+31,Computer Architecture,Cyber Security,0.561,0.304,0.564,49.378,112.0
+120,Data Science,Cyber Security,0.56,0.305,0.538,52.129,59.0
+186,Algorithms,Cyber Security,0.56,0.28,0.608,48.68,143.0
+48,Data Structures,Cyber Security,0.559,0.283,0.575,51.632,145.0
+142,Algorithms,Artificial Intelligence,0.557,0.301,0.555,52.262,163.0
+146,Operating Systems,Cyber Security,0.557,0.296,0.599,48.37,71.0
+58,Software Engineering,Cyber Security,0.557,0.365,0.441,54.803,52.0
+51,Discrete Mathematics,Cyber Security,0.556,0.31,0.53,53.632,126.0
+181,Operating Systems,Artificial Intelligence,0.556,0.286,0.576,52.345,283.0
+127,Computer Architecture,Computer Science,0.555,0.22,0.663,52.8,50.0
+173,Mobile App Development,Cyber Security,0.554,0.268,0.603,52.674,179.0
+147,Data Science,Cyber Security,0.554,0.265,0.619,51.676,68.0
+5,Discrete Mathematics,Artificial Intelligence,0.553,0.593,0.0,69.944,27.0
+33,Data Science,Computer Science,0.553,0.306,0.573,50.764,121.0
+54,Artificial Intelligence,Cyber Security,0.553,0.265,0.574,56.412,34.0
+101,Web Development,Cyber Security,0.552,0.338,0.49,55.26,71.0
+16,Algorithms,Artificial Intelligence,0.552,0.308,0.526,55.703,130.0
+129,Discrete Mathematics,Computer Science,0.551,0.297,0.603,49.692,64.0
+151,Software Engineering,Computer Science,0.55,0.296,0.599,50.586,54.0
+159,Data Science,Computer Science,0.55,0.243,0.6,57.667,37.0
+114,Mobile App Development,Artificial Intelligence,0.549,0.302,0.573,52.87,222.0
+4,Computer Networks,Artificial Intelligence,0.545,0.326,0.574,50.808,132.0
+43,Database Systems,Cyber Security,0.545,0.36,0.543,49.441,111.0
+191,Data Structures,Artificial Intelligence,0.544,0.35,0.52,53.303,60.0
+184,Algorithms,Artificial Intelligence,0.544,0.287,0.604,53.373,143.0
+174,Web Development,Artificial Intelligence,0.542,0.31,0.557,55.679,29.0
+90,Discrete Mathematics,Artificial Intelligence,0.542,0.25,0.62,57.235,72.0
+86,Database Systems,Cyber Security,0.538,0.303,0.578,55.799,175.0
+71,Algorithms,Artificial Intelligence,0.538,0.229,0.7,53.389,35.0
+19,Machine Learning,Artificial Intelligence,0.537,0.362,0.493,56.802,188.0
+53,Discrete Mathematics,Artificial Intelligence,0.537,0.342,0.519,56.98,82.0
+194,Algorithms,Cyber Security,0.537,0.356,0.523,54.517,45.0
+97,Computer Networks,Artificial Intelligence,0.535,0.404,0.438,57.382,104.0
+105,Computer Networks,Artificial Intelligence,0.534,0.289,0.664,50.342,135.0
+123,Cloud Computing,Computer Science,0.533,0.377,0.506,54.65,53.0
+23,Data Structures,Computer Science,0.533,0.328,0.55,56.924,61.0
+87,Web Development,Computer Science,0.532,0.309,0.58,56.851,81.0
+110,Software Engineering,Artificial Intelligence,0.531,0.345,0.562,54.026,29.0
+63,Computer Networks,Computer Science,0.529,0.347,0.562,54.54,124.0
+2,Machine Learning,Computer Science,0.526,0.321,0.651,50.084,106.0
+148,Algorithms,Artificial Intelligence,0.521,0.359,0.565,55.372,64.0
+116,Data Structures,Artificial Intelligence,0.521,0.323,0.602,56.424,31.0
+118,Computer Networks,Computer Science,0.519,0.333,0.577,58.12,63.0
+143,Database Systems,Computer Science,0.516,0.342,0.589,56.692,225.0
+106,Software Engineering,Artificial Intelligence,0.515,0.333,0.604,56.844,129.0
+1,Cyber Security Fundamentals,Computer Science,0.506,0.281,0.591,67.917,32.0
+27,Cloud Computing,Artificial Intelligence,0.498,0.375,0.59,58.278,64.0
+102,Discrete Mathematics,Artificial Intelligence,0.497,0.333,0.597,63.42,33.0
+77,Mobile App Development,Computer Science,0.488,0.395,0.547,63.27,38.0
+62,Machine Learning,Computer Science,0.481,0.387,0.588,62.474,31.0
+67,Operating Systems,Computer Science,0.478,0.408,0.583,61.22,49.0
+49,Data Structures,Artificial Intelligence,0.478,0.405,0.617,58.174,37.0

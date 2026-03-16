@@ -1,0 +1,4 @@
+Target,TruePositive,FalsePositive,TrueNegative,FalseNegative,Precision,Recall,Specificity,FalseAlarmRate,MissedCasesRate,OptimalThreshold
+Dropout,770,11,4186,33,0.9859,0.9589,0.9974,0.0026,0.0411,0.35
+AtRisk,462,4,4390,144,0.9914,0.7624,0.9991,0.0009,0.2376,0.55
+HighPerformer,196,724,4027,53,0.213,0.7871,0.8476,0.1524,0.2129,0.75

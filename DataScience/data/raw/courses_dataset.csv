@@ -1,0 +1,201 @@
+Id,Title,Description,ImageUrl,CreditHours,EnrolledStudentsCount,DepartmentId,YearId,CreatedById,IsArchived,InstructorId,CreatedAt,UpdatedAt
+1,Cyber Security Fundamentals,User authentication was completed.,/uploads/courses/93222290-2f18-4df1-bf49-89e0fb8d2f04.png,4,145,1.0,432.0,3,False,6.0,2024-03-02 17:18:28,2024-06-11 17:18:28
+2,Machine Learning,Data import finished without errors.,/uploads/courses/826ccf7e-b361-4411-87d0-6adf3de5cbbc.png,3,19,1.0,28.0,1,True,1.0,2025-02-11 15:18:17,2025-03-20 15:18:17
+3,Data Structures,Profile information was reviewed.,/uploads/courses/e646b811-ed66-4be7-ae0b-25b2dcf3fa0c.png,2,118,3.0,47.0,1,True,5.0,2023-10-31 17:40:05,2024-02-23 17:40:05
+4,Computer Networks,User authentication was completed.,/uploads/courses/f5519446-caf8-4b23-be86-a516bbcacb39.png,2,57,2.0,41.0,1,True,15.0,2023-12-26 12:00:06,2024-01-17 12:00:06
+5,Discrete Mathematics,User session expired and was terminated.,/uploads/courses/dd01a936-1ec2-4b86-91a2-de862149bdaa.png,4,229,2.0,29.0,3,True,12.0,2022-05-21 16:51:28,2022-09-12 16:51:28
+6,Artificial Intelligence,Data import finished without errors.,/uploads/courses/14df7205-e9be-4759-b2b2-ab700891fd91.png,3,218,1.0,17.0,3,True,14.0,2024-11-16 00:57:00,2024-12-19 00:57:00
+7,Operating Systems,Annual academic year data was synchronized.,/uploads/courses/c86409a6-6260-4415-a062-4fcb522a6b09.png,2,165,3.0,55.0,2,False,12.0,2023-09-03 18:46:48,2023-09-06 18:46:48
+8,Data Science,Course registration period has been updated.,/uploads/courses/9fc684f6-31d0-44bb-9cbd-89cfe882d564.png,3,146,1.0,15.0,3,True,7.0,2024-10-09 20:47:46,2024-12-01 20:47:46
+9,Artificial Intelligence,Annual academic year data was synchronized.,/uploads/courses/50f4d0bc-a07b-4542-82ad-da766564b6c5.png,20,14,2.0,29.0,1,False,8.0,2022-11-22 20:56:11,2022-12-19 20:56:11
+10,Operating Systems,Bulk operation completed for selected records.,/uploads/courses/998ba364-3baa-47b9-998b-2bfa7a71330a.png,4,138,7.0,992.0,3,True,5.0,2023-03-18 21:31:59,2023-05-07 21:31:59
+11,Computer Networks,New student record was added to the system.,/uploads/courses/545f651d-e6ab-422d-bf6b-11a31dd26ef8.png,3,753,2.0,17.0,3,True,2.0,2023-05-19 07:44:58,2023-09-04 07:44:58
+12,Discrete Mathematics,System backup was completed successfully.,/uploads/courses/466d3e28-4457-46f2-bb5c-173565a2e492.png,4,120,1.0,7.0,1,True,15.0,2023-01-26 21:35:07,2023-03-24 21:35:07
+13,Software Engineering,The system processed the request successfully.,/uploads/courses/7326d405-091c-4fb0-8c1e-2819ff1c1d24.png,3,87,,17.0,3,False,7.0,2023-02-10 14:01:37,2023-02-23 14:01:37
+14,Computer Architecture,Enrollment confirmed for the selected course.,/uploads/courses/4cd8f4cc-6d67-4a4f-a263-5c250eb483db.png,0,175,1.0,47.0,2,True,11.0,2022-06-14 13:24:56,2022-09-19 13:24:56
+15,Discrete Mathematics,The system processed the request successfully.,/uploads/courses/665c4757-ff79-4ae3-9c10-e41695330e68.png,2,0,7.0,750.0,1,True,7.0,2024-01-17 03:04:34,2024-03-01 03:04:34
+16,Algorithms,System backup was completed successfully.,/uploads/courses/7a47deb5-771b-4c6e-8232-3908f601186d.png,3,20,2.0,41.0,2,True,15.0,2024-07-04 19:18:06,2024-09-30 19:18:06
+17,Operating Systems,Enrollment confirmed for the selected course.,/uploads/courses/9c569d63-b419-429b-bf3a-1add5646b9a5.png,0,115,,55.0,2,True,13.0,2025-01-15 23:06:49,2025-02-18 23:06:49
+18,Computer Networks,Data import finished without errors.,/uploads/courses/b43aaab2-3011-4f70-b3d7-f94725610c77.png,3,248,3.0,41.0,2,True,8.0,2024-06-15 11:36:40,2024-09-08 11:36:40
+19,Machine Learning,Profile information was reviewed.,/uploads/courses/3e9ae38d-c406-4d43-ad8a-4d9e4249b3ef.png,150,55,,15.0,1,False,3.0,2022-08-25 01:06:55,2022-08-28 01:06:55
+20,Computer Architecture,Course registration period has been updated.,/uploads/courses/5c6918dd-43b3-49bd-9d5f-58fc2aeb5d6a.png,20,16,1.0,31.0,3,True,2.0,2023-01-03 11:37:02,2023-03-19 11:37:02
+21,Algorithms,Course registration period has been updated.,/uploads/courses/64e32831-69cb-4204-a18e-8031d23c7d2d.png,3,72,3.0,353.0,1,False,13.0,2025-02-08 10:58:05,2025-02-26 10:58:05
+22,Data Science,Password reset request was initiated.,/uploads/courses/559193e1-0c6b-4d7e-99ce-3193ba50a463.png,4,110,1.0,31.0,3,True,3.0,2023-08-31 23:05:05,2023-09-14 23:05:05
+23,Data Structures,Bulk operation completed for selected records.,/uploads/courses/7a0226de-2563-4c89-b264-9a527992a60d.png,4,154,1.0,41.0,1,True,3.0,2024-04-30 04:34:25,2024-07-25 04:34:25
+24,Cloud Computing,Data import finished without errors.,/uploads/courses/75667f21-b253-4ac0-abc9-da8f6e99d0f8.png,3,0,2.0,7.0,2,True,3.0,2024-12-13 13:25:34,2025-01-05 13:25:34
+25,Cloud Computing,Enrollment confirmed for the selected course.,/uploads/courses/585f6f34-be7c-45b7-bf3d-5f4f0820485b.png,3,5,2.0,15.0,3,False,10.0,2022-12-08 13:22:48,2023-02-16 13:22:48
+26,Mobile App Development,,/uploads/courses/72b51b92-fefd-42ae-a226-2978780021bb.png,150,180,1.0,941.0,3,False,6.0,2022-03-25 11:12:03,2022-05-17 11:12:03
+27,Cloud Computing,Profile information was reviewed.,/uploads/courses/c4bd711e-f8d4-4c00-91d7-ba4ca5e2b0bd.png,2,75,7.0,31.0,2,True,8.0,2025-03-16 15:41:43,2025-06-26 15:41:43
+28,Mobile App Development,Password reset request was initiated.,/uploads/courses/f752ce82-9aa8-4fb3-817d-7a7ce250a8d9.png,4,30,1.0,320.0,1,False,3.0,2022-05-15 16:31:56,2022-08-31 16:31:56
+29,Algorithms,Course registration period has been updated.,/uploads/courses/895f49f9-0c8f-42e5-8e87-1bc2b3db79c0.png,2,167,3.0,36.0,2,True,8.0,2025-05-05 14:55:22,2025-07-29 14:55:22
+30,Machine Learning,Squadron assignment updated by admin.,/uploads/courses/96c680da-eb00-48b7-8414-1003bae10343.png,4,32,2.0,29.0,2,False,15.0,2022-05-18 23:01:08,2022-07-21 23:01:08
+31,Computer Architecture,The system processed the request successfully.,/uploads/courses/014b16e3-e530-4eb9-b359-b384ec0c1ae6.png,4,42,3.0,29.0,1,True,3.0,2023-01-19 08:20:06,2023-04-08 08:20:06
+32,Computer Architecture,,/uploads/courses/af082e9f-d997-451d-af7f-cbcc587ecb14.png,3,82,2.0,31.0,3,False,15.0,2024-02-04 07:30:01,2024-05-22 07:30:01
+33,Data Science,The system processed the request successfully.,/uploads/courses/a89dc843-59fe-4abd-b560-f5031fba92d9.png,4,229,1.0,28.0,2,True,14.0,2022-11-04 08:36:19,2023-02-16 08:36:19
+34,Algorithms,Enrollment confirmed for the selected course.,/uploads/courses/8d2732ef-68bb-4f22-b311-4a8e385233cf.png,2,72,3.0,51.0,3,True,5.0,2024-07-11 09:14:36,2024-10-19 09:14:36
+35,Data Structures,Record was archived by the administrator.,/uploads/courses/f41549f2-fc52-4cf0-88dd-9a1f01600169.png,2,227,2.0,,1,False,14.0,2025-04-24 07:59:13,2025-07-09 07:59:13
+36,Software Engineering,Squadron assignment updated by admin.,/uploads/courses/8e09684c-1a39-4941-a2a9-e0b25243643f.png,3,219,3.0,31.0,3,False,10.0,2024-08-30 11:54:15,2024-10-30 11:54:15
+37,Database Systems,Bulk operation completed for selected records.,/uploads/courses/ff7f95d8-bd39-4ab8-8c51-11e678a37d2e.png,150,230,3.0,,1,True,15.0,2022-12-07 23:43:01,2023-01-01 23:43:01
+38,Database Systems,Course registration period has been updated.,/uploads/courses/bfb94b69-feeb-40e4-a84b-a37c7bd7a4bb.png,2,87,2.0,29.0,3,False,4.0,2023-02-04 18:18:42,2023-05-01 18:18:42
+39,Computer Networks,User authentication was completed.,/uploads/courses/38872a07-7090-449c-8cc3-e0085b853dc0.png,2,46,7.0,47.0,1,False,12.0,2022-01-17 08:54:55,2022-05-12 08:54:55
+40,Discrete Mathematics,Bulk operation completed for selected records.,/uploads/courses/74678cd2-4aab-443a-a2cc-67ce7f7a2d8e.png,3,79,1.0,17.0,2,False,,2025-01-07 05:49:09,2025-04-16 05:49:09
+41,Database Systems,Enrollment confirmed for the selected course.,/uploads/courses/fc50c803-f475-416c-bd48-f43546595da7.png,4,0,1.0,845.0,3,False,10.0,2025-04-07 08:50:35,2025-06-15 08:50:35
+42,Web Development,Course registration period has been updated.,/uploads/courses/4264c23b-3c17-4881-a744-be1f03f29bb7.png,2,35,,36.0,2,False,2.0,2025-01-14 21:35:37,2025-02-16 21:35:37
+43,Database Systems,Password reset request was initiated.,/uploads/courses/2be4eebf-18da-4775-b7b1-3b451b25b503.png,2,105,3.0,47.0,1,False,12.0,2025-04-23 10:29:48,2025-05-28 10:29:48
+44,Database Systems,Course registration period has been updated.,/uploads/courses/61fc106d-149c-43c0-a46c-e8bd1aa5af97.png,3,637,,17.0,2,False,6.0,2022-09-03 10:36:32,2022-12-25 10:36:32
+45,Discrete Mathematics,Course registration period has been updated.,/uploads/courses/fbc9e7ac-9393-452f-8f01-086c95dee85a.png,4,143,7.0,51.0,3,True,4.0,2024-01-10 11:53:19,2024-01-30 11:53:19
+46,Mobile App Development,Data import finished without errors.,/uploads/courses/bd31c9bb-fead-4dba-9fa9-62d5f71bb043.png,20,38,2.0,36.0,3,True,7.0,2022-01-08 01:22:44,2022-02-04 01:22:44
+47,Machine Learning,Profile information was reviewed.,/uploads/courses/f579939c-bb36-4392-a241-997914829090.png,2,992,1.0,31.0,2,True,14.0,2022-07-28 01:32:53,2022-11-10 01:32:53
+48,Data Structures,New student record was added to the system.,/uploads/courses/6b188778-3a66-4d92-9c6d-5418bcc65b90.png,4,80,3.0,47.0,1,True,7.0,2022-11-06 22:08:43,2023-02-28 22:08:43
+49,Data Structures,The system processed the request successfully.,/uploads/courses/fb61dfa5-bfc9-423e-8464-3428bce583c3.png,3,172,2.0,,3,True,10.0,2023-10-21 09:20:23,2024-01-19 09:20:23
+50,Discrete Mathematics,Password reset request was initiated.,/uploads/courses/dca81624-688a-4113-8fe7-2967fe6979a9.png,2,74,2.0,29.0,2,False,10.0,2025-01-05 19:57:11,2025-04-28 19:57:11
+51,Discrete Mathematics,Profile information was reviewed.,/uploads/courses/639d7146-26b8-40b5-abd4-adcff62ce247.png,4,1042,3.0,,2,False,2.0,2025-05-22 02:44:22,2025-06-29 02:44:22
+52,Operating Systems,Annual academic year data was synchronized.,/uploads/courses/19016432-17b1-45ba-bcca-4a3be79b77cb.png,3,36,1.0,31.0,1,False,3.0,2025-06-19 21:10:13,2025-10-11 21:10:13
+53,Discrete Mathematics,User authentication was completed.,/uploads/courses/51e0e08e-d0d1-41bf-bcbf-4b7c57c376a4.png,1,19,2.0,51.0,3,False,11.0,2025-02-20 05:13:51,2025-04-20 05:13:51
+54,Artificial Intelligence,The system processed the request successfully.,/uploads/courses/726437cd-2e27-4dae-a79c-044e8f7dc099.png,3,233,3.0,17.0,2,True,13.0,2024-01-14 19:28:14,2024-03-21 19:28:14
+55,Computer Networks,Data import finished without errors.,/uploads/courses/92259404-4070-4776-ac46-db5ea864a710.png,4,180,,55.0,3,True,6.0,2023-07-16 21:12:23,2023-07-28 21:12:23
+56,Data Science,Record was archived by the administrator.,/uploads/courses/c3608dd3-e53b-4968-bae6-c2339b296bb0.png,4,11,1.0,792.0,1,False,4.0,2023-06-18 03:02:47,2023-07-25 03:02:47
+57,Web Development,Record was archived by the administrator.,/uploads/courses/1e2afb2d-e5a1-4e36-953c-6c8a9da68896.png,3,214,1.0,29.0,3,True,1.0,2024-10-31 18:15:50,2024-12-11 18:15:50
+58,Software Engineering,Course registration period has been updated.,/uploads/courses/1dc7d07e-dbfc-425f-b5dd-9d3df394c6fb.png,2,0,3.0,15.0,1,True,12.0,2024-09-25 03:57:41,2024-11-29 03:57:41
+59,Machine Learning,The system processed the request successfully.,/uploads/courses/acc82bac-6d0d-439a-863f-a245f2de00ac.png,1,13,1.0,47.0,1,True,15.0,2022-04-27 08:12:31,2022-06-20 08:12:31
+60,Algorithms,Enrollment confirmed for the selected course.,/uploads/courses/527c50fb-342d-4939-99ed-715e01ec540b.png,3,938,7.0,657.0,3,False,9.0,2022-01-24 13:20:50,2022-01-31 13:20:50
+61,Mobile App Development,Profile information was reviewed.,/uploads/courses/6dae578a-6610-42a6-9adb-b818f0cfb7c9.png,2,164,3.0,,2,False,13.0,2022-06-22 14:55:46,2022-09-09 14:55:46
+62,Machine Learning,User authentication was completed.,/uploads/courses/07fadf6e-4259-4c96-90d3-77c0bb6c8761.png,4,0,1.0,31.0,3,False,9.0,2025-04-17 19:04:19,2025-07-19 19:04:19
+63,Computer Networks,The system processed the request successfully.,/uploads/courses/9530ad25-b706-4c04-838e-f403db455890.png,2,105,1.0,520.0,2,False,13.0,2023-01-17 05:15:56,2023-01-17 05:15:56
+64,Database Systems,Password reset request was initiated.,/uploads/courses/b27b59b6-b342-49fd-b59c-6dad119320de.png,3,124,2.0,352.0,3,True,,2025-04-11 05:19:52,2025-05-18 05:19:52
+65,Algorithms,Access token generated for session.,/uploads/courses/79786d14-b4d7-485f-809c-01faaab6faee.png,4,669,2.0,28.0,2,True,,2024-11-20 09:41:24,2025-01-02 09:41:24
+66,Computer Architecture,Annual academic year data was synchronized.,/uploads/courses/b6cd8626-ef00-443a-917e-686cef1de6a1.png,3,121,,41.0,3,False,13.0,2022-02-22 05:48:47,2022-04-12 05:48:47
+67,Operating Systems,Enrollment confirmed for the selected course.,/uploads/courses/bb8a3c90-18b1-4c9e-8523-d2afcae5f692.png,3,173,1.0,7.0,1,False,8.0,2022-09-29 23:39:32,2023-01-26 23:39:32
+68,Computer Networks,,/uploads/courses/a4e6e77a-48d7-4647-b8d2-dedf8f0c8f4e.png,2,31,7.0,,2,False,14.0,2023-09-14 23:17:00,2023-12-23 23:17:00
+69,Computer Networks,Course registration period has been updated.,/uploads/courses/5db1c928-0b38-4be0-9328-7741601c5430.png,3,18,1.0,55.0,2,True,13.0,2023-05-11 17:41:40,2023-08-24 17:41:40
+70,Operating Systems,Record was archived by the administrator.,/uploads/courses/d2143bd7-c79a-4c8f-9d81-8ac67bd8d0c7.png,2,221,3.0,41.0,2,True,2.0,2023-01-17 19:42:37,2023-04-06 19:42:37
+71,Algorithms,New student record was added to the system.,/uploads/courses/df025a0f-d595-4269-8a5c-a7a62860c5bd.png,2,0,2.0,47.0,1,True,11.0,2024-12-25 10:35:06,2025-04-13 10:35:06
+72,Artificial Intelligence,Record was archived by the administrator.,/uploads/courses/6d71bc69-8bcb-4f1e-af91-efeebc6dbe19.png,2,205,2.0,442.0,3,False,9.0,2022-03-07 13:46:10,2022-06-03 13:46:10
+73,Web Development,User authentication was completed.,/uploads/courses/e3d9528a-edae-474b-b736-4f18d9fd1467.png,4,0,2.0,,3,False,12.0,2023-10-23 21:01:00,2024-01-30 21:01:00
+74,Computer Architecture,User authentication was completed.,/uploads/courses/3f2f6f4a-6923-47a3-872e-ae37304e0166.png,2,197,3.0,7.0,2,False,,2022-03-25 14:26:58,2022-06-12 14:26:58
+75,Data Science,Course registration period has been updated.,/uploads/courses/3f21921a-cf86-4edd-a112-c0b09b818326.png,1,240,3.0,17.0,2,False,4.0,2023-06-07 00:46:15,2023-07-21 00:46:15
+76,Computer Networks,Record was archived by the administrator.,/uploads/courses/d1127f38-97d9-48d1-97b6-399183957b88.png,3,159,3.0,877.0,2,False,3.0,2022-01-31 17:24:42,2022-03-19 17:24:42
+77,Mobile App Development,Course registration period has been updated.,/uploads/courses/e5c7bf89-7130-4d6c-83e8-0e882900f7d0.png,2,42,1.0,51.0,2,True,13.0,2025-01-25 09:10:05,2025-04-07 09:10:05
+78,Artificial Intelligence,Squadron assignment updated by admin.,/uploads/courses/a3a09b44-cd12-4356-ac81-19da8300a1a4.png,2,157,2.0,501.0,2,False,8.0,2023-03-09 00:20:01,2023-04-04 00:20:01
+79,Cyber Security Fundamentals,Data import finished without errors.,/uploads/courses/ba580091-0821-4547-b3b6-7daf0d0066f9.png,3,755,1.0,47.0,2,False,13.0,2024-07-20 16:38:09,2024-08-09 16:38:09
+80,Computer Architecture,Squadron assignment updated by admin.,/uploads/courses/24feb30c-2083-4090-958d-4a1e1207e09a.png,4,542,1.0,18.0,1,True,15.0,2025-03-15 12:49:44,2025-04-13 12:49:44
+81,Artificial Intelligence,Access token generated for session.,/uploads/courses/9de390b8-e16b-48c7-ae2f-31a72bdd163a.png,4,40,1.0,28.0,3,False,7.0,2022-02-11 03:14:30,2022-04-03 03:14:30
+82,Data Science,User authentication was completed.,/uploads/courses/228ff94e-5025-4604-98a5-bf8e5628ae14.png,4,66,,,1,True,5.0,2025-02-09 00:14:13,2025-06-05 00:14:13
+83,Machine Learning,Profile information was reviewed.,/uploads/courses/3d839967-ad45-4d1e-9922-39a8d90971b3.png,2,206,,17.0,3,False,13.0,2025-01-07 07:09:56,2025-02-14 07:09:56
+84,Database Systems,Data import finished without errors.,/uploads/courses/34a1ea1b-fa32-47de-a2a8-e46fd8ddc62c.png,1,1125,2.0,31.0,3,True,14.0,2023-09-09 19:03:38,2023-11-28 19:03:38
+85,Artificial Intelligence,Annual academic year data was synchronized.,/uploads/courses/a72cda1e-acfd-4e40-a552-45ac16fe4331.png,0,243,2.0,29.0,3,False,1.0,2025-01-20 21:56:08,2025-02-28 21:56:08
+86,Database Systems,Bulk operation completed for selected records.,/uploads/courses/cbf49536-f8e9-4b76-bbc4-84fe789e3cf7.png,3,239,3.0,47.0,2,False,2.0,2024-10-13 14:58:51,2024-10-26 14:58:51
+87,Web Development,,/uploads/courses/37c6d8b5-49c8-47da-947a-614fa5548e1c.png,2,177,1.0,55.0,1,False,,2023-12-18 17:13:33,2024-02-09 17:13:33
+88,Cloud Computing,Annual academic year data was synchronized.,/uploads/courses/703c0369-ad03-4d46-b738-377995ba9ed7.png,4,200,2.0,28.0,3,True,,2025-05-19 11:04:25,2025-06-18 11:04:25
+89,Cyber Security Fundamentals,The system processed the request successfully.,/uploads/courses/5daf8141-8772-4abc-891e-7efa59515994.png,4,184,1.0,291.0,3,False,5.0,2023-07-07 10:22:10,2023-10-27 10:22:10
+90,Discrete Mathematics,Access token generated for session.,/uploads/courses/1e55f7cb-5aaf-4f6c-824e-d3020f2904e6.png,2,0,7.0,41.0,3,False,4.0,2025-01-14 14:09:58,2025-01-23 14:09:58
+91,Computer Architecture,Data import finished without errors.,/uploads/courses/d0c40042-3354-45b8-8f49-0a2ccadd1e95.png,3,6,3.0,41.0,1,False,8.0,2022-06-10 21:44:14,2022-09-18 21:44:14
+92,Web Development,Profile information was reviewed.,/uploads/courses/7ea10dfd-5f09-458d-8753-4e7ab7f91fca.png,4,23,2.0,714.0,3,False,13.0,2023-06-04 12:35:20,2023-08-07 12:35:20
+93,Machine Learning,System backup was completed successfully.,/uploads/courses/6c1ba3ce-0bd3-46b4-9812-14b75a3f34a3.png,3,117,1.0,17.0,1,False,11.0,2024-05-24 06:41:10,2024-07-11 06:41:10
+94,Data Science,Annual academic year data was synchronized.,/uploads/courses/7ca418de-9af2-439b-9ed3-38e77f96a63f.png,2,86,2.0,29.0,3,False,10.0,2022-02-03 13:28:46,2022-04-01 13:28:46
+95,Software Engineering,Course registration period has been updated.,/uploads/courses/11efa0cb-1a54-48ca-9fed-5c2e748f1b31.png,2,0,1.0,41.0,2,True,13.0,2025-04-11 06:11:20,2025-06-25 06:11:20
+96,Database Systems,User authentication was completed.,/uploads/courses/3d84353b-7254-45c8-b77d-736300d28f6e.png,4,15,1.0,31.0,1,False,6.0,2025-02-22 14:19:20,2025-05-14 14:19:20
+97,Computer Networks,,/uploads/courses/26203e32-1d97-48a0-ad82-7c5a74d04fc1.png,4,161,,18.0,3,False,15.0,2025-01-11 12:51:51,2025-01-30 12:51:51
+98,Machine Learning,The system processed the request successfully.,/uploads/courses/373604a8-29bd-4752-9aef-4a5f7f281bd1.png,2,37,3.0,36.0,2,True,4.0,2022-02-16 07:59:51,2022-05-24 07:59:51
+99,Mobile App Development,Course registration period has been updated.,/uploads/courses/d337c662-b660-4e7e-b8f0-54ba14c4ad09.png,3,33,3.0,520.0,2,True,14.0,2024-12-18 10:25:14,2024-12-28 10:25:14
+100,Software Engineering,Profile information was reviewed.,/uploads/courses/104011dd-943c-438d-b765-4258a45e16a1.png,3,0,1.0,15.0,1,False,4.0,2024-09-12 02:54:33,2024-12-15 02:54:33
+101,Web Development,Enrollment confirmed for the selected course.,/uploads/courses/7e856d80-9bec-4db0-aa53-323b57a04ec3.png,3,121,3.0,51.0,1,False,14.0,2025-05-05 15:01:35,2025-05-23 15:01:35
+102,Discrete Mathematics,The system processed the request successfully.,/uploads/courses/5b47250b-4d42-4b4a-a542-8167f6639aba.png,3,0,,17.0,3,True,14.0,2025-05-05 12:45:06,2025-08-08 12:45:06
+103,Web Development,Password reset request was initiated.,/uploads/courses/b9136c2e-38e6-415e-98ac-c17427dd9d2a.png,4,193,,36.0,3,True,15.0,2022-08-27 18:54:56,2022-09-10 18:54:56
+104,Mobile App Development,User authentication was completed.,/uploads/courses/7b4b74f1-efc8-43c4-9ab7-9ea861f7f9b2.png,1,0,7.0,36.0,1,True,3.0,2022-06-15 17:45:39,2022-09-01 17:45:39
+105,Computer Networks,Data import finished without errors.,/uploads/courses/d80840d0-856f-438f-a635-cf5725c47b08.png,2,162,,31.0,3,False,9.0,2023-05-28 03:56:33,2023-09-18 03:56:33
+106,Software Engineering,Annual academic year data was synchronized.,/uploads/courses/b3cab546-c691-4f3b-b8dc-285577a46f3c.png,4,210,2.0,28.0,1,False,14.0,2024-02-26 11:59:44,2024-06-22 11:59:44
+107,Software Engineering,User authentication was completed.,/uploads/courses/3e6fa49f-4ede-45d8-b706-17866b3a70d7.png,2,124,2.0,,2,False,12.0,2025-06-21 15:16:05,2025-06-22 15:16:05
+108,Software Engineering,Squadron assignment updated by admin.,/uploads/courses/ce0231d9-b54c-4d4b-874d-4d35d09ee549.png,2,110,1.0,41.0,2,True,4.0,2025-01-21 10:59:21,2025-04-13 10:59:21
+109,Artificial Intelligence,System backup was completed successfully.,/uploads/courses/0b8d0e11-0770-4532-85b3-a1f9dc2ecb2b.png,4,144,1.0,332.0,3,False,4.0,2025-02-05 10:14:28,2025-05-20 10:14:28
+110,Software Engineering,Squadron assignment updated by admin.,/uploads/courses/95b70e05-74b5-48a6-a7b5-387551c5ed5f.png,2,69,2.0,,2,True,6.0,2024-11-13 18:23:27,2024-11-18 18:23:27
+111,Cyber Security Fundamentals,Bulk operation completed for selected records.,/uploads/courses/a855b3f1-b7e2-47f0-8063-3c81b67c2338.png,3,202,2.0,18.0,2,False,10.0,2024-09-08 06:50:10,2024-09-21 06:50:10
+112,Operating Systems,Enrollment confirmed for the selected course.,/uploads/courses/9b6fa03b-8747-47d2-94f6-24530a5085fc.png,1,110,7.0,51.0,1,True,8.0,2023-05-14 22:39:42,2023-07-29 22:39:42
+113,Database Systems,The system processed the request successfully.,/uploads/courses/f6e9254d-8344-4e01-b4d8-720de93af5aa.png,4,142,7.0,439.0,2,False,13.0,2023-07-09 23:04:33,2023-08-08 23:04:33
+114,Mobile App Development,Record was archived by the administrator.,/uploads/courses/35992eed-6d8a-4304-b627-dc35c803df8f.png,4,240,7.0,41.0,3,True,1.0,2024-05-13 03:23:55,2024-06-04 03:23:55
+115,Artificial Intelligence,Squadron assignment updated by admin.,/uploads/courses/be912d47-cecf-44ef-8833-f056ec696c1f.png,3,171,3.0,29.0,3,True,2.0,2022-08-03 00:09:15,2022-10-15 00:09:15
+116,Data Structures,User session expired and was terminated.,/uploads/courses/fe079387-f431-4e79-9ff7-462d0c1e9b4e.png,3,106,7.0,15.0,2,True,15.0,2025-04-17 22:28:25,2025-07-03 22:28:25
+117,Data Structures,New student record was added to the system.,/uploads/courses/6caa7519-b705-4de9-9f14-82ed80a6df4a.png,2,132,2.0,,3,True,15.0,2022-01-20 03:46:17,2022-02-10 03:46:17
+118,Computer Networks,Enrollment confirmed for the selected course.,/uploads/courses/f6d5278c-afe6-4a07-b20e-4b31148f4638.png,2,135,1.0,55.0,3,False,3.0,2023-08-23 07:04:34,2023-11-04 07:04:34
+119,Cyber Security Fundamentals,User session expired and was terminated.,/uploads/courses/b1f9327e-6a4e-4db5-a81b-a0290e2ebdca.png,3,203,1.0,17.0,2,True,8.0,2024-02-06 05:47:58,2024-02-17 05:47:58
+120,Data Science,New student record was added to the system.,/uploads/courses/c48dcf4d-de88-4061-8e8c-2bb6165839cf.png,2,169,3.0,,1,True,14.0,2023-12-17 10:59:06,2023-12-21 10:59:06
+121,Mobile App Development,Access token generated for session.,/uploads/courses/8aac9b6e-50f7-4ba3-8397-3eda55672b56.png,4,16,1.0,,1,False,15.0,2025-02-23 09:28:06,2025-05-15 09:28:06
+122,Mobile App Development,Password reset request was initiated.,/uploads/courses/8a0315ee-1346-45ad-93c5-1ccd8ba6a963.png,2,0,,679.0,3,False,12.0,2025-02-16 00:11:27,2025-03-30 00:11:27
+123,Cloud Computing,User authentication was completed.,/uploads/courses/00e8665b-295b-48eb-b792-5f35bf929846.png,3,199,1.0,,1,False,1.0,2025-02-15 15:22:22,2025-04-03 15:22:22
+124,Discrete Mathematics,Course registration period has been updated.,/uploads/courses/b281e527-877f-4c18-89c6-0a82b8b02326.png,3,17,2.0,,3,False,11.0,2023-06-03 22:28:09,2023-06-21 22:28:09
+125,Operating Systems,Enrollment confirmed for the selected course.,/uploads/courses/cf5bd796-9b84-49b4-ad54-2b7266cbc1dc.png,4,78,,7.0,1,True,15.0,2025-06-21 15:49:44,2025-07-14 15:49:44
+126,Machine Learning,Profile information was reviewed.,/uploads/courses/6bbc80b2-66af-4511-860d-bf23599d1ed9.png,3,169,2.0,18.0,1,True,8.0,2025-02-10 18:52:10,2025-06-05 18:52:10
+127,Computer Architecture,System backup was completed successfully.,/uploads/courses/c9c129f8-ecd7-41c4-977a-f8be40550973.png,2,72,1.0,18.0,3,False,5.0,2023-07-14 06:45:22,2023-10-27 06:45:22
+128,Artificial Intelligence,Data import finished without errors.,/uploads/courses/649b39dd-e586-4734-9de2-e38677ae03c8.png,4,99,2.0,495.0,2,False,10.0,2025-03-16 11:14:29,2025-05-02 11:14:29
+129,Discrete Mathematics,,/uploads/courses/812475e3-59a6-49b4-9ec1-5fd9cb024f9e.png,4,152,1.0,,3,False,2.0,2025-03-26 04:51:32,2025-04-13 04:51:32
+130,Computer Architecture,New student record was added to the system.,/uploads/courses/442c81a2-e64a-4022-81f8-d7faf16b0ada.png,3,134,2.0,483.0,3,False,10.0,2023-05-11 09:40:31,2023-08-29 09:40:31
+131,Machine Learning,New student record was added to the system.,/uploads/courses/191c36eb-44c5-4e46-af3e-7729d22f5ece.png,3,52,2.0,7.0,1,True,12.0,2025-06-21 08:12:38,2025-08-12 08:12:38
+132,Mobile App Development,Profile information was reviewed.,/uploads/courses/1517ca6f-886c-46a8-aa72-d1c2913d003d.png,2,90,7.0,986.0,2,True,13.0,2022-11-27 22:26:53,2023-02-23 22:26:53
+133,Computer Networks,Profile information was reviewed.,/uploads/courses/11c657dc-cee3-42ac-b556-1b13819f20d9.png,4,244,2.0,,1,False,9.0,2024-03-05 09:41:53,2024-04-08 09:41:53
+134,Web Development,Record was archived by the administrator.,/uploads/courses/4e34d132-65d1-4ab5-8d7b-9d33fb1b51ff.png,2,194,2.0,28.0,3,True,2.0,2022-05-13 10:25:10,2022-06-22 10:25:10
+135,Data Science,Bulk operation completed for selected records.,/uploads/courses/45aa11d4-3be5-4963-8a43-617784ce4cf9.png,4,221,2.0,41.0,3,True,1.0,2024-01-03 03:11:53,2024-03-07 03:11:53
+136,Operating Systems,Profile information was reviewed.,/uploads/courses/da9c7919-d9e2-4a09-a279-66f57df427b7.png,1,44,2.0,347.0,3,True,5.0,2025-05-30 20:14:46,2025-09-14 20:14:46
+137,Computer Networks,Access token generated for session.,/uploads/courses/09028ba8-6bdc-48dd-bdbb-bb01e7d817e1.png,4,47,1.0,41.0,3,False,10.0,2025-02-22 05:49:50,2025-05-27 05:49:50
+138,Algorithms,Access token generated for session.,/uploads/courses/7f97bda4-799b-41d6-950c-bed304e60a69.png,4,239,1.0,31.0,1,False,14.0,2025-01-28 02:56:44,2025-05-18 02:56:44
+139,Artificial Intelligence,System backup was completed successfully.,/uploads/courses/3a833c5d-8963-47b0-9935-5a26cd1a8dd0.png,4,151,,47.0,2,False,7.0,2025-03-13 21:15:14,2025-04-29 21:15:14
+140,Operating Systems,Course registration period has been updated.,/uploads/courses/49272ae6-335d-4b3a-b343-40a6b65e162a.png,3,152,3.0,29.0,1,True,10.0,2022-09-13 15:05:52,2022-10-27 15:05:52
+141,Computer Networks,Enrollment confirmed for the selected course.,/uploads/courses/bb37746f-55d1-4e94-86be-318e7ac97122.png,4,242,3.0,55.0,3,True,1.0,2024-07-13 11:18:19,2024-10-25 11:18:19
+142,Algorithms,User authentication was completed.,/uploads/courses/09db16fc-a1df-4b2d-843f-8868673becba.png,3,41,7.0,17.0,1,False,10.0,2023-09-21 10:39:11,2023-12-23 10:39:11
+143,Database Systems,Password reset request was initiated.,/uploads/courses/b2f82b2e-1050-4388-a829-cf9abc01cb76.png,3,83,1.0,41.0,1,True,6.0,2025-02-20 21:33:03,2025-05-26 21:33:03
+144,Software Engineering,,/uploads/courses/fd9ba9c5-e93b-484f-bf10-60c3670ed38e.png,2,33,,876.0,3,True,,2022-04-18 09:21:21,2022-07-10 09:21:21
+145,Web Development,User session expired and was terminated.,/uploads/courses/7962c623-74f4-467b-9470-eac1d843b5ac.png,1,242,2.0,18.0,1,True,,2022-12-13 06:32:51,2023-01-03 06:32:51
+146,Operating Systems,Password reset request was initiated.,/uploads/courses/79f371e3-2de9-4a7c-8d20-59845ada6384.png,3,130,3.0,31.0,1,True,6.0,2022-02-18 05:43:43,2022-05-27 05:43:43
+147,Data Science,The system processed the request successfully.,/uploads/courses/65c180c2-3beb-45c6-bc4d-e56da6b381e8.png,2,33,3.0,,1,True,9.0,2025-04-23 17:29:10,2025-05-27 17:29:10
+148,Algorithms,New student record was added to the system.,/uploads/courses/d1817475-08e2-4e19-8ff2-e896b994c296.png,2,176,,,3,True,5.0,2024-02-26 21:25:32,2024-04-29 21:25:32
+149,Web Development,User session expired and was terminated.,/uploads/courses/8edfa030-adf5-42c2-8948-ef4a24ad56c2.png,4,163,3.0,946.0,2,True,7.0,2025-06-12 04:06:11,2025-07-15 04:06:11
+150,Cyber Security Fundamentals,Enrollment confirmed for the selected course.,/uploads/courses/b7c02695-6d9f-46d9-a3c6-c3356a1c0a0e.png,2,185,3.0,29.0,2,False,9.0,2025-03-16 04:04:08,2025-04-04 04:04:08
+151,Software Engineering,Squadron assignment updated by admin.,/uploads/courses/93440c09-fe19-4aa1-8ecd-1fffc2847cbb.png,3,0,1.0,,2,False,12.0,2024-05-23 21:03:43,2024-06-29 21:03:43
+152,Operating Systems,User authentication was completed.,/uploads/courses/6e8a13ab-b8df-4250-b895-f52d75ae6632.png,3,142,1.0,18.0,2,False,3.0,2024-03-08 04:24:55,2024-06-18 04:24:55
+153,Algorithms,System backup was completed successfully.,/uploads/courses/eb208d5d-ef65-44e4-a4d3-489c56aa19c2.png,3,48,2.0,,1,False,4.0,2022-12-03 05:27:05,2022-12-03 05:27:05
+154,Software Engineering,User authentication was completed.,/uploads/courses/3e6f4f92-09d1-454a-92e1-df849c5c5268.png,4,8,3.0,47.0,1,False,11.0,2024-07-24 07:11:12,2024-08-17 07:11:12
+155,Data Structures,Squadron assignment updated by admin.,/uploads/courses/821ebe71-4d73-4b41-9e4b-20bed5e00bb4.png,4,160,,,1,True,1.0,2024-08-30 19:14:26,2024-12-02 19:14:26
+156,Algorithms,Record was archived by the administrator.,/uploads/courses/c9ba0295-dfba-4dfc-a713-e319d576f012.png,4,212,3.0,17.0,3,True,1.0,2023-10-16 06:56:04,2023-10-30 06:56:04
+157,Mobile App Development,,/uploads/courses/02fcba00-3814-44db-9ece-9cf549d2117e.png,2,18,3.0,51.0,3,True,5.0,2022-05-05 08:18:31,2022-08-15 08:18:31
+158,Mobile App Development,The system processed the request successfully.,/uploads/courses/312b1def-5868-4888-982b-7611b41dbba4.png,3,0,2.0,36.0,1,False,10.0,2022-11-06 07:47:46,2023-01-26 07:47:46
+159,Data Science,Annual academic year data was synchronized.,/uploads/courses/7a0e1e9e-fe9c-4a75-93e9-58b7001be3d1.png,20,217,1.0,55.0,2,True,11.0,2025-05-14 14:43:58,2025-05-29 14:43:58
+160,Computer Architecture,User authentication was completed.,/uploads/courses/ffd918da-cd76-461f-bcdb-68de755944e2.png,4,124,1.0,55.0,3,False,11.0,2025-01-28 17:34:54,2025-03-13 17:34:54
+161,Cyber Security Fundamentals,Access token generated for session.,/uploads/courses/841e21a3-0b89-44dd-9487-1d58852bf395.png,2,20,,36.0,1,False,3.0,2024-12-15 13:04:08,2024-12-29 13:04:08
+162,Cloud Computing,System backup was completed successfully.,/uploads/courses/bff2d6ba-fe1e-4dcb-b023-ac799cd555f2.png,0,151,1.0,576.0,2,True,11.0,2025-02-21 15:16:38,2025-06-21 15:16:38
+163,Data Science,Squadron assignment updated by admin.,/uploads/courses/f39c751a-209a-4430-8b91-6727673e48e7.png,3,12,7.0,36.0,2,True,3.0,2025-01-05 00:03:33,2025-04-30 00:03:33
+164,Data Science,Record was archived by the administrator.,/uploads/courses/0007a85b-b13e-4d86-ab60-4735a9b224a8.png,4,136,2.0,752.0,1,False,,2025-02-03 12:45:58,2025-05-23 12:45:58
+165,Computer Networks,Squadron assignment updated by admin.,/uploads/courses/28c21df9-d8eb-4cc3-8155-3a7cb92e94ab.png,3,196,,7.0,2,True,9.0,2023-01-31 13:58:57,2023-02-18 13:58:57
+166,Discrete Mathematics,New student record was added to the system.,/uploads/courses/a47d4c58-f29f-4e45-93d5-8a5a7afafcfd.png,1,0,2.0,55.0,3,True,2.0,2023-08-17 12:01:34,2023-11-15 12:01:34
+167,Operating Systems,Enrollment confirmed for the selected course.,/uploads/courses/14fd2bbe-a3d3-4696-8934-e6b998ff734c.png,1,172,3.0,7.0,1,True,9.0,2022-01-14 14:58:12,2022-03-11 14:58:12
+168,Web Development,User authentication was completed.,/uploads/courses/72e0bd29-b77d-4682-9597-78012c19feaa.png,2,0,3.0,47.0,1,True,,2022-12-12 00:46:25,2023-02-01 00:46:25
+169,Cyber Security Fundamentals,Data import finished without errors.,/uploads/courses/90994705-aba8-462e-88e6-e8fc994a7a34.png,3,225,1.0,31.0,3,True,15.0,2022-08-07 12:37:22,2022-09-07 12:37:22
+170,Data Science,Squadron assignment updated by admin.,/uploads/courses/03ffb975-76fd-465d-9d17-937038b208d5.png,4,1092,1.0,29.0,3,True,5.0,2024-11-21 08:17:41,2025-01-11 08:17:41
+171,Mobile App Development,Data import finished without errors.,/uploads/courses/d7c719bf-1ff9-4d88-b796-0b2f607d8b4f.png,2,155,2.0,17.0,2,True,11.0,2022-01-03 02:36:42,2022-01-09 02:36:42
+172,Database Systems,The system processed the request successfully.,/uploads/courses/d28dc497-1dc1-4225-b3da-c3d683a2d6d9.png,3,830,7.0,18.0,1,False,,2024-11-27 10:08:02,2025-01-10 10:08:02
+173,Mobile App Development,System backup was completed successfully.,/uploads/courses/4c5f5d78-facc-4210-b2f0-ae25b4a79611.png,1,55,3.0,,1,False,6.0,2022-02-23 07:58:08,2022-06-21 07:58:08
+174,Web Development,User authentication was completed.,/uploads/courses/c1df8fa5-57a9-4ece-819d-c8503caaec1b.png,2,103,7.0,18.0,3,False,14.0,2025-03-09 12:59:50,2025-03-23 12:59:50
+175,Discrete Mathematics,Annual academic year data was synchronized.,/uploads/courses/df031764-a679-4e5c-a092-7429e91ec9eb.png,4,62,7.0,,1,True,7.0,2024-11-18 21:52:07,2024-12-10 21:52:07
+176,Cyber Security Fundamentals,User authentication was completed.,/uploads/courses/4f9e70c4-865e-488d-8e61-a2fc74668af4.png,2,21,7.0,220.0,3,True,4.0,2025-04-28 21:32:56,2025-08-03 21:32:56
+177,Data Science,Record was archived by the administrator.,/uploads/courses/117691dc-1643-4083-b4bf-cedfc5c78a5d.png,1,86,1.0,36.0,2,False,,2022-12-14 11:10:47,2022-12-27 11:10:47
+178,Algorithms,User session expired and was terminated.,/uploads/courses/cf58042c-e6ef-4861-ad0b-6979cdad3f23.png,2,105,3.0,29.0,2,False,1.0,2024-04-05 03:19:12,2024-07-31 03:19:12
+179,Data Science,System backup was completed successfully.,/uploads/courses/18464343-f06e-40b8-8487-32d5265abdc9.png,2,838,1.0,,3,False,10.0,2023-10-07 19:57:57,2023-12-06 19:57:57
+180,Discrete Mathematics,Data import finished without errors.,/uploads/courses/a8cb2e44-c37e-4e6c-bbfc-c3ce73d76b98.png,2,56,2.0,287.0,2,True,15.0,2025-02-27 12:23:49,2025-05-26 12:23:49
+181,Operating Systems,Annual academic year data was synchronized.,/uploads/courses/7cf379f2-87e9-4e47-b92e-b71e2751977f.png,3,196,2.0,,1,False,10.0,2024-01-06 06:28:20,2024-04-25 06:28:20
+182,Data Structures,Record was archived by the administrator.,/uploads/courses/53ee13f6-57e2-45bc-a8c4-c387fc1ed9de.png,1,145,3.0,391.0,3,False,12.0,2024-08-11 11:25:41,2024-08-30 11:25:41
+183,Computer Architecture,Record was archived by the administrator.,/uploads/courses/e249d41f-f1e1-4532-914e-c69e1d1bad18.png,1,103,3.0,47.0,2,True,13.0,2022-07-13 15:08:52,2022-09-13 15:08:52
+184,Algorithms,New student record was added to the system.,/uploads/courses/644d176c-3a2f-426a-9e8d-bf8068356c68.png,3,188,,55.0,1,True,12.0,2025-02-06 22:38:36,2025-04-05 22:38:36
+185,Data Science,Enrollment confirmed for the selected course.,/uploads/courses/493aa56b-396f-45fd-a884-673bd5300d96.png,2,86,7.0,51.0,3,True,14.0,2023-05-16 15:04:10,2023-06-17 15:04:10
+186,Algorithms,Bulk operation completed for selected records.,/uploads/courses/cc025106-0d57-4987-9585-5b1f774517c5.png,2,32,3.0,18.0,2,True,11.0,2025-06-22 15:38:48,2025-07-11 15:38:48
+187,Operating Systems,Squadron assignment updated by admin.,/uploads/courses/c193526e-4b69-4daa-8dfa-e9bdb50c03f2.png,2,0,3.0,7.0,1,False,12.0,2023-03-31 16:31:01,2023-04-15 16:31:01
+188,Web Development,System backup was completed successfully.,/uploads/courses/05d91b4b-f3f7-497f-9615-33fa5ff1f4d0.png,3,154,2.0,36.0,3,False,1.0,2023-12-17 01:29:24,2024-03-26 01:29:24
+189,Artificial Intelligence,The system processed the request successfully.,/uploads/courses/4b628d96-be0f-4fa4-8036-5693c8f46c5c.png,3,160,2.0,17.0,1,False,,2023-12-04 09:30:57,2024-01-09 09:30:57
+190,Computer Architecture,Password reset request was initiated.,/uploads/courses/15591582-59b3-4b8f-b87e-106ec199149d.png,4,199,3.0,29.0,2,True,11.0,2024-01-29 14:53:18,2024-03-18 14:53:18
+191,Data Structures,Access token generated for session.,/uploads/courses/914aa762-5334-4be8-b9b8-60925ffb4841.png,3,227,2.0,17.0,3,False,10.0,2023-12-25 15:57:02,2024-02-15 15:57:02
+192,Computer Networks,Profile information was reviewed.,/uploads/courses/dc952770-b478-4525-bb3e-0decb3eed646.png,3,78,2.0,15.0,1,False,11.0,2024-11-06 08:15:38,2024-11-06 08:15:38
+193,Operating Systems,Password reset request was initiated.,/uploads/courses/2a1df6eb-5bbc-40e7-8ddc-9d1b566842d7.png,0,20,3.0,7.0,3,True,14.0,2025-06-29 15:18:58,2025-07-16 15:18:58
+194,Algorithms,Annual academic year data was synchronized.,/uploads/courses/5fef5f7f-d29f-4471-b815-c08d02e631cf.png,2,774,3.0,,3,False,12.0,2024-07-07 09:56:46,2024-07-08 09:56:46
+195,Computer Architecture,User authentication was completed.,/uploads/courses/00ffc83b-02ed-4839-93e9-5c8420188d0a.png,4,10,7.0,289.0,1,True,6.0,2025-03-25 22:48:45,2025-06-01 22:48:45
+196,Database Systems,Bulk operation completed for selected records.,/uploads/courses/2536cb43-6dcd-487f-b2f6-e67184564f7b.png,2,235,2.0,28.0,1,True,8.0,2022-06-05 17:43:49,2022-07-02 17:43:49
+197,Computer Networks,Record was archived by the administrator.,/uploads/courses/577ef3c5-a59d-4509-ad97-9223b47a3e27.png,2,169,2.0,,3,False,6.0,2025-01-14 12:53:46,2025-02-06 12:53:46
+198,Machine Learning,Data import finished without errors.,/uploads/courses/30b6b06b-fcfd-4816-8175-fb9c390c0dc2.png,4,212,3.0,36.0,2,True,13.0,2025-02-21 15:28:49,2025-06-07 15:28:49
+199,Cloud Computing,Annual academic year data was synchronized.,/uploads/courses/811aa764-ac8b-4b7f-8548-50d56dffa7a5.png,4,48,7.0,18.0,2,True,6.0,2022-06-11 08:25:54,2022-09-29 08:25:54
+200,Algorithms,New student record was added to the system.,/uploads/courses/8e4d3349-7921-4907-b9ac-9c984417a815.png,4,160,3.0,17.0,2,True,,2025-03-12 21:30:48,2025-03-12 21:30:48

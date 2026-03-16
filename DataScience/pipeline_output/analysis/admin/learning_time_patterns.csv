@@ -1,0 +1,6 @@
+TimeSlot,Attempts,Students,AvgScore,PassRate
+Night (0-5),2845,1200,53.067,0.296
+Morning (6-11),2706,1178,51.577,0.299
+Afternoon (12-17),2744,1190,50.322,0.272
+Evening (18-21),1852,1000,50.596,0.279
+Late Night (22-23),941,682,51.536,0.295

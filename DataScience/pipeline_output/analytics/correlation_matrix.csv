@@ -1,0 +1,5 @@
+EnrolledCourseCount,TotalCreditLoad,AccountAgeDays,RiskScore
+1.0,0.955,-0.005,-0.484
+0.955,1.0,-0.003,-0.482
+-0.005,-0.003,1.0,0.035
+-0.484,-0.482,0.035,1.0

@@ -1,0 +1,176 @@
+CourseId,AvgDays,MedianDays,StudentCount,Title
+145,69.1,61.0,27,Web Development
+79,67.7,76.0,27,Cyber Security Fundamentals
+68,67.4,75.0,63,Computer Networks
+137,65.8,75.0,51,Computer Networks
+82,65.4,75.5,52,Data Science
+44,65.1,66.0,22,Database Systems
+39,64.8,69.0,26,Computer Networks
+58,64.8,65.0,26,Software Engineering
+149,64.7,58.0,43,Web Development
+177,63.5,69.5,24,Data Science
+40,63.4,62.5,54,Discrete Mathematics
+194,62.6,70.0,56,Algorithms
+187,62.4,67.0,34,Operating Systems
+113,62.0,63.0,184,Database Systems
+35,61.7,61.5,54,Data Structures
+66,61.6,72.0,57,Computer Architecture
+23,61.5,65.0,152,Data Structures
+176,61.5,66.0,29,Cyber Security Fundamentals
+69,61.4,72.0,55,Computer Networks
+56,61.3,65.0,83,Data Science
+75,60.7,60.0,30,Data Science
+152,60.6,53.0,28,Operating Systems
+8,60.4,61.5,48,Data Science
+185,60.2,55.0,29,Data Science
+188,59.8,62.5,85,Web Development
+183,59.7,57.0,124,Computer Architecture
+10,59.7,59.0,23,Operating Systems
+24,59.5,61.0,143,Cloud Computing
+153,59.4,62.0,66,Algorithms
+77,59.4,61.0,78,Mobile App Development
+158,59.4,56.0,27,Mobile App Development
+93,59.3,58.0,69,Machine Learning
+43,59.3,56.0,175,Database Systems
+34,59.3,61.0,111,Algorithms
+70,59.3,61.5,84,Operating Systems
+103,59.1,64.0,108,Web Development
+45,59.1,50.0,105,Discrete Mathematics
+130,59.0,68.0,53,Computer Architecture
+27,58.9,58.0,93,Cloud Computing
+13,58.9,67.0,25,Software Engineering
+174,58.8,56.0,112,Web Development
+99,58.8,58.0,112,Mobile App Development
+87,58.7,52.0,116,Web Development
+191,58.5,61.0,39,Data Structures
+148,58.3,55.0,90,Algorithms
+156,58.3,55.0,85,Algorithms
+20,58.2,56.0,114,Computer Architecture
+22,58.2,60.0,89,Data Science
+32,58.1,66.0,91,Computer Architecture
+105,58.0,54.0,73,Computer Networks
+73,57.8,58.0,111,Web Development
+196,57.8,60.0,91,Database Systems
+171,57.8,60.0,70,Mobile App Development
+184,57.8,60.0,61,Algorithms
+173,57.6,53.0,123,Mobile App Development
+170,57.5,59.5,34,Data Science
+165,57.5,57.0,75,Computer Networks
+100,57.5,59.0,54,Software Engineering
+63,57.5,57.5,141,Computer Networks
+86,57.5,57.0,63,Database Systems
+62,57.5,54.0,57,Machine Learning
+67,57.5,57.0,105,Operating Systems
+161,57.3,57.0,25,Cyber Security Fundamentals
+107,57.3,55.0,189,Software Engineering
+121,57.3,57.0,113,Mobile App Development
+180,57.3,59.0,142,Discrete Mathematics
+76,57.2,57.0,86,Computer Networks
+42,57.1,53.0,53,Web Development
+1,57.1,69.0,26,Cyber Security Fundamentals
+129,57.1,49.0,90,Discrete Mathematics
+36,57.0,56.0,71,Software Engineering
+2,56.9,59.0,28,Machine Learning
+7,56.8,53.0,151,Operating Systems
+9,56.7,58.0,53,Artificial Intelligence
+29,56.7,51.0,83,Algorithms
+192,56.7,60.0,50,Computer Networks
+159,56.6,56.5,118,Data Science
+143,56.6,57.0,98,Database Systems
+17,56.5,53.0,43,Operating Systems
+112,56.5,55.0,106,Operating Systems
+175,56.5,55.0,87,Discrete Mathematics
+31,56.5,50.0,118,Computer Architecture
+72,56.4,53.5,143,Artificial Intelligence
+53,56.3,58.0,27,Discrete Mathematics
+25,56.2,46.5,34,Cloud Computing
+46,56.1,60.0,154,Mobile App Development
+26,56.1,44.5,22,Mobile App Development
+186,56.1,52.0,31,Algorithms
+4,55.9,52.5,187,Computer Networks
+95,55.9,54.0,41,Software Engineering
+142,55.8,53.0,78,Algorithms
+157,55.8,40.0,16,Mobile App Development
+132,55.7,52.0,64,Mobile App Development
+91,55.6,53.5,56,Computer Architecture
+47,55.5,53.0,141,Machine Learning
+167,55.4,55.0,69,Operating Systems
+30,55.4,54.5,141,Machine Learning
+80,55.3,57.0,88,Computer Architecture
+119,55.2,54.0,109,Cyber Security Fundamentals
+138,55.2,55.0,143,Algorithms
+193,55.1,57.0,141,Operating Systems
+89,55.1,42.5,81,Cyber Security Fundamentals
+123,55.1,54.0,78,Cloud Computing
+16,55.1,57.0,51,Algorithms
+65,55.0,39.0,27,Algorithms
+164,54.9,51.0,53,Data Science
+19,54.9,50.5,177,Machine Learning
+150,54.7,51.5,130,Cyber Security Fundamentals
+71,54.7,54.5,28,Algorithms
+48,54.6,46.0,23,Data Structures
+38,54.4,47.5,85,Database Systems
+166,54.4,51.0,50,Discrete Mathematics
+128,54.4,47.0,115,Artificial Intelligence
+110,54.2,46.0,113,Software Engineering
+141,54.1,44.0,31,Computer Networks
+139,54.0,44.5,62,Artificial Intelligence
+154,54.0,52.0,62,Software Engineering
+111,53.8,49.0,82,Cyber Security Fundamentals
+98,53.8,53.0,50,Machine Learning
+146,53.7,50.0,176,Operating Systems
+155,53.7,48.0,185,Data Structures
+94,53.6,45.5,28,Data Science
+54,53.5,44.0,27,Artificial Intelligence
+52,53.3,50.0,100,Operating Systems
+109,53.3,62.0,27,Artificial Intelligence
+172,53.2,53.0,24,Database Systems
+136,53.1,52.0,121,Operating Systems
+198,52.9,43.0,26,Machine Learning
+197,52.9,55.5,57,Computer Networks
+90,52.7,49.0,103,Discrete Mathematics
+131,52.7,45.0,82,Machine Learning
+18,52.6,54.0,34,Computer Networks
+125,52.4,38.0,39,Operating Systems
+181,52.3,52.0,196,Operating Systems
+61,52.3,50.0,47,Mobile App Development
+163,52.2,61.0,25,Data Science
+190,52.1,54.5,20,Computer Architecture
+74,52.1,50.0,128,Computer Architecture
+169,52.0,53.0,100,Cyber Security Fundamentals
+151,52.0,47.0,91,Software Engineering
+160,51.9,42.0,100,Computer Architecture
+120,51.9,45.0,153,Data Science
+144,51.9,45.0,119,Software Engineering
+102,51.8,48.0,88,Discrete Mathematics
+33,51.7,45.0,133,Data Science
+122,51.6,45.0,61,Mobile App Development
+135,51.6,52.0,59,Data Science
+124,51.4,54.0,31,Discrete Mathematics
+116,51.4,48.0,119,Data Structures
+49,51.3,48.0,29,Data Structures
+51,51.3,38.0,52,Discrete Mathematics
+114,51.3,46.0,93,Mobile App Development
+41,51.0,47.5,111,Database Systems
+3,51.0,42.0,29,Data Structures
+127,51.0,49.0,61,Computer Architecture
+101,50.8,42.0,98,Web Development
+85,50.8,47.0,95,Artificial Intelligence
+106,50.6,48.0,58,Software Engineering
+147,49.9,49.0,57,Data Science
+97,49.9,43.5,63,Computer Networks
+84,49.6,53.0,54,Database Systems
+118,49.2,41.0,100,Computer Networks
+11,49.2,44.5,134,Computer Networks
+140,49.2,45.5,107,Operating Systems
+182,49.0,41.0,25,Data Structures
+28,48.9,51.0,84,Mobile App Development
+21,48.6,42.5,34,Algorithms
+117,48.1,40.0,101,Data Structures
+92,47.8,37.0,83,Web Development
+37,47.7,38.5,58,Database Systems
+88,47.5,31.0,64,Cloud Computing
+81,47.3,32.0,86,Artificial Intelligence
+189,47.3,33.0,33,Artificial Intelligence
+178,46.9,39.0,30,Algorithms
+179,46.6,34.0,35,Data Science

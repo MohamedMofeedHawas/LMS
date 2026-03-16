@@ -1,0 +1,156 @@
+InstructorId,CourseId,Title,Students,AvgProgress,CompletionRate
+1,2,Machine Learning,66,76.628,0.651
+1,57,Web Development,59,,
+1,85,Artificial Intelligence,68,75.593,0.599
+1,123,Cloud Computing,70,66.409,0.506
+1,135,Data Science,63,65.3,0.536
+1,141,Computer Networks,61,71.175,0.544
+1,156,Algorithms,71,67.018,0.533
+1,178,Algorithms,68,81.896,0.625
+1,188,Web Development,58,68.708,0.512
+2,11,Computer Networks,69,69.992,0.541
+2,20,Computer Architecture,69,66.954,0.528
+2,51,Discrete Mathematics,60,69.14,0.53
+2,70,Operating Systems,62,68.534,0.515
+2,86,Database Systems,61,72.431,0.578
+2,115,Artificial Intelligence,65,,
+2,129,Discrete Mathematics,60,75.397,0.603
+2,134,Web Development,65,,
+2,166,Discrete Mathematics,64,64.979,0.532
+3,22,Data Science,61,70.516,0.567
+3,23,Data Structures,64,71.162,0.55
+3,24,Cloud Computing,62,68.436,0.535
+3,28,Mobile App Development,65,68.174,0.528
+3,31,Computer Architecture,76,74.109,0.564
+3,52,Operating Systems,48,69.495,0.526
+3,76,Computer Networks,57,69.886,0.557
+3,118,Computer Networks,74,70.697,0.577
+3,152,Operating Systems,58,66.51,0.549
+4,38,Database Systems,62,70.475,0.531
+4,56,Data Science,75,71.234,0.539
+4,75,Data Science,54,69.151,0.566
+4,98,Machine Learning,57,69.353,0.588
+4,100,Software Engineering,65,70.475,0.545
+4,108,Software Engineering,78,,
+4,109,Artificial Intelligence,60,75.86,0.628
+4,153,Algorithms,59,71.781,0.588
+5,3,Data Structures,69,71.212,0.558
+5,34,Algorithms,59,72.961,0.541
+5,89,Cyber Security Fundamentals,65,74.232,0.609
+5,127,Computer Architecture,65,80.348,0.663
+5,136,Operating Systems,57,72.905,0.563
+5,157,Mobile App Development,69,57.167,0.381
+5,170,Data Science,66,75.745,0.667
+6,1,Cyber Security Fundamentals,63,77.727,0.591
+6,26,Mobile App Development,77,68.178,0.489
+6,96,Database Systems,55,,
+6,110,Software Engineering,56,69.886,0.562
+6,143,Database Systems,61,71.851,0.589
+6,146,Operating Systems,64,73.44,0.599
+6,173,Mobile App Development,64,75.139,0.603
+6,197,Computer Networks,52,76.733,0.574
+7,8,Data Science,62,69.72,0.516
+7,46,Mobile App Development,73,68.793,0.537
+7,48,Data Structures,68,68.95,0.575
+7,81,Artificial Intelligence,61,72.703,0.588
+7,149,Web Development,69,62.775,0.483
+8,9,Artificial Intelligence,64,69.206,0.52
+8,18,Computer Networks,63,76.067,0.567
+8,29,Algorithms,71,72.559,0.553
+8,67,Operating Systems,56,72.545,0.583
+8,78,Artificial Intelligence,59,,
+8,91,Computer Architecture,52,72.087,0.544
+8,119,Cyber Security Fundamentals,56,76.076,0.614
+8,126,Machine Learning,65,,
+8,196,Database Systems,64,68.87,0.538
+9,62,Machine Learning,64,68.113,0.588
+9,72,Artificial Intelligence,72,68.779,0.537
+9,133,Computer Networks,65,,
+9,147,Data Science,71,74.227,0.619
+9,150,Cyber Security Fundamentals,65,72.799,0.561
+9,167,Operating Systems,69,65.797,0.507
+10,25,Cloud Computing,64,75.364,0.618
+10,36,Software Engineering,71,69.743,0.514
+10,40,Discrete Mathematics,54,68.242,0.545
+10,41,Database Systems,67,71.17,0.596
+10,49,Data Structures,75,77.489,0.617
+10,50,Discrete Mathematics,64,,
+10,64,Database Systems,68,,
+10,65,Algorithms,62,65.714,0.551
+10,74,Computer Architecture,50,73.052,0.561
+10,87,Web Development,79,72.249,0.58
+10,88,Cloud Computing,68,69.2,0.5
+10,94,Data Science,53,65.216,0.549
+10,111,Cyber Security Fundamentals,64,71.322,0.553
+10,128,Artificial Intelligence,47,67.489,0.525
+10,130,Computer Architecture,70,72.591,0.57
+10,137,Computer Networks,63,67.717,0.515
+10,140,Operating Systems,66,69.238,0.56
+10,145,Web Development,51,65.078,0.529
+10,158,Mobile App Development,76,80.047,0.628
+10,164,Data Science,65,68.822,0.525
+10,168,Web Development,70,,
+10,177,Data Science,60,70.217,0.522
+10,179,Data Science,59,83.608,0.686
+10,181,Operating Systems,65,72.3,0.576
+10,189,Artificial Intelligence,69,72.49,0.647
+10,191,Data Structures,59,69.6,0.52
+10,200,Algorithms,68,,
+11,14,Computer Architecture,57,,
+11,53,Discrete Mathematics,78,67.923,0.519
+11,71,Algorithms,69,82.5,0.7
+11,93,Machine Learning,68,61.111,0.451
+11,124,Discrete Mathematics,58,72.577,0.596
+11,154,Software Engineering,67,74.61,0.6
+11,159,Data Science,66,70.54,0.6
+11,160,Computer Architecture,53,69.708,0.526
+11,162,Cloud Computing,71,,
+11,171,Mobile App Development,67,72.016,0.568
+11,186,Algorithms,50,72.176,0.608
+11,190,Computer Architecture,72,64.537,0.488
+11,192,Computer Networks,72,73.333,0.595
+12,5,Discrete Mathematics,55,,
+12,7,Operating Systems,54,70.707,0.54
+12,43,Database Systems,55,71.03,0.543
+12,58,Software Engineering,62,68.169,0.441
+12,73,Web Development,80,71.459,0.587
+12,107,Software Engineering,60,66.995,0.522
+12,131,Machine Learning,57,66.571,0.522
+12,151,Software Engineering,71,72.954,0.599
+12,182,Data Structures,64,67.565,0.543
+12,187,Operating Systems,61,70.136,0.576
+12,194,Algorithms,68,64.841,0.523
+13,21,Algorithms,65,73.982,0.618
+13,54,Artificial Intelligence,68,78.532,0.574
+13,61,Mobile App Development,61,69.386,0.566
+13,63,Computer Networks,69,73.75,0.562
+13,69,Computer Networks,70,68.802,0.519
+13,77,Mobile App Development,63,69.845,0.547
+13,79,Cyber Security Fundamentals,69,62.328,0.443
+13,92,Web Development,68,69.224,0.534
+13,95,Software Engineering,67,64.888,0.512
+13,183,Computer Architecture,69,69.964,0.522
+13,198,Machine Learning,72,62.759,0.448
+14,6,Artificial Intelligence,62,,
+14,33,Data Science,66,73.895,0.573
+14,35,Data Structures,55,67.52,0.549
+14,47,Machine Learning,65,68.428,0.553
+14,84,Database Systems,72,69.779,0.519
+14,99,Mobile App Development,63,71.518,0.578
+14,101,Web Development,58,64.381,0.49
+14,106,Software Engineering,56,73.01,0.604
+14,120,Data Science,72,70.645,0.538
+14,138,Algorithms,57,71.373,0.541
+14,193,Operating Systems,44,69.281,0.547
+15,4,Computer Networks,75,71.71,0.574
+15,12,Discrete Mathematics,68,,
+15,16,Algorithms,70,69.619,0.526
+15,30,Machine Learning,60,66.809,0.527
+15,32,Computer Architecture,76,72.047,0.535
+15,37,Database Systems,65,71.936,0.617
+15,59,Machine Learning,68,,
+15,80,Computer Architecture,58,77.227,0.631
+15,117,Data Structures,66,73.432,0.58
+15,121,Mobile App Development,58,72.517,0.541
+15,169,Cyber Security Fundamentals,68,65.596,0.502
+15,180,Discrete Mathematics,74,71.16,0.598
