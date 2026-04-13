@@ -1,0 +1,227 @@
+.grades-content {
+  max-width: 2000px; 
+  padding: 20px ;
+  margin: 20px auto;
+  width: 95%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.main-white-box{
+    background-color: white;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.report-toggle { margin-bottom: 25px; }
+
+.toggle-btn {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;}
+
+.toggle-btn.active {
+  background-color: #007bff;
+  color: white;}
+
+.toggle-btn:hover {
+  background-color: #e0e0e0;}
+
+.toggle-btn.active:hover {
+  background-color: #0056b3;}
+
+.report-title {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;}
+
+.dropdown-icon {
+  margin-right: 10px;
+  font-size: 14px;}
+
+.student-info { margin-bottom: 30px;}
+
+.student-name {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;}
+
+.course-label {
+  display: flex;
+  gap: 40px;}
+
+.course-label .label {
+  color: #666;
+  font-size: 14px;}
+
+.course-label .value {
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;}
+
+.grades-list {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 0 15px;}
+
+.grade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;}
+
+.grade-item:hover { background-color: #f0f0f0;}
+
+.grade-item:last-child { border-bottom: none;}
+
+.grade-info {flex: 1;}
+
+.grade-title {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4;}
+
+.grade-type {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;}
+
+.grade-type.workshop {
+  background-color: #e8f4fc;
+  color: #0066cc;}
+
+.grade-type.database {
+  background-color: #fff3cd;
+  color: #856404;}
+
+.grade-type.assignment {
+  background-color: #d4edda;
+  color: #155724;}
+
+.grade-type.quiz {
+  background-color: #f8d7da;
+  color: #721c24;}
+
+.grade-percentage {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 80px;
+  text-align: center;}
+
+.grade-percentage.high {
+  background-color: #d4edda;
+  color: #155724;}
+
+.grade-percentage.medium {
+  background-color: #fff3cd;
+  color: #856404;}
+
+.grade-percentage.low {
+  background-color: #d1ecf1;
+  color: #0c5460;}
+
+.grade-percentage.zero {
+  background-color: #f8d7da;
+  color: #721c24;}
+
+.course-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-top: 2px solid #ccc;}
+
+.total-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;}
+
+.total-title {
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  font-size: 15px;}
+
+.total-type {
+  background-color: #333;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  width: fit-content;}
+
+.total-percentage {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: center;}
+
+.user-report {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+.user-report-placeholder {
+  padding: 40px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+  color: #666;}
+
+.sub-nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;}
+
+.sub-nav-link {
+  color: #666;
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-size: 14px;
+  transition: color 0.3s;}
+
+.sub-nav-link:hover { color: #007bff;}
+
+.sub-nav-link.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;}
+  
+/*el 5at al fasel*/
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0 25px 0;}
+
+.main-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;}

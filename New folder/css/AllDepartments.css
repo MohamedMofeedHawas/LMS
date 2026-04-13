@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alldepartments-page {
+  display: flex;
+  min-height: 100vh;
+  /*background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 110%;
+  max-width: 1600px;
+ /* background-attachment: fixed;*/
+}
+
+.sidebar {
+  width: 260px;
+  background: white;
+  padding: 2rem 1.5rem;
+  position: relative;
+  left: -100px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-header-side {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-item:hover {
+  background: #f5f7fb;
+  color: #5876d6;
+}
+
+.nav-item.active {
+  background: #5876d6;
+  color: white;
+}
+
+.logout {
+  margin-top: 2rem;
+  border-top: 1px solid #f0f2f5;
+  padding-top: 1rem;
+}
+
+/* main */
+.alldepartments-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-left: -50px;
+}
+
+
+.alldepartments-header h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* table */
+.departments-table-container {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  /*overflow-x: auto;*/
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1800px;
+  margin-left: -40px;
+}
+
+.departments-table {
+  width: 100%;
+  min-width: 2000px;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+.departments-table th {
+  text-align: left;
+  padding: 1rem;
+  background: #f8fafc;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #e0e4e8;
+  text-transform: uppercase;
+}
+
+.departments-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f2f5;
+  color: #555;
+}
+
+.departments-table tr:hover {
+  background: #f8fafc;
+}
+
+.dept-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+    padding: 1rem;
+  }
+  
+  .departments-table-container {padding: 1rem;}
+  
+  .alldepartments-header h1 {font-size: 1.6rem;}
+}

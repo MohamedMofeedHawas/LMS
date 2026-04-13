@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.allusers-page {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8ed9ff 0%, #efefef 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  gap: 30px;
+}
+
+.sidebar {
+  width: 260px;
+  background: white;
+  padding: 2rem 1.5rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-item:hover {
+  background: #f5f7fb;
+  color: #667eea;
+}
+
+.nav-item.active {
+  background:#1b57da;
+  color: white;
+}
+
+.logout {
+  margin-top: 2rem;
+  border-top: 1px solid #f0f2f5;
+  padding-top: 1rem;
+}
+
+/* main */
+.allusers-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow-x: auto;
+  margin-bottom: 5rem;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.users-table th {
+  text-align: left;
+  padding: 1rem;
+  background: #f8fafc;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #e0e4e8;
+  text-transform: uppercase;
+}
+
+.users-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f2f5;
+  color: #555;
+}
+
+.users-table tr:hover {
+  background: #f8fafc;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #e6f7e6;
+  color: #27ae60;
+}
+
+.status-pending {
+  background: #fff3e0;
+  color: #f39c12;
+}
+.allusers-main{
+    margin-left: 20px;
+    padding: 2rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.logout-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f2f5;
+  text-align: center;
+}
+.logout{margin-top: -5px;}
+/* responsive */
+@media (max-width: 768px) {
+  .users-table-container{ padding: 1rem;}}
